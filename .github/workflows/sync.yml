@@ -14,5 +14,5 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SYNC_GITEE_PRI_KEY }}
         with:
-          source-repo: "git@github.com:itcharge/LeetCode-Py.git"
-          destination-repo: "git@gitee.com:itcharge/LeetCode-Py.git"
+          source-repo: "git@github.com:itcharge/AlgoNote.git"
+          destination-repo: "git@gitee.com:itcharge/AlgoNote.git"
