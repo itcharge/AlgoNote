@@ -82,3 +82,7 @@ class Solution:
 归并排序的时间复杂度是 $O(n \log n)$，这是因为它需要 $\log n$ 次分解，每次合并需要 $O(n)$ 时间。空间复杂度是 $O(n)$，因为合并过程需要额外的存储空间。
 
 归并排序是稳定的排序算法，在合并过程中相等元素的相对顺序不会改变。它适合处理大规模数据，但需要额外的存储空间是其缺点。归并排序常用于外部排序场景。
+
+## 练习题目
+
+- [排序算法题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)

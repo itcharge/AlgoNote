@@ -231,6 +231,10 @@ class Solution:
 - **时间复杂度**：$O(n \times \log n)$，其中 $n$ 是区间的数量。
 - **空间复杂度**：$O(\log n)$。
 
+## 练习题目
+
+- [贪心算法题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【博文】[贪心 - OI Wiki](https://oi-wiki.org/basic/greedy/)

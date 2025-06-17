@@ -269,6 +269,10 @@ class Solution:
 - **时间复杂度**：$O(n \times m)$，其中 $m$ 和 $n$ 分别为行数和列数。
 - **空间复杂度**：$O(n \times m)$。
 
+## 练习题目
+
+- [图的广度优先搜索题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%9B%BE%E7%9A%84%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【文章】[广度优先搜索 - LeetBook - 力扣（LeetCode）](https://leetcode.cn/leetbook/read/bfs/e69rh1/)

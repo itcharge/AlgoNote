@@ -101,3 +101,7 @@ print(sunday("abbcfdddbddcaddebc", "bcf"))
 - 【书籍】柔性字符串匹配 - 中科院计算所网络信息安全研究组 译
 - 【博文】[字符串模式匹配算法：BM、Horspool、Sunday、KMP、KR、AC算法 - schips - 博客园](https://www.cnblogs.com/schips/p/11098041.html)
 - 【博文】[字符串匹配——Sunday 算法 - Switch 的博客 - CSDN 博客](https://blog.csdn.net/q547550831/article/details/51860017)
+
+## 练习题目
+
+- [单模式串匹配题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%8D%95%E6%A8%A1%E5%BC%8F%E4%B8%B2%E5%8C%B9%E9%85%8D%E9%A2%98%E7%9B%AE)

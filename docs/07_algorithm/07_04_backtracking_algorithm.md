@@ -397,6 +397,10 @@ class Solution:
 - **时间复杂度**：$O(n!)$，其中 $n$ 是皇后数量。
 - **空间复杂度**：$O(n^2)$，其中 $n$ 是皇后数量。递归调用层数不会超过 $n$，每个棋盘的空间复杂度为 $O(n^2)$，所以空间复杂度为 $O(n^2)$。
 
+## 练习题目
+
+- [回溯算法题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【题解】[回溯算法入门级详解 + 练习（持续更新） - 全排列 - 力扣](https://leetcode.cn/problems/permutations/solution/hui-su-suan-fa-python-dai-ma-java-dai-ma-by-liweiw/)

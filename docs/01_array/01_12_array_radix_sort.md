@@ -63,3 +63,7 @@ class Solution:
 基数排序的时间复杂度是 $O(n \times k)$，$n$ 是元素数量，$k$ 是最大位数。空间复杂度是 $O(n + k)$。它是稳定的排序算法，能保持相同数字的相对顺序。
 
 基数排序适合处理位数不多的整数排序。当数字范围很大但位数较少时效率较高。实际应用中常用于电话号码、身份证号等固定位数数据的排序。
+
+## 练习题目
+
+- [排序算法题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)

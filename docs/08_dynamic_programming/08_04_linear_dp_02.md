@@ -370,6 +370,11 @@ class Solution:
 - **时间复杂度**：$O(n \sqrt{n})$。外层循环遍历的时间复杂度是 $O(n)$，内层循环遍历的时间复杂度是 $O(\sqrt{n})$，所以总体时间复杂度为 $O(n \sqrt{n})$。
 - **空间复杂度**：$O(n)$。用到了一维数组保存状态，所以总体空间复杂度为 $O(n)$。
 
+## 题目练习
+
+- [矩阵线性 DP 问题题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E7%9F%A9%E9%98%B5%E7%BA%BF%E6%80%A7-dp-%E9%97%AE%E9%A2%98)
+- [矩阵线性 DP 问题题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%97%A0%E4%B8%B2%E7%BA%BF%E6%80%A7-dp-%E9%97%AE%E9%A2%98)
+
 ## 参考资料
 
 - 【书籍】算法竞赛进阶指南

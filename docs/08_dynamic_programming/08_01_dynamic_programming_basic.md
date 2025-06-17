@@ -384,6 +384,10 @@ class Solution:
 - **时间复杂度**：$O(m \times n)$。初始条件赋值的时间复杂度为 $O(m + n)$，两重循环遍历的时间复杂度为 $O(m \times n)$，所以总体时间复杂度为 $O(m \times n)$。
 - **空间复杂度**：$O(m \times n)$。用到了二维数组保存状态，所以总体空间复杂度为 $O(m \times n)$。因为 $dp[i][j]$ 的状态只依赖于上方值 $dp[i - 1][j]$ 和左侧值 $dp[i][j - 1]$，而我们在进行遍历时的顺序刚好是从上至下、从左到右。所以我们可以使用长度为 $n$ 的一维数组来保存状态，从而将空间复杂度优化到 $O(n)$。
 
+## 题目练习
+
+- [动态规划基础题目](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【文章】[动态规划基础 - OI Wiki](https://oi-wiki.org/dp/basic/)

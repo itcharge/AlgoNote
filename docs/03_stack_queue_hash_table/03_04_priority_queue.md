@@ -391,6 +391,10 @@ class Solution:
 - **时间复杂度**：$O(n \times \log n)$。
 - **空间复杂度**：$O(n)$。
 
+## 练习题目
+
+- [优先队列题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【博文】[浅入浅出数据结构（15）—— 优先队列（堆） - NSpt - 博客园](https://www.cnblogs.com/mm93/p/7481782.html)

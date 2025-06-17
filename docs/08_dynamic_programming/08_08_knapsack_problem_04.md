@@ -322,6 +322,11 @@ class Solution:
 - **时间复杂度**：$O(n \times W \times V)$，其中 $n$ 为物品分组数量，$W$ 为背包的载重上限，$V$ 为背包的容量上限。
 - **空间复杂度**：$O(W \times V)$。
 
+## 练习题目
+
+- [分组背包问题题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%88%86%E7%BB%84%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98)
+- [多维背包问题题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%A4%9A%E7%BB%B4%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98)
+
 ## 参考资料
 
 - 【资料】[背包九讲 - 崔添翼](https://github.com/tianyicui/pack)

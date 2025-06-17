@@ -129,3 +129,7 @@ print(f"次短路径长度: {result}")
 2. 如果不存在次短路径，返回 $-1$。
 3. 图中可能存在负权边，此时需要使用 Bellman-Ford 算法的变体。
 4. 对于无向图，需要将每条边都加入两次。
+
+## 练习题目
+
+- [次短路径题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%AC%A1%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%A2%98%E7%9B%AE)

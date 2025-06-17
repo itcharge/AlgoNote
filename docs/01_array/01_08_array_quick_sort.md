@@ -144,6 +144,10 @@ class Solution:
 
 快速排序在实际应用中很常见，是许多编程语言内置排序函数的实现基础。它的效率通常比其他 $O(n \log n)$ 算法更高，因为它的常数因子较小。
 
+## 练习题目
+
+- [排序算法题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【文章】[快速排序 - OI Wiki](https://oi-wiki.org/basic/quick-sort/)

@@ -310,6 +310,10 @@ class Solution:
         return sub_sets                     # 返回所有子集
 ```
 
+## 练习题目
+
+- [位运算题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E4%BD%8D%E8%BF%90%E7%AE%97%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【博文】[Python 中的按位运算符 |【生长吧！Python!】- 云社区 - 华为云](https://bbs.huaweicloud.com/blogs/280901)

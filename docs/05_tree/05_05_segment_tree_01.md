@@ -325,6 +325,10 @@ class SegmentTree:
         self.tree[index].lazy_tag = None            # 更新当前节点的懒惰标记
 ```
 
+## 练习题目
+
+- [线段树题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E7%BA%BF%E6%AE%B5%E6%A0%91%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【书籍】ACM-ICPC 程序设计系列 - 算法设计与实现 - 陈宇 吴昊 主编

@@ -200,3 +200,7 @@ def johnson(graph, n):
   - 需要存储距离矩阵，大小为 $O(V^2)$
   - 需要存储重新赋权后的图，大小为 $O(E)$
   - 因此总空间复杂度为 $O(V^2)$
+
+## 练习题目
+
+- [多源最短路径题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%A4%9A%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%A2%98%E7%9B%AE)

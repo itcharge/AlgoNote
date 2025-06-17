@@ -1,6 +1,6 @@
 # 本章内容
 
-- [0.1 关于本书](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_01_about_the_book.md)
+- [0.1 前言](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_01_preface.md)
 - [0.2 算法与数据结构](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_02_data_structures_algorithms.md)
 - [0.3 算法复杂度](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_03_algorithm_complexity.md)
 - [0.4 LeetCode 入门与攻略](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_04_leetcode_guide.md)

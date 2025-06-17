@@ -62,9 +62,9 @@
 
 - 其中 $dp[i]$ 对应全概率公式中的 $E(Y)$，$p[i][j]$ 对应了 $P(x_j)$，$dp[j]$ 则对应了 $E(Y \text{ | } x_j)$。
 
-## 3. 概率 DP 的应用
+## 练习题目
 
-### 3.1 
+- [概率 DP 题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%A6%82%E7%8E%87-dp-%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 

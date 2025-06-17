@@ -96,6 +96,10 @@ print(horspool("abbcfdddbddcaddebc", "bcf"))
 
 - Horspool 算法在平均情况下的时间复杂度为 $O(n)$，但是在最坏情况下时间复杂度会退化为 $O(n * m)$。
 
+## 练习题目
+
+- [单模式串匹配题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%8D%95%E6%A8%A1%E5%BC%8F%E4%B8%B2%E5%8C%B9%E9%85%8D%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【书籍】柔性字符串匹配 - 中科院计算所网络信息安全研究组 译

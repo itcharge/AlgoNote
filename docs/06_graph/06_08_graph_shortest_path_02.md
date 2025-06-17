@@ -159,3 +159,7 @@ def spfa(graph, n, source):
   - 需要存储距离数组，大小为 $O(V)$
   - 需要存储队列和访问数组，大小为 $O(V)$
   - 因此总空间复杂度为 $O(V)$
+
+## 练习题目
+
+- [单源最短路径题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%A2%98%E7%9B%AE)

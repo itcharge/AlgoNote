@@ -561,6 +561,10 @@ class Solution:
         return len(res)
 ```
 
+## 练习题目
+
+- [并查集题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%B9%B6%E6%9F%A5%E9%9B%86%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【博文】[并查集 - OI Wiki](https://oi-wiki.org/ds/dsu/)

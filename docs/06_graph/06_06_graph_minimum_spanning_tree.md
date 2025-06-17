@@ -209,3 +209,7 @@ Kruskal 算法的时间复杂度主要取决于以下几个因素：
 因此，Kruskal 算法的总体时间复杂度为：
 - 时间复杂度：$O(E \log E)$，其中 $E$ 是图中的边数。
 - 空间复杂度：$O(V)$，其中 $V$ 是图中的顶点数，主要用于存储并查集数据结构。
+
+## 练习题目
+
+- [图的最小生成树题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%9B%BE%E7%9A%84%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%E9%A2%98%E7%9B%AE)

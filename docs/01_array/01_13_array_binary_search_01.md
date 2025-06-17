@@ -155,3 +155,7 @@ class Solution:
 二分查找的时间复杂度是 $O(\log n)$，比顺序查找的 $O(n)$ 更快。它的空间复杂度是 $O(1)$，因为它不需要额外的存储空间。
 
 二分查找的思想是减而治之，通过排除不可能的区域来缩小搜索范围。这种方法在有序数据集中非常有效，可以显著提高搜索效率。
+
+## 练习题目
+
+- [二分查找题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E9%A2%98%E7%9B%AE)

@@ -280,6 +280,11 @@ LeetCode 是一个在线编程练习平台，主要用于提升算法和编程�
 
 刷题需要坚持和重复练习。按专题分类刷题效果更好，可以巩固知识点。写解题报告有助于加深理解。
 
+## 练习题目
+
+- [2235. 两整数相加](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/2200-2299/add-two-integers.md)
+- [1929. 数组串联](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/1900-1999/concatenation-of-array.md)
+
 ## 参考资料
 
 - 【文章】[What is LeetCode? - Quora](https://www.quora.com/What-is-Leetcode)

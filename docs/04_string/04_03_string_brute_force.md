@@ -45,6 +45,10 @@ BF 算法非常简单，容易理解，但其效率很低。主要是因为在�
 
 在一般情况下，根据等概率原则，平均搜索次数为 $\frac{(n + m)}{2}$，所以 Brute Force 算法的平均时间复杂度为 $O(n \times m)$。
 
+## 练习题目
+
+- [单模式串匹配题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%8D%95%E6%A8%A1%E5%BC%8F%E4%B8%B2%E5%8C%B9%E9%85%8D%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【书籍】数据结构与算法 Python 语言描述 - 裘宗燕 著

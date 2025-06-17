@@ -275,3 +275,7 @@ def max_flow_bipartite_matching(graph, left_size, right_size):
    - 优点：可以处理更复杂的问题，如带权匹配
    - 缺点：实现复杂，常数较大
    - 适用场景：带权匹配，复杂约束条件
+
+## 练习题目
+
+- [二分图最大匹配题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%88%86%E5%9B%BE%E6%9C%80%E5%A4%A7%E5%8C%B9%E9%85%8D%E9%A2%98%E7%9B%AE)

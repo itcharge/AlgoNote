@@ -359,6 +359,10 @@ def removeInside(self, index):
 - 链表进行尾部插入、尾部删除操作的时间复杂度是 $O(n)$。
 - 链表在普通情况下进行插入、删除元素操作的时间复杂度为 $O(n)$。
 
+## 练习题目
+
+- [链表经典题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E9%93%BE%E8%A1%A8%E7%BB%8F%E5%85%B8%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【文章】[链表理论基础 - 代码随想录](https://programmercarl.com/链表理论基础.html#链表理论基础)

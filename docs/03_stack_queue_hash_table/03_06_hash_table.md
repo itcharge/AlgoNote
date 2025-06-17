@@ -153,6 +153,10 @@ $343246_{13} = 3 \times 13^5 + 4 \times 13^4 + 3 \times 13^3 + 2 \times 13^2 + 4
 - 常用的哈希函数方法有：直接定址法、除留余数法、平方取中法、基数转换法、数字分析法、折叠法、随机数法、乘积法、点积法等。
 - 常用的哈希冲突的解决方法有两种：开放地址法和链地址法。
 
+## 练习题目
+
+- [哈希表题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%93%88%E5%B8%8C%E8%A1%A8%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【博文】[哈希算法及 python 字典的实现 – Tim's Path](https://xiaoxubeii.github.io/articles/hash/)

@@ -256,6 +256,10 @@ class Solution:
 
 掌握这些细节能更灵活地应用二分查找，避免常见错误。
 
+## 练习题目
+
+- [二分查找题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【博文】[Learning-Algorithms-with-Leetcode - 第 3.1 节 二分查找算法](https://www.yuque.com/liweiwei1419/algo/wkmtx4)

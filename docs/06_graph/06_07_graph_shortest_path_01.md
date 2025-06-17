@@ -202,3 +202,7 @@ for i in range(1, n + 1):
 - **空间复杂度**：$O(V)$
   - 需要存储距离数组，大小为 $O(V)$。
   - 优先队列在最坏情况下可能存储所有节点，大小为 $O(V)$。
+
+## 练习题目
+
+- [单源最短路径题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%A2%98%E7%9B%AE)

@@ -246,6 +246,10 @@ class Solution:
         return left if nums[left] == target else -1
 ```
 
+## 练习题目
+
+- [分治算法题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【书籍】趣学算法 - 陈小玉 著

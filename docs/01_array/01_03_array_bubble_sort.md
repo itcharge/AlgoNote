@@ -107,6 +107,13 @@ class Solution:
 
 冒泡排序容易实现，但效率较低。在实际应用中，通常选择更高效的排序算法处理大规模数据。
 
+## 练习题目
+
+- [0283. 移动零](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0200-0299/move-zeroes.md)（冒泡排序会超时，仅作练习）
+- [0912. 排序数组](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0900-0999/sort-an-array.md)（冒泡排序会超时，仅作练习）
+
+- [排序算法题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【文章】[11.3.  冒泡排序 - Hello 算法](https://www.hello-algo.com/chapter_sorting/bubble_sort/)

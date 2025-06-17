@@ -189,6 +189,10 @@ class Solution:
                 return root.right
 ```
 
+## 练习题目
+
+- [二叉搜索树题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【书籍】算法训练营 陈小玉 著

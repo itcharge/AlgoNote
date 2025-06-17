@@ -179,6 +179,10 @@ ASCII 编码可以解决以英语为主的语言，可是无法满足中文编�
 
 所以学习多模式匹配算法，重点是要掌握 **「字典树」** 和 **「AC 自动机算法」** 。
 
+## 练习题目
+
+- [字符串基础题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【书籍】数据结构（C 语言版）- 严蔚敏 著

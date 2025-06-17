@@ -204,6 +204,10 @@ class Solution:
 - **时间复杂度**：$O(W \times \sum \log_2{count[i]})$，其中 $W$ 为背包的载重上限，$count[i]$ 是第 $i$ 种物品的数量。
 - **空间复杂度**：$O(W)$。
 
+## 练习题目
+
+- [多重背包题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#0-1-%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98)
+
 ## 参考资料
 
 - 【资料】[背包九讲 - 崔添翼](https://github.com/tianyicui/pack)

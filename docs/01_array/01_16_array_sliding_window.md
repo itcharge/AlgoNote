@@ -275,6 +275,10 @@ class Solution:
 
 掌握滑动窗口算法能高效解决许多子区间相关问题。
 
+## 练习题目
+
+- [滑动窗口题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【答案】[TCP 协议的滑动窗口具体是怎样控制流量的？ - 知乎](https://www.zhihu.com/question/32255109/answer/68558623)

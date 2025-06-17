@@ -22,6 +22,10 @@
 
 ### 4.3 求逆序对数
 
+## 练习题目
+
+- [树状数组题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【书籍】ACM-ICPC 程序设计系列 - 算法设计与实现 - 陈宇 吴昊 主编

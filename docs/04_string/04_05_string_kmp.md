@@ -144,6 +144,10 @@ print(kmp("ababbbbaaabbbaaa", "bbbb"))
 - KMP 算法在匹配阶段，是根据前缀表不断调整匹配的位置，文本串的下标 $i$ 并没有进行回退，可以看出匹配阶段的时间复杂度是 $O(n)$，其中 $n$ 是文本串 $T$ 的长度。
 - 所以 KMP 整个算法的时间复杂度是 $O(n + m)$，相对于朴素匹配算法的 $O(n \times m)$ 的时间复杂度，KMP 算法的效率有了很大的提升。
 
+## 练习题目
+
+- [单模式串匹配题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%8D%95%E6%A8%A1%E5%BC%8F%E4%B8%B2%E5%8C%B9%E9%85%8D%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【书籍】柔性字符串匹配 - 中科院计算所网络信息安全研究组 译

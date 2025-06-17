@@ -118,3 +118,7 @@ def solve_difference_constraints(n, constraints):
 2. 如果存在负环，则无解
 3. 实际应用中需要注意数值精度问题
 4. 对于大规模问题，可以考虑使用其他优化算法
+
+## 练习题目
+
+- [差分约束系统题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F%E7%B3%BB%E7%BB%9F)

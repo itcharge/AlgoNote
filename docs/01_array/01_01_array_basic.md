@@ -234,6 +234,17 @@ print(arr)
 
 不同编程语言中数组的实现可能不同。C/C++ 的数组严格使用连续内存，Java 和 Python 的数组灵活性更高。
 
+## 4. 练习题目
+
+- [0066. 加一](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0001-0099/plus-one.md)
+- [0724. 寻找数组的中心下标](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0700-0799/find-pivot-index.md)
+- [0189. 轮转数组](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0100-0199/rotate-array.md)
+- [0048. 旋转图像](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0001-0099/rotate-image.md)
+- [0054. 螺旋矩阵](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0001-0099/spiral-matrix.md)
+- [0498. 对角线遍历](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0400-0499/diagonal-traverse.md)
+
+- [数组基础题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%95%B0%E7%BB%84%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【文章】[数据结构中的数组和不同语言中数组的区别 - CSDN 博客](https://blog.csdn.net/sinat_14913533/article/details/102763573)

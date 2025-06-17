@@ -278,3 +278,7 @@ class Solution:
 
 - **时间复杂度**：$O(n^2)$。
 - **空间复杂度**：$O(1)$。
+
+## 练习题目
+
+- [枚举算法题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%9E%9A%E4%B8%BE%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)

@@ -407,3 +407,6 @@ class Solution:
 - **时间复杂度**：$O(n)$。
 - **空间复杂度**：$O(1)$。
 
+## 练习题目
+
+- [链表双指针题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E9%93%BE%E8%A1%A8%E5%8F%8C%E6%8C%87%E9%92%88%E9%A2%98%E7%9B%AE)

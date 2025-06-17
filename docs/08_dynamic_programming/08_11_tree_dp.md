@@ -392,6 +392,10 @@ class Solution:
 - **时间复杂度**：$O(n)$。
 - **空间复杂度**：$O(n)$。
 
+## 练习题目
+
+- [树形 DP 题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9-dp-%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 - 【题解】[C++ 容易理解的换根动态规划解法 - 最小高度树](https://leetcode.cn/problems/minimum-height-trees/solution/c-huan-gen-by-vclip-sa84/)

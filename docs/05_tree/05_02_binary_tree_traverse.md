@@ -307,6 +307,10 @@ class Solution:
         return order
 ```
 
+## 练习题目
+
+- [二叉树的遍历题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E9%A2%98%E7%9B%AE)
+
 ## 参考资料
 
 1. 【书籍】数据结构教程 第 3 版 - 唐发根 著
