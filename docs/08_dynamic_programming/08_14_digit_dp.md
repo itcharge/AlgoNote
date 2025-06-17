@@ -368,7 +368,7 @@ class Solution:
 
 ## 练习题目
 
-- [数位 DP 题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%95%B0%E4%BD%8D-dp-%E9%A2%98%E7%9B%AE)
+- [数位 DP 题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%95%B0%E4%BD%8D-dp-%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 

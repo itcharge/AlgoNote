@@ -183,15 +183,15 @@ LeetCode 的题目序号并不是按照难易程度进行排序的，所以除�
 
 或者直接按照我整理的分类刷题列表进行刷题：
 
-- 刷题列表（GitHub 版）链接：[点击打开「GitHub 版分类刷题列表」](https://github.com/itcharge/AlgoNote/blob/main/Contents/00.Introduction/05.Categories-List.md)
+- 刷题列表（GitHub 版）链接：[点击打开「GitHub 版分类刷题列表」](https://github.com/ITCharge/AlgoNote/tree/main/Contents/00.Introduction/05.Categories-List.md)
 - 刷题列表（网页版）链接：[点击打开「网页版分类刷题列表」](https://algo.itcharge.cn/00.Introduction/05.Categories-List/)
 
 正在准备面试、没有太多时间刷题的小伙伴，可以按照我总结的「LeetCode 面试最常考 100 题」、「LeetCode 面试最常考 200 题」进行刷题。
 
 > **说明**：「LeetCode 面试最常考 100 题」、「LeetCode 面试最常考 200 题」是笔者根据「[CodeTop 企业题库](https://codetop.cc/home)」按频度从高到低进行筛选，并且去除了一部分 LeetCode 上没有的题目和重复题目后得到的题目清单。
 
-- 「LeetCode 面试最常考 100 题（GitHub 版）」链接：[点击打开「LeetCode 面试最常考 100 题（GitHub 版）」](https://github.com/itcharge/AlgoNote/blob/main/Contents/00.Introduction/06.Interview-100-List.md)
-- 「LeetCode 面试最常考 200 题（GitHub 版）」链接：[点击打开「LeetCode 面试最常考 200 题（GitHub 版）」](https://github.com/itcharge/AlgoNote/blob/main/Contents/00.Introduction/07.Interview-200-List.md)
+- 「LeetCode 面试最常考 100 题（GitHub 版）」链接：[点击打开「LeetCode 面试最常考 100 题（GitHub 版）」](https://github.com/ITCharge/AlgoNote/tree/main/Contents/00.Introduction/06.Interview-100-List.md)
+- 「LeetCode 面试最常考 200 题（GitHub 版）」链接：[点击打开「LeetCode 面试最常考 200 题（GitHub 版）」](https://github.com/ITCharge/AlgoNote/tree/main/Contents/00.Introduction/07.Interview-200-List.md)
 
 ---
 
@@ -282,8 +282,8 @@ LeetCode 是一个在线编程练习平台，主要用于提升算法和编程�
 
 ## 练习题目
 
-- [2235. 两整数相加](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/2200-2299/add-two-integers.md)
-- [1929. 数组串联](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/1900-1999/concatenation-of-array.md)
+- [2235. 两整数相加](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2200-2299/add-two-integers.md)
+- [1929. 数组串联](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1900-1999/concatenation-of-array.md)
 
 ## 参考资料
 

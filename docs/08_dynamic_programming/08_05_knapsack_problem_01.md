@@ -264,7 +264,7 @@ class Solution:
 
 ## 练习题目
 
-- [0-1 背包问题题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#0-1-%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98)
+- [0-1 背包问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#0-1-%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98)
 
 
 ## 参考资料

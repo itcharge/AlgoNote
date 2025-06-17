@@ -277,7 +277,7 @@ class Solution:
 
 ## 练习题目
 
-- [滑动窗口题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E9%A2%98%E7%9B%AE)
+- [滑动窗口题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 

@@ -495,7 +495,7 @@ class Solution:
 
 ## 练习题目
 
-- [双指针题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%8F%8C%E6%8C%87%E9%92%88%E9%A2%98%E7%9B%AE)
+- [双指针题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%8F%8C%E6%8C%87%E9%92%88%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 

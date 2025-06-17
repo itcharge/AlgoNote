@@ -73,4 +73,4 @@ def is_bipartite(graph):
 
 ## 练习题目
 
-- [二分图基础题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%88%86%E5%9B%BE%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)
+- [二分图基础题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%88%86%E5%9B%BE%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)

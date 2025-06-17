@@ -279,7 +279,7 @@ class Solution:
 
 ## 题目练习
 
-- [记忆化搜索题目](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2%E9%A2%98%E7%9B%AE)
+- [记忆化搜索题目](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 

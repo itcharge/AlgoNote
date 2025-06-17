@@ -347,4 +347,4 @@ class Solution:
 
 ## 练习题目
 
-- [拓扑排序题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%9B%BE%E7%9A%84%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F%E9%A2%98%E7%9B%AE)
+- [拓扑排序题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%9B%BE%E7%9A%84%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F%E9%A2%98%E7%9B%AE)

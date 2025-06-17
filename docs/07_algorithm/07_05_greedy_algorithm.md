@@ -233,7 +233,7 @@ class Solution:
 
 ## 练习题目
 
-- [贪心算法题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
+- [贪心算法题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 
