@@ -2,8 +2,8 @@
 
 - [6.1 图的定义和分类](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_01_graph_basic.md)
 - [6.2 图的存储结构和问题应用](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_02_graph_structure.md)
-- [6.3 图的深度优先搜索](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_03_graph_dfs.md)
-- [6.4 图的广度优先搜索](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_04_graph_bfs.md)
+- [6.3 深度优先搜索](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_03_graph_dfs.md)
+- [6.4 广度优先搜索](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_04_graph_bfs.md)
 - [6.5 图的拓扑排序](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_05_graph_topological_sorting.md)
 - [6.6 图的最小生成树](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_06_graph_minimum_spanning_tree.md)
 - [6.7 单源最短路径（一）](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_07_graph_shortest_path_01.md) 

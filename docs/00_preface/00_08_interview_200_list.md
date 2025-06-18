@@ -229,9 +229,9 @@
 | [0445. 两数相加 II](https://leetcode.cn/problems/add-two-numbers-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/add-two-numbers-ii.md) | 栈、链表、数学 | 中等 |
 
 
-## 第 3 章  堆栈、队列、哈希表
+## 第 3 章  栈、队列、哈希表
 
-### 堆栈基础题目
+### 栈基础题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -379,7 +379,7 @@
 
 ## 第 6 章  图论
 
-### 图的深度优先搜索题目
+### 深度优先搜索题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -399,7 +399,7 @@
 | [0111. 二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/minimum-depth-of-binary-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 简单 |
 
 
-### 图的广度优先搜索题目
+### 广度优先搜索题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |

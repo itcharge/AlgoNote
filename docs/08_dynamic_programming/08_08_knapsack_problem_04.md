@@ -324,8 +324,8 @@ class Solution:
 
 ## 练习题目
 
-- [分组背包问题题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%88%86%E7%BB%84%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
-- [多维背包问题题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%A4%9A%E7%BB%B4%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
+- [分组背包问题题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%88%86%E7%BB%84%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
+- [多维背包问题题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%A4%9A%E7%BB%B4%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 

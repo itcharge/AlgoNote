@@ -173,9 +173,9 @@
 | [0002. 两数相加](https://leetcode.cn/problems/add-two-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/add-two-numbers.md) | 递归、链表、数学 | 中等 |
 
 
-## 第 3 章  堆栈、队列、哈希表
+## 第 3 章  栈、队列、哈希表
 
-### 堆栈基础题目
+### 栈基础题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -278,7 +278,7 @@
 
 ## 第 6 章  图论
 
-### 图的深度优先搜索题目
+### 深度优先搜索题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -293,7 +293,7 @@
 | [0662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-width-of-binary-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 中等 |
 
 
-### 图的广度优先搜索题目
+### 广度优先搜索题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |

@@ -330,9 +330,9 @@
 | [0445. 两数相加 II](https://leetcode.cn/problems/add-two-numbers-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/add-two-numbers-ii.md) | 栈、链表、数学 | 中等 |
 
 
-## 第 3 章  堆栈、队列、哈希表
+## 第 3 章  栈、队列、哈希表
 
-### 堆栈基础题目
+### 栈基础题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -610,7 +610,7 @@
 
 ## 第 6 章  图论
 
-### 图的深度优先搜索题目
+### 深度优先搜索题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -649,7 +649,7 @@
 | [0529. 扫雷游戏](https://leetcode.cn/problems/minesweeper/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/minesweeper.md) | 深度优先搜索、广度优先搜索、数组、矩阵 | 中等 |
 
 
-### 图的广度优先搜索题目
+### 广度优先搜索题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
