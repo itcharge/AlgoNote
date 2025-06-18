@@ -287,7 +287,7 @@
 
 ## 第 2 章  链表
 
-### 链表经典题目
+### 链表基础题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -351,7 +351,7 @@
 | [0071. 简化路径](https://leetcode.cn/problems/simplify-path/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/simplify-path.md) | 栈、字符串 | 中等 |
 
 
-### 单调栈
+### 单调栈题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -566,7 +566,7 @@
 | [0732. 我的日程安排表 III](https://leetcode.cn/problems/my-calendar-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/my-calendar-iii.md) | 设计、线段树、二分查找、有序集合、前缀和 | 困难 |
 
 
-#### 扫描线问题
+#### 扫描线问题题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -720,7 +720,7 @@
 | [2045. 到达目的地的第二短时间](https://leetcode.cn/problems/second-minimum-time-to-reach-destination/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2000-2099/second-minimum-time-to-reach-destination.md) | 广度优先搜索、图、最短路 | 困难 |
 
 
-### 差分约束系统
+### 差分约束系统题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -995,7 +995,7 @@
 
 ### 背包问题题目
 
-#### 0-1 背包问题
+#### 0-1 背包问题题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -1004,7 +1004,7 @@
 | [1049. 最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/last-stone-weight-ii.md) | 数组、动态规划 | 中等 |
 
 
-#### 完全背包问题
+#### 完全背包问题题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -1017,9 +1017,9 @@
 | [1449. 数位成本和为目标值的最大数字](https://leetcode.cn/problems/form-largest-integer-with-digits-that-add-up-to-target/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1400-1499/form-largest-integer-with-digits-that-add-up-to-target.md) | 数组、动态规划 | 困难 |
 
 
-#### 多重背包问题
+#### 多重背包问题题目
 
-#### 分组背包问题
+#### 分组背包问题题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -1027,7 +1027,7 @@
 | [2585. 获得分数的方法数](https://leetcode.cn/problems/number-of-ways-to-earn-points/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2500-2599/number-of-ways-to-earn-points.md) | 数组、动态规划 | 困难 |
 
 
-#### 多维背包问题
+#### 多维背包问题题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |

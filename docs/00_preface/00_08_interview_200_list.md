@@ -191,7 +191,7 @@
 
 ## 02. 链表
 
-### 链表经典题目
+### 链表基础题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -248,7 +248,7 @@
 | [0071. 简化路径](https://leetcode.cn/problems/simplify-path/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/simplify-path.md) | 栈、字符串 | 中等 |
 
 
-### 单调栈
+### 单调栈题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |

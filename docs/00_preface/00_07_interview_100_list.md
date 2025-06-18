@@ -139,7 +139,7 @@
 
 ## 第 2 章  链表
 
-### 链表经典题目
+### 链表基础题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
@@ -187,7 +187,7 @@
 | [0032. 最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-valid-parentheses.md) | 栈、字符串、动态规划 | 困难 |
 
 
-### 单调栈
+### 单调栈题目
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |

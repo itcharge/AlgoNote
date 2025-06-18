@@ -206,7 +206,7 @@ class Solution:
 
 ## 练习题目
 
-- [多重背包题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#0-1-%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98)
+- [多重背包问题题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%A4%9A%E9%87%8D%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 
