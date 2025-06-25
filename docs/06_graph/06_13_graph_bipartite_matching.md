@@ -278,4 +278,8 @@ def max_flow_bipartite_matching(graph, left_size, right_size):
 
 ## 练习题目
 
+- [LCP 04. 覆盖](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCP/broken-board-dominoes.md)	
+- [1947. 最大兼容性评分和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1900-1999/maximum-compatibility-score-sum.md)	
+- [1595. 连通两组点的最小成本](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1500-1599/minimum-cost-to-connect-two-groups-of-points.md)	
+
 - [二分图最大匹配题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%88%86%E5%9B%BE%E6%9C%80%E5%A4%A7%E5%8C%B9%E9%85%8D%E9%A2%98%E7%9B%AE)

@@ -381,4 +381,11 @@ class Solution:
 
 ## 练习题目
 
-- [区间 DP 题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%8C%BA%E9%97%B4-dp-%E9%A2%98%E7%9B%AE)
+- [0005. 最长回文子串](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-palindromic-substring.md)
+- [0516. 最长回文子序列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/longest-palindromic-subsequence.md)
+- [0312. 戳气球](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/burst-balloons.md)
+- [0486. 预测赢家](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/predict-the-winner.md)
+- [1547. 切棍子的最小成本](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1500-1599/minimum-cost-to-cut-a-stick.md)
+- [0664. 奇怪的打印机](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/strange-printer.md)
+
+- [区间 DP 题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E5%8C%BA%E9%97%B4-dp-%E9%A2%98%E7%9B%AE)

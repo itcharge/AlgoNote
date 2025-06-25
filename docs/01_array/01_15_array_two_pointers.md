@@ -495,6 +495,13 @@ class Solution:
 
 ## 练习题目
 
+- [0344. 反转字符串](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/reverse-string.md)
+- [0345. 反转字符串中的元音字母](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/reverse-vowels-of-a-string.md)
+- [0015. 三数之和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/3sum.md)
+- [0027. 移除元素](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0001-0099/remove-element.md)
+- [0080. 删除有序数组中的重复项 II](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0001-0099/remove-duplicates-from-sorted-array-ii.md)
+- [0925. 长按键入](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/long-pressed-name.md)
+
 - [双指针题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%8F%8C%E6%8C%87%E9%92%88%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

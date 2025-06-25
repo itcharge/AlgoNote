@@ -326,6 +326,16 @@ class Solution:
 
 ## 练习题目
 
+- [0200. 岛屿数量](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/number-of-islands.md)
+- [0133. 克隆图](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/clone-graph.md)
+- [0494. 目标和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/target-sum.md)
+- [0841. 钥匙和房间](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/keys-and-rooms.md)
+- [0695. 岛屿的最大面积](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/max-area-of-island.md)
+- [0130. 被围绕的区域](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/surrounded-regions.md)
+- [0417. 太平洋大西洋水流问题](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/pacific-atlantic-water-flow.md)
+- [1020. 飞地的数量](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/number-of-enclaves.md)
+- [1254. 统计封闭岛屿的数目](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/number-of-closed-islands.md)
+
 - [深度优先搜索题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

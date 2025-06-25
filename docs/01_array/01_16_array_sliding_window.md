@@ -143,7 +143,7 @@ class Solution:
 ##### 思路 1：复杂度分析
 
 - **时间复杂度**：$O(n)$。
-- **空间复杂度**：$O(n)$。
+- **空间复杂度**：$O(1)$。
 
 ## 4. 不定长度滑动窗口
 
@@ -276,6 +276,10 @@ class Solution:
 掌握滑动窗口算法能高效解决许多子区间相关问题。
 
 ## 练习题目
+
+- [0643. 子数组最大平均数 I](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-average-subarray-i.md)
+- [0674. 最长连续递增序列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/longest-continuous-increasing-subsequence.md)
+- [1004. 最大连续1的个数 III](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/max-consecutive-ones-iii.md)
 
 - [滑动窗口题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E9%A2%98%E7%9B%AE)
 

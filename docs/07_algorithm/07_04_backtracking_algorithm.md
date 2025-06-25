@@ -399,6 +399,16 @@ class Solution:
 
 ## 练习题目
 
+- [0046. 全排列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/permutations.md)
+- [0047. 全排列 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/permutations-ii.md)
+- [0022. 括号生成](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/generate-parentheses.md)
+- [0017. 电话号码的字母组合](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/letter-combinations-of-a-phone-number.md)
+- [0039. 组合总和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/combination-sum.md)
+- [0040. 组合总和 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/combination-sum-ii.md)
+- [0078. 子集](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/subsets.md)
+- [0090. 子集 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/subsets-ii.md)
+- [0079. 单词搜索](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/word-search.md)
+
 - [回溯算法题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

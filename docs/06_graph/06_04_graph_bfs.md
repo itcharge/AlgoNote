@@ -271,6 +271,13 @@ class Solution:
 
 ## 练习题目
 
+- [0463. 岛屿的周长](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/island-perimeter.md)
+- [0752. 打开转盘锁](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/open-the-lock.md)
+- [0279. 完全平方数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/perfect-squares.md)
+- [0542. 01 矩阵](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/01-matrix.md)
+- [0322. 零钱兑换](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/coin-change.md)
+- [LCR 130. 衣橱整理](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/ji-qi-ren-de-yun-dong-fan-wei-lcof.md)
+
 - [广度优先搜索题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

@@ -563,6 +563,13 @@ class Solution:
 
 ## 练习题目
 
+- [0990. 等式方程的可满足性](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/satisfiability-of-equality-equations.md)
+- [1202. 交换字符串中的元素](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/smallest-string-with-swaps.md)
+- [0947. 移除最多的同行或同列石头](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/most-stones-removed-with-same-row-or-column.md)
+- [0547. 省份数量](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/number-of-provinces.md)
+- [0684. 冗余连接](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/redundant-connection.md)
+- [0765. 情侣牵手](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/couples-holding-hands.md)
+
 - [并查集题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%B9%B6%E6%9F%A5%E9%9B%86%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

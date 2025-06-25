@@ -181,6 +181,11 @@ ASCII 编码可以解决以英语为主的语言，可是无法满足中文编�
 
 ## 练习题目
 
+- [0125. 验证回文串](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/valid-palindrome.md)
+- [0344. 反转字符串](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/reverse-string.md)
+- [0557. 反转字符串中的单词 III](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/reverse-words-in-a-string-iii.md)
+
+
 - [字符串基础题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

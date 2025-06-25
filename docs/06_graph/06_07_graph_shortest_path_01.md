@@ -205,4 +205,8 @@ for i in range(1, n + 1):
 
 ## 练习题目
 
+- [0743. 网络延迟时间](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/network-delay-time.md)
+- [0787. K 站中转内最便宜的航班](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/cheapest-flights-within-k-stops.md)
+- [1631. 最小体力消耗路径](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1600-1699/path-with-minimum-effort.md)
+
 - [单源最短路径题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%A2%98%E7%9B%AE)

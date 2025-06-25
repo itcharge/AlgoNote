@@ -233,6 +233,16 @@ class Solution:
 
 ## 练习题目
 
+- [0455. 分发饼干](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/assign-cookies.md)
+- [0860. 柠檬水找零](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/lemonade-change.md)
+- [0135. 分发糖果](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/candy.md)
+- [0055. 跳跃游戏](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/jump-game.md)
+- [0045. 跳跃游戏 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/jump-game-ii.md)
+- [0881. 救生艇](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/boats-to-save-people.md)
+- [0435. 无重叠区间](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/non-overlapping-intervals.md)
+- [0452. 用最少数量的箭引爆气球](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/minimum-number-of-arrows-to-burst-balloons.md)
+- [1710. 卡车上的最大单元数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1700-1799/maximum-units-on-a-truck.md)
+
 - [贪心算法题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

@@ -64,6 +64,9 @@
 
 ## 练习题目
 
+- [0688. 骑士在棋盘上的概率](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0600-0699/knight-probability-in-chessboard.md)
+- [1227. 飞机座位分配概率](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/1200-1299/airplane-seat-assignment-probability.md)
+
 - [概率 DP 题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%A6%82%E7%8E%87-dp-%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

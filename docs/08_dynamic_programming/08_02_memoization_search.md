@@ -279,6 +279,11 @@ class Solution:
 
 ## 题目练习
 
+- [0494. 目标和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/target-sum.md)
+- [1137. 第 N 个泰波那契数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/n-th-tribonacci-number.md)
+- [0576. 出界的路径数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/out-of-boundary-paths.md)
+
+
 - [记忆化搜索题目](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

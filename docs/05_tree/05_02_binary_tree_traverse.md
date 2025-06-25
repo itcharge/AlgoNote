@@ -309,6 +309,13 @@ class Solution:
 
 ## 练习题目
 
+- [0144. 二叉树的前序遍历](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/binary-tree-preorder-traversal.md)
+- [0094. 二叉树的中序遍历](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/binary-tree-inorder-traversal.md)
+- [0145. 二叉树的后序遍历](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/binary-tree-postorder-traversal.md)
+- [0102. 二叉树的层序遍历](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/binary-tree-level-order-traversal.md)
+- [0104. 二叉树的最大深度](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/maximum-depth-of-binary-tree.md)
+- [0112. 路径总和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/path-sum.md)
+
 - [二叉树的遍历题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

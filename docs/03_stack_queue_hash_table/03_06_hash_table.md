@@ -155,6 +155,13 @@ $343246_{13} = 3 \times 13^5 + 4 \times 13^4 + 3 \times 13^3 + 2 \times 13^2 + 4
 
 ## 练习题目
 
+- [0217. 存在重复元素](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/contains-duplicate.md)
+- [0219. 存在重复元素 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/contains-duplicate-ii.md)
+- [0036. 有效的数独](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/valid-sudoku.md)
+- [0349. 两个数组的交集](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/intersection-of-two-arrays.md)
+- [0350. 两个数组的交集 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/intersection-of-two-arrays-ii.md)
+- [0706. 设计哈希映射](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/design-hashmap.md)
+
 - [哈希表题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%93%88%E5%B8%8C%E8%A1%A8%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

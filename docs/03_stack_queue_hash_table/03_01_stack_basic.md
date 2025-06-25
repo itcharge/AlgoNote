@@ -350,6 +350,13 @@ class Solution:
 
 ## 练习题目
 
+- [0155. 最小栈](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/min-stack.md)
+- [0020. 有效的括号](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/valid-parentheses.md)
+- [0227. 基本计算器 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/basic-calculator-ii.md)
+- [0150. 逆波兰表达式求值](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/evaluate-reverse-polish-notation.md)
+- [0394. 字符串解码](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/decode-string.md)
+- [0946. 验证栈序列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/validate-stack-sequences.md)
+
 - [栈基础题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%A0%88%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

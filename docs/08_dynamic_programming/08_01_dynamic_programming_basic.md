@@ -386,6 +386,10 @@ class Solution:
 
 ## 题目练习
 
+- [0509. 斐波那契数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/fibonacci-number.md)
+- [0070. 爬楼梯](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/climbing-stairs.md)
+- [0062. 不同路径](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/unique-paths.md)
+
 - [动态规划基础题目](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

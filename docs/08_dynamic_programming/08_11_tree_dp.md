@@ -394,6 +394,10 @@ class Solution:
 
 ## 练习题目
 
+- [0687. 最长同值路径](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/longest-univalue-path.md)
+- [1617. 统计子树中城市之间最大距离](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1600-1699/count-subtrees-with-max-distance-between-cities.md)
+- [0834. 树中距离之和]https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/sum-of-distances-in-tree.md)
+
 - [树形 DP 题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9-dp-%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

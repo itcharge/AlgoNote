@@ -204,4 +204,9 @@ class Solution:
 
 ## 练习题目
 
+- [0063. 不同路径 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/unique-paths-ii.md)
+- [0343. 整数拆分](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/integer-break.md)
+- [1137. 第 N 个泰波那契数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/n-th-tribonacci-number.md)
+
+
 - [计数 DP 题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%95%B0%E4%BD%8D-dp-%E9%A2%98%E7%9B%AE)

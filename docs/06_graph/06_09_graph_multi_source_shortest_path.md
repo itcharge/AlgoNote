@@ -203,4 +203,7 @@ def johnson(graph, n):
 
 ## 练习题目
 
+- [0815. 公交路线](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/bus-routes.md)
+- [1162. 地图分析](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/as-far-from-land-as-possible.md)
+
 - [多源最短路径题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%A4%9A%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E9%A2%98%E7%9B%AE)

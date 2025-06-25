@@ -368,6 +368,10 @@ class Solution:
 
 ## 练习题目
 
+- [0357. 统计各位数字都不同的数字个数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/count-numbers-with-unique-digits.md)
+- [0788. 旋转数字](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/rotated-digits.md)
+- [2719. 统计整数数目](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2700-2799/count-of-integers.md)
+
 - [数位 DP 题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%95%B0%E4%BD%8D-dp-%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

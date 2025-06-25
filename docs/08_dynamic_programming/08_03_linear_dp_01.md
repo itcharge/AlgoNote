@@ -741,6 +741,13 @@ class Solution:
 
 ## 题目练习
 
+- [0300. 最长递增子序列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/longest-increasing-subsequence.md)
+- [0053. 最大子数组和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/maximum-subarray.md)
+- [0198. 打家劫舍](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/house-robber.md)
+- [0213. 打家劫舍 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/house-robber-ii.md)
+- [0873. 最长的斐波那契子序列的长度](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/length-of-longest-fibonacci-subsequence.md)
+- [1143. 最长公共子序列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/longest-common-subsequence.md)
+
 - [单串线性 DP 问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%8D%95%E4%B8%B2%E7%BA%BF%E6%80%A7-dp-%E9%97%AE%E9%A2%98)
 - [双串线性 DP 问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%8F%8C%E4%B8%B2%E7%BA%BF%E6%80%A7-dp-%E9%97%AE%E9%A2%98)
 

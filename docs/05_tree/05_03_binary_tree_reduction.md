@@ -161,6 +161,10 @@ class Solution:
 
 ## 练习题目
 
+- [0105. 从前序与中序遍历序列构造二叉树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/construct-binary-tree-from-preorder-and-inorder-traversal.md)
+- [0106. 从中序与后序遍历序列构造二叉树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/construct-binary-tree-from-inorder-and-postorder-traversal.md)
+- [0889. 根据前序和后序遍历构造二叉树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/construct-binary-tree-from-preorder-and-postorder-traversal.md)
+
 - [二叉树的还原题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BF%98%E5%8E%9F%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

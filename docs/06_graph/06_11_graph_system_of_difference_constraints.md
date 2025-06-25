@@ -121,4 +121,7 @@ def solve_difference_constraints(n, constraints):
 
 ## 练习题目
 
+- [0995. K 连续位的最小翻转次数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/minimum-number-of-k-consecutive-bit-flips.md)
+- [1109. 航班预订统计](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/corporate-flight-bookings.md)
+
 - [差分约束系统题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F%E7%B3%BB%E7%BB%9F%E9%A2%98%E7%9B%AE)

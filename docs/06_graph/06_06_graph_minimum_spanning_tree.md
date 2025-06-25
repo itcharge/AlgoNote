@@ -212,4 +212,8 @@ Kruskal 算法的时间复杂度主要取决于以下几个因素：
 
 ## 练习题目
 
+- [1584. 连接所有点的最小费用](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1500-1599/min-cost-to-connect-all-points.md)
+- [1631. 最小体力消耗路径](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1600-1699/path-with-minimum-effort.md)
+- [0778. 水位上升的泳池中游泳](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/swim-in-rising-water.md)
+
 - [图的最小生成树题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%9B%BE%E7%9A%84%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%E9%A2%98%E7%9B%AE)

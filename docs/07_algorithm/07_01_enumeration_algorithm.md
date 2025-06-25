@@ -281,4 +281,11 @@ class Solution:
 
 ## 练习题目
 
+- [0001. 两数之和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/two-sum.md)
+- [0204. 计数质数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/count-primes.md)
+- [1925. 统计平方和三元组的数目](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1900-1999/count-square-sum-triples.md)
+- [2427. 公因子的数目](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2400-2499/number-of-common-factors.md)
+- [LCR 180. 文件组合](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof.md)
+- [2249. 统计圆内格点数目](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2200-2299/count-lattice-points-inside-a-circle.md)
+
 - [枚举算法题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%9E%9A%E4%B8%BE%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)

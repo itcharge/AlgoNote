@@ -312,6 +312,13 @@ class Solution:
 
 ## 练习题目
 
+- [0190. 颠倒二进制位](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/reverse-bits.md)
+- [0191. 位1的个数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/number-of-1-bits.md)
+- [0201. 数字范围按位与](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/bitwise-and-of-numbers-range.md)
+- [0136. 只出现一次的数字](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/single-number.md)
+- [0137. 只出现一次的数字 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/single-number-ii.md)
+- [0260. 只出现一次的数字 III](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/single-number-iii.md)
+
 - [位运算题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E4%BD%8D%E8%BF%90%E7%AE%97%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

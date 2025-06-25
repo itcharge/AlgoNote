@@ -248,6 +248,13 @@ class Solution:
 
 ## 练习题目
 
+- [0050. Pow(x, n)](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/powx-n.md)
+- [0169. 多数元素](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/majority-element.md)
+- [0053. 最大子数组和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/maximum-subarray.md)
+- [0932. 漂亮数组](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/beautiful-array.md)
+- [0241. 为运算表达式设计优先级](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/different-ways-to-add-parentheses.md)
+- [0023. 合并 K 个升序链表](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/merge-k-sorted-lists.md)
+
 - [分治算法题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

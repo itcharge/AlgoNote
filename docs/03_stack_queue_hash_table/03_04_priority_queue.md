@@ -393,6 +393,10 @@ class Solution:
 
 ## 练习题目
 
+- [0215. 数组中的第K个最大元素](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/kth-largest-element-in-an-array.md)
+- [0347. 前 K 个高频元素](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/top-k-frequent-elements.md)
+- [0451. 根据字符出现频率排序](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/sort-characters-by-frequency.md)
+
 - [优先队列题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

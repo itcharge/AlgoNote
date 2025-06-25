@@ -317,6 +317,13 @@ class Solution:
 
 ## 练习题目
 
+- [0509. 斐波那契数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/fibonacci-number.md)
+- [0070. 爬楼梯](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/climbing-stairs.md)
+- [0226. 翻转二叉树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/invert-binary-tree.md)
+- [0206. 反转链表](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/reverse-linked-list.md)
+- [0092. 反转链表 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/reverse-linked-list-ii.md)
+- [0779. 第K个语法符号](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/k-th-symbol-in-grammar.md)
+
 - [递归算法题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

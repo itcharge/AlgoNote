@@ -372,6 +372,13 @@ class Solution:
 
 ## 题目练习
 
+- [0718. 最长重复子数组](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/maximum-length-of-repeated-subarray.md)
+- [0072. 编辑距离](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/edit-distance.md)
+- [0064. 最小路径和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/minimum-path-sum.md)
+- [0221. 最大正方形](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/maximal-square.md)
+- [0343. 整数拆分](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/integer-break.md)
+- [0650. 两个键的键盘](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/2-keys-keyboard.md)
+
 - [矩阵线性 DP 问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E7%9F%A9%E9%98%B5%E7%BA%BF%E6%80%A7-dp-%E9%97%AE%E9%A2%98)
 - [矩阵线性 DP 问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%97%A0%E4%B8%B2%E7%BA%BF%E6%80%A7-dp-%E9%97%AE%E9%A2%98)
 

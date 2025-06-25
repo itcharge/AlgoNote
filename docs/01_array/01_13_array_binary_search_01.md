@@ -158,4 +158,9 @@ class Solution:
 
 ## 练习题目
 
+- [0704. 二分查找](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0700-0799/binary-search.md)
+- [0374. 猜数字大小](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0300-0399/guess-number-higher-or-lower.md)
+- [0035. 搜索插入位置](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0001-0099/search-insert-position.md)
+- [0167. 两数之和 II - 输入有序数组](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0100-0199/two-sum-ii-input-array-is-sorted.md)
+
 - [二分查找题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E9%A2%98%E7%9B%AE)

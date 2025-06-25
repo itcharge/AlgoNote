@@ -64,4 +64,8 @@ class Solution:
 
 ## 练习题目
 
+- [0148. 排序链表](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/sort-list.md)
+- [0021. 合并两个有序链表](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/merge-two-sorted-lists.md)
+- [0023. 合并 K 个升序链表](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/merge-k-sorted-lists.md)
+
 - [链表排序题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E9%93%BE%E8%A1%A8%E6%8E%92%E5%BA%8F%E9%A2%98%E7%9B%AE)

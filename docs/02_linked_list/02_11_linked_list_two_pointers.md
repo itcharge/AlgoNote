@@ -409,4 +409,8 @@ class Solution:
 
 ## 练习题目
 
+- [0141. 环形链表](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/linked-list-cycle.md)
+- [0142. 环形链表 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/linked-list-cycle-ii.md)
+- [0019. 删除链表的倒数第 N 个结点](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/remove-nth-node-from-end-of-list.md)
+
 - [链表双指针题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E9%93%BE%E8%A1%A8%E5%8F%8C%E6%8C%87%E9%92%88%E9%A2%98%E7%9B%AE)

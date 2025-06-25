@@ -329,6 +329,10 @@ class Queue:
 
 ## 练习题目
 
+- [0622. 设计循环队列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/design-circular-queue.md)
+- [0346. 数据流中的移动平均值](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/moving-average-from-data-stream.md)
+- [0225. 用队列实现栈](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/implement-stack-using-queues.md)
+
 - [队列基础题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E9%98%9F%E5%88%97%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)
 
 ## 参考资料

@@ -191,6 +191,13 @@ class Solution:
 
 ## 练习题目
 
+- [0700. 二叉搜索树中的搜索](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/search-in-a-binary-search-tree.md)
+- [0701. 二叉搜索树中的插入操作](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/insert-into-a-binary-search-tree.md)
+- [0450. 删除二叉搜索树中的节点](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/delete-node-in-a-bst.md)
+- [0098. 验证二叉搜索树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/validate-binary-search-tree.md)
+- [0108. 将有序数组转换为二叉搜索树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/convert-sorted-array-to-binary-search-tree.md)
+- [0235. 二叉搜索树的最近公共祖先](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/lowest-common-ancestor-of-a-binary-search-tree.md)
+
 - [二叉搜索树题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
