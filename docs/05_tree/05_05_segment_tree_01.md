@@ -142,8 +142,8 @@ class SegmentTree:
 1. 如果区间 $[q\underline{\hspace{0.5em}}left, q\underline{\hspace{0.5em}}right]$ 完全覆盖了当前节点所在区间  $[left, right]$ ，即 $left \ge q\underline{\hspace{0.5em}}left$ 并且 $right \le q\underline{\hspace{0.5em}}right$，则返回该节点的区间值。
 2. 如果区间 $[q\underline{\hspace{0.5em}}left, q\underline{\hspace{0.5em}}right]$ 与当前节点所在区间 $[left, right]$ 毫无关系，即 $right < q\underline{\hspace{0.5em}}left$ 或者 $left > q\underline{\hspace{0.5em}}right$，则返回 $0$。
 3. 如果区间 $[q\underline{\hspace{0.5em}}left, q\underline{\hspace{0.5em}}right]$ 与当前节点所在区间有交集，则：
-   1. 如果区间 $[q\underline{\hspace{0.5em}}left, q\underline{\hspace{0.5em}}right]$ 与左子节点所在区间 $[left, mid]$ 有交集，即 $q\underline{\hspace{0.5em}}left \le mid$，则在当前节点的左子树中进行查询并保存查询结果 $res_\underline{\hspace{0.5em}}left$。
-   2. 如果区间 $[q\underline{\hspace{0.5em}}left, q\underline{\hspace{0.5em}}right]$ 与右子节点所在区间 $[mid + 1, right]$ 有交集，即 $q\underline{\hspace{0.5em}}right > mid$，则在当前节点的右子树中进行查询并保存查询结果 $res_\underline{\hspace{0.5em}}right$。
+   1. 如果区间 $[q\underline{\hspace{0.5em}}left, q\underline{\hspace{0.5em}}right]$ 与左子节点所在区间 $[left, mid]$ 有交集，即 $q\underline{\hspace{0.5em}}left \le mid$，则在当前节点的左子树中进行查询并保存查询结果 $res\underline{\hspace{0.5em}}left$。
+   2. 如果区间 $[q\underline{\hspace{0.5em}}left, q\underline{\hspace{0.5em}}right]$ 与右子节点所在区间 $[mid + 1, right]$ 有交集，即 $q\underline{\hspace{0.5em}}right > mid$，则在当前节点的右子树中进行查询并保存查询结果 $res\underline{\hspace{0.5em}}right$。
    3. 最后返回左右子树元素区间值的聚合计算结果。
 
 线段树的区间查询代码如下：
