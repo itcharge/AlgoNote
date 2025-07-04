@@ -87,9 +87,9 @@ class Solution:
 
 
 - [0912. 排序数组](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-an-array.md)
-- [0088. 合并两个有序数组](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0001-0099/merge-sorted-array.md)
-- [LCR 170. 交易逆序对的总数](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/LCR/shu-zu-zhong-de-ni-xu-dui-lcof.md)
-- [0315. 计算右侧小于当前元素的个数](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0300-0399/count-of-smaller-numbers-after-self.md)
+- [0088. 合并两个有序数组](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/merge-sorted-array.md)
+- [LCR 170. 交易逆序对的总数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/shu-zu-zhong-de-ni-xu-dui-lcof.md)
+- [0315. 计算右侧小于当前元素的个数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/count-of-smaller-numbers-after-self.md)
 
 
 - [排序算法题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)

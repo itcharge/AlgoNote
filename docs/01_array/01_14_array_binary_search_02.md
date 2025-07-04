@@ -258,10 +258,10 @@ class Solution:
 
 ## 练习题目
 
-- [0278. 第一个错误的版本](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0200-0299/first-bad-version.md)
-- [0069. x 的平方根](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0001-0099/sqrtx.md)
-- [1011. 在 D 天内送达包裹的能力](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/1000-1099/capacity-to-ship-packages-within-d-days.md)
-- [0033. 搜索旋转排序数组](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0001-0099/search-in-rotated-sorted-array.md)
+- [0278. 第一个错误的版本](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/first-bad-version.md)
+- [0069. x 的平方根](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/sqrtx.md)
+- [1011. 在 D 天内送达包裹的能力](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/capacity-to-ship-packages-within-d-days.md)
+- [0033. 搜索旋转排序数组](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/search-in-rotated-sorted-array.md)
 - [0153. 寻找旋转排序数组中的最小值](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/find-minimum-in-rotated-sorted-array.md)
 
 - [二分查找题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E9%A2%98%E7%9B%AE)

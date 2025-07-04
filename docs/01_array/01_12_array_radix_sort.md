@@ -67,7 +67,7 @@ class Solution:
 ## 练习题目
 
 - [0912. 排序数组](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-an-array.md)
-- [0164. 最大间距](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0100-0199/maximum-gap.md)
-- [0561. 数组拆分](https://github.com/itcharge/AlgoNote/blob/main/docs/solutions/0500-0599/array-partition.md)
+- [0164. 最大间距](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/maximum-gap.md)
+- [0561. 数组拆分](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/array-partition.md)
 
 - [排序算法题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E9%A2%98%E7%9B%AE)

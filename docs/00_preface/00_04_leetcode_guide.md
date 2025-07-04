@@ -183,20 +183,14 @@ LeetCode 的题目序号并不是按照难易程度进行排序的，所以除�
 
 或者直接按照我整理的分类刷题列表进行刷题：
 
-- 刷题列表（GitHub 版）链接：[点击打开「GitHub 版分类刷题列表」](https://github.com/ITCharge/AlgoNote/tree/main/Contents/00.Introduction/05.Categories-List.md)
-- 刷题列表（网页版）链接：[点击打开「网页版分类刷题列表」](https://algo.itcharge.cn/00.Introduction/05.Categories-List/)
+- LeetCode 分类刷题列表：[点击打开「LeetCode 分类刷题列表」](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md)
 
 正在准备面试、没有太多时间刷题的小伙伴，可以按照我总结的「LeetCode 面试最常考 100 题」、「LeetCode 面试最常考 200 题」进行刷题。
 
 > **说明**：「LeetCode 面试最常考 100 题」、「LeetCode 面试最常考 200 题」是笔者根据「[CodeTop 企业题库](https://codetop.cc/home)」按频度从高到低进行筛选，并且去除了一部分 LeetCode 上没有的题目和重复题目后得到的题目清单。
 
-- 「LeetCode 面试最常考 100 题（GitHub 版）」链接：[点击打开「LeetCode 面试最常考 100 题（GitHub 版）」](https://github.com/ITCharge/AlgoNote/tree/main/Contents/00.Introduction/06.Interview-100-List.md)
-- 「LeetCode 面试最常考 200 题（GitHub 版）」链接：[点击打开「LeetCode 面试最常考 200 题（GitHub 版）」](https://github.com/ITCharge/AlgoNote/tree/main/Contents/00.Introduction/07.Interview-200-List.md)
-
----
-
-- 「LeetCode 面试最常考 100 题（网页版）」链接：[点击打开「LeetCode 面试最常考 100 题（网页版）」](https://algo.itcharge.cn/00.Introduction/06.Interview-100-List/)
-- 「LeetCode 面试最常考 200 题（网页版）」链接：[点击打开「LeetCode 面试最常考 200 题（网页版）」](https://algo.itcharge.cn/00.Introduction/07.Interview-200-List/)
+- 「LeetCode 面试最常考 100 题：[点击打开「LeetCode 面试最常考 100 题」](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_07_interview_100_list.md)
+- 「LeetCode 面试最常考 200 题：[点击打开「LeetCode 面试最常考 200 题」](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_08_interview_200_list.md)
 
 ### 3.3 LeetCode 刷题技巧
 
