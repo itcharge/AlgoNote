@@ -443,7 +443,7 @@
 | [0415. 字符串相加](https://leetcode.cn/problems/add-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/add-strings.md) | 数学、字符串、模拟 | 简单 |
 | [0151. 反转字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/reverse-words-in-a-string.md) | 双指针、字符串 | 中等 |
 | [0043. 字符串相乘](https://leetcode.cn/problems/multiply-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/multiply-strings.md) | 数学、字符串、模拟 | 中等 |
-| [0014. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-common-prefix.md) | 字典树、字符串 | 简单 |
+| [0014. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-common-prefix.md) | 字典树、数组、字符串 | 简单 |
 
 
 ### 单模式串匹配题目
@@ -752,6 +752,7 @@
 | :--- | :--- | :--- | :--- |
 | [0001. 两数之和](https://leetcode.cn/problems/two-sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/two-sum.md) | 数组、哈希表 | 简单 |
 | [0204. 计数质数](https://leetcode.cn/problems/count-primes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/count-primes.md) | 数组、数学、枚举、数论 | 中等 |
+| [2427. 公因子的数目](https://leetcode.cn/problems/number-of-common-factors/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2400-2499/number-of-common-factors.md) | 数学、枚举、数论 | 简单 |
 | [1925. 统计平方和三元组的数目](https://leetcode.cn/problems/count-square-sum-triples/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1900-1999/count-square-sum-triples.md) | 数学、枚举 | 简单 |
 | [1450. 在既定时间做作业的学生人数](https://leetcode.cn/problems/number-of-students-doing-homework-at-a-given-time/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1400-1499/number-of-students-doing-homework-at-a-given-time.md) | 数组 | 简单 |
 | [1620. 网络信号最好的坐标](https://leetcode.cn/problems/coordinate-with-maximum-network-quality/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1600-1699/coordinate-with-maximum-network-quality.md) | 数组、枚举 | 中等 |
@@ -793,7 +794,7 @@
 | [0241. 为运算表达式设计优先级](https://leetcode.cn/problems/different-ways-to-add-parentheses/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/different-ways-to-add-parentheses.md) | 递归、记忆化搜索、数学、字符串、动态规划 | 中等 |
 | [0169. 多数元素](https://leetcode.cn/problems/majority-element/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/majority-element.md) | 数组、哈希表、分治、计数、排序 | 简单 |
 | [0050. Pow(x, n)](https://leetcode.cn/problems/powx-n/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/powx-n.md) | 递归、数学 | 中等 |
-| [0014. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-common-prefix.md) | 字典树、字符串 | 简单 |
+| [0014. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-common-prefix.md) | 字典树、数组、字符串 | 简单 |
 | [LCR 152. 验证二叉搜索树的后序遍历序列](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof.md) | 栈、树、二叉搜索树、递归、数组、二叉树、单调栈 | 中等 |
 
 
@@ -853,8 +854,8 @@
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
-| [0504. 七进制数](https://leetcode.cn/problems/base-7/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/base-7.md) | 数学 | 简单 |
-| [0405. 数字转换为十六进制数](https://leetcode.cn/problems/convert-a-number-to-hexadecimal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/convert-a-number-to-hexadecimal.md) | 位运算、数学 | 简单 |
+| [0504. 七进制数](https://leetcode.cn/problems/base-7/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/base-7.md) | 数学、字符串 | 简单 |
+| [0405. 数字转换为十六进制数](https://leetcode.cn/problems/convert-a-number-to-hexadecimal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/convert-a-number-to-hexadecimal.md) | 位运算、数学、字符串 | 简单 |
 | [0190. 颠倒二进制位](https://leetcode.cn/problems/reverse-bits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/reverse-bits.md) | 位运算、分治 | 简单 |
 | [1009. 十进制整数的反码](https://leetcode.cn/problems/complement-of-base-10-integer/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/complement-of-base-10-integer.md) | 位运算 | 简单 |
 | [0191. 位1的个数](https://leetcode.cn/problems/number-of-1-bits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/number-of-1-bits.md) | 位运算、分治 | 简单 |
@@ -933,7 +934,7 @@
 | [0256. 粉刷房子](https://leetcode.cn/problems/paint-house/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/paint-house.md) | 数组、动态规划 | 中等 |
 | [0265. 粉刷房子 II](https://leetcode.cn/problems/paint-house-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/paint-house-ii.md) | 数组、动态规划 | 困难 |
 | [1473. 粉刷房子 III](https://leetcode.cn/problems/paint-house-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1400-1499/paint-house-iii.md) | 数组、动态规划 | 困难 |
-| [0975. 奇偶跳](https://leetcode.cn/problems/odd-even-jump/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/odd-even-jump.md) | 栈、数组、动态规划、有序集合、单调栈 | 困难 |
+| [0975. 奇偶跳](https://leetcode.cn/problems/odd-even-jump/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/odd-even-jump.md) | 栈、数组、动态规划、有序集合、排序、单调栈 | 困难 |
 | [0403. 青蛙过河](https://leetcode.cn/problems/frog-jump/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/frog-jump.md) | 数组、动态规划 | 困难 |
 | [1478. 安排邮筒](https://leetcode.cn/problems/allocate-mailboxes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1400-1499/allocate-mailboxes.md) | 数组、数学、动态规划、排序 | 困难 |
 | [1230. 抛掷硬币](https://leetcode.cn/problems/toss-strange-coins/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/toss-strange-coins.md) | 数组、数学、动态规划、概率与统计 | 中等 |

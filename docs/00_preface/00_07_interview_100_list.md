@@ -231,7 +231,7 @@
 | [0415. 字符串相加](https://leetcode.cn/problems/add-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/add-strings.md) | 数学、字符串、模拟 | 简单 |
 | [0151. 反转字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/reverse-words-in-a-string.md) | 双指针、字符串 | 中等 |
 | [0043. 字符串相乘](https://leetcode.cn/problems/multiply-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/multiply-strings.md) | 数学、字符串、模拟 | 中等 |
-| [0014. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-common-prefix.md) | 字典树、字符串 | 简单 |
+| [0014. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-common-prefix.md) | 字典树、数组、字符串 | 简单 |
 
 
 ## 第 5 章  树
@@ -336,7 +336,7 @@
 | [0023. 合并 K 个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/merge-k-sorted-lists.md) | 链表、分治、堆（优先队列）、归并排序 | 困难 |
 | [0004. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/median-of-two-sorted-arrays.md) | 数组、二分查找、分治 | 困难 |
 | [0169. 多数元素](https://leetcode.cn/problems/majority-element/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/majority-element.md) | 数组、哈希表、分治、计数、排序 | 简单 |
-| [0014. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-common-prefix.md) | 字典树、字符串 | 简单 |
+| [0014. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-common-prefix.md) | 字典树、数组、字符串 | 简单 |
 
 
 ### 回溯算法题目

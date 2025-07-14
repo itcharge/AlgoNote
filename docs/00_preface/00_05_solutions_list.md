@@ -16,7 +16,7 @@
 | [0011. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/container-with-most-water.md) | 贪心、数组、双指针 | 中等 |
 | [0012. 整数转罗马数字](https://leetcode.cn/problems/integer-to-roman/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/integer-to-roman.md) | 哈希表、数学、字符串 | 中等 |
 | [0013. 罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/roman-to-integer.md) | 哈希表、数学、字符串 | 简单 |
-| [0014. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-common-prefix.md) | 字典树、字符串 | 简单 |
+| [0014. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/longest-common-prefix.md) | 字典树、数组、字符串 | 简单 |
 | [0015. 三数之和](https://leetcode.cn/problems/3sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/3sum.md) | 数组、双指针、排序 | 中等 |
 | [0016. 最接近的三数之和](https://leetcode.cn/problems/3sum-closest/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/3sum-closest.md) | 数组、双指针、排序 | 中等 |
 | [0017. 电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/letter-combinations-of-a-phone-number.md) | 哈希表、字符串、回溯 | 中等 |
@@ -299,7 +299,7 @@
 | [0400. 第 N 位数字](https://leetcode.cn/problems/nth-digit/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/nth-digit.md) | 数学、二分查找 | 中等 |
 | [0403. 青蛙过河](https://leetcode.cn/problems/frog-jump/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/frog-jump.md) | 数组、动态规划 | 困难 |
 | [0404. 左叶子之和](https://leetcode.cn/problems/sum-of-left-leaves/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/sum-of-left-leaves.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 简单 |
-| [0405. 数字转换为十六进制数](https://leetcode.cn/problems/convert-a-number-to-hexadecimal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/convert-a-number-to-hexadecimal.md) | 位运算、数学 | 简单 |
+| [0405. 数字转换为十六进制数](https://leetcode.cn/problems/convert-a-number-to-hexadecimal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/convert-a-number-to-hexadecimal.md) | 位运算、数学、字符串 | 简单 |
 | [0406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/queue-reconstruction-by-height.md) | 树状数组、线段树、数组、排序 | 中等 |
 | [0409. 最长回文串](https://leetcode.cn/problems/longest-palindrome/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/longest-palindrome.md) | 贪心、哈希表、字符串 | 简单 |
 | [0410. 分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/split-array-largest-sum.md) | 贪心、数组、二分查找、动态规划、前缀和 | 困难 |
@@ -349,7 +349,7 @@
 | :--- | :--- | :--- | :--- |
 | [0501. 二叉搜索树中的众数](https://leetcode.cn/problems/find-mode-in-binary-search-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/find-mode-in-binary-search-tree.md) | 树、深度优先搜索、二叉搜索树、二叉树 | 简单 |
 | [0503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/next-greater-element-ii.md) | 栈、数组、单调栈 | 中等 |
-| [0504. 七进制数](https://leetcode.cn/problems/base-7/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/base-7.md) | 数学 | 简单 |
+| [0504. 七进制数](https://leetcode.cn/problems/base-7/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/base-7.md) | 数学、字符串 | 简单 |
 | [0506. 相对名次](https://leetcode.cn/problems/relative-ranks/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/relative-ranks.md) | 数组、排序、堆（优先队列） | 简单 |
 | [0509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/fibonacci-number.md) | 递归、记忆化搜索、数学、动态规划 | 简单 |
 | [0513. 找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/find-bottom-left-tree-value.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 中等 |
@@ -739,7 +739,7 @@
 | [1827. 最少操作使数组递增](https://leetcode.cn/problems/minimum-operations-to-make-the-array-increasing/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1800-1899/minimum-operations-to-make-the-array-increasing.md) | 贪心、数组 | 简单 |
 | [1833. 雪糕的最大数量](https://leetcode.cn/problems/maximum-ice-cream-bars/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1800-1899/maximum-ice-cream-bars.md) | 贪心、数组、计数排序、排序 | 中等 |
 | [1844. 将所有数字用字符替换](https://leetcode.cn/problems/replace-all-digits-with-characters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1800-1899/replace-all-digits-with-characters.md) | 字符串 | 简单 |
-| [1858. 包含所有前缀的最长单词](https://leetcode.cn/problems/longest-word-with-all-prefixes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1800-1899/longest-word-with-all-prefixes.md) | 深度优先搜索、字典树 | 中等 |
+| [1858. 包含所有前缀的最长单词](https://leetcode.cn/problems/longest-word-with-all-prefixes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1800-1899/longest-word-with-all-prefixes.md) | 深度优先搜索、字典树、数组、字符串 | 中等 |
 | [1859. 将句子排序](https://leetcode.cn/problems/sorting-the-sentence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1800-1899/sorting-the-sentence.md) | 字符串、排序 | 简单 |
 | [1876. 长度为三且各字符不同的子字符串](https://leetcode.cn/problems/substrings-of-size-three-with-distinct-characters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1800-1899/substrings-of-size-three-with-distinct-characters.md) | 哈希表、字符串、计数、滑动窗口 | 简单 |
 | [1877. 数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1800-1899/minimize-maximum-pair-sum-in-array.md) | 贪心、数组、双指针、排序 | 中等 |
