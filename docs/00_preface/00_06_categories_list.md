@@ -979,7 +979,7 @@
 | [0576. 出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/out-of-boundary-paths.md) | 动态规划 | 中等 |
 | [0085. 最大矩形](https://leetcode.cn/problems/maximal-rectangle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/maximal-rectangle.md) | 栈、数组、动态规划、矩阵、单调栈 | 困难 |
 | [0363. 矩形区域不超过 K 的最大数值和](https://leetcode.cn/problems/max-sum-of-rectangle-no-larger-than-k/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/max-sum-of-rectangle-no-larger-than-k.md) | 数组、二分查找、矩阵、有序集合、前缀和 | 困难 |
-| [面试题 17.24. 最大子矩阵](https://leetcode.cn/problems/max-submatrix-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/max-submatrix-lcci.md) | 数组、动态规划、矩阵、前缀和 | 困难 |
+| [面试题 17.24. 最大子矩阵](https://leetcode.cn/problems/max-submatrix-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/max-submatrix-lcci.md) | 数组、动态规划、矩阵、前缀和 | 困难 |
 | [1444. 切披萨的方案数](https://leetcode.cn/problems/number-of-ways-of-cutting-a-pizza/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1400-1499/number-of-ways-of-cutting-a-pizza.md) | 记忆化搜索、数组、动态规划、矩阵、前缀和 | 困难 |
 
 
@@ -1148,7 +1148,7 @@
 | [1088. 易混淆数 II](https://leetcode.cn/problems/confusing-number-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/confusing-number-ii.md) | 数学、回溯 | 困难 |
 | [1067. 范围内的数字计数](https://leetcode.cn/problems/digit-count-in-range/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/digit-count-in-range.md) | 数学、动态规划 | 困难 |
 | [1742. 盒子中小球的最大数量](https://leetcode.cn/problems/maximum-number-of-balls-in-a-box/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1700-1799/maximum-number-of-balls-in-a-box.md) | 哈希表、数学、计数 | 简单 |
-| [面试题 17.06. 2出现的次数](https://leetcode.cn/problems/number-of-2s-in-range-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/number-of-2s-in-range-lcci.md) | 递归、数学、动态规划 | 困难 |
+| [面试题 17.06. 2出现的次数](https://leetcode.cn/problems/number-of-2s-in-range-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/number-of-2s-in-range-lcci.md) | 递归、数学、动态规划 | 困难 |
 
 
 ### 概率 DP 题目

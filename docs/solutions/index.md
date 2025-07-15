@@ -27,5 +27,5 @@
 - [第 2400 ~ 2499 题](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2400-2499/)
 - [第 2500 ~ 2599 题](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2500-2599/)
 - [第 2700 ~ 2799 题](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2700-2799/)
-- [面试题](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/)
 - [LCR 系列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/)
+- [面试题](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/)

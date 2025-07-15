@@ -822,42 +822,6 @@
 | [2719. 统计整数数目](https://leetcode.cn/problems/count-of-integers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/2700-2799/count-of-integers.md) | 数学、字符串、动态规划 | 困难 |
 
 
-### 面试题
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
-| [面试题 01.07. 旋转矩阵](https://leetcode.cn/problems/rotate-matrix-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/rotate-matrix-lcci.md) | 数组、数学、矩阵 | 中等 |
-| [面试题 01.08. 零矩阵](https://leetcode.cn/problems/zero-matrix-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/zero-matrix-lcci.md) | 数组、哈希表、矩阵 | 中等 |
-| [面试题 02.02. 返回倒数第 k 个节点](https://leetcode.cn/problems/kth-node-from-end-of-list-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/kth-node-from-end-of-list-lcci.md) | 链表、双指针 | 简单 |
-| [面试题 02.05. 链表求和](https://leetcode.cn/problems/sum-lists-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/sum-lists-lcci.md) | 递归、链表、数学 | 中等 |
-| [面试题 02.06. 回文链表](https://leetcode.cn/problems/palindrome-linked-list-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/palindrome-linked-list-lcci.md) | 栈、递归、链表、双指针 | 简单 |
-| [面试题 02.07. 链表相交](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/intersection-of-two-linked-lists-lcci.md) | 哈希表、链表、双指针 | 简单 |
-| [面试题 02.08. 环路检测](https://leetcode.cn/problems/linked-list-cycle-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/linked-list-cycle-lcci.md) | 哈希表、链表、双指针 | 中等 |
-| [面试题 03.02. 栈的最小值](https://leetcode.cn/problems/min-stack-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/min-stack-lcci.md) | 栈、设计 | 简单 |
-| [面试题 03.04. 化栈为队](https://leetcode.cn/problems/implement-queue-using-stacks-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/implement-queue-using-stacks-lcci.md) | 栈、设计、队列 | 简单 |
-| [面试题 04.02. 最小高度树](https://leetcode.cn/problems/minimum-height-tree-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/minimum-height-tree-lcci.md) | 树、二叉搜索树、数组、分治、二叉树 | 简单 |
-| [面试题 04.05. 合法二叉搜索树](https://leetcode.cn/problems/legal-binary-search-tree-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/legal-binary-search-tree-lcci.md) | 树、深度优先搜索、二叉搜索树、二叉树 | 中等 |
-| [面试题 04.06. 后继者](https://leetcode.cn/problems/successor-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/successor-lcci.md) | 树、深度优先搜索、二叉搜索树、二叉树 | 中等 |
-| [面试题 04.08. 首个共同祖先](https://leetcode.cn/problems/first-common-ancestor-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/first-common-ancestor-lcci.md) | 树、深度优先搜索、二叉树 | 中等 |
-| [面试题 04.12. 求和路径](https://leetcode.cn/problems/paths-with-sum-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/paths-with-sum-lcci.md) | 树、深度优先搜索、二叉树 | 中等 |
-| [面试题 08.04. 幂集](https://leetcode.cn/problems/power-set-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/power-set-lcci.md) | 位运算、数组、回溯 | 中等 |
-| [面试题 08.07. 无重复字符串的排列组合](https://leetcode.cn/problems/permutation-i-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/permutation-i-lcci.md) | 字符串、回溯 | 中等 |
-| [面试题 08.08. 有重复字符串的排列组合](https://leetcode.cn/problems/permutation-ii-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/permutation-ii-lcci.md) | 字符串、回溯 | 中等 |
-| [面试题 08.09. 括号](https://leetcode.cn/problems/bracket-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/bracket-lcci.md) | 字符串、动态规划、回溯 | 中等 |
-| [面试题 08.10. 颜色填充](https://leetcode.cn/problems/color-fill-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/color-fill-lcci.md) | 深度优先搜索、广度优先搜索、数组、矩阵 | 简单 |
-| [面试题 08.12. 八皇后](https://leetcode.cn/problems/eight-queens-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/eight-queens-lcci.md) | 数组、回溯 | 困难 |
-| [面试题 10.01. 合并排序的数组](https://leetcode.cn/problems/sorted-merge-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/sorted-merge-lcci.md) | 数组、双指针、排序 | 简单 |
-| [面试题 10.02. 变位词组](https://leetcode.cn/problems/group-anagrams-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/group-anagrams-lcci.md) | 数组、哈希表、字符串、排序 | 中等 |
-| [面试题 10.09. 排序矩阵查找](https://leetcode.cn/problems/sorted-matrix-search-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/sorted-matrix-search-lcci.md) | 数组、二分查找、分治、矩阵 | 中等 |
-| [面试题 16.02. 单词频率](https://leetcode.cn/problems/words-frequency-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/words-frequency-lcci.md) | 设计、字典树、数组、哈希表、字符串 | 中等 |
-| [面试题 16.05. 阶乘尾数](https://leetcode.cn/problems/factorial-zeros-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/factorial-zeros-lcci.md) | 数学 | 简单 |
-| [面试题 16.26. 计算器](https://leetcode.cn/problems/calculator-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/calculator-lcci.md) | 栈、数学、字符串 | 中等 |
-| [面试题 17.06. 2出现的次数](https://leetcode.cn/problems/number-of-2s-in-range-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/number-of-2s-in-range-lcci.md) | 递归、数学、动态规划 | 困难 |
-| [面试题 17.14. 最小K个数](https://leetcode.cn/problems/smallest-k-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/smallest-k-lcci.md) | 数组、分治、快速选择、排序、堆（优先队列） | 中等 |
-| [面试题 17.15. 最长单词](https://leetcode.cn/problems/longest-word-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/longest-word-lcci.md) | 字典树、数组、哈希表、字符串 | 中等 |
-| [面试题 17.17. 多次搜索](https://leetcode.cn/problems/multi-search-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/Interviews/multi-search-lcci.md) | 字典树、数组、哈希表、字符串、字符串匹配、滑动窗口 | 中等 |
-
-
 ### LCR 系列
 
 | 标题 | 题解 | 标签 | 难度 |
@@ -1032,5 +996,41 @@
 | [LCR 192. 把字符串转换成整数 (atoi)](https://leetcode.cn/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof.md) | 字符串 | 中等 |
 | [LCR 193. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof.md) | 树、深度优先搜索、二叉搜索树、二叉树 | 简单 |
 | [LCR 194. 二叉树的最近公共祖先](https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof.md) | 树、深度优先搜索、二叉树 | 简单 |
+
+
+### 面试题
+
+| 标题 | 题解 | 标签 | 难度 |
+| :--- | :--- | :--- | :--- |
+| [面试题 01.07. 旋转矩阵](https://leetcode.cn/problems/rotate-matrix-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/rotate-matrix-lcci.md) | 数组、数学、矩阵 | 中等 |
+| [面试题 01.08. 零矩阵](https://leetcode.cn/problems/zero-matrix-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/zero-matrix-lcci.md) | 数组、哈希表、矩阵 | 中等 |
+| [面试题 02.02. 返回倒数第 k 个节点](https://leetcode.cn/problems/kth-node-from-end-of-list-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/kth-node-from-end-of-list-lcci.md) | 链表、双指针 | 简单 |
+| [面试题 02.05. 链表求和](https://leetcode.cn/problems/sum-lists-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/sum-lists-lcci.md) | 递归、链表、数学 | 中等 |
+| [面试题 02.06. 回文链表](https://leetcode.cn/problems/palindrome-linked-list-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/palindrome-linked-list-lcci.md) | 栈、递归、链表、双指针 | 简单 |
+| [面试题 02.07. 链表相交](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/intersection-of-two-linked-lists-lcci.md) | 哈希表、链表、双指针 | 简单 |
+| [面试题 02.08. 环路检测](https://leetcode.cn/problems/linked-list-cycle-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/linked-list-cycle-lcci.md) | 哈希表、链表、双指针 | 中等 |
+| [面试题 03.02. 栈的最小值](https://leetcode.cn/problems/min-stack-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/min-stack-lcci.md) | 栈、设计 | 简单 |
+| [面试题 03.04. 化栈为队](https://leetcode.cn/problems/implement-queue-using-stacks-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/implement-queue-using-stacks-lcci.md) | 栈、设计、队列 | 简单 |
+| [面试题 04.02. 最小高度树](https://leetcode.cn/problems/minimum-height-tree-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/minimum-height-tree-lcci.md) | 树、二叉搜索树、数组、分治、二叉树 | 简单 |
+| [面试题 04.05. 合法二叉搜索树](https://leetcode.cn/problems/legal-binary-search-tree-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/legal-binary-search-tree-lcci.md) | 树、深度优先搜索、二叉搜索树、二叉树 | 中等 |
+| [面试题 04.06. 后继者](https://leetcode.cn/problems/successor-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/successor-lcci.md) | 树、深度优先搜索、二叉搜索树、二叉树 | 中等 |
+| [面试题 04.08. 首个共同祖先](https://leetcode.cn/problems/first-common-ancestor-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/first-common-ancestor-lcci.md) | 树、深度优先搜索、二叉树 | 中等 |
+| [面试题 04.12. 求和路径](https://leetcode.cn/problems/paths-with-sum-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/paths-with-sum-lcci.md) | 树、深度优先搜索、二叉树 | 中等 |
+| [面试题 08.04. 幂集](https://leetcode.cn/problems/power-set-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/power-set-lcci.md) | 位运算、数组、回溯 | 中等 |
+| [面试题 08.07. 无重复字符串的排列组合](https://leetcode.cn/problems/permutation-i-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/permutation-i-lcci.md) | 字符串、回溯 | 中等 |
+| [面试题 08.08. 有重复字符串的排列组合](https://leetcode.cn/problems/permutation-ii-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/permutation-ii-lcci.md) | 字符串、回溯 | 中等 |
+| [面试题 08.09. 括号](https://leetcode.cn/problems/bracket-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/bracket-lcci.md) | 字符串、动态规划、回溯 | 中等 |
+| [面试题 08.10. 颜色填充](https://leetcode.cn/problems/color-fill-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/color-fill-lcci.md) | 深度优先搜索、广度优先搜索、数组、矩阵 | 简单 |
+| [面试题 08.12. 八皇后](https://leetcode.cn/problems/eight-queens-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/eight-queens-lcci.md) | 数组、回溯 | 困难 |
+| [面试题 10.01. 合并排序的数组](https://leetcode.cn/problems/sorted-merge-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/sorted-merge-lcci.md) | 数组、双指针、排序 | 简单 |
+| [面试题 10.02. 变位词组](https://leetcode.cn/problems/group-anagrams-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/group-anagrams-lcci.md) | 数组、哈希表、字符串、排序 | 中等 |
+| [面试题 10.09. 排序矩阵查找](https://leetcode.cn/problems/sorted-matrix-search-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/sorted-matrix-search-lcci.md) | 数组、二分查找、分治、矩阵 | 中等 |
+| [面试题 16.02. 单词频率](https://leetcode.cn/problems/words-frequency-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/words-frequency-lcci.md) | 设计、字典树、数组、哈希表、字符串 | 中等 |
+| [面试题 16.05. 阶乘尾数](https://leetcode.cn/problems/factorial-zeros-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/factorial-zeros-lcci.md) | 数学 | 简单 |
+| [面试题 16.26. 计算器](https://leetcode.cn/problems/calculator-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/calculator-lcci.md) | 栈、数学、字符串 | 中等 |
+| [面试题 17.06. 2出现的次数](https://leetcode.cn/problems/number-of-2s-in-range-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/number-of-2s-in-range-lcci.md) | 递归、数学、动态规划 | 困难 |
+| [面试题 17.14. 最小K个数](https://leetcode.cn/problems/smallest-k-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/smallest-k-lcci.md) | 数组、分治、快速选择、排序、堆（优先队列） | 中等 |
+| [面试题 17.15. 最长单词](https://leetcode.cn/problems/longest-word-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/longest-word-lcci.md) | 字典树、数组、哈希表、字符串 | 中等 |
+| [面试题 17.17. 多次搜索](https://leetcode.cn/problems/multi-search-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/multi-search-lcci.md) | 字典树、数组、哈希表、字符串、字符串匹配、滑动窗口 | 中等 |
 
 
