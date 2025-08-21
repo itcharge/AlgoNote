@@ -1,40 +1,51 @@
 ## 1. 双指针简介
 
-在数组双指针中我们已经学习过了双指针的概念。这里再来复习一下。
+双指针是链表问题中非常常用且高效的技巧，通过两个指针的配合移动，能够巧妙地解决许多复杂问题。
 
-> **双指针（Two Pointers）**：指的是在遍历元素的过程中，不是使用单个指针进行访问，而是使用两个指针进行访问，从而达到相应的目的。如果两个指针方向相反，则称为「对撞时针」。如果两个指针方向相同，则称为「快慢指针」。如果两个指针分别属于不同的数组 / 链表，则称为「分离双指针」。
+> **双指针（Two Pointers）**：指在遍历链表时同时使用两个指针，根据移动方式主要分为以下两类：
+> - **快慢指针**：两个指针从同一起点出发，移动速度不同，常用于检测环、寻找中点、定位倒数第 n 个节点等。
+>    - **起点不一致**：快指针先行若干步，之后快慢指针同步移动，常用于定位倒数第 n 个节点。
+>    - **步长不一致**：快指针每次移动两步，慢指针每次移动一步，常用于判断链表是否有环、寻找中点等。
+> - **分离双指针**：两个指针分别在不同链表或不同起点上独立移动，常用于合并两个有序链表、比较链表节点等场景。
 
-而在单链表中，因为遍历节点只能顺着 `next` 指针方向进行，所以对于链表而言，一般只会用到「快慢指针」和「分离双指针」。其中链表的「快慢指针」又分为「起点不一致的快慢指针」和「步长不一致的快慢指针」。这几种类型的双指针所解决的问题也各不相同，下面我们一一进行讲解。
+双指针法能够有效降低时间复杂度，减少空间消耗，是解决链表相关问题（如查找、删除、合并等）时非常高效且常用的技巧。
 
-## 2. 起点不一致的快慢指针
+## 2. 快慢指针（起点不一致）
 
->**起点不一致的快慢指针**：指的是两个指针从同一侧开始遍历链表，但是两个指针的起点不一样。 快指针 `fast` 比慢指针 `slow` 先走 `n` 步，直到快指针移动到链表尾端时为止。
+> **起点不一致的快慢指针**：快指针先走 n 步，然后两个指针同时移动，快指针到达末尾时，慢指针正好在目标位置。
 
-### 2.1 起点不一致的快慢指针求解步骤
+### 2.1 求解步骤
 
-1. 使用两个指针 `slow`、`fast`。`slow`、`fast` 都指向链表的头节点，即：`slow = head`，`fast = head`。
-2. 先将快指针向右移动 `n` 步。然后再同时向右移动快、慢指针。
-3. 等到快指针移动到链表尾部（即 `fast == None`）时跳出循环体。
+1. **初始化**：两个指针 $slow$、$fast$ 都指向头节点。
+2. **快指针先行**：快指针先移动 n 步。
+3. **同步移动**：两个指针同时移动，直到快指针到达末尾（`fast == None`）。
+4. **结果**：慢指针正好指向倒数第 n 个节点。
 
-### 2.2 起点不一致的快慢指针伪代码模板
+### 2.2 代码模板
 
 ```python
-slow = head
-fast = head
-
-while n:
-    fast = fast.next
-    n -= 1
-while fast:
-    fast = fast.next
-    slow = slow.next
+def findNthFromEnd(head, n):
+    slow = fast = head
+    
+    # 快指针先走 n 步
+    for _ in range(n):
+        fast = fast.next
+    
+    # 两个指针同时移动
+    while fast:
+        slow = slow.next
+        fast = fast.next
+    
+    return slow  # 慢指针指向倒数第 n 个节点
 ```
 
-### 2.3 起点不一致的快慢指针适用范围
+### 2.3 适用场景
 
-起点不一致的快慢指针主要用于找到链表中倒数第 k 个节点、删除链表倒数第 N 个节点等。
+- 找到链表中倒数第 k 个节点
+- 删除链表倒数第 N 个节点
+- 其他需要定位倒数位置的问题
 
-### 2.4 删除链表的倒数第 N 个结点
+### 2.4 经典例题：删除链表的倒数第 N 个结点
 
 #### 2.4.1 题目链接
 
@@ -75,57 +86,70 @@ while fast:
 
 如果用一次遍历实现的话，可以使用快慢指针。让快指针先走 `n` 步，然后快慢指针、慢指针再同时走，每次一步，这样等快指针遍历到链表尾部的时候，慢指针就刚好遍历到了倒数第 `n` 个节点位置。将该位置上的节点删除即可。
 
-需要注意的是要删除的节点可能包含了头节点。我们可以考虑在遍历之前，新建一个头节点，让其指向原来的头节点。这样，最终如果删除的是头节点，则删除原头节点即可。返回结果的时候，可以直接返回新建头节点的下一位节点。
 
 ##### 思路 1：代码
 
 ```python
 class Solution:
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
-        newHead = ListNode(0, head)
+        # 创建虚拟头节点，简化边界情况处理
+        dummy = ListNode(0, head)
+        slow = dummy
         fast = head
-        slow = newHead
-        while n:
+        
+        # 快指针先走 n 步
+        for _ in range(n):
             fast = fast.next
-            n -= 1
+        
+        # 两个指针同时移动
         while fast:
-            fast = fast.next
             slow = slow.next
+            fast = fast.next
+        
+        # 删除目标节点（slow.next 是要删除的节点）
         slow.next = slow.next.next
-        return newHead.next
+        
+        return dummy.next
 ```
 
 ##### 思路 1：复杂度分析
 
-- **时间复杂度**：$O(n)$。
-- **空间复杂度**：$O(1)$。
+- **时间复杂度**：$O(n)$，只遍历一次
+- **空间复杂度**：O(1)，只使用常数额外空间
 
-## 3. 步长不一致的快慢指针
+## 3. 快慢指针（步长不一致）
 
-> **步长不一致的快慢指针**：指的是两个指针从同一侧开始遍历链表，两个指针的起点一样，但是步长不一致。例如，慢指针 `slow` 每次走 `1` 步，快指针 `fast` 每次走两步。直到快指针移动到链表尾端时为止。
+> **步长不一致的快慢指针**：两个指针从同一起点出发，慢指针每次走 1 步，快指针每次走 2 步。
 
-### 3.1 步长不一致的快慢指针求解步骤
+### 3.1 求解步骤
 
-1. 使用两个指针 `slow`、`fast`。`slow`、`fast` 都指向链表的头节点。
-2. 在循环体中将快、慢指针同时向右移动，但是快、慢指针的移动步长不一致。比如将慢指针每次移动 `1` 步，即 `slow = slow.next`。快指针每次移动 `2` 步，即 `fast = fast.next.next`。
-3. 等到快指针移动到链表尾部（即 `fast == None`）时跳出循环体。
+1. **初始化**：两个指针都指向头节点。
+2. **不同步长**：慢指针每次移动 1 步，快指针每次移动 2 步。
+3. **终止条件**：快指针到达末尾或无法继续移动。
+4. **应用场景**：找中点、检测环、找交点等。
 
-### 3.2 步长不一致的快慢指针伪代码模板
+### 3.2 代码模板
 
 ```python
-fast = head
-slow = head
-
-while fast and fast.next:
-    slow = slow.next
-    fast = fast.next.next
+def fastSlowPointer(head):
+    slow = fast = head
+    
+    # 快指针每次走 2 步，慢指针每次走 1 步
+    while fast and fast.next:
+        slow = slow.next      # 慢指针移动 1 步
+        fast = fast.next.next # 快指针移动 2 步
+    
+    return slow  # 慢指针指向中点或环的入口
 ```
 
-### 3.3 步长不一致的快慢指针适用范围
+### 3.3 适用场景
 
-步长不一致的快慢指针适合寻找链表的中点、判断和检测链表是否有环、找到两个链表的交点等问题。
+- 寻找链表的中点
+- 检测链表是否有环
+- 找到两个链表的交点
+- 其他需要定位中间位置的问题
 
-### 3.4 链表的中间结点
+### 3.4 经典例题：链表的中间结点
 
 #### 3.4.1 题目链接
 
@@ -167,16 +191,18 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 ```python
 class Solution:
     def middleNode(self, head: ListNode) -> ListNode:
-        n = 0
+        # 第一次遍历：计算链表长度
+        count = 0
         curr = head
         while curr:
-            n += 1
+            count += 1
             curr = curr.next
-        k = 0
+        
+        # 第二次遍历：找到中间位置
         curr = head
-        while k < n // 2:
-            k += 1
+        for _ in range(count // 2):
             curr = curr.next
+        
         return curr
 ```
 
@@ -199,11 +225,14 @@ class Solution:
 ```python
 class Solution:
     def middleNode(self, head: ListNode) -> ListNode:
-        fast = head
-        slow = head
+        slow = fast = head
+        
+        # 快指针每次走 2 步，慢指针每次走 1 步
+        # 当快指针到达末尾时，慢指针正好在中点
         while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
+            slow = slow.next      # 慢指针移动 1 步
+            fast = fast.next.next # 快指针移动 2 步
+        
         return slow
 ```
 
@@ -212,132 +241,46 @@ class Solution:
 - **时间复杂度**：$O(n)$。
 - **空间复杂度**：$O(1)$。
 
-### 3.5 判断链表中是否含有环
-
-#### 3.5.1 题目链接
-
-- [141. 环形链表 - 力扣（LeetCode）](https://leetcode.cn/problems/linked-list-cycle/)
-
-#### 3.5.2 题目大意
-
-**描述**：给定一个链表的头节点 `head`。
-
-**要求**：判断链表中是否有环。如果有环则返回 `True`，否则返回 `False`。
-
-**说明**：
-
-- 链表中节点的数目范围是 $[0, 10^4]$。
-- $-10^5 \le Node.val \le 10^5$。
-- `pos` 为 `-1` 或者链表中的一个有效索引。
-
-**示例**：
-
-![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png)
-
-```python
-输入：head = [3,2,0,-4], pos = 1
-输出：True
-解释：链表中有一个环，其尾部连接到第二个节点。
-```
-
-![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test2.png)
-
-```python
-输入：head = [1,2], pos = 0
-输出：True
-解释：链表中有一个环，其尾部连接到第一个节点。
-```
-
-#### 3.5.3 解题思路
-
-##### 思路 1：哈希表
-
-最简单的思路是遍历所有节点，每次遍历节点之前，使用哈希表判断该节点是否被访问过。如果访问过就说明存在环，如果没访问过则将该节点添加到哈希表中，继续遍历判断。
-
-##### 思路 1：代码
-
-```python
-class Solution:
-    def hasCycle(self, head: ListNode) -> bool:
-        nodeset = set()
-
-        while head:
-            if head in nodeset:
-                return True
-            nodeset.add(head)
-            head = head.next
-        return False
-```
-
-##### 思路 1：复杂度分析
-
-- **时间复杂度**：$O(n)$。
-- **空间复杂度**：$O(n)$。
-
-##### 思路 2：快慢指针（Floyd 判圈算法）
-
-这种方法类似于在操场跑道跑步。两个人从同一位置同时出发，如果跑道有环（环形跑道），那么快的一方总能追上慢的一方。
-
-基于上边的想法，Floyd 用两个指针，一个慢指针（龟）每次前进一步，快指针（兔）指针每次前进两步（两步或多步效果是等价的）。如果两个指针在链表头节点以外的某一节点相遇（即相等）了，那么说明链表有环，否则，如果（快指针）到达了某个没有后继指针的节点时，那么说明没环。
-
-##### 思路 2：代码
-
-```python
-class Solution:
-    def hasCycle(self, head: ListNode) -> bool:
-        if head == None or head.next == None:
-            return False
-
-        slow = head
-        fast = head.next
-
-        while slow != fast:
-            if fast == None or fast.next == None:
-                return False
-            slow = slow.next
-            fast = fast.next.next
-
-        return True
-```
-
-##### 思路 2：复杂度分析
-
-- **时间复杂度**：$O(n)$。
-- **空间复杂度**：$O(1)$。   
-
 ## 4. 分离双指针
 
-> **分离双指针**：两个指针分别属于不同的链表，两个指针分别在两个链表中移动。
+> **分离双指针**：两个指针分别在不同的链表中移动，常用于合并、比较等操作。
 
-### 4.1 分离双指针求解步骤
+### 4.1 求解步骤
 
-1. 使用两个指针 `left_1`、`left_2`。`left_1` 指向第一个链表头节点，即：`left_1 = list1`，`left_2` 指向第二个链表头节点，即：`left_2 = list2`。
-2. 当满足一定条件时，两个指针同时右移，即 `left_1 = left_1.next`、`left_2 = left_2.next`。
-3. 当满足另外一定条件时，将 `left_1` 指针右移，即 `left_1 = left_1.next`。
-4. 当满足其他一定条件时，将 `left_2` 指针右移，即 `left_2 = left_2.next`。
-5. 当其中一个链表遍历完时或者满足其他特殊条件时跳出循环体。
+1. **初始化**：两个指针分别指向两个链表的头节点。
+2. **条件移动**：根据具体问题决定何时移动哪个指针。
+3. **终止条件**：其中一个链表遍历完毕或满足特定条件。
+4. **应用场景**：有序链表合并、链表比较等。
 
-### 4.2 分离双指针伪代码模板
+### 4.2 代码模板
 
 ```python
-left_1 = list1
-left_2 = list2
-
-while left_1 and left_2:
-    if 一定条件 1:
-        left_1 = left_1.next
-        left_2 = left_2.next
-    elif 一定条件 2:
-        left_1 = left_1.next
-    elif 一定条件 3:
-        left_2 = left_2.next
+def separateTwoPointers(list1, list2):
+    p1, p2 = list1, list2
+    
+    while p1 and p2:
+        if condition1:
+            # 两个指针同时移动
+            p1 = p1.next
+            p2 = p2.next
+        elif condition2:
+            # 只移动第一个指针
+            p1 = p1.next
+        else:
+            # 只移动第二个指针
+            p2 = p2.next
+    
+    return result
 ```
 
-### 4.3 分离双指针适用范围
+### 4.3 适用场景
 
-分离双指针一般用于有序链表合并等问题。
+- 合并两个有序链表
+- 比较两个链表
+- 找到两个链表的交点
+- 其他需要同时处理两个链表的问题
 
-### 4.4 合并两个有序链表
+### 4.4 经典例题：合并两个有序链表
 
 #### 4.4.1 题目链接
 
@@ -385,21 +328,26 @@ while left_1 and left_2:
 ```python
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        dummy_head = ListNode(-1)
-
-        curr = dummy_head
+        # 创建虚拟头节点，简化操作
+        dummy = ListNode(-1)
+        curr = dummy
+        
+        # 分离双指针：分别遍历两个链表
         while list1 and list2:
             if list1.val <= list2.val:
+                # 选择 list1 的当前节点
                 curr.next = list1
                 list1 = list1.next
             else:
+                # 选择 list2 的当前节点
                 curr.next = list2
                 list2 = list2.next
             curr = curr.next
-
-        curr.next = list1 if list1 is not None else list2
-
-        return dummy_head.next
+        
+        # 处理剩余节点
+        curr.next = list1 if list1 else list2
+        
+        return dummy.next
 ```
 
 ##### 思路 1：复杂度分析
