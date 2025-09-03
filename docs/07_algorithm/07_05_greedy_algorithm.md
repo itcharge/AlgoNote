@@ -120,10 +120,10 @@
 
 使用贪心算法的代码解决步骤描述如下：
 
-1. 对数组 $g$、$s$ 进行从小到大排序，使用变量 $index\underline{\hspace{0.5em}}g$ 和 $index\underline{\hspace{0.5em}}s$ 分别指向 $g$、$s$ 初始位置，使用变量 $res$ 保存结果，初始化为 $0$。
-2. 对比每个元素 $g[index\underline{\hspace{0.5em}}g]$ 和 $s[index\underline{\hspace{0.5em}}s]$：
-   1. 如果 $g[index\underline{\hspace{0.5em}}g] \le s[index\underline{\hspace{0.5em}}s]$，说明当前饼干满足当前孩子胃口，则答案数量加 $1$，并且向右移动 $index\underline{\hspace{0.5em}}g$ 和 $index\underline{\hspace{0.5em}}s$。
-   2. 如果 $g[index\underline{\hspace{0.5em}}g] > s[index\underline{\hspace{0.5em}}s]$，说明当前饼干无法满足当前孩子胃口，则向右移动 $index_s$，判断下一块饼干是否可以满足当前孩子胃口。
+1. 对数组 $g$、$s$ 进行从小到大排序，使用变量 $index\_g$ 和 $index\_s$ 分别指向 $g$、$s$ 初始位置，使用变量 $res$ 保存结果，初始化为 $0$。
+2. 对比每个元素 $g[index\_g]$ 和 $s[index\_s]$：
+   1. 如果 $g[index\_g] \le s[index\_s]$，说明当前饼干满足当前孩子胃口，则答案数量加 $1$，并且向右移动 $index\_g$ 和 $index\_s$。
+   2. 如果 $g[index\_g] > s[index\_s]$，说明当前饼干无法满足当前孩子胃口，则向右移动 $index_s$，判断下一块饼干是否可以满足当前孩子胃口。
 3. 遍历完输出答案 $res$。
 
 ##### 思路 1：代码
@@ -203,9 +203,9 @@ class Solution:
 
 使用贪心算法的代码解决步骤描述如下：
 
-1. 将区间集合按照结束坐标升序排列，然后维护两个变量，一个是当前不重叠区间的结束时间 $end\underline{\hspace{0.5em}}pos$，另一个是不重叠区间的个数 $count$。初始情况下，结束坐标 $end\underline{\hspace{0.5em}}pos$ 为第一个区间的结束坐标，$count$ 为 $1$。
+1. 将区间集合按照结束坐标升序排列，然后维护两个变量，一个是当前不重叠区间的结束时间 $end\_pos$，另一个是不重叠区间的个数 $count$。初始情况下，结束坐标 $end\_pos$ 为第一个区间的结束坐标，$count$ 为 $1$。
 2. 依次遍历每段区间。对于每段区间：$intervals[i]$：
-   1. 如果 $end\underline{\hspace{0.5em}}pos \le intervals[i][0]$，即 $end\underline{\hspace{0.5em}}pos$ 小于等于区间起始位置，则说明出现了不重叠区间，令不重叠区间数 $count$ 加 $1$，$end\underline{\hspace{0.5em}}pos$ 更新为新区间的结束位置。
+   1. 如果 $end\_pos \le intervals[i][0]$，即 $end\_pos$ 小于等于区间起始位置，则说明出现了不重叠区间，令不重叠区间数 $count$ 加 $1$，$end\_pos$ 更新为新区间的结束位置。
 3. 最终返回「总区间个数 - 不重叠区间的最多个数」即 $len(intervals) - count$ 作为答案。
 
 ##### 思路 1：代码

@@ -94,11 +94,11 @@ class Solution:
 
 现在问题就转变了如何快速获取在值域区间 $[left, right]$ 中，有多少个 $arr[i]$。
 
-我们可以利用前缀和数组，先计算出 $[0, 1000]$ 范围中，满足 $arr[i] < num$ 的元素个数，即为 $prefix\underline{\hspace{0.5em}}cnts[num]$。
+我们可以利用前缀和数组，先计算出 $[0, 1000]$ 范围中，满足 $arr[i] < num$ 的元素个数，即为 $prefix\_cnts[num]$。
 
-然后对于区间 $[left, right]$，通过 $prefix\underline{\hspace{0.5em}}cnts[right] - prefix\underline{\hspace{0.5em}}cnts[left - 1]$ 即可快速求解出区间 $[left, right]$ 内 $arr[i]$ 的个数。
+然后对于区间 $[left, right]$，通过 $prefix\_cnts[right] - prefix\_cnts[left - 1]$ 即可快速求解出区间 $[left, right]$ 内 $arr[i]$ 的个数。
 
-因为 $i < j < k$，所以我们可以在每次 $j$ 向右移动一位的时候，更新 $arr[j]$ 对应的前缀和数组，保证枚举到 $j$ 时，$prefix\underline{\hspace{0.5em}}cnts$ 存储对应元素值的个数足够正确。
+因为 $i < j < k$，所以我们可以在每次 $j$ 向右移动一位的时候，更新 $arr[j]$ 对应的前缀和数组，保证枚举到 $j$ 时，$prefix\_cnts$ 存储对应元素值的个数足够正确。
 
 ### 思路 2：代码
 

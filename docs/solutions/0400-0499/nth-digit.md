@@ -53,7 +53,7 @@
 1. 我们可以先找到第 $n$ 位所在整数 $number$ 所对应的位数 $digit$。
 2. 同时找到该位数 $digit$ 的起始整数 $start$。
 3. 再计算出 $n$ 所在整数 $number$。$number$ 等于从起始数字 $start$ 开始的第 $\lfloor \frac{n - 1}{digit} \rfloor$ 个数字。即 `number = start + (n - 1) // digit`。
-4. 然后确定 $n$ 对应的是数字 $number$ 中的哪一位。即 $digit\underline{\hspace{0.5em}}idx = (n - 1) \mod digit$。
+4. 然后确定 $n$ 对应的是数字 $number$ 中的哪一位。即 $digit\_idx = (n - 1) \mod digit$。
 5. 最后返回结果。
 
 ### 思路 1：代码
@@ -90,7 +90,7 @@ class Solution:
 
 $n$ 的最大值为 $2^{31} - 1$，约为 $2 \times 10^9$。而 $9$ 位数字有 $9 \times 10^8$ 个，共 $9 \times 9 \times 10^8 = 8.1 \times 10^9 > 2 \times 10 ^ 9$，所以第 $n$ 位所在整数的位数 $digit$ 最多为 $9$ 位，最小为 $1$ 位。即 $digit$ 的取值范围为 $[1, 9]$。
 
-我们使用二分查找算法得到 $digit$ 之后，还可以计算出不超过 $digit - 1$ 的整数的所有位数和 $pre\underline{\hspace{0.5em}}digits = totalDigits(digit - 1)$，则第 $n$ 位数字所在整数在所有 $digit$ 位数中的下标是 $idx = n - pre\underline{\hspace{0.5em}}digits - 1$。
+我们使用二分查找算法得到 $digit$ 之后，还可以计算出不超过 $digit - 1$ 的整数的所有位数和 $pre\_digits = totalDigits(digit - 1)$，则第 $n$ 位数字所在整数在所有 $digit$ 位数中的下标是 $idx = n - pre\_digits - 1$。
 
 得到下标 $idx$ 后，可以计算出 $n$ 所在整数 $number$。$number$ 等于从起始数字 $10^{digit - 1}$ 开始的第 $\lfloor \frac{idx}{digit} \rfloor$ 个数字。即 `number = 10 ** (digit - 1) + idx // digit`。
 

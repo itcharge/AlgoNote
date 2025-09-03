@@ -47,17 +47,17 @@
 
 可以用固定长度的滑动窗口来做。
 
-由于只能从开头或末尾位置拿 $k$ 张牌，则最后剩下的肯定是连续的 $len(cardPoints) - k$ 张牌。要求求出 $k$ 张牌可以获得的最大收益，我们可以反向先求出连续 $len(cardPoints) - k$ 张牌的最小点数。则答案为 $sum(cardPoints) - min\underline{\hspace{0.5em}}sum$。维护一个固定长度为 $len(cardPoints) - k$ 的滑动窗口，求最小和。具体做法如下：
+由于只能从开头或末尾位置拿 $k$ 张牌，则最后剩下的肯定是连续的 $len(cardPoints) - k$ 张牌。要求求出 $k$ 张牌可以获得的最大收益，我们可以反向先求出连续 $len(cardPoints) - k$ 张牌的最小点数。则答案为 $sum(cardPoints) - min\_sum$。维护一个固定长度为 $len(cardPoints) - k$ 的滑动窗口，求最小和。具体做法如下：
 
-1. $window\underline{\hspace{0.5em}}sum$ 用来维护窗口内的元素和，初始值为 $0$。$min\underline{\hspace{0.5em}}sum$ 用来维护滑动窗口元素的最小和。初始值为 $sum(cardPoints)$。滑动窗口的长度为 $window\underline{\hspace{0.5em}}size$，值为 $len(cardPoints) - k$。
+1. $window\_sum$ 用来维护窗口内的元素和，初始值为 $0$。$min\_sum$ 用来维护滑动窗口元素的最小和。初始值为 $sum(cardPoints)$。滑动窗口的长度为 $window\_size$，值为 $len(cardPoints) - k$。
 2. 使用双指针 $left$、$right$。$left$ 、$right$ 都指向序列的第一个元素，即：`left = 0`，`right = 0`。
-3. 向右移动 $right$，先将 $window\underline{\hspace{0.5em}}size$ 个元素填入窗口中。
-4. 当窗口元素个数为 $window\underline{\hspace{0.5em}}size$ 时，即：$right - left + 1 \ge window\underline{\hspace{0.5em}}size$ 时，计算窗口内的元素和，并维护子数组最小和 $min\underline{\hspace{0.5em}}sum$。
+3. 向右移动 $right$，先将 $window\_size$ 个元素填入窗口中。
+4. 当窗口元素个数为 $window\_size$ 时，即：$right - left + 1 \ge window\_size$ 时，计算窗口内的元素和，并维护子数组最小和 $min\_sum$。
 5. 然后向右移动 $left$，从而缩小窗口长度，即 `left += 1`，使得窗口大小始终保持为 $k$。
 6. 重复 4 ~ 5 步，直到 $right$ 到达数组末尾。
-7. 最后输出 $sum(cardPoints) - min\underline{\hspace{0.5em}}sum$ 即为答案。
+7. 最后输出 $sum(cardPoints) - min\_sum$ 即为答案。
 
-注意：如果 $window\underline{\hspace{0.5em}}size$ 为 $0$ 时需要特殊判断，此时答案为数组和 $sum(cardPoints)$。
+注意：如果 $window\_size$ 为 $0$ 时需要特殊判断，此时答案为数组和 $sum(cardPoints)$。
 
 ### 思路 1：代码
 

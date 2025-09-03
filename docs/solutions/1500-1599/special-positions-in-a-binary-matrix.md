@@ -48,9 +48,9 @@
 ### 思路 1：模拟
 
 1. 按照行、列遍历二位数组 $mat$。
-2. 使用数组 $row\underline{\hspace{0.5em}}cnts$、$col\underline{\hspace{0.5em}}cnts$ 分别记录每行和每列所含 $1$ 的个数。
+2. 使用数组 $row\_cnts$、$col\_cnts$ 分别记录每行和每列所含 $1$ 的个数。
 3. 再次按照行、列遍历二维数组 $mat$。
-4. 统计满足 $mat[row][col] == 1$ 并且 $row\underline{\hspace{0.5em}}cnts[row] == col\underline{\hspace{0.5em}}cnts[col] == 1$ 的位置个数。 
+4. 统计满足 $mat[row][col] == 1$ 并且 $row\_cnts[row] == col\_cnts[col] == 1$ 的位置个数。 
 5. 返回答案。
 
 ### 思路 1：代码

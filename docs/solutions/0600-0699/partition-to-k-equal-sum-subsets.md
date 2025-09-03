@@ -62,10 +62,10 @@
 
 1. 当数组元素选择情况为 $state$ 时可行，即 $dp[state] == True$；
 2. 第 $i$ 位数字没有被使用；
-3. 加上第 $i$ 位元素后的状态为 $next\underline{\hspace{0.5em}}state$；
+3. 加上第 $i$ 位元素后的状态为 $next\_state$；
 4. 加上第 $i$ 位元素后没有超出目标和。
 
-则：$dp[next\underline{\hspace{0.5em}}state] = True$。
+则：$dp[next\_state] = True$。
 
 ###### 4. 初始条件
 

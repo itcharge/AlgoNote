@@ -43,14 +43,14 @@
 
 将 $x$ 减到 $0$ 的最小操作数可以转换为求和等于 $sum(nums) - x$ 的最长连续子数组长度。我们可以维护一个区间和为 $sum(nums) - x$ 的滑动窗口，求出最长的窗口长度。具体做法如下：
 
-令 `target = sum(nums) - x`，使用 $max\underline{\hspace{0.5em}}len$ 维护和等于 $target$ 的最长连续子数组长度。然后用滑动窗口 $window\underline{\hspace{0.5em}}sum$ 来记录连续子数组的和，设定两个指针：$left$、$right$，分别指向滑动窗口的左右边界，保证窗口中的和刚好等于 $target$。
+令 `target = sum(nums) - x`，使用 $max\_len$ 维护和等于 $target$ 的最长连续子数组长度。然后用滑动窗口 $window\_sum$ 来记录连续子数组的和，设定两个指针：$left$、$right$，分别指向滑动窗口的左右边界，保证窗口中的和刚好等于 $target$。
 
 - 一开始，$left$、$right$ 都指向 $0$。
-- 向右移动 $right$，将最右侧元素加入当前窗口和 $window\underline{\hspace{0.5em}}sum$ 中。
-- 如果 $window\underline{\hspace{0.5em}}sum > target$，则不断右移 $left$，缩小滑动窗口长度，并更新窗口和的最小值，直到 $window\underline{\hspace{0.5em}}sum \le target$。
-- 如果 $window\underline{\hspace{0.5em}}sum == target$，则更新最长连续子数组长度。
+- 向右移动 $right$，将最右侧元素加入当前窗口和 $window\_sum$ 中。
+- 如果 $window\_sum > target$，则不断右移 $left$，缩小滑动窗口长度，并更新窗口和的最小值，直到 $window\_sum \le target$。
+- 如果 $window\_sum == target$，则更新最长连续子数组长度。
 - 然后继续右移 $right$，直到 $right \ge len(nums)$ 结束。
-- 输出 $len(nums) - max\underline{\hspace{0.5em}}len$ 作为答案。
+- 输出 $len(nums) - max\_len$ 作为答案。
 - 注意判断题目中的特殊情况。
 
 ### 思路 1：代码

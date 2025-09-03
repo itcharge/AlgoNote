@@ -46,8 +46,8 @@
 ### 思路 1：二叉树的层序遍历
 
 1. 利用广度优先搜索，在二叉树的层序遍历的基础上，统计每一层节点和，并存入数组 $levels$ 中。
-2. 遍历 $levels$ 数组，从 $levels$ 数组中找到最大层和 $max\underline{\hspace{0.5em}}sum$。
-3. 再次遍历 $levels$ 数组，找出等于最大层和 $max\underline{\hspace{0.5em}}sum$ 的那一层，并返回该层序号。
+2. 遍历 $levels$ 数组，从 $levels$ 数组中找到最大层和 $max\_sum$。
+3. 再次遍历 $levels$ 数组，找出等于最大层和 $max\_sum$ 的那一层，并返回该层序号。
 
 ### 思路 1：代码
 

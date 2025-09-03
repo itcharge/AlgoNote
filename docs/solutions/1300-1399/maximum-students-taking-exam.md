@@ -70,15 +70,15 @@
 
 ###### 3. 状态转移方程
 
-因为学生可以看到左侧、右侧、左上方、右上方这四个方向上紧邻他的学生答卷，所以对于当前排的某个座位来说，其左侧、右侧、左上方、右上方都不应有人坐。我们可以根据当前排的座位选取状态 $cur\underline{\hspace{0.5em}}state$，并通过枚举的方式，找出符合要求的上一排座位选取状态 $pre\underline{\hspace{0.5em}}state$，并计算出当前排座位选择个数，即 $f(cur\underline{\hspace{0.5em}}state)$，则状态转移方程为：
+因为学生可以看到左侧、右侧、左上方、右上方这四个方向上紧邻他的学生答卷，所以对于当前排的某个座位来说，其左侧、右侧、左上方、右上方都不应有人坐。我们可以根据当前排的座位选取状态 $cur\_state$，并通过枚举的方式，找出符合要求的上一排座位选取状态 $pre\_state$，并计算出当前排座位选择个数，即 $f(cur\_state)$，则状态转移方程为：
 
- $dp[i][state] = \max \lbrace dp[i - 1][pre\underline{\hspace{0.5em}}state] \rbrace  + f(state)$ 
+ $dp[i][state] = \max \lbrace dp[i - 1][pre\_state] \rbrace  + f(state)$ 
 
-因为所给座位中还有坏座位（不可用）的情况，我们可以使用一个 $8$ 位的二进制数 $bad\underline{\hspace{0.5em}}seat$ 来表示当前排的坏座位情况，如果 $cur\underline{\hspace{0.5em}}state  \text{ \& } bad\underline{\hspace{0.5em}}seat == 1$，则说明当前状态下，选择了坏椅子，则可直接跳过这种状态。
+因为所给座位中还有坏座位（不可用）的情况，我们可以使用一个 $8$ 位的二进制数 $bad\_seat$ 来表示当前排的坏座位情况，如果 $cur\_state  \text{ \& } bad\_seat == 1$，则说明当前状态下，选择了坏椅子，则可直接跳过这种状态。
 
-我们还可以通过 $cur\underline{\hspace{0.5em}}state  \text{ \& }  (cur\underline{\hspace{0.5em}}state \text{ <}\text{< } 1)$ 和 $cur\underline{\hspace{0.5em}}state \& (cur\underline{\hspace{0.5em}}state \text{ >}\text{> } 1)$ 来判断当前排选择状态下，左右相邻座位上是否有人，如果有人，则可直接跳过这种状态。
+我们还可以通过 $cur\_state  \text{ \& }  (cur\_state \text{ <}\text{< } 1)$ 和 $cur\_state \& (cur\_state \text{ >}\text{> } 1)$ 来判断当前排选择状态下，左右相邻座位上是否有人，如果有人，则可直接跳过这种状态。
 
-同理，我们还可以通过 $cur\underline{\hspace{0.5em}}state  \text{ \& } (pre\underline{\hspace{0.5em}}state \text{ <}\text{< } 1)$ 和 $cur\underline{\hspace{0.5em}}state \text{ \& } (pre\underline{\hspace{0.5em}}state \text{ >}\text{> } 1)$ 来判断当前排选择状态下，上一行左上、右上相邻座位上是否有人，如果有人，则可直接跳过这种状态。
+同理，我们还可以通过 $cur\_state  \text{ \& } (pre\_state \text{ <}\text{< } 1)$ 和 $cur\_state \text{ \& } (pre\_state \text{ >}\text{> } 1)$ 来判断当前排选择状态下，上一行左上、右上相邻座位上是否有人，如果有人，则可直接跳过这种状态。
 
 ###### 4. 初始条件
 

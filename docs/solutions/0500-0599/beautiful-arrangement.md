@@ -173,11 +173,11 @@ class Solution:
 
 ###### 3. 状态转移方程
 
-对于状态 $state$，先统计出 $state$ 中选择的数字个数（即统计二进制中 $1$ 的个数）$one\underline{\hspace{0.5em}}num$。
+对于状态 $state$，先统计出 $state$ 中选择的数字个数（即统计二进制中 $1$ 的个数）$one\_num$。
 
-则 $dp[state]$ 表示选择了前 $one\underline{\hspace{0.5em}}num$ 个数字，且选择情况为 $state$ 时的方案数。
+则 $dp[state]$ 表示选择了前 $one\_num$ 个数字，且选择情况为 $state$ 时的方案数。
 
-$dp[state]$ 的状态肯定是由前 $one\underline{\hspace{0.5em}}num - 1$ 个数字，且 $state$ 第 $k$ 位为 $0$ 的状态而来对应状态转移而来，即：$dp[state \oplus (1 << (k - 1))]$。
+$dp[state]$ 的状态肯定是由前 $one\_num - 1$ 个数字，且 $state$ 第 $k$ 位为 $0$ 的状态而来对应状态转移而来，即：$dp[state \oplus (1 << (k - 1))]$。
 
 所以状态转移方程为：$dp[state] = \sum_{k = 1}^n dp[state \oplus (1 << (k - 1))]$
 

@@ -89,14 +89,14 @@ class Solution:
 
 ### 思路 2：滑动窗口（不定长度）
 
-1. 设定两个指针：$left$、$right$，分别指向滑动窗口的左右边界，保证窗口内为连续递增序列。使用 $window\underline{\hspace{0.5em}}len$ 存储当前窗口大小，使用 $max\underline{\hspace{0.5em}}len$ 维护最大窗口长度。
+1. 设定两个指针：$left$、$right$，分别指向滑动窗口的左右边界，保证窗口内为连续递增序列。使用 $window\_len$ 存储当前窗口大小，使用 $max\_len$ 维护最大窗口长度。
 2. 一开始，$left$、$right$ 都指向 $0$。
 3. 将最右侧元素 $nums[right]$ 加入当前连续递增序列中，即当前窗口长度加 $1$（`window_len += 1`）。
 4. 判断当前元素 $nums[right]$ 是否满足连续递增序列。
 5. 如果 $right > 0$ 并且 $nums[right - 1] \ge nums[right]$ ，说明不满足连续递增序列，则将 $left$ 移动到窗口最右侧，重置当前窗口长度为 $1$（`window_len = 1`）。
 6. 记录当前连续递增序列的长度，并更新最长连续递增序列的长度。
 7. 继续右移 $right$，直到 $right \ge len(nums)$ 结束。
-8. 输出最长连续递增序列的长度 $max\underline{\hspace{0.5em}}len$。
+8. 输出最长连续递增序列的长度 $max\_len$。
 
 ### 思路 2：代码
 

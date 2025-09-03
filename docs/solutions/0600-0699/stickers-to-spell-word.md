@@ -51,13 +51,13 @@
 
 然后我们从初始状态 $state = 0$（没有选中 $target$ 中的任何字母）开始进行广度优先搜索遍历。
 
-在广度优先搜索过程中，对于当前状态 $cur\underline{\hspace{0.5em}}state$，我们遍历所有贴纸的所有字母，如果当前字母可以拼到 $target$ 中的某个位置上，则更新状态 $next\underline{\hspace{0.5em}}state$ 为「选中 $target$ 中对应位置上的字母」。
+在广度优先搜索过程中，对于当前状态 $cur\_state$，我们遍历所有贴纸的所有字母，如果当前字母可以拼到 $target$ 中的某个位置上，则更新状态 $next\_state$ 为「选中 $target$ 中对应位置上的字母」。
 
 为了得到最小最小贴纸数量，我们可以使用动态规划的方法，定义 $dp[state]$ 表示为到达 $state$ 状态需要的最小贴纸数量。
 
-那么在广度优先搜索中，在更新状态时，同时进行状态转移，即 $dp[next\underline{\hspace{0.5em}}state] = dp[cur\underline{\hspace{0.5em}}state] + 1$。
+那么在广度优先搜索中，在更新状态时，同时进行状态转移，即 $dp[next\_state] = dp[cur\_state] + 1$。
 
-> 注意：在进行状态转移时，要跳过 $dp[next\underline{\hspace{0.5em}}state]$ 已经有值的情况。
+> 注意：在进行状态转移时，要跳过 $dp[next\_state]$ 已经有值的情况。
 
 这样在到达状态 $1 \text{ <}\text{< } len(target) - 1$ 时，所得到的 $dp[1 \text{ <}\text{< } len(target) - 1]$ 即为答案。
 

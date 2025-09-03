@@ -66,22 +66,22 @@
 
 对此我们可以使用深度优先搜索递归遍历二叉树，并在递归遍历的同时，维护一个最大开销变量 $ans$。
 
-然后定义函数 ` def dfs(self, u, father):` 计算以节点 $u$ 为根节点的子树中，带端点的最大路径和 $max\underline{\hspace{0.5em}}s1$，以及去掉端点的最大路径和 $max\underline{\hspace{0.5em}}s2$，其中 $father$ 表示节点 $u$ 的根节点，用于遍历邻接节点的过程中过滤父节点，避免重复遍历。
+然后定义函数 ` def dfs(self, u, father):` 计算以节点 $u$ 为根节点的子树中，带端点的最大路径和 $max\_s1$，以及去掉端点的最大路径和 $max\_s2$，其中 $father$ 表示节点 $u$ 的根节点，用于遍历邻接节点的过程中过滤父节点，避免重复遍历。
 
-初始化带端点的最大路径和 $max\underline{\hspace{0.5em}}s1$ 为 $price[u]$，表示当前只有一个节点，初始化去掉端点的最大路径和 $max\underline{\hspace{0.5em}}s2$ 为 $0$，表示当前没有节点。
+初始化带端点的最大路径和 $max\_s1$ 为 $price[u]$，表示当前只有一个节点，初始化去掉端点的最大路径和 $max\_s2$ 为 $0$，表示当前没有节点。
 
 然后在遍历节点 $u$ 的相邻节点 $v$ 时，递归调用 $dfs(v, u)$，获取以节点 $v$ 为根节点的子树中，带端点的最大路径和 $s1$，以及去掉端点的最大路径和 $s2$。此时最大开销变量 $self.ans$ 有两种情况：
 
-1. $u$ 的子树中带端点的最大路径和，加上 $v$ 的子树中不带端点的最大路径和，即：$max\underline{\hspace{0.5em}}s1 + s2$。
-2. $u$ 的子树中去掉端点的最大路径和，加上 $v$ 的子树中带端点的最大路径和，即：$max\underline{\hspace{0.5em}}s2 + s1$。
+1. $u$ 的子树中带端点的最大路径和，加上 $v$ 的子树中不带端点的最大路径和，即：$max\_s1 + s2$。
+2. $u$ 的子树中去掉端点的最大路径和，加上 $v$ 的子树中带端点的最大路径和，即：$max\_s2 + s1$。
 
-此时我们更新最大开销变量 $self.ans$，即：$self.ans = max(self.ans, \quad max\underline{\hspace{0.5em}}s1 + s2, \quad  max\underline{\hspace{0.5em}}s2 + s1)$。
+此时我们更新最大开销变量 $self.ans$，即：$self.ans = max(self.ans, \quad max\_s1 + s2, \quad  max\_s2 + s1)$。
 
-然后更新 $u$ 的子树中带端点的最大路径和 $max\underline{\hspace{0.5em}}s1$，即：$max\underline{\hspace{0.5em}}s1= max(max\underline{\hspace{0.5em}}s1, \quad s1 + price[u])$。
+然后更新 $u$ 的子树中带端点的最大路径和 $max\_s1$，即：$max\_s1= max(max\_s1, \quad s1 + price[u])$。
 
-再更新 $u$ 的子树中去掉端点的最大路径和 $max\underline{\hspace{0.5em}}s2$，即：$max\underline{\hspace{0.5em}}s2 = max(max\underline{\hspace{0.5em}}s2, \quad s2 + price[u])$。
+再更新 $u$ 的子树中去掉端点的最大路径和 $max\_s2$，即：$max\_s2 = max(max\_s2, \quad s2 + price[u])$。
 
-最后返回带端点 $u$ 的最大路径和 $max\underline{\hspace{0.5em}}s1$，以及去掉端点 $u$ 的最大路径和 $。
+最后返回带端点 $u$ 的最大路径和 $max\_s1$，以及去掉端点 $u$ 的最大路径和 $。
 
 最终，最大开销变量 $self.ans$ 即为答案。
 

@@ -45,8 +45,8 @@
 用滑动窗口来记录连续子数组的和，设定两个指针：$left$、$right$，分别指向滑动窗口的左右边界，保证窗口中的和刚好大于等于 $target$。
 
 1. 一开始，$left$、$right$ 都指向 $0$。
-2. 向右移动 $right$，将最右侧元素加入当前窗口和 $window\underline{\hspace{0.5em}}sum$ 中。
-3. 如果 $window\underline{\hspace{0.5em}}sum \ge target$，则不断右移 $left$，缩小滑动窗口长度，并更新窗口和的最小值，直到 $window\underline{\hspace{0.5em}}sum < target$。
+2. 向右移动 $right$，将最右侧元素加入当前窗口和 $window\_sum$ 中。
+3. 如果 $window\_sum \ge target$，则不断右移 $left$，缩小滑动窗口长度，并更新窗口和的最小值，直到 $window\_sum < target$。
 4. 然后继续右移 $right$，直到 $right \ge len(nums)$ 结束。
 5. 输出窗口和的最小值作为答案。
 

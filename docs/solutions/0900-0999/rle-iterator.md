@@ -56,12 +56,12 @@ rLEIterator.next(2); // 耗去序列的 2 个项，返回 -1。 这是由于第�
 1. 初始化时：
    1. 保存数组 $encoding$ 作为成员变量。
    2. 保存当前位置 $index$，表示当前迭代器指向元素 $encoding[index + 1]$。初始化赋值为 $0$。
-   3. 保存当前指向元素 $encoding[index + 1]$ 已经被删除的元素个数 $d\underline{\hspace{0.5em}}cnt$。初始化赋值为 $0$。
+   3. 保存当前指向元素 $encoding[index + 1]$ 已经被删除的元素个数 $d\_cnt$。初始化赋值为 $0$。
 2. 调用 `next(n)` 时：
    1. 对于当前元素，先判断当前位置是否超出 $encoding$ 范围，超过则直接返回 $-1$。
-   2. 如果未超过，再判断当前元素剩余个数 $encoding[index] - d\underline{\hspace{0.5em}}cnt$ 是否小于 $n$ 个。
+   2. 如果未超过，再判断当前元素剩余个数 $encoding[index] - d\_cnt$ 是否小于 $n$ 个。
       1. 如果小于 $n$ 个，则删除当前元素剩余所有个数，并指向下一位置继续删除剩余元素。
-      2. 如果等于大于等于 $n$ 个，则令当前指向元素 $encoding[index + 1]$ 已经被删除的元素个数 $d\underline{\hspace{0.5em}}cnt$ 加上 $n$。
+      2. 如果等于大于等于 $n$ 个，则令当前指向元素 $encoding[index + 1]$ 已经被删除的元素个数 $d\_cnt$ 加上 $n$。
 
 ### 思路 1：代码
 

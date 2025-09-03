@@ -69,11 +69,11 @@
 
 对于当前状态 $state$，肯定是从比 $state$ 少选一个老师被分配的状态中递推而来。我们可以枚举少选一个元素的状态，找到可以得到的最大兼容性评分和，赋值给 $dp[state]$。
 
-即状态转移方程为：$dp[state] = max(dp[state], \quad dp[state \oplus (1 \text{ <}\text{< } i)] + score[i][one\underline{\hspace{0.5em}}cnt - 1])$，其中：
+即状态转移方程为：$dp[state] = max(dp[state], \quad dp[state \oplus (1 \text{ <}\text{< } i)] + score[i][one\_cnt - 1])$，其中：
 
 1. $state$ 第 $i$ 位一定为 $1$。
 2. $state \oplus (1 \text{ <}\text{< } i)$ 为比 $state$ 少选一个元素的状态。
-3. $scores[i][one\underline{\hspace{0.5em}}cnt - 1]$ 为第 $i$ 名老师分配到第 $one\underline{\hspace{0.5em}}cnt - 1$ 名学生的兼容性评分。
+3. $scores[i][one\_cnt - 1]$ 为第 $i$ 名老师分配到第 $one\_cnt - 1$ 名学生的兼容性评分。
 
 关于每位老师与每位同学之间的兼容性评分，我们可以事先通过一个 $m \times m \times n$ 的三重循环计算得出，并且存入到 $m \times m$ 大小的二维矩阵 $scores$ 中。
 

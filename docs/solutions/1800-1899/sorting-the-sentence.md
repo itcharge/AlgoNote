@@ -46,8 +46,8 @@
 
 ### 思路 1：模拟
 
-1. 将句子 $s$ 按照空格分隔成数组 $s\underline{\hspace{0.5em}}list$。
-2. 遍历数组 $s\underline{\hspace{0.5em}}list$ 中的单词：
+1. 将句子 $s$ 按照空格分隔成数组 $s\_list$。
+2. 遍历数组 $s\_list$ 中的单词：
    1. 从单词中分割出对应单词索引 $idx$ 和对应单词 $word$。
    2. 将单词 $word$ 存入答案数组 $res$ 对应位置 $idx - 1$ 上，即：$res[int(idx) - 1] = word$。
 3. 将答案数组用空格拼接成句子字符串，并返回。

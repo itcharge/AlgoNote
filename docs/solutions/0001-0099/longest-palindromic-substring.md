@@ -59,7 +59,7 @@
 
 ###### 5. 最终结果
 
-根据我们之前定义的状态，$dp[i][j]$ 表示为：字符串 $s$ 在区间 $[i, j]$ 范围内是否是一个回文串。当判断完 $s[i: j]$ 是否为回文串时，同时判断并更新最长回文子串的起始位置 $max\underline{\hspace{0.5em}}start$ 和最大长度 $max\underline{\hspace{0.5em}}len$。则最终结果为 $s[max\underline{\hspace{0.5em}}start, max\underline{\hspace{0.5em}}start + max\underline{\hspace{0.5em}}len]$。
+根据我们之前定义的状态，$dp[i][j]$ 表示为：字符串 $s$ 在区间 $[i, j]$ 范围内是否是一个回文串。当判断完 $s[i: j]$ 是否为回文串时，同时判断并更新最长回文子串的起始位置 $max\_start$ 和最大长度 $max\_len$。则最终结果为 $s[max\_start, max\_start + max\_len]$。
 
 ### 思路 1：代码
 

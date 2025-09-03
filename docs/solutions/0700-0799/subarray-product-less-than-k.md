@@ -40,10 +40,10 @@
 
 ### 思路 1：滑动窗口（不定长度）
 
-1. 设定两个指针：$left$、$right$，分别指向滑动窗口的左右边界，保证窗口内所有数的乘积 $window\underline{\hspace{0.5em}}product$ 都小于 $k$。使用 $window\underline{\hspace{0.5em}}product$ 记录窗口中的乘积值，使用 $count$ 记录符合要求的子数组个数。
+1. 设定两个指针：$left$、$right$，分别指向滑动窗口的左右边界，保证窗口内所有数的乘积 $window\_product$ 都小于 $k$。使用 $window\_product$ 记录窗口中的乘积值，使用 $count$ 记录符合要求的子数组个数。
 2. 一开始，$left$、$right$ 都指向 $0$。
-3. 向右移动 $right$，将最右侧元素加入当前子数组乘积 $window\underline{\hspace{0.5em}}product$ 中。
-4. 如果 $window\underline{\hspace{0.5em}}product \ge k$，则不断右移 $left$，缩小滑动窗口长度，并更新当前乘积值 $window\underline{\hspace{0.5em}}product$  直到 $window\underline{\hspace{0.5em}}product < k$。
+3. 向右移动 $right$，将最右侧元素加入当前子数组乘积 $window\_product$ 中。
+4. 如果 $window\_product \ge k$，则不断右移 $left$，缩小滑动窗口长度，并更新当前乘积值 $window\_product$  直到 $window\_product < k$。
 5. 记录累积答案个数加 $1$，继续右移 $right$，直到 $right \ge len(nums)$ 结束。
 6. 输出累积答案个数。
 

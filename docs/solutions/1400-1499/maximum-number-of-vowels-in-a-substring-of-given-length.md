@@ -44,9 +44,9 @@
 
 固定长度的滑动窗口题目。维护一个长度为 $k$ 的窗口，并统计滑动窗口中最大元音字母数。具体做法如下：
 
-1. $ans$ 用来维护长度为 $k$ 的单个字符串中最大元音字母数。$window\underline{\hspace{0.5em}}count$ 用来维护窗口中元音字母数。集合 $vowel\underline{\hspace{0.5em}}set$ 用来存储元音字母。
+1. $ans$ 用来维护长度为 $k$ 的单个字符串中最大元音字母数。$window\_count$ 用来维护窗口中元音字母数。集合 $vowel\_set$ 用来存储元音字母。
 2. $left$ 、$right$ 都指向字符串 $s$ 的第一个元素，即：$left = 0$，$right = 0$。
-3. 判断 $s[right]$ 是否在元音字母集合中，如果在则用 $window\underline{\hspace{0.5em}}count$ 进行计数。
+3. 判断 $s[right]$ 是否在元音字母集合中，如果在则用 $window\_count$ 进行计数。
 4. 当窗口元素个数为 $k$ 时，即：$right - left + 1 \ge k$ 时，更新 $ans$。然后判断 $s[left]$ 是否为元音字母，如果是则 `window_count -= 1`，并向右移动 $left$，从而缩小窗口长度，即 `left += 1`，使得窗口大小始终保持为 $k$。
 5. 重复 $3 \sim 4$ 步，直到 $right$ 到达数组末尾。
 6. 最后输出 $ans$。

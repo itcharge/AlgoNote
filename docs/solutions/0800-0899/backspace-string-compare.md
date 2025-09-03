@@ -75,19 +75,19 @@ class Solution:
 
 由于 `#` 会消除左侧字符，而不会影响右侧字符，所以我们选择从字符串尾端遍历 $s$、$t$ 字符串。具体做法如下：
 
-- 使用分离双指针 $left\underline{\hspace{0.5em}}1$、$left\underline{\hspace{0.5em}}2$。$left\underline{\hspace{0.5em}}1$ 指向字符串 $s$ 末尾，$left\underline{\hspace{0.5em}}2$ 指向字符串 $t$ 末尾。使用 $sign\underline{\hspace{0.5em}}1$、$sign\underline{\hspace{0.5em}}2$ 标记字符串 $s$、$t$ 中当前退格字符个数。
+- 使用分离双指针 $left\_1$、$left\_2$。$left\_1$ 指向字符串 $s$ 末尾，$left\_2$ 指向字符串 $t$ 末尾。使用 $sign\_1$、$sign\_2$ 标记字符串 $s$、$t$ 中当前退格字符个数。
 - 从后到前遍历字符串 $s$、$t$。
   - 先来循环处理字符串 $s$ 尾端 `#` 的影响，具体如下：
-    - 如果当前字符是 `#`，则更新 $s$ 当前退格字符个数，即 `sign_1 += 1`。同时将 $left\underline{\hspace{0.5em}}1$ 左移。 
-    - 如果 $s$ 当前退格字符个数大于 $0$，则退格数减一，即 `sign_1 -= 1`。同时将 $left\underline{\hspace{0.5em}}1$ 左移。 
+    - 如果当前字符是 `#`，则更新 $s$ 当前退格字符个数，即 `sign_1 += 1`。同时将 $left\_1$ 左移。 
+    - 如果 $s$ 当前退格字符个数大于 $0$，则退格数减一，即 `sign_1 -= 1`。同时将 $left\_1$ 左移。 
     - 如果 $s$ 当前为普通字符，则跳出循环。
   - 同理再来处理字符串 $t$ 尾端 `#` 的影响，具体如下：
-    - 如果当前字符是 `#`，则更新 $t$ 当前退格字符个数，即 `sign_2 += 1`。同时将 $left\underline{\hspace{0.5em}}2$ 左移。 
-    - 如果 $t$ 当前退格字符个数大于 $0$，则退格数减一，即 `sign_2 -= 1`。同时将 $left\underline{\hspace{0.5em}}2$ 左移。 
+    - 如果当前字符是 `#`，则更新 $t$ 当前退格字符个数，即 `sign_2 += 1`。同时将 $left\_2$ 左移。 
+    - 如果 $t$ 当前退格字符个数大于 $0$，则退格数减一，即 `sign_2 -= 1`。同时将 $left\_2$ 左移。 
     - 如果 $t$ 当前为普通字符，则跳出循环。
   - 处理完，如果两个字符串为空，则说明匹配，直接返回 $True$。
   - 再先排除长度不匹配的情况，直接返回 $False$。
-  - 最后判断 $s[left\underline{\hspace{0.5em}}1]$ 是否等于 $s[left\underline{\hspace{0.5em}}2]$。不等于则直接返回 $False$，等于则令 $left\underline{\hspace{0.5em}}1$、$left\underline{\hspace{0.5em}}2$ 左移，继续遍历。
+  - 最后判断 $s[left\_1]$ 是否等于 $s[left\_2]$。不等于则直接返回 $False$，等于则令 $left\_1$、$left\_2$ 左移，继续遍历。
 - 遍历完没有出现不匹配的情况，则返回 $True$。
 
 ### 思路 2：代码

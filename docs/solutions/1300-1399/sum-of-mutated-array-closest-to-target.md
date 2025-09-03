@@ -54,9 +54,9 @@
 
 整个算法步骤如下：
 
-- 先对数组排序，并计算数组的前缀和 $pre\underline{\hspace{0.5em}}sum$。
+- 先对数组排序，并计算数组的前缀和 $pre\_sum$。
 - 通过二分查找在 $[0, arr[-1]]$ 中查找使得转变后数组和刚好大于等于 $target$ 的值 $value$。
-- 计算 $value$ 对应的数组和 $sum\underline{\hspace{0.5em}}1$，以及 $value - 1$ 对应的数组和 $sum\underline{\hspace{0.5em}}2$。并分别计算与 $target$ 的差值 $diff\underline{\hspace{0.5em}}1$、$diff\underline{\hspace{0.5em}}2$。
+- 计算 $value$ 对应的数组和 $sum\_1$，以及 $value - 1$ 对应的数组和 $sum\_2$。并分别计算与 $target$ 的差值 $diff\_1$、$diff\_2$。
 - 输出差值小的那个值。
 
 ### 思路 1：代码

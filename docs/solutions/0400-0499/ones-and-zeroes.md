@@ -60,10 +60,10 @@
 
 填满最多由 $i$ 个 $0$ 和 $j$ 个 $1$ 构成的二维背包的最多物品数为下面两种情况中的最大值：
 
-- 使用之前字符串填满容量为 $i - zero\underline{\hspace{0.5em}}num$、$j - one\underline{\hspace{0.5em}}num$ 的背包的物品数 + 当前字符串价值
+- 使用之前字符串填满容量为 $i - zero\_num$、$j - one\_num$ 的背包的物品数 + 当前字符串价值
 - 选择之前字符串填满容量为 $i$、$j$ 的物品数。
 
-则状态转移方程为：$dp[i][j] = max(dp[i][j], dp[i - zero\underline{\hspace{0.5em}}num][j - one\underline{\hspace{0.5em}}num] + 1)$。
+则状态转移方程为：$dp[i][j] = max(dp[i][j], dp[i - zero\_num][j - one\_num] + 1)$。
 
 ###### 4. 初始条件
 

@@ -45,10 +45,10 @@
 ### 思路 1：前缀和
 
 1. 先遍历一遍数组，求出数组中全部元素和为 $total$。
-2. 再遍历一遍数组，使用变量 $prefix\underline{\hspace{0.5em}}sum$ 为前 $i$ 个元素和。
-3. 当遍历到第 $i$ 个元素时，其数组左侧元素之和为 $prefix\underline{\hspace{0.5em}}sum$，右侧元素和为 $total - prefix\underline{\hspace{0.5em}}sum - nums[i]$。
-   1. 如果左右元素之和相等，即 $prefix\underline{\hspace{0.5em}}sum == total - prefix\underline{\hspace{0.5em}}sum - nums[i]$（$2 \times prefix\underline{\hspace{0.5em}}sum + nums[i] == total$） 时，$i$ 为中间位置。此时返回 $i$。
-   2. 如果不满足，则继续累加当前元素到 $prefix\underline{\hspace{0.5em}}sum$ 中，继续向后遍历。
+2. 再遍历一遍数组，使用变量 $prefix\_sum$ 为前 $i$ 个元素和。
+3. 当遍历到第 $i$ 个元素时，其数组左侧元素之和为 $prefix\_sum$，右侧元素和为 $total - prefix\_sum - nums[i]$。
+   1. 如果左右元素之和相等，即 $prefix\_sum == total - prefix\_sum - nums[i]$（$2 \times prefix\_sum + nums[i] == total$） 时，$i$ 为中间位置。此时返回 $i$。
+   2. 如果不满足，则继续累加当前元素到 $prefix\_sum$ 中，继续向后遍历。
 4. 如果找不到符合要求的中间位置，则返回 $-1$。
 
 ### 思路 1：代码

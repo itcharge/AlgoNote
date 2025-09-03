@@ -50,12 +50,12 @@
 
 求最少交换次数，也就是求滑动窗口中最少的 $0$ 的个数。具体做法如下：
 
-1. 统计 $1$ 的个数，并设置为窗口长度 $window\underline{\hspace{0.5em}}size$。使用 $window\underline{\hspace{0.5em}}count$ 维护窗口中 $0$ 的个数。使用 $ans$ 维护窗口中最少的 $0$ 的个数，也可以叫做最少交换次数。
-2. 如果 $window\underline{\hspace{0.5em}}size$ 为 $0$，则说明不用交换，直接返回 $0$。
+1. 统计 $1$ 的个数，并设置为窗口长度 $window\_size$。使用 $window\_count$ 维护窗口中 $0$ 的个数。使用 $ans$ 维护窗口中最少的 $0$ 的个数，也可以叫做最少交换次数。
+2. 如果 $window\_size$ 为 $0$，则说明不用交换，直接返回 $0$。
 3. 使用两个指针 $left$、$right$。$left$、$right$ 都指向数组的第一个元素，即：`left = 0`，`right = 0`。
 4. 如果 $data[right] == 0$，则更新窗口中 $0$ 的个数，即 `window_count += 1`。然后向右移动 $right$。
-5. 当窗口元素个数为 $window\underline{\hspace{0.5em}}size$ 时，即：$right - left + 1 \ge window\underline{\hspace{0.5em}}size$ 时，更新窗口中最少的 $0$ 的个数。
-6. 然后如果左侧 $data[left] == 0$，则更新窗口中 $0$ 的个数，即 `window_count -= 1`。然后向右移动 $left$，从而缩小窗口长度，即 `left += 1`，使得窗口大小始终保持为 $window\underline{\hspace{0.5em}}size$。
+5. 当窗口元素个数为 $window\_size$ 时，即：$right - left + 1 \ge window\_size$ 时，更新窗口中最少的 $0$ 的个数。
+6. 然后如果左侧 $data[left] == 0$，则更新窗口中 $0$ 的个数，即 `window_count -= 1`。然后向右移动 $left$，从而缩小窗口长度，即 `left += 1`，使得窗口大小始终保持为 $window\_size$。
 7. 重复 4 ~ 6 步，直到 $right$ 到达数组末尾。返回答案 $ans$。
 
 ### 思路 1：代码

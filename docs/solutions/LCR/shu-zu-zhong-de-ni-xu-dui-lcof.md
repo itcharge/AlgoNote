@@ -43,15 +43,15 @@
 
 1. 使用全局变量 $cnt$ 来存储逆序对的个数。然后进行归并排序。
 2. **分割过程**：先递归地将当前序列平均分成两半，直到子序列长度为 $1$。
-   1. 找到序列中心位置 $mid$，从中心位置将序列分成左右两个子序列 $left\underline{\hspace{0.5em}}arr$、$right\underline{\hspace{0.5em}}arr$。
-   2. 对左右两个子序列 $left\underline{\hspace{0.5em}}arr$、$right\underline{\hspace{0.5em}}arr$ 分别进行递归分割。
+   1. 找到序列中心位置 $mid$，从中心位置将序列分成左右两个子序列 $left\_arr$、$right\_arr$。
+   2. 对左右两个子序列 $left\_arr$、$right\_arr$ 分别进行递归分割。
    3. 最终将数组分割为 $n$ 个长度均为 $1$ 的有序子序列。
 3. **归并过程**：从长度为 $1$ 的有序子序列开始，依次进行两两归并，直到合并成一个长度为 $n$ 的有序序列。
    1. 使用数组变量 $arr$ 存放归并后的有序数组。
-   2. 使用两个指针 $left\underline{\hspace{0.5em}}i$、$right\underline{\hspace{0.5em}}i$ 分别指向两个有序子序列 $left\underline{\hspace{0.5em}}arr$、$right\underline{\hspace{0.5em}}arr$ 的开始位置。
+   2. 使用两个指针 $left\_i$、$right\_i$ 分别指向两个有序子序列 $left\_arr$、$right\_arr$ 的开始位置。
    3. 比较两个指针指向的元素：
-      1. 如果 $left\underline{\hspace{0.5em}}arr[left\underline{\hspace{0.5em}}i] \le right\underline{\hspace{0.5em}}arr[right\underline{\hspace{0.5em}}i]$，则将 $left\underline{\hspace{0.5em}}arr[left\underline{\hspace{0.5em}}i]$ 存入到结果数组 $arr$ 中，并将指针移动到下一位置。
-      2. 如果 $left\underline{\hspace{0.5em}}arr[left\underline{\hspace{0.5em}}i] > right\underline{\hspace{0.5em}}arr[right\underline{\hspace{0.5em}}i]$，则 **记录当前左子序列中元素与当前右子序列元素所形成的逆序对的个数，并累加到 $cnt$ 中，即 `self.cnt += len(left_arr) - left_i`**，然后将 $right\underline{\hspace{0.5em}}arr[right\underline{\hspace{0.5em}}i]$ 存入到结果数组 $arr$ 中，并将指针移动到下一位置。
+      1. 如果 $left\_arr[left\_i] \le right\_arr[right\_i]$，则将 $left\_arr[left\_i]$ 存入到结果数组 $arr$ 中，并将指针移动到下一位置。
+      2. 如果 $left\_arr[left\_i] > right\_arr[right\_i]$，则 **记录当前左子序列中元素与当前右子序列元素所形成的逆序对的个数，并累加到 $cnt$ 中，即 `self.cnt += len(left_arr) - left_i`**，然后将 $right\_arr[right\_i]$ 存入到结果数组 $arr$ 中，并将指针移动到下一位置。
    4. 重复步骤 $3$，直到某一指针到达子序列末尾。
    5. 将另一个子序列中的剩余元素存入到结果数组 $arr$ 中。
    6. 返回归并后的有序数组 $arr$。

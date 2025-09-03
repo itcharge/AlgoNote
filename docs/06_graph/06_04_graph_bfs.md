@@ -146,10 +146,10 @@ Solution().bfs(graph, "0")
 
 1. 使用哈希表 $visited$ 来存储原图中被访问过的节点和克隆图中对应节点，键值对为「原图被访问过的节点：克隆图中对应节点」。使用队列 $queue$ 存放节点。
 2. 根据起始节点 $node$，创建一个新的节点，并将其添加到哈希表 $visited$ 中，即 `visited[node] = Node(node.val, [])`。然后将起始节点放入队列中，即 `queue.append(node)`。
-3. 从队列中取出第一个节点 $node\underline{\hspace{0.5em}}u$。访问节点 $node\underline{\hspace{0.5em}}u$。
-4. 遍历节点 $node\underline{\hspace{0.5em}}u$ 的所有未访问邻接节点 $node\underline{\hspace{0.5em}}v$（节点 $node\underline{\hspace{0.5em}}v$ 不在 $visited$ 中）。
-5. 根据节点 $node\underline{\hspace{0.5em}}v$ 创建一个新的节点，并将其添加到哈希表 $visited$ 中，即 `visited[node_v] = Node(node_v.val, [])`。
-6. 然后将节点 $node\underline{\hspace{0.5em}}v$ 放入队列 $queue$ 中，即 `queue.append(node_v)`。
+3. 从队列中取出第一个节点 $node\_u$。访问节点 $node\_u$。
+4. 遍历节点 $node\_u$ 的所有未访问邻接节点 $node\_v$（节点 $node\_v$ 不在 $visited$ 中）。
+5. 根据节点 $node\_v$ 创建一个新的节点，并将其添加到哈希表 $visited$ 中，即 `visited[node_v] = Node(node_v.val, [])`。
+6. 然后将节点 $node\_v$ 放入队列 $queue$ 中，即 `queue.append(node_v)`。
 7. 重复步骤 $3 \sim 6$，直到队列 $queue$ 为空。
 8. 广度优先搜索结束，返回起始节点的克隆节点（即 $visited[node]$）。
 
@@ -227,7 +227,7 @@ class Solution:
 
 1. 使用 $ans$ 记录最大岛屿面积。
 2. 遍历二维数组的每一个元素，对于每个值为 $1$ 的元素：
-   1. 将该元素置为 $0$。并使用队列  $queue$ 存储该节点位置。使用 $temp\underline{\hspace{0.5em}}ans$ 记录当前岛屿面积。
+   1. 将该元素置为 $0$。并使用队列  $queue$ 存储该节点位置。使用 $temp\_ans$ 记录当前岛屿面积。
    2. 然后从队列 $queue$ 中取出第一个节点位置 $(i, j)$。遍历该节点位置上、下、左、右四个方向上的相邻节点。并将其置为 $0$（避免重复搜索）。并将其加入到队列中。并累加当前岛屿面积，即 `temp_ans += 1`。
    3. 不断重复上一步骤，直到队列 $queue$ 为空。
    4. 更新当前最大岛屿面积，即 `ans = max(ans, temp_ans)`。

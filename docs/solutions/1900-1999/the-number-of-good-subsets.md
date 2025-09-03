@@ -79,9 +79,9 @@
 
 ###### 3. 状态转移方程
 
-对于 $nums$ 中的每个数 $num$，其对应出现次数为 $cnt$。我们可以通过试除法，将 $num$ 分解为不同的质因数，并使用「状态压缩」的方式，用一个二进制数 $cur\underline{\hspace{0.5em}}state$ 来表示当前数 $num$ 中使用了哪些质因数。然后枚举所有状态，找到与 $cur\underline{\hspace{0.5em}}state$ 不冲突的状态 $state$（也就是除了 $cur\underline{\hspace{0.5em}}state$ 中选择的质因数外，选择的其他质因数情况，比如 $cur\underline{\hspace{0.5em}}state$ 选择了 $2$ 和 $5$，则枚举不选择 $2$ 和 $5$ 的状态）。
+对于 $nums$ 中的每个数 $num$，其对应出现次数为 $cnt$。我们可以通过试除法，将 $num$ 分解为不同的质因数，并使用「状态压缩」的方式，用一个二进制数 $cur\_state$ 来表示当前数 $num$ 中使用了哪些质因数。然后枚举所有状态，找到与 $cur\_state$ 不冲突的状态 $state$（也就是除了 $cur\_state$ 中选择的质因数外，选择的其他质因数情况，比如 $cur\_state$ 选择了 $2$ 和 $5$，则枚举不选择 $2$ 和 $5$ 的状态）。
 
-此时，状态转移方程为：$dp[state | cur\underline{\hspace{0.5em}}state] = \sum (dp[state] \times cnt) \mod MOD , \quad state \text{ \& } cur\underline{\hspace{0.5em}}state == 0$
+此时，状态转移方程为：$dp[state | cur\_state] = \sum (dp[state] \times cnt) \mod MOD , \quad state \text{ \& } cur\_state == 0$
 
 ###### 4. 初始条件
 

@@ -48,11 +48,11 @@
 
 维护一个固定长度为 $len(p)$ 的滑动窗口。于是问题的难点变为了如何判断 $s$ 的子串和 $p$ 是异位词。可以使用两个字典来分别存储 $s$ 的子串中各个字符个数和 $p$ 中各个字符个数。如果两个字典对应的键值全相等，则说明 $s$ 的子串和 $p$ 是异位词。但是这样每一次比较的操作时间复杂度是 $O(n)$，我们可以通过在滑动数组中逐字符比较的方式来减少两个字典之间相互比较的复杂度，并用 $valid$ 记录经过验证的字符个数。整个算法步骤如下：
 
-- 使用哈希表 $need$ 记录 $p$ 中各个字符出现次数。使用字典 $window$ 记录 $s$ 的子串中各个字符出现的次数。使用数组 $res$ 记录答案。使用 $valid$ 记录 $s$ 的子串中经过验证的字符个数。使用 $window\underline{\hspace{0.5em}}size$ 表示窗口大小，值为 $len(p)$。使用两个指针 $left$、$right$。分别指向滑动窗口的左右边界。
+- 使用哈希表 $need$ 记录 $p$ 中各个字符出现次数。使用字典 $window$ 记录 $s$ 的子串中各个字符出现的次数。使用数组 $res$ 记录答案。使用 $valid$ 记录 $s$ 的子串中经过验证的字符个数。使用 $window\_size$ 表示窗口大小，值为 $len(p)$。使用两个指针 $left$、$right$。分别指向滑动窗口的左右边界。
 - 一开始，$left$、$right$ 都指向 $0$。
 - 如果 $s[right]$ 出现在 $need$ 中，将最右侧字符 $s[right]$ 加入当前窗口 $window$ 中，记录该字符个数。并验证该字符是否和 $need$ 中个对应字符个数相等。如果相等则验证的字符个数加 $1$，即 `valid += 1`。
-- 如果该窗口字符长度大于等于 $window\underline{\hspace{0.5em}}size$ 个，即 $right - left + 1 \ge window\underline{\hspace{0.5em}}size$。则不断右移 $left$，缩小滑动窗口长度。
-  - 如果验证字符个数 $valid$ 等于窗口长度 $window\underline{\hspace{0.5em}}size$，则 $s[left, right + 1]$ 为 $p$ 的异位词，所以将 $left$ 加入到答案数组中。
+- 如果该窗口字符长度大于等于 $window\_size$ 个，即 $right - left + 1 \ge window\_size$。则不断右移 $left$，缩小滑动窗口长度。
+  - 如果验证字符个数 $valid$ 等于窗口长度 $window\_size$，则 $s[left, right + 1]$ 为 $p$ 的异位词，所以将 $left$ 加入到答案数组中。
   - 如果$s[left]$ 在 $need$ 中，则更新窗口中对应字符的个数，同时维护 $valid$ 值。
 - 右移 $right$，直到 $right \ge len(nums)$ 结束。
 - 输出答案数组 $res$。

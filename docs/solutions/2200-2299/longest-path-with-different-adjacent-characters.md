@@ -60,11 +60,11 @@
 
 即：**最长路径长度 = max(某子树中的最长路径长度 + 另一子树中的最长路径长度 + 1，某个子树中的最长路径长度)**。
 
-对此，我们可以使用深度优先搜索递归遍历 $u$ 的所有相邻节点 $v$，并在递归遍历的同时，维护一个全局最大路径和变量 $ans$，以及当前节点 $u$ 的最大路径长度变量 $u\underline{\hspace{0.5em}}len$。
+对此，我们可以使用深度优先搜索递归遍历 $u$ 的所有相邻节点 $v$，并在递归遍历的同时，维护一个全局最大路径和变量 $ans$，以及当前节点 $u$ 的最大路径长度变量 $u\_len$。
 
-1. 先计算出从相邻节点 $v$ 出发的最长路径长度 $v\underline{\hspace{0.5em}}len$。
-2. 更新维护全局最长路径长度为 $self.ans = max(self.ans, \quad u\underline{\hspace{0.5em}}len + v\underline{\hspace{0.5em}}len + 1)$。
-3. 更新维护当前节点 $u$ 的最长路径长度为 $u\underline{\hspace{0.5em}}len = max(u\underline{\hspace{0.5em}}len, \quad v\underline{\hspace{0.5em}}len + 1)$。
+1. 先计算出从相邻节点 $v$ 出发的最长路径长度 $v\_len$。
+2. 更新维护全局最长路径长度为 $self.ans = max(self.ans, \quad u\_len + v\_len + 1)$。
+3. 更新维护当前节点 $u$ 的最长路径长度为 $u\_len = max(u\_len, \quad v\_len + 1)$。
 
 因为题目限定了「相邻节点字符不同」，所以在更新全局最长路径长度和当前节点 $u$ 的最长路径长度时，我们需要判断一下节点 $u$ 与相邻节点 $v$ 的字符是否相同，只有在字符不同的条件下，才能够更新维护。
 

@@ -76,23 +76,23 @@ class Solution:
 
 ### 思路 2：前缀和 + 哈希表
 
-先用一重循环遍历数组，计算出数组 $nums$ 中前 $j$ 个元素的和（前缀和），保存到一维数组 $pre\underline{\hspace{0.5em}}sum$ 中，那么对于任意 $nums[i]…nums[j]$ 的子数组的和为 $pre\underline{\hspace{0.5em}}sum[j] - pre\underline{\hspace{0.5em}}sum[i - 1]$。这样计算子数组和的时间复杂度降为了 $O(1)$。总体时间复杂度为 $O(n^2)$。
+先用一重循环遍历数组，计算出数组 $nums$ 中前 $j$ 个元素的和（前缀和），保存到一维数组 $pre\_sum$ 中，那么对于任意 $nums[i]…nums[j]$ 的子数组的和为 $pre\_sum[j] - pre\_sum[i - 1]$。这样计算子数组和的时间复杂度降为了 $O(1)$。总体时间复杂度为 $O(n^2)$。
 
 但是还是超时了。。
 
 由于我们只关心和为 $k$ 出现的次数，不关心具体的解，可以使用哈希表来加速运算。
 
-$pre\underline{\hspace{0.5em}}sum[i]$ 的定义是前 $i$ 个元素和，则 $pre\underline{\hspace{0.5em}}sum[i]$ 可以由 $pre\underline{\hspace{0.5em}}sum[i - 1]$ 递推而来，即：$pre\underline{\hspace{0.5em}}sum[i] = pre\underline{\hspace{0.5em}}sum[i - 1] + num[i]$。 $[i..j]$ 子数组和为 $k$ 可以转换为：$pre\underline{\hspace{0.5em}}sum[j] - pre\underline{\hspace{0.5em}}sum[i - 1] == k$。
+$pre\_sum[i]$ 的定义是前 $i$ 个元素和，则 $pre\_sum[i]$ 可以由 $pre\_sum[i - 1]$ 递推而来，即：$pre\_sum[i] = pre\_sum[i - 1] + num[i]$。 $[i..j]$ 子数组和为 $k$ 可以转换为：$pre\_sum[j] - pre\_sum[i - 1] == k$。
 
-综合一下，可得：$pre\underline{\hspace{0.5em}}sum[i - 1] == pre\underline{\hspace{0.5em}}sum[j] - k $。
+综合一下，可得：$pre\_sum[i - 1] == pre\_sum[j] - k $。
 
-所以，当我们考虑以 $j$ 结尾和为 $k$ 的连续子数组个数时，只需要统计有多少个前缀和为 $pre\underline{\hspace{0.5em}}sum[j] - k$ （即 $pre\underline{\hspace{0.5em}}sum[i - 1]$）的个数即可。具体做法如下：
+所以，当我们考虑以 $j$ 结尾和为 $k$ 的连续子数组个数时，只需要统计有多少个前缀和为 $pre\_sum[j] - k$ （即 $pre\_sum[i - 1]$）的个数即可。具体做法如下：
 
-- 使用 $pre\underline{\hspace{0.5em}}sum$ 变量记录前缀和（代表 $pre\underline{\hspace{0.5em}}sum[j]$）。
-- 使用哈希表 $pre\underline{\hspace{0.5em}}dic$ 记录 $pre\underline{\hspace{0.5em}}sum[j]$ 出现的次数。键值对为 $pre\underline{\hspace{0.5em}}sum[j] : pre\underline{\hspace{0.5em}}sum\underline{\hspace{0.5em}}count$。
-- 从左到右遍历数组，计算当前前缀和 $pre\underline{\hspace{0.5em}}sum$。
-- 如果 $pre\underline{\hspace{0.5em}}sum - k$ 在哈希表中，则答案个数累加上 $pre\underline{\hspace{0.5em}}dic[pre\underline{\hspace{0.5em}}sum - k]$。
-- 如果 $pre\underline{\hspace{0.5em}}sum$ 在哈希表中，则前缀和个数累加 $1$，即 $pre\underline{\hspace{0.5em}}dic[pre\underline{\hspace{0.5em}}sum] += 1$。
+- 使用 $pre\_sum$ 变量记录前缀和（代表 $pre\_sum[j]$）。
+- 使用哈希表 $pre\_dic$ 记录 $pre\_sum[j]$ 出现的次数。键值对为 $pre\_sum[j] : pre\_sum\_count$。
+- 从左到右遍历数组，计算当前前缀和 $pre\_sum$。
+- 如果 $pre\_sum - k$ 在哈希表中，则答案个数累加上 $pre\_dic[pre\_sum - k]$。
+- 如果 $pre\_sum$ 在哈希表中，则前缀和个数累加 $1$，即 $pre\_dic[pre\_sum] += 1$。
 - 最后输出答案个数。
 
 ### 思路 2：代码

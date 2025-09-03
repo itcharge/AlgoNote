@@ -77,7 +77,7 @@
 
 举个例子 $nums2 = \lbrace 1, 2, 3, 4 \rbrace$，$state = (1001)_2$，表示选择了第 $1$ 个元素和第 $4$ 个元素，也就是 $1$、$4$。那么 $state$ 只能从 $(1000)_2$ 和 $(0001)_2$ 这两个状态转移而来，我们只需要枚举这两种状态，并求出转移过来的异或值之和最小值。
 
-即状态转移方程为：$dp[state] = min(dp[state], \quad dp[state \oplus (1 \text{ <}\text{< } i)] + (nums1[i] \oplus nums2[one\underline{\hspace{0.5em}}cnt - 1]))$，其中 $state$ 第 $i$ 位一定为 $1$，$one\underline{\hspace{0.5em}}cnt$ 为 $state$ 中 $1$ 的个数。
+即状态转移方程为：$dp[state] = min(dp[state], \quad dp[state \oplus (1 \text{ <}\text{< } i)] + (nums1[i] \oplus nums2[one\_cnt - 1]))$，其中 $state$ 第 $i$ 位一定为 $1$，$one\_cnt$ 为 $state$ 中 $1$ 的个数。
 
 ###### 4. 初始条件
 

@@ -69,9 +69,9 @@
 在递归时，我们先计算左右子节点的最大贡献值，再更新维护当前最大路径和变量。最终 $ans$ 即为答案。具体步骤如下：
 
 1. 如果根节点 $root$ 为空，则返回 $0$。
-2. 递归计算左子树的最大贡献值为 $left\underline{\hspace{0.5em}}max$。
-3. 递归计算右子树的最大贡献值为 $right\underline{\hspace{0.5em}}max$。
-4. 更新维护最大路径和变量，即 $self.ans = max \lbrace self.ans, \quad left\underline{\hspace{0.5em}}max + right\underline{\hspace{0.5em}}max + node.val \rbrace$。
+2. 递归计算左子树的最大贡献值为 $left\_max$。
+3. 递归计算右子树的最大贡献值为 $right\_max$。
+4. 更新维护最大路径和变量，即 $self.ans = max \lbrace self.ans, \quad left\_max + right\_max + node.val \rbrace$。
 5. 返回以当前节点为根节点，并且经过该节点的最大贡献值。即返回 **当前节点值 + 左右子节点提供的最大贡献值中较大的一个**。
 6. 最终 $self.ans$ 即为答案。
 

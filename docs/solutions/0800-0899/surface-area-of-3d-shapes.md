@@ -48,10 +48,10 @@
 而每一个正方体所贡献的表面积，可以通过枚举当前正方体前后左右相邻四个方向上的正方体的个数，从而通过判断计算得出。
 
 - 如果当前位置 $(row, col)$ 存在正方体，则正方体在上下位置上起码贡献了 $2$ 的表面积。
-- 如果当前位置 $(row, col)$ 的相邻位置 $(new\underline{\hspace{0.5em}}row, new\underline{\hspace{0.5em}}col)$ 上不存在正方体，说明当前正方体在该方向为最外侧，则 $(row, col)$ 位置所贡献的表面积为当前位置上的正方体个数，即 $grid[row][col]$。
-- 如果当前位置 $(row, col)$ 的相邻位置 $(new\underline{\hspace{0.5em}}row, new\underline{\hspace{0.5em}}col)$ 上存在正方体：
-	- 如果 $grid[row][col] > grid[new\underline{\hspace{0.5em}}row][new\underline{\hspace{0.5em}}col]$，说明 $grid[row][col]$ 在该方向上底面一部分被 $grid[new\underline{\hspace{0.5em}}row][new\underline{\hspace{0.5em}}col]$ 遮盖了，则 $(row, col)$ 位置所贡献的表面积为 $grid[row][col] - grid[new_row][new_col]$。
-	- 如果 $grid[row][col] \le grid[new\underline{\hspace{0.5em}}row][new\underline{\hspace{0.5em}}col]$，说明 $grid[row][col]$ 在该方向上完全被 $grid[new\underline{\hspace{0.5em}}row][new\underline{\hspace{0.5em}}col]$ 遮盖了，则 $(row, col)$ 位置所贡献的表面积为 $0$。
+- 如果当前位置 $(row, col)$ 的相邻位置 $(new\_row, new\_col)$ 上不存在正方体，说明当前正方体在该方向为最外侧，则 $(row, col)$ 位置所贡献的表面积为当前位置上的正方体个数，即 $grid[row][col]$。
+- 如果当前位置 $(row, col)$ 的相邻位置 $(new\_row, new\_col)$ 上存在正方体：
+	- 如果 $grid[row][col] > grid[new\_row][new\_col]$，说明 $grid[row][col]$ 在该方向上底面一部分被 $grid[new\_row][new\_col]$ 遮盖了，则 $(row, col)$ 位置所贡献的表面积为 $grid[row][col] - grid[new_row][new_col]$。
+	- 如果 $grid[row][col] \le grid[new\_row][new\_col]$，说明 $grid[row][col]$ 在该方向上完全被 $grid[new\_row][new\_col]$ 遮盖了，则 $(row, col)$ 位置所贡献的表面积为 $0$。
 
 ### 思路 1：代码
 

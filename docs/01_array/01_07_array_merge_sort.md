@@ -9,12 +9,12 @@
 假设数组的元素个数为 $n$ 个，则归并排序的算法步骤如下：
 
 1. **分解过程**：递归地将当前数组平分为两部分，直到每个子数组只包含一个元素为止。
-   1. 找到数组的中间位置 $mid$，将数组划分为左、右两个子数组 $left\underline{\hspace{0.5em}}nums$ 和 $right\underline{\hspace{0.5em}}nums$。
-   2. 分别对 $left\underline{\hspace{0.5em}}nums$ 和 $right\underline{\hspace{0.5em}}nums$ 递归执行分解操作。
+   1. 找到数组的中间位置 $mid$，将数组划分为左、右两个子数组 $left\_nums$ 和 $right\_nums$。
+   2. 分别对 $left\_nums$ 和 $right\_nums$ 递归执行分解操作。
    3. 最终将原数组拆分为 $n$ 个长度为 $1$ 的有序子数组。
 2. **归并过程**：从长度为 $1$ 的有序子数组开始，逐步将相邻的有序子数组两两合并，最终合并为一个长度为 $n$ 的有序数组。
    1. 新建数组 $nums$ 用于存放合并后的有序结果。
-   2. 设置两个指针 $left\underline{\hspace{0.5em}}i$ 和 $right\underline{\hspace{0.5em}}i$，分别指向 $left\underline{\hspace{0.5em}}nums$ 和 $right\underline{\hspace{0.5em}}nums$ 的起始位置。
+   2. 设置两个指针 $left\_i$ 和 $right\_i$，分别指向 $left\_nums$ 和 $right\_nums$ 的起始位置。
    3. 比较两个指针所指元素，将较小者加入结果数组 $nums$，并将对应指针后移一位。
    4. 重复上述操作，直到某一指针到达对应子数组末尾。
    5. 将另一个子数组剩余的所有元素依次加入结果数组 $nums$。

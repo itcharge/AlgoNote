@@ -68,10 +68,10 @@ class Solution:
 ### 思路 2：分离双指针
 
 1. 对数组 $nums1$、$nums2$ 先排序。
-2. 使用两个指针 $left\underline{\hspace{0.5em}}1$、$left\underline{\hspace{0.5em}}2$。$left\underline{\hspace{0.5em}}1$ 指向第一个数组的第一个元素，即：$left\underline{\hspace{0.5em}}1 = 0$，$left\underline{\hspace{0.5em}}2$ 指向第二个数组的第一个元素，即：$left\underline{\hspace{0.5em}}2 = 0$。
-3. 如果 $nums1[left_1]$ 等于 $nums2[left_2]$，则将其加入答案数组（注意去重），并将 $left\underline{\hspace{0.5em}}1$ 和 $left\underline{\hspace{0.5em}}2$ 右移。
-4. 如果 $nums1[left_1]$ 小于 $nums2[left_2]$，则将 $left\underline{\hspace{0.5em}}1$ 右移。
-5. 如果 $nums1[left_1]$ 大于 $nums2[left_2]$，则将 $left\underline{\hspace{0.5em}}2$ 右移。
+2. 使用两个指针 $left\_1$、$left\_2$。$left\_1$ 指向第一个数组的第一个元素，即：$left\_1 = 0$，$left\_2$ 指向第二个数组的第一个元素，即：$left\_2 = 0$。
+3. 如果 $nums1[left_1]$ 等于 $nums2[left_2]$，则将其加入答案数组（注意去重），并将 $left\_1$ 和 $left\_2$ 右移。
+4. 如果 $nums1[left_1]$ 小于 $nums2[left_2]$，则将 $left\_1$ 右移。
+5. 如果 $nums1[left_1]$ 大于 $nums2[left_2]$，则将 $left\_2$ 右移。
 6. 最后返回答案数组。
 
 ### 思路 2：代码

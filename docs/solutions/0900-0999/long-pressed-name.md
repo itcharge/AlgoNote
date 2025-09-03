@@ -44,14 +44,14 @@
 
 这道题目的意思是在 $typed$ 里边匹配 $name$，同时要考虑字符重复问题，以及不匹配的情况。可以使用分离双指针来做。具体做法如下：
 
-1. 使用两个指针 $left\underline{\hspace{0.5em}}1$、$left\underline{\hspace{0.5em}}2$，$left\underline{\hspace{0.5em}}1$ 指向字符串 $name$ 开始位置，$left\underline{\hspace{0.5em}}2$ 指向字符串 $type$ 开始位置。
-2. 如果 $name[left\underline{\hspace{0.5em}}1] == name[left\underline{\hspace{0.5em}}2]$，则将 $left\underline{\hspace{0.5em}}1$、$left\underline{\hspace{0.5em}}2$ 同时右移。
-3. 如果 $nmae[left\underline{\hspace{0.5em}}1] \ne name[left\underline{\hspace{0.5em}}2]$，则：
-   1. 如果 $typed[left\underline{\hspace{0.5em}}2]$ 和前一个位置元素 $typed[left\underline{\hspace{0.5em}}2 - 1]$ 相等，则说明出现了重复元素，将 $left\underline{\hspace{0.5em}}2$ 右移，过滤重复元素。
-   2. 如果 $typed[left\underline{\hspace{0.5em}}2]$ 和前一个位置元素 $typed[left\underline{\hspace{0.5em}}2 - 1]$ 不等，则说明出现了多余元素，不匹配。直接返回 `False` 即可。
+1. 使用两个指针 $left\_1$、$left\_2$，$left\_1$ 指向字符串 $name$ 开始位置，$left\_2$ 指向字符串 $type$ 开始位置。
+2. 如果 $name[left\_1] == name[left\_2]$，则将 $left\_1$、$left\_2$ 同时右移。
+3. 如果 $nmae[left\_1] \ne name[left\_2]$，则：
+   1. 如果 $typed[left\_2]$ 和前一个位置元素 $typed[left\_2 - 1]$ 相等，则说明出现了重复元素，将 $left\_2$ 右移，过滤重复元素。
+   2. 如果 $typed[left\_2]$ 和前一个位置元素 $typed[left\_2 - 1]$ 不等，则说明出现了多余元素，不匹配。直接返回 `False` 即可。
 
-4. 当 $left\underline{\hspace{0.5em}}1 == len(name)$ 或者 $left\underline{\hspace{0.5em}}2 == len(typed)$ 时跳出循环。然后过滤掉 $typed$ 末尾的重复元素。
-5. 最后判断，如果 $left\underline{\hspace{0.5em}}1 == len(name)$ 并且 $left\underline{\hspace{0.5em}}2 == len(typed)$，则说明匹配，返回 `True`，否则返回 `False`。
+4. 当 $left\_1 == len(name)$ 或者 $left\_2 == len(typed)$ 时跳出循环。然后过滤掉 $typed$ 末尾的重复元素。
+5. 最后判断，如果 $left\_1 == len(name)$ 并且 $left\_2 == len(typed)$，则说明匹配，返回 `True`，否则返回 `False`。
 
 ### 思路 1：代码
 

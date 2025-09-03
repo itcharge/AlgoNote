@@ -41,14 +41,14 @@
 
 ### 思路 1：滑动窗口
 
-维护一个滑动窗口 $window\underline{\hspace{0.5em}}sum$ 用于记录窗口内的开销总和，保证窗口内的开销总和小于等于 $maxCost$。使用 $ans$ 记录可以转化的最大长度。具体做法如下：
+维护一个滑动窗口 $window\_sum$ 用于记录窗口内的开销总和，保证窗口内的开销总和小于等于 $maxCost$。使用 $ans$ 记录可以转化的最大长度。具体做法如下：
 
 使用两个指针 $left$、$right$。分别指向滑动窗口的左右边界，保证窗口内所有元素转化开销总和小于等于 $maxCost$。
 
 - 先统计出 $s$ 中第 $i$ 个字符变为 $t$ 的第 $i$ 个字符的开销，用数组 $costs$ 保存。
 - 一开始，$left$、$right$ 都指向 $0$。
 - 将最右侧字符的转变开销填入窗口中，向右移动 $right$。
-- 直到窗口内开销总和 $window\underline{\hspace{0.5em}}sum$ 大于 $maxCost$。则不断右移 $left$，缩小窗口长度。直到 $window\underline{\hspace{0.5em}}sum \le maxCost$ 时，更新可以转换的最大长度 $ans$。
+- 直到窗口内开销总和 $window\_sum$ 大于 $maxCost$。则不断右移 $left$，缩小窗口长度。直到 $window\_sum \le maxCost$ 时，更新可以转换的最大长度 $ans$。
 - 向右移动 $right$，直到 $right \ge len(s)$ 为止。
 - 输出答案 $ans$。
 

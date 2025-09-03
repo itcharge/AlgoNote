@@ -96,9 +96,9 @@
 在递归时，我们先计算左右子节点的最大贡献值，再更新维护当前最大路径和变量。最终 $ans$ 即为答案。具体步骤如下：
 
 1. 如果根节点 $root$ 为空，则返回 $0$。
-2. 递归计算左子树的最大贡献值为 $left\underline{\hspace{0.5em}}max$。
-3. 递归计算右子树的最大贡献值为 $right\underline{\hspace{0.5em}}max$。
-4. 更新维护最大路径和变量，即 $self.ans = max \lbrace self.ans, \quad left\underline{\hspace{0.5em}}max + right\underline{\hspace{0.5em}}max + node.val \rbrace$。
+2. 递归计算左子树的最大贡献值为 $left\_max$。
+3. 递归计算右子树的最大贡献值为 $right\_max$。
+4. 更新维护最大路径和变量，即 $self.ans = max \lbrace self.ans, \quad left\_max + right\_max + node.val \rbrace$。
 5. 返回以当前节点为根节点，并且经过该节点的最大贡献值。即返回 **当前节点值 + 左右子节点提供的最大贡献值中较大的一个**。
 6. 最终 $self.ans$ 即为答案。
 
@@ -195,11 +195,11 @@ class Solution:
 
 即：**最长路径长度 = max(某子树中的最长路径长度 + 另一子树中的最长路径长度 + 1，某个子树中的最长路径长度)**。
 
-对此，我们可以使用深度优先搜索递归遍历 $u$ 的所有相邻节点 $v$，并在递归遍历的同时，维护一个全局最大路径和变量 $ans$，以及当前节点 $u$ 的最大路径长度变量 $u\underline{\hspace{0.5em}}len$。
+对此，我们可以使用深度优先搜索递归遍历 $u$ 的所有相邻节点 $v$，并在递归遍历的同时，维护一个全局最大路径和变量 $ans$，以及当前节点 $u$ 的最大路径长度变量 $u\_len$。
 
-1. 先计算出从相邻节点 $v$ 出发的最长路径长度 $v\underline{\hspace{0.5em}}len$。
-2. 更新维护全局最长路径长度为 $self.ans = max(self.ans, \quad u\underline{\hspace{0.5em}}len + v\underline{\hspace{0.5em}}len + 1)$。
-3. 更新维护当前节点 $u$ 的最长路径长度为 $u\underline{\hspace{0.5em}}len = max(u\underline{\hspace{0.5em}}len, \quad v\underline{\hspace{0.5em}}len + 1)$。
+1. 先计算出从相邻节点 $v$ 出发的最长路径长度 $v\_len$。
+2. 更新维护全局最长路径长度为 $self.ans = max(self.ans, \quad u\_len + v\_len + 1)$。
+3. 更新维护当前节点 $u$ 的最长路径长度为 $u\_len = max(u\_len, \quad v\_len + 1)$。
 
 因为题目限定了「相邻节点字符不同」，所以在更新全局最长路径长度和当前节点 $u$ 的最长路径长度时，我们需要判断一下节点 $u$ 与相邻节点 $v$ 的字符是否相同，只有在字符不同的条件下，才能够更新维护。
 

@@ -9,7 +9,7 @@
 
 ## 题目大意
 
-**描述**：给定两个数字字符串 $num1$ 和 $num2$，以及两个整数 $max\underline{\hspace{0.5em}}sum$ 和 $min\underline{\hspace{0.5em}}sum$。
+**描述**：给定两个数字字符串 $num1$ 和 $num2$，以及两个整数 $max\_sum$ 和 $min\_sum$。
 
 **要求**：返回好整数的数目。答案可能很大，请返回答案对 $10^9 + 7$ 取余后的结果。
 
@@ -17,11 +17,11 @@
 
 - **好整数**：如果一个整数 $x$ 满足一下条件，我们称它是一个好整数：
   - $num1 \le x \le num2$。
-  - $num\underline{\hspace{0.5em}}sum \le digit\underline{\hspace{0.5em}}sum(x) \le max\underline{\hspace{0.5em}}sum$。
+  - $num\_sum \le digit\_sum(x) \le max\_sum$。
 
-- $digit\underline{\hspace{0.5em}}sum(x)$ 表示 $x$ 各位数字之和。
+- $digit\_sum(x)$ 表示 $x$ 各位数字之和。
 - $1 \le num1 \le num2 \le 10^{22}$。
-- $1 \le min\underline{\hspace{0.5em}}sum \le max\underline{\hspace{0.5em}}sum \le 400$。
+- $1 \le min\_sum \le max\_sum \le 400$。
 
 **示例**：
 
@@ -52,9 +52,9 @@
 	2. 初始数位和为 $0$。
 	3. 开始时当前数位最大值受到最高位数位的约束。
 	4. 开始时当前数位最小值受到最高位数位的约束。
-2. 如果 $total > max\underline{\hspace{0.5em}}sum$，说明当前方案不符合要求，则返回方案数 $0$。
+2. 如果 $total > max\_sum$，说明当前方案不符合要求，则返回方案数 $0$。
 3. 如果遇到  $pos == len(s)$，表示到达数位末尾，此时：
-	1. 如果 $min\underline{\hspace{0.5em}}sum \le total \le max\underline{\hspace{0.5em}}sum$，说明当前方案符合要求，则返回方案数 $1$。
+	1. 如果 $min\_sum \le total \le max\_sum$，说明当前方案符合要求，则返回方案数 $1$。
 	2. 如果不满足，则当前方案不符合要求，则返回方案数 $0$。
 4. 如果 $pos \ne len(s)$，则定义方案数 $ans$，令其等于 $0$，即：`ans = 0`。
 5. 根据 $isMaxLimit$ 和 $isMinLimit$ 来决定填当前位数位所能选择的最小数字（$minX$）和所能选择的最大数字（$maxX$）。
@@ -106,5 +106,5 @@ class Solution:
 ### 思路 1：复杂度分析
 
 - **时间复杂度**：$O(n \times 10)$，其中 $n$ 为数组 $nums2$ 的长度。
-- **空间复杂度**：$O(n \times max\underline{\hspace{0.5em}}sum)$。
+- **空间复杂度**：$O(n \times max\_sum)$。
 

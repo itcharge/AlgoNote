@@ -43,12 +43,12 @@
 
 ### 思路 1：归并排序
 
-在使用归并排序对数组进行排序时，每当遇到 $left\underline{\hspace{0.5em}}nums[left\underline{\hspace{0.5em}}i] \le right\underline{\hspace{0.5em}}nums[right\underline{\hspace{0.5em}}i]$ 时，意味着：在合并前，左子数组当前元素 $left\underline{\hspace{0.5em}}nums[left\underline{\hspace{0.5em}}i]$ 右侧一定有 $left\underline{\hspace{0.5em}}i$ 个元素比 $left\underline{\hspace{0.5em}}nums[left\underline{\hspace{0.5em}}i]$ 小。则我们可以在归并排序的同时，记录 $nums[i]$ 右侧小于 $nums[i]$ 的元素的数量。
+在使用归并排序对数组进行排序时，每当遇到 $left\_nums[left\_i] \le right\_nums[right\_i]$ 时，意味着：在合并前，左子数组当前元素 $left\_nums[left\_i]$ 右侧一定有 $left\_i$ 个元素比 $left\_nums[left\_i]$ 小。则我们可以在归并排序的同时，记录 $nums[i]$ 右侧小于 $nums[i]$ 的元素的数量。
 
 1. 将元素值、对应下标、右侧小于 nums[i] 的元素的数量存入数组中。
 2. 对其进行归并排序。
-3. 当遇到 $left\underline{\hspace{0.5em}}nums[left\underline{\hspace{0.5em}}i] \le right\underline{\hspace{0.5em}}nums[right\underline{\hspace{0.5em}}i]$ 时，记录 $left\underline{\hspace{0.5em}}nums[left\underline{\hspace{0.5em}}i]$ 右侧比 $left\underline{\hspace{0.5em}}nums[left\underline{\hspace{0.5em}}i]$ 小的元素数量，即：`left_nums[left_i][2] += right_i`。
-4. 当合并时 $left\underline{\hspace{0.5em}}nums[left\underline{\hspace{0.5em}}i]$ 仍有剩余时，说明 $left\underline{\hspace{0.5em}}nums[left\underline{\hspace{0.5em}}i]$ 右侧有 $right\underline{\hspace{0.5em}}i$ 个小于 $left\underline{\hspace{0.5em}}nums[left\underline{\hspace{0.5em}}i]$ 的元素，记录下来，即：`left_nums[left_i][2] += right_i`。
+3. 当遇到 $left\_nums[left\_i] \le right\_nums[right\_i]$ 时，记录 $left\_nums[left\_i]$ 右侧比 $left\_nums[left\_i]$ 小的元素数量，即：`left_nums[left_i][2] += right_i`。
+4. 当合并时 $left\_nums[left\_i]$ 仍有剩余时，说明 $left\_nums[left\_i]$ 右侧有 $right\_i$ 个小于 $left\_nums[left\_i]$ 的元素，记录下来，即：`left_nums[left_i][2] += right_i`。
 5. 根据下标及右侧小于 $nums[i]$ 的元素的数量，组合出答案数组，并返回答案数组。
 
 ### 思路 1：代码

@@ -51,11 +51,11 @@
 1. 定义从位置 $0$、和为 $0$ 开始，到达数组尾部位置为止，和为 $target$ 的方案数为 `dfs(0, 0)`。
 2. 下面从位置 $0$、和为 $0$ 开始，以深度优先搜索遍历每个位置。
 3. 如果当前位置 $i$ 到达最后一个位置 $size$：
-   1. 如果和 $cur\underline{\hspace{0.5em}}sum$ 等于目标和 $target$，则返回方案数 $1$。
-   2. 如果和 $cur\underline{\hspace{0.5em}}sum$ 不等于目标和 $target$，则返回方案数 $0$。
-4. 递归搜索 $i + 1$ 位置，和为 $cur\underline{\hspace{0.5em}}sum  -  nums[i]$ 的方案数。
-5. 递归搜索 $i + 1$ 位置，和为 $cur\underline{\hspace{0.5em}}sum  +  nums[i]$ 的方案数。
-6. 将 4 ~ 5 两个方案数加起来就是当前位置 $i$、和为 $cur\underline{\hspace{0.5em}}sum$ 的方案数，返回该方案数。
+   1. 如果和 $cur\_sum$ 等于目标和 $target$，则返回方案数 $1$。
+   2. 如果和 $cur\_sum$ 不等于目标和 $target$，则返回方案数 $0$。
+4. 递归搜索 $i + 1$ 位置，和为 $cur\_sum  -  nums[i]$ 的方案数。
+5. 递归搜索 $i + 1$ 位置，和为 $cur\_sum  +  nums[i]$ 的方案数。
+6. 将 4 ~ 5 两个方案数加起来就是当前位置 $i$、和为 $cur\_sum$ 的方案数，返回该方案数。
 7. 最终方案数为 `dfs(0, 0)`，将其作为答案返回即可。
 
 ### 思路 1：代码
@@ -86,18 +86,18 @@ class Solution:
 
 在思路 1 中我们单独使用深度优先搜索对每位数字进行 `+` 或者 `-` 的方法超时了。所以我们考虑使用记忆化搜索的方式，避免进行重复搜索。
 
-这里我们使用哈希表 $$table$$ 记录遍历过的位置 $i$ 及所得到的的当前和 $cur\underline{\hspace{0.5em}}sum$ 下的方案数，来避免重复搜索。具体步骤如下：
+这里我们使用哈希表 $$table$$ 记录遍历过的位置 $i$ 及所得到的的当前和 $cur\_sum$ 下的方案数，来避免重复搜索。具体步骤如下：
 
 1. 定义从位置 $0$、和为 $0$ 开始，到达数组尾部位置为止，和为 $target$ 的方案数为 `dfs(0, 0)`。
 2. 下面从位置 $0$、和为 $0$ 开始，以深度优先搜索遍历每个位置。
 3. 如果当前位置 $i$ 遍历完所有位置：
-   1. 如果和 $cur\underline{\hspace{0.5em}}sum$ 等于目标和 $target$，则返回方案数 $1$。
-   2. 如果和 $cur\underline{\hspace{0.5em}}sum$ 不等于目标和 $target$，则返回方案数 $0$。
-4. 如果当前位置 $i$、和为 $cur\underline{\hspace{0.5em}}sum$  之前记录过（即使用 $table$ 记录过对应方案数），则返回该方案数。
-5. 如果当前位置 $i$、和为 $cur\underline{\hspace{0.5em}}sum$  之前没有记录过，则：
-   1. 递归搜索 $i + 1$ 位置，和为 $cur\underline{\hspace{0.5em}}sum  -  nums[i]$ 的方案数。
-   2. 递归搜索 $i + 1$ 位置，和为 $cur\underline{\hspace{0.5em}}sum  +  nums[i]$ 的方案数。
-   3. 将上述两个方案数加起来就是当前位置 $i$、和为 $cur\underline{\hspace{0.5em}}sum$ 的方案数，将其记录到哈希表 $table$ 中，并返回该方案数。
+   1. 如果和 $cur\_sum$ 等于目标和 $target$，则返回方案数 $1$。
+   2. 如果和 $cur\_sum$ 不等于目标和 $target$，则返回方案数 $0$。
+4. 如果当前位置 $i$、和为 $cur\_sum$  之前记录过（即使用 $table$ 记录过对应方案数），则返回该方案数。
+5. 如果当前位置 $i$、和为 $cur\_sum$  之前没有记录过，则：
+   1. 递归搜索 $i + 1$ 位置，和为 $cur\_sum  -  nums[i]$ 的方案数。
+   2. 递归搜索 $i + 1$ 位置，和为 $cur\_sum  +  nums[i]$ 的方案数。
+   3. 将上述两个方案数加起来就是当前位置 $i$、和为 $cur\_sum$ 的方案数，将其记录到哈希表 $table$ 中，并返回该方案数。
 6. 最终方案数为 `dfs(0, 0)`，将其作为答案返回即可。
 
 ### 思路 2：代码
@@ -132,9 +132,9 @@ class Solution:
 
 ### 思路 3：动态规划
 
-假设数组中所有元素和为 $sum$，数组中所有符号为 `+` 的元素为 $sum\underline{\hspace{0.5em}}x$，符号为 `-` 的元素和为 $sum\underline{\hspace{0.5em}}y$。则 $target = sum\underline{\hspace{0.5em}}x - sum\underline{\hspace{0.5em}}y$。
+假设数组中所有元素和为 $sum$，数组中所有符号为 `+` 的元素为 $sum\_x$，符号为 `-` 的元素和为 $sum\_y$。则 $target = sum\_x - sum\_y$。
 
-而 $sum\underline{\hspace{0.5em}}x + sum\underline{\hspace{0.5em}}y = sum$。根据两个式子可以求出 $2 \times sum\underline{\hspace{0.5em}}x = target + sum$，即 $sum\underline{\hspace{0.5em}}x = (target + sum) / 2$。
+而 $sum\_x + sum\_y = sum$。根据两个式子可以求出 $2 \times sum\_x = target + sum$，即 $sum\_x = (target + sum) / 2$。
 
 那么这道题就变成了，如何在数组中找到一个集合，使集合中元素和为 $(target + sum) / 2$。这就变为了「0-1 背包问题」中求装满背包的方案数问题。
 

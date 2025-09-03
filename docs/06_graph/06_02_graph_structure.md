@@ -10,10 +10,10 @@
 
 #### 1.1.1 邻接矩阵的原理描述
 
-> **邻接矩阵（Adjacency Matrix）**：使用一个二维数组 $adj\underline{\hspace{0.5em}}matrix$ 来存储顶点之间的邻接关系。
+> **邻接矩阵（Adjacency Matrix）**：使用一个二维数组 $adj\_matrix$ 来存储顶点之间的邻接关系。
 >
-> - 对于无权图来说，如果 $adj\underline{\hspace{0.5em}}matrix[i][j]$ 为 $1$，则说明顶点 $v_i$ 到 $v_j$ 存在边，如果 $adj\underline{\hspace{0.5em}}matrix[i][j]$ 为 $0$，则说明顶点 $v_i$ 到 $v_j$ 不存在边。
-> - 对于带权图来说，如果 $adj\underline{\hspace{0.5em}}matrix[i][j]$ 为 $w$，并且 $w \ne \infty$（即 `w != float('inf')`），则说明顶点 $v_i$ 到 $v_j$ 的权值为 $w$。如果 $adj\underline{\hspace{0.5em}}matrix[i][j]$ 为 $\infty$（即 `float('inf')`），则说明顶点 $v_i$ 到 $v_j$ 不存在边。
+> - 对于无权图来说，如果 $adj\_matrix[i][j]$ 为 $1$，则说明顶点 $v_i$ 到 $v_j$ 存在边，如果 $adj\_matrix[i][j]$ 为 $0$，则说明顶点 $v_i$ 到 $v_j$ 不存在边。
+> - 对于带权图来说，如果 $adj\_matrix[i][j]$ 为 $w$，并且 $w \ne \infty$（即 `w != float('inf')`），则说明顶点 $v_i$ 到 $v_j$ 的权值为 $w$。如果 $adj\_matrix[i][j]$ 为 $\infty$（即 `float('inf')`），则说明顶点 $v_i$ 到 $v_j$ 不存在边。
 
 在下面的示意图中，左侧是一个无向图，右侧则是该无向图对应的邻接矩阵结构。
 

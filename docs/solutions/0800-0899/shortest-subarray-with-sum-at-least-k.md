@@ -48,22 +48,22 @@
 
 首先对于子数组和，我们可以使用「前缀和」的方式，方便快速的得到某个子数组的和。
 
-对于区间 $[left, right]$，通过 $pre\underline{\hspace{0.5em}}sum[right + 1] - prefix\underline{\hspace{0.5em}}cnts[left]$  即可快速求解出区间 $[left, right]$ 的子数组和。
+对于区间 $[left, right]$，通过 $pre\_sum[right + 1] - prefix\_cnts[left]$  即可快速求解出区间 $[left, right]$ 的子数组和。
 
-此时问题就转变为：是否能找到满足 $i > j$ 且 $pre\underline{\hspace{0.5em}}sum[i] - pre\underline{\hspace{0.5em}}sum[j] \ge k$ 两个条件的子数组 $[j, i)$？如果能找到，则找出 $i - j$ 差值最小的作为答案。
+此时问题就转变为：是否能找到满足 $i > j$ 且 $pre\_sum[i] - pre\_sum[j] \ge k$ 两个条件的子数组 $[j, i)$？如果能找到，则找出 $i - j$ 差值最小的作为答案。
 
 #### 2. 单调队列优化
 
 对于区间 $[j, i)$ 来说，我们应该尽可能的减少不成立的区间枚举。
 
-1. 对于某个区间 $[j, i)$ 来说，如果 $pre\underline{\hspace{0.5em}}sum[i] - pre\underline{\hspace{0.5em}}sum[j] \ge k$，那么大于 $i$ 的索引值就不用再进行枚举了，不可能比 $i - j$ 的差值更优了。此时我们应该尽可能的向右移动 $j$，从而使得 $i - j$ 更小。
-2. 对于某个区间 $[j, i)$ 来说，如果 $pre\underline{\hspace{0.5em}}sum[j] \ge pre\underline{\hspace{0.5em}}sum[i]$，对于任何大于等于 $i$ 的索引值 $r$ 来说，$pre\underline{\hspace{0.5em}}sum[r] - pre\underline{\hspace{0.5em}}sum[i]$ 一定比 $pre\underline{\hspace{0.5em}}sum[i] - pre\underline{\hspace{0.5em}}sum[j]$ 更小且长度更小，此时 $pre\underline{\hspace{0.5em}}sum[j]$ 可以直接忽略掉。
+1. 对于某个区间 $[j, i)$ 来说，如果 $pre\_sum[i] - pre\_sum[j] \ge k$，那么大于 $i$ 的索引值就不用再进行枚举了，不可能比 $i - j$ 的差值更优了。此时我们应该尽可能的向右移动 $j$，从而使得 $i - j$ 更小。
+2. 对于某个区间 $[j, i)$ 来说，如果 $pre\_sum[j] \ge pre\_sum[i]$，对于任何大于等于 $i$ 的索引值 $r$ 来说，$pre\_sum[r] - pre\_sum[i]$ 一定比 $pre\_sum[i] - pre\_sum[j]$ 更小且长度更小，此时 $pre\_sum[j]$ 可以直接忽略掉。
 
-因此，我们可以使用单调队列来维护单调递增的前缀数组 $pre\underline{\hspace{0.5em}}sum$。其中存放了下标 $x:x_0, x_1, …$，满足 $pre\underline{\hspace{0.5em}}sum[x_0] < pre\underline{\hspace{0.5em}}sum[x_1] < …$ 单调递增。
+因此，我们可以使用单调队列来维护单调递增的前缀数组 $pre\_sum$。其中存放了下标 $x:x_0, x_1, …$，满足 $pre\_sum[x_0] < pre\_sum[x_1] < …$ 单调递增。
 
 1. 使用一重循环遍历位置 $i$，将当前位置 $i$ 存入倒掉队列中。
-2. 对于每一个位置 $i$，如果单调队列不为空，则可以判断其之前存入在单调队列中的 $pre\underline{\hspace{0.5em}}sum[j]$ 值，如果 $pre\underline{\hspace{0.5em}}sum[i] - pre\underline{\hspace{0.5em}}sum[j] \ge k$，则更新答案，并将 $j$ 从队头位置弹出。直到不再满足 $pre\underline{\hspace{0.5em}}sum[i] - pre\underline{\hspace{0.5em}}sum[j] \ge k$ 时为止（即 $pre\underline{\hspace{0.5em}}sum[i] - pre\underline{\hspace{0.5em}}sum[j] < k$）。
-3. 如果队尾 $pre\underline{\hspace{0.5em}}sum[j] \ge pre\underline{\hspace{0.5em}}sum[i]$，那么说明以后无论如何都不会再考虑 $pre\underline{\hspace{0.5em}}sum[j]$ 了，则将其从队尾弹出。
+2. 对于每一个位置 $i$，如果单调队列不为空，则可以判断其之前存入在单调队列中的 $pre\_sum[j]$ 值，如果 $pre\_sum[i] - pre\_sum[j] \ge k$，则更新答案，并将 $j$ 从队头位置弹出。直到不再满足 $pre\_sum[i] - pre\_sum[j] \ge k$ 时为止（即 $pre\_sum[i] - pre\_sum[j] < k$）。
+3. 如果队尾 $pre\_sum[j] \ge pre\_sum[i]$，那么说明以后无论如何都不会再考虑 $pre\_sum[j]$ 了，则将其从队尾弹出。
 4. 最后遍历完返回答案。
 
 ### 思路 1：代码

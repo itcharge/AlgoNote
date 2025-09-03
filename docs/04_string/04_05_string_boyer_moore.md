@@ -145,13 +145,13 @@ BM 算法的关键在于两种启发式移动规则：**坏字符规则（Bad Ch
 BM 算法的整体流程如下：
 
 1. 计算文本串 $T$ 的长度 $n$ 和模式串 $p$ 的长度 $m$。
-2. 对模式串 $p$ 进行预处理，分别生成坏字符表 $bc\underline{\hspace{0.5em}}table$ 和好后缀规则后移位数表 $gs\underline{\hspace{0.5em}}table$。
+2. 对模式串 $p$ 进行预处理，分别生成坏字符表 $bc\_table$ 和好后缀规则后移位数表 $gs\_table$。
 3. 将模式串 $p$ 的头部与文本串 $T$ 的当前位置 $i$ 对齐，初始 $i = 0$。每次从模式串的末尾（$j = m - 1$）开始向前逐位比较：
    - 如果 $T[i + j]$ 与 $p[j]$ 相等，则继续向前比较下一个字符。
      - 如果模式串所有字符均匹配，则返回当前匹配的起始位置 $i$。
    - 如果 $T[i + j]$ 与 $p[j]$ 不相等：
-     - 分别根据坏字符表和好后缀表，计算坏字符移动距离 $bad\underline{\hspace{0.5em}}move$ 和好后缀移动距离 $good\underline{\hspace{0.5em}}move$。
-     - 取两者的最大值作为本轮的实际移动距离，即 $i += \max(bad\underline{\hspace{0.5em}}move,\, good\underline{\hspace{0.5em}}move)$，然后继续下一轮匹配。
+     - 分别根据坏字符表和好后缀表，计算坏字符移动距离 $bad\_move$ 和好后缀移动距离 $good\_move$。
+     - 取两者的最大值作为本轮的实际移动距离，即 $i += \max(bad\_move,\, good\_move)$，然后继续下一轮匹配。
 4. 如果模式串移动到文本串末尾仍未找到匹配，则返回 $-1$。
 
 该流程充分利用了坏字符和好后缀两种规则，实现了高效的字符串匹配。
@@ -164,11 +164,11 @@ BM 算法的匹配过程本身实现相对简单，真正的难点主要集中�
 
 坏字符位置表的构建非常直观，具体步骤如下：
 
-- 创建一个哈希表 $bc\underline{\hspace{0.5em}}table$，用于记录每个字符在模式串中最后一次出现的位置，即 $bc\underline{\hspace{0.5em}}table[bad\underline{\hspace{0.5em}}char]$ 表示坏字符 $bad\underline{\hspace{0.5em}}char$ 在模式串中的最右下标。
+- 创建一个哈希表 $bc\_table$，用于记录每个字符在模式串中最后一次出现的位置，即 $bc\_table[bad\_char]$ 表示坏字符 $bad\_char$ 在模式串中的最右下标。
 
 - 遍历模式串 $p$，将每个字符 $p[i]$ 及其下标 $i$ 存入哈希表。若某字符在模式串中多次出现，则后出现的下标会覆盖前面的值，确保记录的是最右侧的位置。
 
-在 BM 算法匹配过程中，如果 $bad\underline{\hspace{0.5em}}char$ 不在 $bc\underline{\hspace{0.5em}}table$ 中，则视为其最右位置为 $-1$；如果存在，则直接取 $bc\underline{\hspace{0.5em}}table[bad\underline{\hspace{0.5em}}char]$。据此即可计算模式串本轮应向右移动的距离。
+在 BM 算法匹配过程中，如果 $bad\_char$ 不在 $bc\_table$ 中，则视为其最右位置为 $-1$；如果存在，则直接取 $bc\_table[bad\_char]$。据此即可计算模式串本轮应向右移动的距离。
 
 坏字符位置表的实现代码如下：
 
@@ -226,7 +226,7 @@ def generateSuffixArray(p: str):
     return suffix
 ```
 
-有了 $suffix$ 数组后，我们可以基于它构建好后缀规则的后移位数表 $gs\underline{\hspace{0.5em}}list$。该表用一个数组表示，其中 $gs\underline{\hspace{0.5em}}list[j]$ 表示在模式串第 $j$ 位遇到坏字符时，根据好后缀规则可以向右移动的距离。
+有了 $suffix$ 数组后，我们可以基于它构建好后缀规则的后移位数表 $gs\_list$。该表用一个数组表示，其中 $gs\_list[j]$ 表示在模式串第 $j$ 位遇到坏字符时，根据好后缀规则可以向右移动的距离。
 
 根据「2.2 好后缀规则」的分析，好后缀的移动分为三种情况：
 
@@ -236,13 +236,13 @@ def generateSuffixArray(p: str):
 
 实际上，情况 2 和情况 3 可以合并处理（情况 3 可视为最长前缀长度为 $0$ 的特殊情况）。当某个坏字符同时满足多种情况时，应优先选择移动距离最小的方案，以避免遗漏可能的匹配。例如，若既有匹配子串又有匹配前缀，应优先采用匹配子串的移动方式。
 
-具体构建 $gs\underline{\hspace{0.5em}}list$ 的步骤如下：
+具体构建 $gs\_list$ 的步骤如下：
 
-- 首先，假设所有位置均为情况 3，即 $gs\underline{\hspace{0.5em}}list[i] = m$。
-- 然后，利用后缀和前缀的匹配关系，更新情况 2 下的移动距离：$gs\underline{\hspace{0.5em}}list[j] = m - 1 - i$，其中 $j$ 是好后缀前的坏字符位置，$i$ 是最长前缀的末尾下标，$m - 1 - i$ 为可移动的距离。
-- 最后，处理情况 1：对于好后缀的左端点（$m - 1 - suffix[i]$ 处）遇到坏字符时，更新其可移动距离为 $gs\underline{\hspace{0.5em}}list[m - 1 - suffix[i]] = m - 1 - i$。
+- 首先，假设所有位置均为情况 3，即 $gs\_list[i] = m$。
+- 然后，利用后缀和前缀的匹配关系，更新情况 2 下的移动距离：$gs\_list[j] = m - 1 - i$，其中 $j$ 是好后缀前的坏字符位置，$i$ 是最长前缀的末尾下标，$m - 1 - i$ 为可移动的距离。
+- 最后，处理情况 1：对于好后缀的左端点（$m - 1 - suffix[i]$ 处）遇到坏字符时，更新其可移动距离为 $gs\_list[m - 1 - suffix[i]] = m - 1 - i$。
 
-下面是生成好后缀规则后移位数表 $gs\underline{\hspace{0.5em}}list$ 的代码：
+下面是生成好后缀规则后移位数表 $gs\_list$ 的代码：
 
 ```python
 # 生成好后缀规则后移位数表

@@ -71,12 +71,12 @@
 
 对于当前状态 $dp[state]$，肯定是从比 $state$ 少选一个元素的状态中递推而来。我们可以枚举少选一个元素的状态，找到可以获得的最大与和，赋值给 $dp[state]$。
 
-即状态转移方程为：$dp[state] = min(dp[state], dp[state \oplus (1 \text{ <}\text{< } i)] + (i // 2 + 1) \text{ \& } nums[one\underline{\hspace{0.5em}}cnt - 1])$，其中：
+即状态转移方程为：$dp[state] = min(dp[state], dp[state \oplus (1 \text{ <}\text{< } i)] + (i // 2 + 1) \text{ \& } nums[one\_cnt - 1])$，其中：
 
 1. $state$ 第 $i$ 位一定为 $1$。
 2. $state \oplus (1 \text{ <}\text{< } i)$ 为比 $state$ 少选一个元素的状态。
 3. $i // 2 + 1$ 为篮子对应编号
-4. $nums[one\underline{\hspace{0.5em}}cnt - 1]$ 为当前正在考虑的数组元素。
+4. $nums[one\_cnt - 1]$ 为当前正在考虑的数组元素。
 
 ###### 4. 初始条件
 
@@ -86,7 +86,7 @@
 
 根据我们之前定义的状态，$dp[state]$ 表示为：将前 $count(state)$ 个整数放到篮子里，并且每个篮子中的整数放取情况为 $state$ 时，可以获得的最大与和。所以最终结果为 $max(dp)$。
 
-> 注意：当 $one\underline{\hspace{0.5em}}cnt > len(nums)$ 时，无法通过递推得到 $dp[state]$，需要跳过。
+> 注意：当 $one\_cnt > len(nums)$ 时，无法通过递推得到 $dp[state]$，需要跳过。
 
 ### 思路 1：代码
 

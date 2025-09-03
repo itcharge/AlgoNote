@@ -51,10 +51,10 @@
 
 ### 思路 1：直接模拟
 
-1. 使用变量 $max\underline{\hspace{0.5em}}ans$ 存储最富有客户所拥有的资产总量。
+1. 使用变量 $max\_ans$ 存储最富有客户所拥有的资产总量。
 2. 遍历所有客户，对于当前客户 $accounts[i]$，统计其拥有的资产总量。
-3. 将当前客户的资产总量与 $max\underline{\hspace{0.5em}}ans$ 进行比较，如果大于 $max\underline{\hspace{0.5em}}ans$，则更新 $max\underline{\hspace{0.5em}}ans$ 的值。
-4. 遍历完所有客户，最终返回 $max\underline{\hspace{0.5em}}ans$ 作为结果。
+3. 将当前客户的资产总量与 $max\_ans$ 进行比较，如果大于 $max\_ans$，则更新 $max\_ans$ 的值。
+4. 遍历完所有客户，最终返回 $max\_ans$ 作为结果。
 
 ### 思路 1：代码
 

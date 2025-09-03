@@ -54,8 +54,8 @@
 
 进一步可以变为：「0-1 背包问题」。
 
-1. 假设石头总重量和为 $sum$，将一堆石头放进载重上限为 $sum / 2$ 的背包中，获得的最大价值为 $max\underline{\hspace{0.5em}}weight$（即其中一堆石子的重量）。另一堆石子的重量为 $sum - max\underline{\hspace{0.5em}}weight$。
-2. 则两者的差值为 $sum - 2 \times max\underline{\hspace{0.5em}}weight$，即为答案。
+1. 假设石头总重量和为 $sum$，将一堆石头放进载重上限为 $sum / 2$ 的背包中，获得的最大价值为 $max\_weight$（即其中一堆石子的重量）。另一堆石子的重量为 $sum - max\_weight$。
+2. 则两者的差值为 $sum - 2 \times max\_weight$，即为答案。
 
 ###### 1. 划分阶段
 

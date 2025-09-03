@@ -28,11 +28,11 @@
 
 ### 3.1 固定长度滑动窗口算法步骤
 
-假设窗口大小为 $window\underline{\hspace{0.5em}}size$，步骤如下：
+假设窗口大小为 $window\_size$，步骤如下：
 
 1. 定义两个指针 $left$ 和 $right$，初始都指向序列起始位置（$left = 0, right = 0$），区间 $[left, right]$ 表示当前窗口。
 2. 不断右移 $right$，将元素加入窗口（如 `window.append(nums[right])`）。
-3. 当窗口长度达到 $window\underline{\hspace{0.5em}}size$（即 `right - left + 1 >= window_size`）时：
+3. 当窗口长度达到 $window\_size$（即 `right - left + 1 >= window_size`）时：
    - 判断窗口内元素是否满足题目要求，若满足则更新答案。
    - 右移 $left$（`left += 1`），保持窗口长度不变。
 4. 重复上述过程，直到 $right$ 遍历完整个数组。
@@ -107,7 +107,7 @@ while right < len(nums):
 
 1. 用 $window\_sum$ 维护当前窗口内元素和，$ans$ 统计满足条件的子数组个数。
 2. 使用两个指针 $left$、$right$，初始都为 $0$。
-3. 每次将 $arr[right]$ 加入 $window\underline{\hspace{0.5em}}sum$，$right$ 右移。
+3. 每次将 $arr[right]$ 加入 $window\_sum$，$right$ 右移。
 4. 当窗口长度达到 $k$（即 `right - left + 1 >= k`）时，判断窗口平均值是否大于等于 $threshold$，满足则 $ans + 1$。
 5. 然后将 $arr[left]$ 移出窗口，$left$ 右移，保证窗口长度始终为 $k$。
 6. 重复上述过程直到遍历完整个数组，最后返回 $ans$。

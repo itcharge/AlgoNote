@@ -270,10 +270,10 @@ class Solution:
 
 ### 4.1 分离双指针求解步骤
 
-1. 定义两个指针 $left\underline{\hspace{0.5em}}1$ 和 $left\underline{\hspace{0.5em}}2$，分别指向两个数组的起始位置（均为 $0$）。
-2. 根据条件，若需要，两个指针同时右移：$left\underline{\hspace{0.5em}}1 += 1$，$left\underline{\hspace{0.5em}}2 += 1$。
-3. 若只需移动第一个数组指针，则 $left\underline{\hspace{0.5em}}1 += 1$。
-4. 若只需移动第二个数组指针，则 $left\underline{\hspace{0.5em}}2 += 1$。
+1. 定义两个指针 $left\_1$ 和 $left\_2$，分别指向两个数组的起始位置（均为 $0$）。
+2. 根据条件，若需要，两个指针同时右移：$left\_1 += 1$，$left\_2 += 1$。
+3. 若只需移动第一个数组指针，则 $left\_1 += 1$。
+4. 若只需移动第二个数组指针，则 $left\_2 += 1$。
 5. 当任一指针遍历到数组末尾或满足终止条件时，结束循环。
 
 ### 4.2 分离双指针通用模板
@@ -345,14 +345,14 @@ while left_1 < len(nums1) and left_2 < len(nums2):
 ##### 思路 1：分离双指针
 
 1. 先对 $nums1$ 和 $nums2$ 排序。
-2. 用两个指针 $left\underline{\hspace{0.5em}}1$、$left\underline{\hspace{0.
+2. 用两个指针 $left\_1$、$left\underline{\hspace{0.
 5em}}2$ 分别从两个数组头部开始遍历。
-3. 若 $nums1[left\underline{\hspace{0.5em}}1] == nums2[left\underline
-{\hspace{0.5em}}2]$，将该元素（去重）加入结果，并同时右移 $left\underline{\hspace{0.5em}}1$、$left\underline
+3. 若 $nums1[left\_1] == nums2[left\underline
+{\hspace{0.5em}}2]$，将该元素（去重）加入结果，并同时右移 $left\_1$、$left\underline
 {\hspace{0.5em}}2$。
-4. 若 $nums1[left\underline{\hspace{0.5em}}1] < nums2[left\underline
-{\hspace{0.5em}}2]$，则 $left\underline{\hspace{0.5em}}1$ 右移。
-5. 若 $nums1[left\underline{\hspace{0.5em}}1] > nums2[left\underline
+4. 若 $nums1[left\_1] < nums2[left\underline
+{\hspace{0.5em}}2]$，则 $left\_1$ 右移。
+5. 若 $nums1[left\_1] > nums2[left\underline
 {\hspace{0.5em}}2]$，则 $left\underline
 {\hspace{0.5em}}2$ 右移。
 6. 遍历结束后返回结果数组。

@@ -52,31 +52,31 @@
 
 初始化问题：
 
-我们将所有大于中位数的元素放到 $heap\underline{\hspace{0.5em}}max$（小顶堆）中，并且元素个数向上取整。然后再将所有小于等于中位数的元素放到 $heap\underline{\hspace{0.5em}}min$（大顶堆）中，并且元素个数向下取整。这样当 $k$ 为奇数时，$heap\underline{\hspace{0.5em}}max$ 比 $heap\underline{\hspace{0.5em}}min$ 多一个元素，中位数就是 $heap\underline{\hspace{0.5em}}max$ 堆顶元素。当 $k$ 为偶数时，$heap\underline{\hspace{0.5em}}max$ 和 $heap\underline{\hspace{0.5em}}min$ 中的元素个数相同，中位数就是 $heap\underline{\hspace{0.5em}}min$ 堆顶元素和 $heap\underline{\hspace{0.5em}}max$ 堆顶元素的平均数。这个过程操作如下：
+我们将所有大于中位数的元素放到 $heap\_max$（小顶堆）中，并且元素个数向上取整。然后再将所有小于等于中位数的元素放到 $heap\_min$（大顶堆）中，并且元素个数向下取整。这样当 $k$ 为奇数时，$heap\_max$ 比 $heap\_min$ 多一个元素，中位数就是 $heap\_max$ 堆顶元素。当 $k$ 为偶数时，$heap\_max$ 和 $heap\_min$ 中的元素个数相同，中位数就是 $heap\_min$ 堆顶元素和 $heap\_max$ 堆顶元素的平均数。这个过程操作如下：
 
-- 先将数组中前 $k$ 个元素放到 $heap\underline{\hspace{0.5em}}max$ 中。
-- 再从 $heap\underline{\hspace{0.5em}}max$ 中取出 $k // 2$ 个堆顶元素放到 $heap\underline{\hspace{0.5em}}min$ 中。
+- 先将数组中前 $k$ 个元素放到 $heap\_max$ 中。
+- 再从 $heap\_max$ 中取出 $k // 2$ 个堆顶元素放到 $heap\_min$ 中。
 
 取中位数问题（上边提到过）：
 
-- 当 $k$ 为奇数时，中位数就是 $heap\underline{\hspace{0.5em}}max$ 堆顶元素。当 $k$ 为偶数时，中位数就是 $heap\underline{\hspace{0.5em}}max$ 堆顶元素和 $heap\underline{\hspace{0.5em}}min$ 堆顶元素的平均数。
+- 当 $k$ 为奇数时，中位数就是 $heap\_max$ 堆顶元素。当 $k$ 为偶数时，中位数就是 $heap\_max$ 堆顶元素和 $heap\_min$ 堆顶元素的平均数。
 
 窗口滑动过程中元素的添加和删除问题：
 
 - 删除：每次滑动将窗口左侧元素删除。由于 `heapq` 没有提供删除中间特定元素相对应的方法。所以我们使用「延迟删除」的方式先把待删除的元素标记上，等到待删除的元素出现在堆顶时，再将其移除。我们使用 $removes$ （哈希表）来记录待删除元素个数。
   - 将窗口左侧元素删除的操作为：`removes[nums[left]] += 1`。
-- 添加：每次滑动在窗口右侧添加元素。需要根据上一步删除的结果来判断需要添加到哪一个堆上。我们用 $banlance$ 记录 $heap\underline{\hspace{0.5em}}max$ 和 $heap\underline{\hspace{0.5em}}min$ 元素个数的差值。
-  - 如果窗口左边界 $nums[left]$小于等于 $heap\underline{\hspace{0.5em}}max$ 堆顶元素 ，则说明上一步删除的元素在 $heap\underline{\hspace{0.5em}}min$ 上，则让 `banlance -= 1`。
-  - 如果窗口左边界 $nums[left]$ 大于 $heap\underline{\hspace{0.5em}}max$ 堆顶元素，则说明上一步删除的元素在 $heap\underline{\hspace{0.5em}}max$ 上，则上 `banlance += 1`。
-  - 如果窗口右边界 $nums[right]$ 小于等于 $heap\underline{\hspace{0.5em}}max$ 堆顶元素，则说明待添加元素需要添加到 $heap\underline{\hspace{0.5em}}min$ 上，则让 `banlance += 1`。
-  - 如果窗口右边界 $nums[right]$ 大于 $heap\underline{\hspace{0.5em}}max$ 堆顶元素，则说明待添加元素需要添加到 $heap\underline{\hspace{0.5em}}max$ 上，则让 `banlance -= 1`。
+- 添加：每次滑动在窗口右侧添加元素。需要根据上一步删除的结果来判断需要添加到哪一个堆上。我们用 $banlance$ 记录 $heap\_max$ 和 $heap\_min$ 元素个数的差值。
+  - 如果窗口左边界 $nums[left]$小于等于 $heap\_max$ 堆顶元素 ，则说明上一步删除的元素在 $heap\_min$ 上，则让 `banlance -= 1`。
+  - 如果窗口左边界 $nums[left]$ 大于 $heap\_max$ 堆顶元素，则说明上一步删除的元素在 $heap\_max$ 上，则上 `banlance += 1`。
+  - 如果窗口右边界 $nums[right]$ 小于等于 $heap\_max$ 堆顶元素，则说明待添加元素需要添加到 $heap\_min$ 上，则让 `banlance += 1`。
+  - 如果窗口右边界 $nums[right]$ 大于 $heap\_max$ 堆顶元素，则说明待添加元素需要添加到 $heap\_max$ 上，则让 `banlance -= 1`。
 - 经过上述操作，$banlance$ 的取值为 $0$、$-2$、$2$ 中的一种。需要经过调整使得 $banlance == 0$。
   - 如果 $banlance == 0$，已经平衡，不需要再做操作。
-  - 如果 $banlance == -2$，则说明 $heap\underline{\hspace{0.5em}}min$ 比 $heap\underline{\hspace{0.5em}}max$ 的元素多了两个。则从 $heap\underline{\hspace{0.5em}}min$ 中取出堆顶元素添加到 $heap\underline{\hspace{0.5em}}max$ 中。 
-  - 如果 $banlance == 2$，则说明 $heap\underline{\hspace{0.5em}}max$ 比 $heap\underline{\hspace{0.5em}}min$ 的元素多了两个。则从 $heap\underline{\hspace{0.5em}}max$ 中取出堆顶元素添加到 $heap\underline{\hspace{0.5em}}min$ 中。
-- 调整完之后，分别检查 $heap\underline{\hspace{0.5em}}max$ 和 $heap\underline{\hspace{0.5em}}min$ 的堆顶元素。
-  - 如果 $heap\underline{\hspace{0.5em}}max$ 堆顶元素恰好为待删除元素，即 $removes[-heap\underline{\hspace{0.5em}}max[0]] > 0$，则弹出 $heap\underline{\hspace{0.5em}}max$ 堆顶元素。
-  - 如果 $heap\underline{\hspace{0.5em}}min$ 堆顶元素恰好为待删除元素，即 $removes[heap\underline{\hspace{0.5em}}min[0]] > 0$，则弹出 $heap\underline{\hspace{0.5em}}min$ 堆顶元素。
+  - 如果 $banlance == -2$，则说明 $heap\_min$ 比 $heap\_max$ 的元素多了两个。则从 $heap\_min$ 中取出堆顶元素添加到 $heap\_max$ 中。 
+  - 如果 $banlance == 2$，则说明 $heap\_max$ 比 $heap\_min$ 的元素多了两个。则从 $heap\_max$ 中取出堆顶元素添加到 $heap\_min$ 中。
+- 调整完之后，分别检查 $heap\_max$ 和 $heap\_min$ 的堆顶元素。
+  - 如果 $heap\_max$ 堆顶元素恰好为待删除元素，即 $removes[-heap\_max[0]] > 0$，则弹出 $heap\_max$ 堆顶元素。
+  - 如果 $heap\_min$ 堆顶元素恰好为待删除元素，即 $removes[heap\_min[0]] > 0$，则弹出 $heap\_min$ 堆顶元素。
 - 最后取中位数放入答案数组中，然后继续滑动窗口。
 
 ### 思路 1：代码

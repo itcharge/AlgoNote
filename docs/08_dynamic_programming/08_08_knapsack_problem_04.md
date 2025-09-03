@@ -80,7 +80,7 @@ class Solution:
 
 ## 6. 分组背包问题
 
-> **分组背包问题**：有 $n$ 组物品和一个最多能装重量为 $W$ 的背包，第 $i$ 组物品的件数为 $group\underline{\hspace{0.5em}}count[i]$，第 $i$ 组的第 $j$ 个物品重量为 $weight[i][j]$，价值为 $value[i][j]$。每组物品中最多只能选择 $1$ 件物品装入背包。请问在总重量不超过背包载重上限的情况下，能装入背包的最大价值是多少？
+> **分组背包问题**：有 $n$ 组物品和一个最多能装重量为 $W$ 的背包，第 $i$ 组物品的件数为 $group\_count[i]$，第 $i$ 组的第 $j$ 个物品重量为 $weight[i][j]$，价值为 $value[i][j]$。每组物品中最多只能选择 $1$ 件物品装入背包。请问在总重量不超过背包载重上限的情况下，能装入背包的最大价值是多少？
 
 ![分组背包问题](https://qcdn.itcharge.cn/images/20240514111745.png)
 
@@ -100,17 +100,17 @@ class Solution:
 
 ###### 3. 状态转移方程
 
-由于我们可以不选择 $i - 1$ 组物品中的任何物品，也可以从第 $i - 1$ 组物品的第 $0 \sim group\underline{\hspace{0.5em}}count[i - 1] - 1$ 件物品中随意选择 $1$ 件物品，所以状态 $dp[i][w]$ 可能从以下方案中选择最大值：
+由于我们可以不选择 $i - 1$ 组物品中的任何物品，也可以从第 $i - 1$ 组物品的第 $0 \sim group\_count[i - 1] - 1$ 件物品中随意选择 $1$ 件物品，所以状态 $dp[i][w]$ 可能从以下方案中选择最大值：
 
 1. 不选择第 $i - 1$ 组中的任何物品：可以获得的最大价值为 $dp[i - 1][w]$。
 2. 选择第 $i - 1$ 组物品中第 $0$ 件：可以获得的最大价值为 $dp[i - 1][w - weight[i - 1][0]] + value[i - 1][0]$。
 3. 选择第 $i - 1$ 组物品中第 $1$ 件：可以获得的最大价值为 $dp[i - 1][w - weight[i - 1][1]] + value[i - 1][1]$。
 4. ……
-5. 选择第 $i - 1$ 组物品中最后 $1$ 件：假设 $k =  group\underline{\hspace{0.5em}}count[i - 1] - 1$，则可以获得的最大价值为 $dp[i - 1][w - weight[i - 1][k]] + value[i - 1][k]$。
+5. 选择第 $i - 1$ 组物品中最后 $1$ 件：假设 $k =  group\_count[i - 1] - 1$，则可以获得的最大价值为 $dp[i - 1][w - weight[i - 1][k]] + value[i - 1][k]$。
 
 则状态转移方程为：
 
-$dp[i][w] = max \lbrace dp[i - 1][w], dp[i - 1][w - weight[i - 1][k]] + value[i - 1][k] \rbrace , \quad 0 \le k \le group\underline{\hspace{0.5em}}count[i - 1]$
+$dp[i][w] = max \lbrace dp[i - 1][w], dp[i - 1][w - weight[i - 1][k]] + value[i - 1][k] \rbrace , \quad 0 \le k \le group\_count[i - 1]$
 
 ###### 4. 初始条件
 
@@ -144,7 +144,7 @@ class Solution:
 
 #### 思路 1：复杂度分析
 
-- **时间复杂度**：$O(n \times W \times C)$，其中 $n$ 为物品分组数量，$W$ 为背包的载重上限，$C$ 是每组物品的数量。因为 $n \times C = \sum group\underline{\hspace{0.5em}}count[i]$，所以时间复杂度也可以写成 $O(W \times \sum group\underline{\hspace{0.5em}}count[i])$。
+- **时间复杂度**：$O(n \times W \times C)$，其中 $n$ 为物品分组数量，$W$ 为背包的载重上限，$C$ 是每组物品的数量。因为 $n \times C = \sum group\_count[i]$，所以时间复杂度也可以写成 $O(W \times \sum group\_count[i])$。
 - **空间复杂度**：$O(n \times W)$。
 
 ### 6.2 分组背包问题滚动数组优化
@@ -161,7 +161,7 @@ class Solution:
 
 ###### 3. 状态转移方程
 
-$dp[w] = max \lbrace dp[w], \quad dp[w - weight[i - 1][k]]  + value[i - 1][k] \rbrace , \quad 0 \le k \le group\underline{\hspace{0.5em}}count[i - 1]$
+$dp[w] = max \lbrace dp[w], \quad dp[w - weight[i - 1][k]]  + value[i - 1][k] \rbrace , \quad 0 \le k \le group\_count[i - 1]$
 
 ###### 4. 初始条件
 
@@ -195,7 +195,7 @@ class Solution:
 
 #### 思路 2：复杂度分析
 
-- **时间复杂度**：$O(n \times W \times C)$，其中 $n$ 为物品分组数量，$W$ 为背包的载重上限，$C$ 是每组物品的数量。因为 $n \times C = \sum group\underline{\hspace{0.5em}}count[i]$，所以时间复杂度也可以写成 $O(W \times \sum group\underline{\hspace{0.5em}}count[i])$。
+- **时间复杂度**：$O(n \times W \times C)$，其中 $n$ 为物品分组数量，$W$ 为背包的载重上限，$C$ 是每组物品的数量。因为 $n \times C = \sum group\_count[i]$，所以时间复杂度也可以写成 $O(W \times \sum group\_count[i])$。
 - **空间复杂度**：$O(W)$。
 
 ## 7. 二维费用背包问题
