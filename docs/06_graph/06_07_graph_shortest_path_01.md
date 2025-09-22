@@ -128,54 +128,61 @@ for i in range(1, n + 1):
 ### 3.2 堆优化 Dijkstra 算法实现步骤
 
 1. 初始化距离数组，源点距离设为 $0$，其余节点设为无穷大。
-2. 创建优先队列，将 $(0, source)$ 入队。
+2. 创建优先队列，将源节点及其距离 $(0, source)$ 入队。
 3. 当优先队列非空时，重复以下操作：
    - 弹出队首（距离最小）节点；
-   - 若该节点的距离已大于当前最短距离，跳过；
+   - 如果该节点的距离已大于当前最短距离，跳过；
    - 否则，遍历其所有邻居，尝试松弛：
-     - 若通过当前节点到邻居的距离更短，则更新距离并将新距离入队。
+     - 如果通过当前节点到邻居的距离更短，则更新距离并将新距离入队。
 4. 队列为空时结束，返回所有节点的最短距离数组。
 
-### 3.3 堆优化的 Dijkstra 算法实现代码
+### 3.3 堆优化 Dijkstra 算法实现代码
 
 ```python
 import heapq
 
 class Solution:
     def dijkstra(self, graph, n, source):
-        # 初始化距离数组
-        dist = [float('inf') for _ in range(n + 1)]
-        dist[source] = 0
-        
-        # 创建优先队列，存储 (距离, 节点) 的元组
+        """
+        堆优化 Dijkstra 算法，计算单源最短路径
+        :param graph: 邻接表，graph[u] = {v: w, ...}
+        :param n: 节点总数（节点编号从 1 到 n）
+        :param source: 源点编号
+        :return: dist[i] 表示源点到 i 的最短距离
+        """
+        # 距离数组，初始化为无穷大
+        dist = [float('inf')] * (n + 1)
+        dist[source] = 0  # 源点到自身距离为 0
+
+        # 小根堆，存储 (距离, 节点) 元组
         priority_queue = [(0, source)]
-        
+
         while priority_queue:
             current_distance, current_node = heapq.heappop(priority_queue)
-            
-            # 如果当前距离大于已知的最短距离，跳过
+            # 如果弹出的节点距离不是最短的，说明已被更新，跳过
             if current_distance > dist[current_node]:
                 continue
-                
-            # 遍历当前节点的所有相邻节点
-            for neighbor, weight in graph[current_node].items():
-                distance = current_distance + weight
-                if distance < dist[neighbor]:
-                    dist[neighbor] = distance
-                    heapq.heappush(priority_queue, (distance, neighbor))
-        
+
+            # 遍历当前节点的所有邻居
+            for neighbor, weight in graph.get(current_node, {}).items():
+                new_distance = current_distance + weight
+                # 如果找到更短路径，则更新并入堆
+                if new_distance < dist[neighbor]:
+                    dist[neighbor] = new_distance
+                    heapq.heappush(priority_queue, (new_distance, neighbor))
+
         return dist
 
 # 使用示例
-# 创建一个有向图，使用邻接表表示
+# 构建一个有向图，邻接表表示
 graph = {
     1: {2: 2, 3: 4},
     2: {3: 1, 4: 7},
     3: {4: 3},
     4: {}
 }
-n = 4  # 图中节点数量
-source = 1  # 源节点
+n = 4  # 节点数量
+source = 1  # 源点编号
 
 dist = Solution().dijkstra(graph, n, source)
 print("从节点", source, "到其他节点的最短距离：")
@@ -186,27 +193,15 @@ for i in range(1, n + 1):
         print(f"到节点 {i} 的距离：{dist[i]}")
 ```
 
-代码解释：
+### 3.4 堆优化 Dijkstra 算法复杂度分析
 
-1. `graph` 是一个字典，表示图的邻接表。例如，`graph[1] = {2: 3, 3: 4}` 表示从节点 1 到节点 2 的边权重为 3，到节点 3 的边权重为 4。
-2. `n` 是图中顶点的数量。
-3. `source` 是源节点的编号。
-4. `dist` 数组存储源点到各个节点的最短距离。
-5. `priority_queue` 是一个优先队列，用来选择当前距离源点最近的节点。队列中的元素是 (距离, 节点) 的元组。
-6. 主循环中，每次从队列中取出距离最小的节点。如果该节点的距离已经被更新过，跳过。
-7. 对于当前节点的每一个邻居，计算通过当前节点到达邻居的距离。如果这个距离比已知的更短，更新距离并将邻居加入队列。
-8. 最终，`dist` 数组中存储的就是源点到所有节点的最短距离。
+- **时间复杂度**：$O((V + E) \log V)$。
+  - 堆优化 Dijkstra 算法中，每个节点最多会被弹出优先队列一次，每次弹出操作的复杂度为 $O(\log V)$。  
+  - 每条边在松弛操作时最多会导致一次入堆，入堆操作的复杂度同样为 $O(\log V)$。  
+  - 因此，总体时间复杂度为 $O((V + E) \log V)$，其中 $V$ 为节点数，$E$ 为边数。
 
-### 3.4 堆优化的 Dijkstra 算法复杂度分析
-
-- **时间复杂度**：$O((V + E) \log V)$
-  - 每个节点最多被加入优先队列一次，每次操作的时间复杂度为 $O(\log V)$
-  - 每条边最多被处理一次，每次处理的时间复杂度为 $O(\log V)$
-  - 因此总时间复杂度为 $O((V + E) \log V)$
-
-- **空间复杂度**：$O(V)$
-  - 需要存储距离数组，大小为 $O(V)$。
-  - 优先队列在最坏情况下可能存储所有节点，大小为 $O(V)$。
+- **空间复杂度**：$O(V)$。  
+  - 主要空间消耗在距离数组和优先队列，二者最坏情况下均为 $O(V)$ 级别。
 
 ## 练习题目
 
