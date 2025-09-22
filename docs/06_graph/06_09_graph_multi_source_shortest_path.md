@@ -1,116 +1,119 @@
 ## 1. 多源最短路径简介
 
-> **多源最短路径（All-Pairs Shortest Paths）**：对于一个带权图 $G = (V, E)$，计算图中任意两个顶点之间的最短路径长度。
+> **多源最短路径（All-Pairs Shortest Paths）**：指的是在一个带权图 $G = (V, E)$ 中，计算任意两个顶点之间的最短路径长度。
 
-多源最短路径问题的核心是找到图中任意两个顶点之间的最短路径。这个问题在许多实际应用中都非常重要，比如：
+多源最短路径问题的本质，就是要找出图中每一对顶点之间的最短路径。这类问题在实际生活和工程中非常常见，例如：
 
-1. 网络路由中的路由表计算
-2. 地图导航系统中的距离矩阵计算
-3. 社交网络中的最短关系链分析
-4. 交通网络中的最优路径规划
+1. 网络通信中，生成路由表以确定任意两点之间的最优传输路径；
+2. 地图导航系统中，计算所有地点之间的距离矩阵；
+3. 社交网络分析中，寻找两个人之间的最短关系链；
+4. 交通网络中，规划任意两地之间的最优行车路线。
 
-常见的解决多源最短路径问题的算法包括：
+常用的多源最短路径算法有：
 
-1. **Floyd-Warshall 算法**：一种动态规划算法，可以处理负权边，但不能处理负权环。
-2. **Johnson 算法**：结合了 Bellman-Ford 算法和 Dijkstra 算法，可以处理负权边，但不能处理负权环。
-3. **重复 Dijkstra 算法**：对每个顶点运行一次 Dijkstra 算法，适用于无负权边的图。
+1. **Floyd-Warshall 算法**：一种基于动态规划的方法，能处理负权边，但无法处理负权环。
+2. **Johnson 算法**：结合了 Bellman-Ford 和 Dijkstra 算法，既能处理负权边，也能高效应对稀疏图，但同样不能处理负权环。
+3. **多次 Dijkstra 算法**：对每个顶点分别运行一次 Dijkstra 算法，适用于没有负权边的图。
 
 ## 2. Floyd-Warshall 算法
 
-### 2.1 Floyd-Warshall 算法的算法思想
+### 2.1 Floyd-Warshall 算法的核心思想
 
-> **Floyd-Warshall 算法**：一种动态规划算法，通过逐步考虑中间顶点来更新任意两点之间的最短路径。
+> **Floyd-Warshall 算法**：这是一种经典的动态规划算法，通过不断尝试引入不同的中间节点，来优化任意两点之间的最短路径。
 
-Floyd-Warshall 算法的核心思想是：
+通俗来说，Floyd-Warshall 算法的核心思想如下：
 
-1. 对于图中的任意两个顶点 $i$ 和 $j$，考虑是否存在一个顶点 $k$，使得从 $i$ 到 $k$ 再到 $j$ 的路径比已知的从 $i$ 到 $j$ 的路径更短
-2. 如果存在这样的顶点 $k$，则更新从 $i$ 到 $j$ 的最短路径
-3. 通过考虑所有可能的中间顶点 $k$，最终得到任意两点之间的最短路径
+1. 假设要找从顶点 $i$ 到顶点 $j$ 的最短路径，试着经过某个中间顶点 $k$，看看能不能让路径更短。
+2. 如果发现「先从 $i$ 到 $k$，再从 $k$ 到 $j$」的路径比原来「直接从 $i$ 到 $j$」的路径更短，就用这个更短的路径来更新答案。
+3. 依次尝试所有顶点作为中间点 $k$，每次都用上述方法去优化所有点对之间的最短路径，最终就能得到全局最优解。
 
 ### 2.2 Floyd-Warshall 算法的实现步骤
 
-1. 初始化距离矩阵 $dist$，其中 $dist[i][j]$ 表示从顶点 $i$ 到顶点 $j$ 的最短路径长度
-2. 对于每对顶点 $(i, j)$，如果存在边 $(i, j)$，则 $dist[i][j]$ 设为边的权重，否则设为无穷大
-3. 对于每个顶点 $k$，作为中间顶点：
-   - 对于每对顶点 $(i, j)$，如果 $dist[i][k] + dist[k][j] < dist[i][j]$，则更新 $dist[i][j]$
-4. 重复步骤 3，直到考虑完所有可能的中间顶点
-5. 返回最终的距离矩阵
+1. 先初始化一个距离矩阵 $dist$，$dist[i][j]$ 表示从顶点 $i$ 到顶点 $j$ 的当前最短路径长度。
+2. 如果 $i$ 和 $j$ 之间有直接的边，就把 $dist[i][j]$ 设为这条边的权重；如果没有，设为无穷大（表示不可达）。
+3. 然后，依次枚举每个顶点 $k$ 作为「中转站」：
+   - 对于所有顶点对 $(i, j)$，如果「从 $i$ 经过 $k$ 到 $j$」的路径更短（即 $dist[i][k] + dist[k][j] < dist[i][j]$），就用更短的路径更新 $dist[i][j]$。
+4. 重复第 3 步，直到所有顶点都被作为中间点尝试过。
+5. 最终，$dist$ 矩阵中每个 $dist[i][j]$ 就是从 $i$ 到 $j$ 的最短路径长度。
 
 ### 2.3 Floyd-Warshall 算法的实现代码
 
 ```python
 def floyd_warshall(graph, n):
-    # 初始化距离矩阵
-    dist = [[float('inf') for _ in range(n)] for _ in range(n)]
+    """
+    Floyd-Warshall 算法，计算所有点对之间的最短路径。
+    :param graph: 邻接表，graph[i] = {j: weight, ...}，节点编号为 0~n-1
+    :param n: 节点总数
+    :return: dist 矩阵，dist[i][j] 表示 i 到 j 的最短路径长度
+    """
+    # 初始化距离矩阵，所有点对距离设为无穷大
+    dist = [[float('inf')] * n for _ in range(n)]
     
-    # 设置直接相连的顶点之间的距离
+    # 距离矩阵对角线设为 0，表示自己到自己的距离为 0
     for i in range(n):
         dist[i][i] = 0
-        for j, weight in graph[i].items():
+        # 设置直接相连的顶点之间的距离
+        for j, weight in graph.get(i, {}).items():
             dist[i][j] = weight
-    
-    # 考虑每个顶点作为中间顶点
+
+    # 三重循环，枚举每个中间点 k
     for k in range(n):
         for i in range(n):
+            # 跳过不可达的起点
+            if dist[i][k] == float('inf'):
+                continue
             for j in range(n):
-                if dist[i][k] != float('inf') and dist[k][j] != float('inf'):
-                    dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
+                # 跳过不可达的终点
+                if dist[k][j] == float('inf'):
+                    continue
+                # 如果经过 k 能让 i 到 j 更短，则更新
+                if dist[i][j] > dist[i][k] + dist[k][j]:
+                    dist[i][j] = dist[i][k] + dist[k][j]
     
     return dist
 ```
 
-代码解释：
+### 2.4 Floyd-Warshall 算法分析
 
-1. `graph` 是一个字典，表示图的邻接表。例如，`graph[0] = {1: 3, 2: 4}` 表示从节点 0 到节点 1 的边权重为 3，到节点 2 的边权重为 4。
-2. `n` 是图中顶点的数量。
-3. `dist` 是一个二维数组，存储任意两点之间的最短路径长度。
-4. 首先初始化距离矩阵，将对角线元素设为 0，表示顶点到自身的距离为 0。
-5. 然后设置直接相连的顶点之间的距离。
-6. 主循环中，对于每个顶点 $k$，考虑它作为中间顶点时，是否能缩短其他顶点之间的距离。
-7. 最终返回的距离矩阵中，$dist[i][j]$ 表示从顶点 $i$ 到顶点 $j$ 的最短路径长度。
+- **时间复杂度**：$O(V^3)$  
+  - 算法包含三重嵌套循环，分别枚举所有中间点、起点和终点，因此总时间复杂度为 $O(V^3)$。
 
-### 2.4 Floyd-Warshall 算法复杂度分析
+- **空间复杂度**：$O(V^2)$  
+  - 主要空间消耗在距离矩阵 $dist$，需要 $O(V^2)$ 的空间。  
+  - 由于采用邻接表存储原图结构，无需额外空间存储图的边。
 
-- **时间复杂度**：$O(V^3)$
-  - 需要三层嵌套循环，分别遍历所有顶点
-  - 因此总时间复杂度为 $O(V^3)$
+**Floyd-Warshall 算法优点**：
 
-- **空间复杂度**：$O(V^2)$
-  - 需要存储距离矩阵，大小为 $O(V^2)$
-  - 不需要额外的空间来存储图的结构，因为使用邻接表表示
+1. 实现简洁，易于理解和编码。
+2. 能处理负权边（但不能有负权环）。
+3. 可用于检测负权环（若某个顶点 $i$ 满足 $dist[i][i] < 0$，则存在负权环）。
+4. 特别适合稠密图（边数接近 $V^2$）。
 
-Floyd-Warshall 算法的主要优势在于：
+**Floyd-Warshall 算法缺点**：
 
-1. 实现简单，容易理解
-2. 可以处理负权边
-3. 可以检测负权环（如果某个顶点到自身的距离变为负数，说明存在负权环）
-4. 适用于稠密图
-
-主要缺点：
-
-1. 时间复杂度较高，不适用于大规模图
-2. 空间复杂度较高，需要存储完整的距离矩阵
-3. 不能处理负权环
+1. 时间复杂度较高，不适合节点数很大的图。
+2. 空间复杂度较高，需要维护完整的 $V \times V$ 距离矩阵。
+3. 无法处理存在负权环的情况（若有负权环，最短路无意义）。
 
 ## 3. Johnson 算法
 
-### 3.1 Johnson 算法的算法思想
+### 3.1 Johnson 算法的核心思想
 
-> **Johnson 算法**：一种结合了 Bellman-Ford 算法和 Dijkstra 算法的多源最短路径算法，可以处理负权边，但不能处理负权环。
+> **Johnson 算法**：是一种结合 Bellman-Ford 和 Dijkstra 算法的多源最短路径算法，能够处理负权边，但无法处理负权环。
 
-Johnson 算法的核心思想是：
+Johnson 算法的核心思想如下：
 
-1. 通过重新赋权，将图中的负权边转换为非负权边
-2. 对每个顶点运行一次 Dijkstra 算法，计算最短路径
-3. 将结果转换回原始权重
+1. 通过对图进行重新赋权，将所有边权变为非负，从而使 Dijkstra 算法适用；
+2. 对每个顶点分别运行一次 Dijkstra 算法，计算其到其他所有顶点的最短路径；
+3. 最后将结果还原为原图的最短路径权值。
 
 ### 3.2 Johnson 算法的实现步骤
 
-1. 添加一个新的顶点 $s$，并添加从 $s$ 到所有其他顶点的边，权重为 0
-2. 使用 Bellman-Ford 算法计算从 $s$ 到所有顶点的最短路径 $h(v)$
-3. 重新赋权：对于每条边 $(u, v)$，新的权重为 $w(u, v) + h(u) - h(v)$
-4. 对每个顶点 $v$，使用 Dijkstra 算法计算从 $v$ 到所有其他顶点的最短路径
-5. 将结果转换回原始权重：对于从 $u$ 到 $v$ 的最短路径，原始权重为 $d(u, v) - h(u) + h(v)$
+1. 向原图添加一个新顶点 $s$，并从 $s$ 向所有其他顶点连一条权重为 0 的边；
+2. 使用 Bellman-Ford 算法以 $s$ 为源点，计算 $s$ 到每个顶点 $v$ 的最短距离 $h(v)$；
+3. 对于原图中的每条边 $(u, v)$，将其权重调整为 $w'(u, v) = w(u, v) + h(u) - h(v)$，使所有边权非负；
+4. 对每个顶点 $u$，以 $u$ 为源点在重新赋权后的图上运行 Dijkstra 算法，得到 $u$ 到所有顶点的最短距离 $d'(u, v)$；
+5. 最终结果还原为原图权重：$d(u, v) = d'(u, v) - h(u) + h(v)$，即为原图中 $u$ 到 $v$ 的最短路径长度。
 
 ### 3.3 Johnson 算法的实现代码
 
@@ -119,75 +122,68 @@ from collections import defaultdict
 import heapq
 
 def johnson(graph, n):
-    # 添加新顶点 s
+    """
+    Johnson 算法：多源最短路径，支持负权边但不支持负权环。
+    :param graph: 邻接表，graph[u] = {v: w, ...}，节点编号 0~n-1
+    :param n: 节点总数
+    :return: dist 矩阵，dist[i][j] 表示 i 到 j 的最短路径长度；若有负权环返回 None
+    """
+    # 1. 构建新图，添加超级源点 s（编号为 n），从 s 向所有顶点连权重为 0 的边
     new_graph = defaultdict(dict)
     for u in graph:
         for v, w in graph[u].items():
             new_graph[u][v] = w
-        new_graph[n][u] = 0  # 从 s 到所有顶点的边权重为 0
-    
-    # 使用 Bellman-Ford 算法计算 h(v)
+    for u in range(n):
+        new_graph[n][u] = 0  # s -> u，权重为 0
+
+    # 2. Bellman-Ford 算法，计算超级源点 s 到每个顶点的最短距离 h(v)
     h = [float('inf')] * (n + 1)
-    h[n] = 0
-    
+    h[n] = 0  # s 到自身距离为 0
+    # 最多 n 轮松弛
     for _ in range(n):
+        updated = False
         for u in new_graph:
             for v, w in new_graph[u].items():
-                if h[v] > h[u] + w:
+                if h[u] != float('inf') and h[v] > h[u] + w:
                     h[v] = h[u] + w
-    
-    # 检查是否存在负权环
+                    updated = True
+        if not updated:
+            break
+
+    # 检查负权环：如果还能松弛，说明有负环
     for u in new_graph:
         for v, w in new_graph[u].items():
-            if h[v] > h[u] + w:
+            if h[u] != float('inf') and h[v] > h[u] + w:
                 return None  # 存在负权环
-    
-    # 重新赋权
+
+    # 3. 重新赋权：w'(u,v) = w(u,v) + h[u] - h[v]，保证所有边权非负
     reweighted_graph = defaultdict(dict)
     for u in graph:
         for v, w in graph[u].items():
             reweighted_graph[u][v] = w + h[u] - h[v]
-    
-    # 对每个顶点运行 Dijkstra 算法
-    dist = [[float('inf') for _ in range(n)] for _ in range(n)]
+
+    # 4. 对每个顶点运行 Dijkstra 算法，计算最短路径
+    dist = [[float('inf')] * n for _ in range(n)]
     for source in range(n):
-        # 初始化距离数组
         d = [float('inf')] * n
         d[source] = 0
-        
-        # 使用优先队列
-        pq = [(0, source)]
-        visited = set()
-        
-        while pq:
-            current_dist, u = heapq.heappop(pq)
-            if u in visited:
+        heap = [(0, source)]
+        visited = [False] * n
+        while heap:
+            cur_dist, u = heapq.heappop(heap)
+            if visited[u]:
                 continue
-            visited.add(u)
-            
+            visited[u] = True
             for v, w in reweighted_graph[u].items():
-                if d[v] > current_dist + w:
-                    d[v] = current_dist + w
-                    heapq.heappush(pq, (d[v], v))
-        
-        # 转换回原始权重
+                if d[v] > cur_dist + w:
+                    d[v] = cur_dist + w
+                    heapq.heappush(heap, (d[v], v))
+        # 5. 还原原图权重
         for v in range(n):
             if d[v] != float('inf'):
                 dist[source][v] = d[v] - h[source] + h[v]
-    
     return dist
 ```
-
-代码解释：
-
-1. `graph` 是一个字典，表示图的邻接表。
-2. `n` 是图中顶点的数量。
-3. 首先添加一个新的顶点 $s$，并添加从 $s$ 到所有其他顶点的边，权重为 0。
-4. 使用 Bellman-Ford 算法计算从 $s$ 到所有顶点的最短路径 $h(v)$。
-5. 检查是否存在负权环，如果存在则返回 None。
-6. 重新赋权，将图中的负权边转换为非负权边。
-7. 对每个顶点运行一次 Dijkstra 算法，计算最短路径。
-8. 将结果转换回原始权重，得到最终的距离矩阵。
 
 ### 3.4 Johnson 算法复杂度分析
 
@@ -197,9 +193,8 @@ def johnson(graph, n):
   - 因此总时间复杂度为 $O(VE \log V)$
 
 - **空间复杂度**：$O(V^2)$
-  - 需要存储距离矩阵，大小为 $O(V^2)$
-  - 需要存储重新赋权后的图，大小为 $O(E)$
-  - 因此总空间复杂度为 $O(V^2)$
+  - 主要空间消耗在距离矩阵（$O(V^2)$）以及重新赋权后的图（$O(E)$）。
+  - 因此总体空间复杂度为 $O(V^2)$。
 
 ## 练习题目
 
