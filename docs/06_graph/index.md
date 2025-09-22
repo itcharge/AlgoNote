@@ -10,6 +10,5 @@
 - [6.8 单源最短路径（二）](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_08_graph_shortest_path_02.md) 
 - [6.9 多源最短路径](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_09_graph_multi_source_shortest_path.md)
 - [6.10 次短路径](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_10_graph_the_second_shortest_path.md)
-- [6.11 差分约束系统](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_11_graph_system_of_difference_constraints.md)
-- [6.12 二分图基础](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_12_graph_bipartite_basic.md)
-- [6.13 二分图最大匹配](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_13_graph_bipartite_matching.md)
+- [6.11 二分图基础](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_11_graph_bipartite_basic.md)
+- [6.12 二分图最大匹配](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_12_graph_bipartite_matching.md)
