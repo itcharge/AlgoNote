@@ -323,7 +323,7 @@ def removeInside(self, index):
 - [0234. 回文链表](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/palindrome-linked-list.md)
 - [0138. 随机链表的复制](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/copy-list-with-random-pointer.md)
 
-- [链表基础题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E9%93%BE%E8%A1%A8%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)
+- [链表基础题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E9%93%BE%E8%A1%A8%E5%9F%BA%E7%A1%80%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 

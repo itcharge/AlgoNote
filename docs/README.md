@@ -9,9 +9,9 @@
 
 ### 1.1 源码地址
 
-本书内容及代码都放在 [Github repo](https://github.com/itcharge/AlgoNote) 中，欢迎在下方项目中 **「Star ⭐️ 」** 和 **「Fork」**，这是对我最大的鼓励和支持。
+本书内容及代码都放在 [Github repo](https://github.com/ITCharge/AlgoNote) 中，欢迎在下方项目中 **「Star ⭐️ 」** 和 **「Fork」**，这是对我最大的鼓励和支持。
 
-- Github 地址：[https://github.com/itcharge/AlgoNote](https://github.com/itcharge/AlgoNote)
+- Github 地址：[https://github.com/ITCharge/AlgoNote](https://github.com/ITCharge/AlgoNote)
 
 ### 1.2 目标读者
 

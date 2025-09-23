@@ -359,7 +359,7 @@ class Solution:
 - [1020. 飞地的数量](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/number-of-enclaves.md)
 - [1254. 统计封闭岛屿的数目](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/number-of-closed-islands.md)
 
-- [深度优先搜索题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E9%A2%98%E7%9B%AE)
+- [深度优先搜索题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 
