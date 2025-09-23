@@ -1,3 +1,11 @@
+![](https://qcdn.itcharge.cn/images/20250923140327.png)
+
+::: tip 引  言
+字符串如同夜色中流淌的音符。
+
+如清风拂过琴弦，谱写数据的旋律与梦想。
+:::
+
 ## 本章内容
 
 - [4.1 字符串基础](https://github.com/ITCharge/AlgoNote/tree/main/docs/04_string/04_01_string_basic.md)

@@ -1,3 +1,11 @@
+![](https://qcdn.itcharge.cn/images/20250923140508.png)
+
+::: tip 引  言
+图如同无垠夜空中繁星交织成的瑰丽星网。
+
+点点星光闪烁，彼此相连，交织成一张神秘而浪漫的梦幻之网，铺展出无尽的路径与无限的可能。
+:::
+
 ## 本章内容
 
 - [6.1 图的定义和分类](https://github.com/ITCharge/AlgoNote/tree/main/docs/06_graph/06_01_graph_basic.md)

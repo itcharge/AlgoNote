@@ -1,3 +1,11 @@
+![](https://qcdn.itcharge.cn/images/20250923140251.png)
+
+::: tip 引  言
+链表如同夜空中串联的星星。
+
+节点相连，如繁星串珠，静静铺展成一条灵动的数据长河。
+:::
+
 ## 本章内容
 
 - [2.1 链表基础](https://github.com/ITCharge/AlgoNote/tree/main/docs/02_linked_list/02_01_linked_list_basic.md)

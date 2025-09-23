@@ -1,3 +1,11 @@
+![](https://qcdn.itcharge.cn/images/20250923140208.png)
+
+::: tip 引  言
+数据结构如同星辰，算法宛若清风，星光与微风交织，点亮智慧的夜空。
+
+愿本书与你同行，助你轻装前行，照亮属于你的算法之路。
+:::
+
 # 本章内容
 
 - [0.1 前言](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_01_preface.md)
