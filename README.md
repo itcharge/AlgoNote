@@ -1,3 +1,30 @@
+<div align='center'>
+    <img src="https://qcdn.itcharge.cn/images/20250923171331.png" alt="alt text" width="100%"/>
+    <h1>算法通关手册</h1>
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/github/stars/ITCharge/AlgoNote?style=flat&logo=github" alt="GitHub stars"/>
+  <img src="https://img.shields.io/github/forks/ITCharge/AlgoNote?style=flat&logo=github" alt="GitHub forks"/>
+  <img src="https://img.shields.io/badge/language-Chinese%20%7C%20Python-brightgreen?style=flat" alt="Language"/>
+  <a href="https://github.com/ITCharge/AlgoNote"><img src="https://img.shields.io/badge/GitHub-Project-blue?style=flat&logo=github" alt="GitHub Project"/></a>
+  <p></p>
+</div>
+
+<p align="center">
+  <a href="https://algo.itcharge.cn/">
+    <img src="https://qcdn.itcharge.cn/images/btn_read_online.svg" width="145" alt="在线阅读"></a>
+  <a href="https://github.com/ITCharge/AlgoNote">
+    <img src="https://qcdn.itcharge.cn/images/btn_github_link.svg" width="145" alt="GitHub 仓库"></a>
+</p>
+
+
+<div align="center">
+  <h3>📚 从零开始的「算法与数据结构」学习教程</h3>
+  <p><em>一本系统讲解算法与数据结构、涵盖 LeetCode 题解的中文学习手册</em></p>
+</div>
+
+
 ## 1. 本书简介
 
 本书不仅仅只是一本算法题解书，更是一本算法与数据结构基础知识的讲解书。
