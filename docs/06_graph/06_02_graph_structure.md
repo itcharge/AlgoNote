@@ -1,504 +1,507 @@
 ## 1. 图的存储结构
 
-图的结构比较复杂，我们需要表示顶点和边。一个图可能有任意多个（有限个）顶点，而且任何两个顶点之间都可能存在边。我们在实现图的存储时，重点需要关注边与顶点之间的关联关系，这是图的存储的关键。
+图是一种由顶点和边构成的复杂数据结构，通常包含若干（有限个）顶点，任意两个顶点之间都可能通过边相连。在实现图的存储时，关键在于如何高效地表示顶点与边之间的关系。
 
-图的存储可以通过「顺序存储结构」和「链式存储结构」来实现。其中顺序存储结构包括邻接矩阵和边集数组。链式存储结构包括邻接表、链式前向星、十字链表和邻接多重表。
+常见的图存储方式主要分为「顺序存储结构」和「链式存储结构」两大类。顺序存储结构包括邻接矩阵和边集数组；链式存储结构则有邻接表、链式前向星、十字链表、邻接多重表等。
 
-接下来我们来介绍几个常用的图的存储结构。在下文中，我们约定用 $n$ 代表顶点数目，$m$ 代表边数目，$TD(v_i)$ 表示顶点 $v_i$ 的度。
+下面将详细介绍几种常用的图存储结构。文中约定：$n$ 表示顶点数，$m$ 表示边数，$TD(v_i)$ 表示顶点 $v_i$ 的度数。
 
 ### 1.1 邻接矩阵
 
 #### 1.1.1 邻接矩阵的原理描述
 
-> **邻接矩阵（Adjacency Matrix）**：使用一个二维数组 $adj\_matrix$ 来存储顶点之间的邻接关系。
+> **邻接矩阵（Adjacency Matrix）**：通过一个二维数组 $adj$ 来表示顶点之间的连接关系。
 >
-> - 对于无权图来说，如果 $adj\_matrix[i][j]$ 为 $1$，则说明顶点 $v_i$ 到 $v_j$ 存在边，如果 $adj\_matrix[i][j]$ 为 $0$，则说明顶点 $v_i$ 到 $v_j$ 不存在边。
-> - 对于带权图来说，如果 $adj\_matrix[i][j]$ 为 $w$，并且 $w \ne \infty$（即 `w != float('inf')`），则说明顶点 $v_i$ 到 $v_j$ 的权值为 $w$。如果 $adj\_matrix[i][j]$ 为 $\infty$（即 `float('inf')`），则说明顶点 $v_i$ 到 $v_j$ 不存在边。
+> - 对于无权图，如果 $adj[i][j] == 1$，表示顶点 $v_i$ 与 $v_j$ 之间有边；如果 $adj[i][j] = 0$，则表示两者之间无边。
+> - 对于带权图，如果 $adj[i][j] == w$ 且 $w \ne \infty$，则表示 $v_i$ 到 $v_j$ 有一条权值为 $w$ 的边；如果 $adj[i][j] = \infty$，则表示两者之间无边。
 
-在下面的示意图中，左侧是一个无向图，右侧则是该无向图对应的邻接矩阵结构。
+下图左侧为一个无向图，右侧为其对应的邻接矩阵结构示意：
 
 ![](https://qcdn.itcharge.cn/images/20220317144826.png)
 
-邻接矩阵的特点：
+邻接矩阵的主要特点如下：
 
-- 优点：实现简单，并且可以直接查询顶点 $v_i$ 与 $v_j$ 之间是否有边存在，还可以直接查询边的权值。
-- 缺点：初始化效率和遍历效率较低，空间开销大，空间利用率低，并且不能存储重复边，也不便于增删节点。如果当顶点数目过大（比如当 $n > 10^5$）时，使用邻接矩阵建立一个 $n \times n$ 的二维数组不太现实。
+- **优点**：结构简单，便于实现；可以快速判断任意两个顶点之间是否存在边，也能直接获取边的权值。
+- **缺点**：初始化和遍历效率较低，空间占用大且利用率不高，无法表示重边，顶点的增删操作不便。当顶点数量较大（如 $n > 10^5$）时，采用空间复杂度为 $n \times n$ 的二维数组存储邻接矩阵在实际应用中难以实现。
 
-#### 1.1.2 邻接矩阵的算法分析
+#### 1.1.2 邻接矩阵的代码实现
+
+```python
+class Graph:                                       # 邻接矩阵实现的图
+    def __init__(self, ver_count, directed=False, inf=float('inf')):
+        self.n = ver_count                         # 顶点数量 n
+        self.directed = directed                   # 是否为有向图
+        self.inf = inf                             # 无边时的填充值（带权图用 ∞ 表示无边）
+        # 邻接矩阵，采用 1..n 顶点编号；0 号行列弃用，便于直观
+        self.adj = [[inf] * (ver_count + 1) for _ in range(ver_count + 1)]
+        for i in range(1, ver_count + 1):
+            self.adj[i][i] = 0                    # 自环距离为 0（无权图也可视作 0）
+
+    def add_edge(self, vi, vj, w=1):               # 添加边 vi -> vj，权重默认为 1
+        self.adj[vi][vj] = w
+        if not self.directed:                      # 无向图需要对称赋值
+            self.adj[vj][vi] = w
+
+    def get_edge(self, vi, vj):                    # 查询边权，不存在返回 None
+        if self.adj[vi][vj] != self.inf:
+            return self.adj[vi][vj]
+        return None
+
+    def printMatrix(self):                         # 打印邻接矩阵，∞ 表示无边
+        for i in range(1, self.n + 1):
+            row = [self.adj[i][j] if self.adj[i][j] != self.inf else '∞' for j in range(1, self.n + 1)]
+            print(' '.join(map(str, row)))
+
+
+# 示例：构建一个有向带权图，并进行查询与打印
+graph = Graph(6, directed=True)
+edges = [(1, 2, 5), (1, 5, 6), (2, 4, 7), (4, 3, 9), (3, 1, 2), (5, 6, 8), (6, 4, 3)]
+for u, v, w in edges:
+    graph.add_edge(u, v, w)
+
+print(graph.get_edge(4, 3))   # 输出 9（存在边 4->3，权重 9）
+print(graph.get_edge(4, 5))   # 输出 None（不存在边 4->5）
+graph.printMatrix()           # 打印 6x6 邻接矩阵
+```
+
+#### 1.1.3 邻接矩阵的算法分析
 
 - **时间复杂度**：
-  - **初始化操作**：$O(n^2)$。
-  - **查询、添加或删除边操作**：$O(1)$。
-  - **获取某个点的所有边操作**：$O(n)$。
-  - **图的遍历操作** ：$O(n^2)$。
+  - **初始化**：$O(n^2)$。需要为 $n$ 个顶点分配 $n \times n$ 的二维数组空间。
+  - **查询、添加或删除一条边**：$O(1)$。通过下标即可直接访问和修改边的信息。
+  - **获取某个顶点的所有邻接边**：$O(n)$。需遍历该顶点所在的整行或整列。
+  - **遍历整张图**：$O(n^2)$。需要访问整个邻接矩阵。
+- **空间复杂度**：$O(n^2)$。无论实际边数多少，均需分配 $n \times n$ 的空间。
 
-- **空间复杂度**：$O(n^2)$。
+### 1.2 邻接表
 
-#### 1.1.3 邻接矩阵的代码实现
+#### 1.2.1 邻接表的原理描述
 
-```python
-class Graph:                                    # 基本图类，采用邻接矩阵表示
-    # 图的初始化操作，ver_count 为顶点个数
-    def __init__(self, ver_count):
-        self.ver_count = ver_count              # 顶点个数
-        self.adj_matrix = [[None for _ in range(ver_count)] for _ in range(ver_count)]  # 邻接矩阵
-    
-    # 判断顶点 v 是否有效
-    def __valid(self, v):
-        return 0 <= v <= self.ver_count
-    
-    # 图的创建操作，edges 为边信息
-    def creatGraph(self, edges=[]):
-        for vi, vj, val in edges:
-            self.add_edge(vi, vj, val)
-    
-    # 向图的邻接矩阵中添加边：vi - vj，权值为 val
-    def add_edge(self, vi, vj, val):
-        if not self.__valid(vi) or not self.__valid(vj):
-            raise ValueError(str(vi) + ' or ' + str(vj) + " is not a valid vertex.")
-        
-        self.adj_matrix[vi][vj] = val
-    
-    # 获取 vi - vj 边的权值
-    def get_edge(self, vi, vj):
-        if not self.__valid(vi) or not self.__valid(vj):
-            raise ValueError(str(vi) + ' or ' + str(vj) + " is not a valid vertex.")
+> **邻接表（Adjacency List）**：一种结合顺序存储与链式存储的图结构。它主要由两部分组成：一是用于存放所有顶点信息的数组，二是用于存放每个顶点所有邻接边的链表。
 
-        return self.adj_matrix[vi][vj]
-    
-    # 根据邻接矩阵打印图的边
-    def printGraph(self):
-        for vi in range(self.ver_count):
-            for vj in range(self.ver_count):
-                val = self.get_edge(vi, vj)
-                if val:
-                    print(str(vi) + ' - ' + str(vj) + ' : ' + str(val))
-    
+在邻接表中，每个顶点 $v_i$ 都对应一个链表，链表中的每个节点表示一条从 $v_i$ 出发的边，节点中存储该边所指向的顶点及相关信息。因此，如果图有 $n$ 个顶点，则邻接表由 $n$ 个链表组成，每个链表分别记录对应顶点的所有邻接边。
 
-graph = Graph(5)
-edges = [[1, 2, 5],[2, 1, 5],[1, 3, 30],[3, 1, 30],[2, 3, 14],[3, 2, 14],[2, 4, 26], [4, 2, 26]]
-graph.creatGraph(edges)
-print(graph.get_edge(3, 4))
-graph.printGraph()
-```
+每个顶点在邻接表中都有一个表头节点（即「顶点节点」），该节点包含顶点本身的信息和指向其第一条邻接边的指针。这样可以高效地访问和管理每个顶点的所有邻接边。
 
-### 1.2 边集数组
+为了便于随机访问任意顶点的邻接链表，通常将所有顶点节点以数组形式顺序存储，数组下标即为顶点在图中的编号。
 
-#### 1.2.1 边集数组的原理描述
-
-> **边集数组（Edgeset Array）**：使用一个数组来存储存储顶点之间的邻接关系。数组中每个元素都包含一条边的起点 $v_i$、终点 $v_j$ 和边的权值 $val$（如果是带权图）。
-
-在下面的示意图中，左侧是一个有向图，右侧则是该有向图对应的边集数组结构。
-
-![](https://qcdn.itcharge.cn/images/20220317161454.png)
-
-#### 1.2.2 边集数组的算法分析
-
-边集数组的时间复杂度：
-
-- 图的初始化和创建操作：$O(m)$。
-- 查询是否存在某条边：$O(m)$。
-- 遍历某个点的所有边：$O(m)$。
-- 遍历整张图：$O(nm)$。
-
-边集数组的空间复杂度：
-
-- 空间复杂度：$O(m)$。
-
-采用边集数组计算节点的度或者查找某条边时，需要遍历整个边集数组，时间复杂度为 $O(m)$，`m` 是边的数量。除非特殊必要，很少用使用边集数组来存储图。
-
-一般来说，边集数组适合那些对边依次进行处理的运算，不适合对顶点的运算和对任何一条边的运算。
-
-#### 1.2.3 边集数组的代码实现
-
-```python
-class EdgeNode:                                 # 边信息类
-    def __init__(self, vi, vj, val):
-        self.vi = vi                            # 边的起点
-        self.vj = vj                            # 边的终点
-        self.val = val                          # 边的权值
-        
-class Graph:                                    # 基本图类，采用边集数组表示
-    def __init__(self):
-        self.edges = []                         # 边数组
-        
-    # 图的创建操作，edges 为边信息
-    def creatGraph(self, edges=[]):
-        for vi, vj, val in edges:
-            self.add_edge(vi, vj, val)
-            
-    # 向图的边数组中添加边：vi - vj，权值为 val
-    def add_edge(self, vi, vj, val):
-        edge = EdgeNode(vi, vj, val)            # 创建边节点
-        self.edges.append(edge)                 # 将边节点添加到边数组中
-        
-    # 获取 vi - vj 边的权值
-    def get_edge(self, vi, vj):
-        for edge in self.edges:
-            if vi == edge.vi and vj == edge.vj:
-                val = edge.val
-                return val
-        return None
-    
-    # 根据边数组打印图
-    def printGraph(self):
-        for edge in self.edges:
-            print(str(edge.vi) + ' - ' + str(edge.vj) + ' : ' + str(edge.val))
-            
-graph = Graph()
-edges = [[1, 2, 5],[1, 5, 6],[2, 4, 7],[4, 3, 9],[3, 1, 2],[5, 6, 8],[6, 4, 3]]
-graph.creatGraph(edges)
-print(graph.get_edge(3, 4))
-graph.printGraph()
-```
-
-### 1.3 邻接表
-
-#### 1.3.1 邻接表的原理描述
-
-> **邻接表（Adjacency List）**：使用顺序存储和链式存储相结合的存储结构来存储图的顶点和边。其数据结构包括两个部分，其中一个部分是数组，主要用来存放顶点的数据信息，另一个部分是链表，用来存放边信息。
-
-在邻接表的存储方法中，对于对图中每个顶点 $v_i$ 建立一个线性链表，把所有邻接于 $v_i$ 的顶点链接到单链表上。这样对于具有 `n` 个顶点的图而言，其邻接表结构由 `n` 个线性链表组成。
-
-然后我们在每个顶点前边设置一个表头节点，称之为「顶点节点」。每个顶点节点由「顶点域」和「指针域」组成。其中顶点域用于存放某个顶点的数据信息，指针域用于指出该顶点第 `1` 条边所对应的链节点。
-
-为了方便随机访问任意顶点的链表，通常我们会使用一组顺序存储结构（数组）存储所有「顶点节点」部分，顺序存储结构（数组）的下标表示该顶点在图中的位置。
-
-在下面的示意图中，左侧是一个有向图，右侧则是该有向图对应的邻接表结构。
+下图左侧为一个有向图，右侧为其对应的邻接表结构示意：
 
 ![](https://qcdn.itcharge.cn/images/20220317154531.png)
 
-#### 1.3.2 邻接表的算法分析
-
-邻接表的时间复杂度：
-
-- 图的初始化和创建操作：$O(n + m)$。
-- 查询是否存在 $v_i$ 到 $v_j$ 的边：$O(TD(v_i))$。
-- 遍历某个点的所有边：$O(TD(v_i))$。
-- 遍历整张图：$O(n + m)$。
-
-邻接表的空间复杂度：
-
-- 空间复杂度：$O(n + m)$。
-
-#### 1.3.3 邻接表的代码实现
+#### 1.2.2 邻接表的代码实现
 
 ```python
-class EdgeNode:                                 # 边信息类
+class EdgeNode:                                 # 边结点：存储终点、权值与下一条边
     def __init__(self, vj, val):
         self.vj = vj                            # 边的终点
-        self.val = val                          # 边的权值
-        self.next = None                        # 下一条边
+        self.val = val                          # 边的权值（无权图可默认 1）
+        self.next = None                        # 指向下一条同起点的边
 
-class VertexNode:                               # 顶点信息类
+class VertexNode:                               # 顶点结点：存储顶点编号与其第一条邻接边
     def __init__(self, vi):
-        self.vi = vi                            # 边的起点
-        self.head = None                        # 下一个邻接点
-        
-class Graph:
-    def __init__(self, ver_count):
-        self.ver_count = ver_count
-        self.vertices = []
-        for vi in range(ver_count):
-            vertex = VertexNode(vi)
-            self.vertices.append(vertex)
-    
-    # 判断顶点 v 是否有效
-    def __valid(self, v):
-        return 0 <= v <= self.ver_count
-    
-    # 图的创建操作，edges 为边信息
-    def creatGraph(self, edges=[]):
-        for vi, vj, val in edges:
-            self.add_edge(vi, vj, val)
-    
-    # 向图的邻接表中添加边：vi - vj，权值为 val
-    def add_edge(self, vi, vj, val):
-        if not self.__valid(vi) or not self.__valid(vj):
-            raise ValueError(str(vi) + ' or ' + str(vj) + " is not a valid vertex.")
-            
-        vertex = self.vertices[vi]
-        edge = EdgeNode(vj, val)
-        edge.next = vertex.head
-        vertex.head = edge
+        self.vi = vi                            # 顶点编号
+        self.head = None                        # 指向该顶点的第一条邻接边
 
-    # 获取 vi - vj 边的权值
-    def get_edge(self, vi, vj):
-        if not self.__valid(vi) or not self.__valid(vj):
-            raise ValueError(str(vi) + ' or ' + str(vj) + " is not a valid vertex.")
-        
-        vertex = self.vertices[vi]
-        cur_edge = vertex.head
-        while cur_edge:
-            if cur_edge.vj == vj:
-                return cur_edge.val
-            cur_edge = cur_edge.next
+class Graph:                                    # 邻接表实现的图
+    def __init__(self, ver_count, directed=False):
+        self.n = ver_count                      # 顶点数量 n
+        self.directed = directed                # 是否为有向图
+        # 使用 1..n 的顶点编号，0 号位置空置，便于直观
+        self.vertices = [None] + [VertexNode(i) for i in range(1, ver_count + 1)]
+
+    def _valid(self, v):                        # 顶点合法性检查
+        return 1 <= v <= self.n
+
+    def add_edge(self, vi, vj, val=1):          # 添加边 vi -> vj，权重默认 1
+        if not self._valid(vi) or not self._valid(vj):
+            raise ValueError("invalid vertex: {} or {}".format(vi, vj))
+        edge = EdgeNode(vj, val)                # 头插法加入邻接链表
+        edge.next = self.vertices[vi].head
+        self.vertices[vi].head = edge
+        if not self.directed:                   # 无向图需要加反向边
+            rev = EdgeNode(vi, val)
+            rev.next = self.vertices[vj].head
+            self.vertices[vj].head = rev
+
+    def get_edge(self, vi, vj):                 # 查询 vi -> vj 的边权，如果无边返回 None
+        if not self._valid(vi) or not self._valid(vj):
+            raise ValueError("invalid vertex: {} or {}".format(vi, vj))
+        cur = self.vertices[vi].head
+        while cur:
+            if cur.vj == vj:
+                return cur.val
+            cur = cur.next
         return None
-        
-    # 根据邻接表打印图的边
-    def printGraph(self):
-        for vertex in self.vertices:
-            cur_edge = vertex.head
-            while cur_edge:
-                print(str(vertex.vi) + ' - ' + str(cur_edge.vj) + ' : ' + str(cur_edge.val))
-                cur_edge = cur_edge.next
-                
-graph = Graph(7)
-edges = [[1, 2, 5],[1, 5, 6],[2, 4, 7],[4, 3, 9],[3, 1, 2],[5, 6, 8],[6, 4, 3]]
-graph.creatGraph(edges)
-print(graph.get_edge(3, 4))
+
+    def neighbors(self, vi):                    # 遍历顶点 vi 的所有邻接边 (vj, val)
+        cur = self.vertices[vi].head
+        while cur:
+            yield cur.vj, cur.val
+            cur = cur.next
+
+    def printGraph(self):                       # 打印所有边
+        for vi in range(1, self.n + 1):
+            cur = self.vertices[vi].head
+            while cur:
+                print(str(vi) + ' - ' + str(cur.vj) + ' : ' + str(cur.val))
+                cur = cur.next
+
+
+# 示例：构建有向带权图并查询/打印
+graph = Graph(6, directed=True)
+edges = [(1, 2, 5), (1, 5, 6), (2, 4, 7), (4, 3, 9), (3, 1, 2), (5, 6, 8), (6, 4, 3)]
+for u, v, w in edges:
+    graph.add_edge(u, v, w)
+
+print(graph.get_edge(4, 3))   # 9
+print(graph.get_edge(4, 5))   # None（无此边）
 graph.printGraph()
 ```
 
-### 1.4 链式前向星
+#### 1.2.3 邻接表的算法分析
 
-#### 1.4.1 链式前向星的原理描述
+- **时间复杂度分析**：
+  - **图的初始化与创建**：$O(n + m)$，其中 $n$ 表示顶点数，$m$ 表示边数。因为需要为每个顶点分配空间，并依次插入每条边。
+  - **查询是否存在 $v_i$ 到 $v_j$ 的边**：$O(TD(v_i))$，其中 $TD(v_i)$ 表示顶点 $v_i$ 的出度。由于邻接表只存储与 $v_i$ 直接相连的边，因此需要遍历 $v_i$ 的所有邻接点，最坏情况下需遍历 $v_i$ 的全部出边。
+  - **遍历某个顶点的所有边**：$O(TD(v_i))$，即与该顶点相连的所有边都需访问一遍，效率较高。
+  - **遍历整张图的所有边**：$O(n + m)$。遍历所有顶点，每个顶点的邻接表总共包含 $m$ 条边，因此整体遍历代价为 $O(n + m)$。
 
-> **链式前向星（Linked Forward Star）**：也叫做静态邻接表，实质上就是使用静态链表实现的邻接表。链式前向星将边集数组和邻接表相结合，可以快速访问一个节点所有的邻接点，并且使用很少的额外空间。
+- **空间复杂度分析**：$O(n + m)$，邻接表需要为每个顶点分配一个链表头结点（$O(n)$），并为每条边分配一个边节点（$O(m)$），因此总空间复杂度为 $O(n + m)$。相比邻接矩阵，邻接表在稀疏图中能显著节省空间。
 
-链式前向星采用了一种静态链表的存储方式，可以说是目前建图和遍历效率最高的存储方式。
+### 1.3 链式前向星
 
-链式前向星由两种数据结构组成：
+#### 1.3.1 链式前向星的原理描述
 
-- **特殊的边集数组**：`edges`，其中 `edges[i]` 表示第 `i` 条边。`edges[i].vj` 表示第 `i` 条边的终止点，`edges[i].val` 表示第 `i` 条边的权值，`edges[i].next` 表示与第 `i` 条边同起始点的下一条边的存储位置。
-- **头节点数组**：`head`，其中 `head[i]` 存储以顶点 `i` 为起始点的第 `1` 条边在数组 `edges` 中的下标。
+> **链式前向星（Linked Forward Star）**，又称静态邻接表，是一种以静态链表实现邻接表的高效图存储结构。它将边集数组与邻接表结合，能够高效地访问某个节点的所有邻接点，并且空间开销极小。
 
-链式前向星其实并没有改变边集数组原来的存储数学，只是利用 `head` 数组构成静态链表，建立了顶点 $v_i$ 和顶点 $v_i$ 所连第 `1` 条边的关系。
+链式前向星采用静态链表的方式存储边信息，是目前建图和遍历效率极高的存储方法之一。
 
-在下面的示意图中，左侧是一个有向图，右侧则是该有向图对应的链式前向星结构。
+其核心由两类数据结构组成：
 
-如果需要在该图中遍历顶点 $v_1$ 的所有边，则步骤如下：
+- **边集数组** $edges$：$edges[i]$ 表示第 $i$ 条边，包含以下信息：$edges[i].vj$ 为该边的终点，$edges[i].val$ 为该边的权值，$edges[i].next$ 指向与该边起点相同的下一条边在 $edges$ 数组中的下标。
+- **头节点数组** $head$：$head[i]$ 存储以顶点 $i$ 为起点的第一条边在 $edges$ 数组中的下标。
 
-- 找到以顶点 $v_1$ 为起始点的的 `1` 条边在数组 `edges` 中的下标，即 `index = head[1] = 1 `。则在 `edges` 数组中找到与顶点 $v_1$ 相连的第 `1` 条边为 `edges[1]`，即 $\langle v_1, v_5 \rangle$，权值为 6。
-- 查找 `index = self.edges[1].next = 0 `，则在 `edges` 数组中找到与顶点 $v_1$ 相连的第 `2` 条边 `edges[0]`，即 $\langle v_1, v_2 \rangle$，权值为 5。
-- 继续查找 `index = self.edges[0].next = -1`，则不存在其余边，查找结束。
+链式前向星的核心思想是通过 $head$ 数组记录每个顶点的第一条出边在 $edges$ 数组中的下标，并利用 $edges$ 数组中每条边的 $next$ 字段，将同一起点的所有出边以静态链表的形式串联起来，从而高效地关联顶点 $v_i$ 及其所有出边。
+
+如下图所示，左侧为一个有向图，右侧为其对应的链式前向星结构。
 
 ![](https://qcdn.itcharge.cn/images/20220317161217.png)
 
-#### 1.4.2 链式前向星的算法分析
+以遍历顶点 $v_1$ 的所有出边为例，步骤如下：
 
-链式前向星的时间复杂度：
+- 首先，通过 `index = head[1] = 1`，找到以 $v_1$ 为起点的第一条边在 `edges` 数组中的下标，即 `edges[1]`，对应边 $\langle v_1, v_5 \rangle$，权值为 6。
+- 然后，根据 `index = edges[1].next = 0`，找到第二条边 `edges[0]`，即 $\langle v_1, v_2 \rangle$，权值为 5。
+- 最后，`index = edges[0].next = -1`，表示没有更多的出边，遍历结束。
 
-- 图的初始化和创建操作：$O(n + m)$。
-- 查询是否存在 $v_i$ 到 $v_j$ 的边：$O(TD(v_i))$。
-- 遍历某个点的所有边：$O(TD(v_i))$。
-- 遍历整张图：$O(n + m)$。
-
-链式前向星的空间复杂度：
-
-- 空间复杂度：$O(n + m)$。
-
-#### 1.4.3 链式前向星的代码实现
+#### 1.3.2 链式前向星的代码实现
 
 ```python
-class EdgeNode:                                 # 边信息类
-    def __init__(self, vj, val):
-        self.vj = vj                            # 边的终点
-        self.val = val                          # 边的权值
-        self.next = None                        # 下一条边
-        
+class EdgeNode:
+    """边信息类，存储终点、权值和下一条边的下标"""
+    def __init__(self, vj, val, next_idx):
+        self.vj = vj        # 边的终点
+        self.val = val      # 边的权值
+        self.next = next_idx  # 下一条边在边集数组中的下标
+
 class Graph:
-    def __init__(self, ver_count, edge_count):
-        self.ver_count = ver_count              # 顶点个数
-        self.edge_count = edge_count            # 边个数
-        self.head = [-1 for _ in range(ver_count)]  # 头节点数组
-        self.edges = []                         # 边集数组
-    
-    # 判断顶点 v 是否有效
-    def __valid(self, v):
-        return 0 <= v <= self.ver_count
-    
-    # 图的创建操作，edges 为边信息
-    def creatGraph(self, edges=[]):
-        for i in range(len(edges)):
-            vi, vj, val = edges[i]
-            self.add_edge(i, vi, vj, val)
-            
-    # 向图的边集数组中添加边：vi - vj，权值为 val
-    def add_edge(self, index, vi, vj, val):
-        if not self.__valid(vi) or not self.__valid(vj):
-            raise ValueError(str(vi) + ' or ' + str(vj) + " is not a valid vertex.")
-            
-        edge = EdgeNode(vj, val)                # 构造边节点
-        edge.next = self.head[vi]               # 边节点的 next 指向原来首指针
-        self.edges.append(edge)                 # 边集数组添加该边
-        self.head[vi] = index                   # 首指针指向新加边所在边集数组的下标
-    
-    # 获取 vi - vj 边的权值
+    """链式前向星图结构"""
+    def __init__(self, ver_count):
+        self.n = ver_count          # 顶点个数
+        self.head = [-1] * self.n   # 头节点数组，head[i]为顶点i的第一条出边下标
+        self.edges = []             # 边集数组
+
+    def _valid(self, v):
+        """判断顶点编号是否合法（0 ~ n - 1）"""
+        return 0 <= v < self.n
+
+    def add_edge(self, vi, vj, val):
+        """
+        添加一条边 vi -> vj，权值为 val
+        vi, vj 均为 0 ~ n - 1 的顶点编号
+        """
+        if not self._valid(vi) or not self._valid(vj):
+            raise ValueError(f"{vi} 或 {vj} 不是有效顶点编号")
+        # 新边的 next 指向 vi 原来的第一条出边
+        edge = EdgeNode(vj, val, self.head[vi])
+        self.edges.append(edge)
+        self.head[vi] = len(self.edges) - 1  # head[vi] 指向新加边的下标
+
+    def build(self, edge_list):
+        """批量建图，edge_list 为 [(vi, vj, val), ...]，顶点编号从 1 开始"""
+        for vi, vj, val in edge_list:
+            # 由于输入的顶点编号是从 1 开始，内部实现是从 0 开始，所以需要减 1
+            self.add_edge(vi - 1, vj - 1, val)  
+
     def get_edge(self, vi, vj):
-        if not self.__valid(vi) or not self.__valid(vj):
-            raise ValueError(str(vi) + ' or ' + str(vj) + " is not a valid vertex.")
-            
-        index = self.head[vi]                   # 得到顶点 vi 相连的第一条边在边集数组的下标
-        while index != -1:                      # index == -1 时说明 vi 相连的边遍历完了
-            if vj == self.edges[index].vj:      # 找到了 vi - vj 边
-                return self.edges[index].val    # 返回 vi - vj 边的权值
-            index = self.edges[index].next      # 取顶点 vi 相连的下一条边在边集数组的下标
-        return None                             # 没有找到 vi - vj 边
-    
-    # 根据链式前向星打印图的边
-    def printGraph(self):
-        for vi in range(self.ver_count):        # 遍历顶点 vi
-            index = self.head[vi]               # 得到顶点 vi 相连的第一条边在边集数组的下标
-            while index != -1:                  # index == -1 时说明 vi 相连的边遍历完了
-                print(str(vi) + ' - ' + str(self.edges[index].vj) + ' : ' + str(self.edges[index].val))
-                index = self.edges[index].next  # 取顶点 vi 相连的下一条边在边集数组的下标
-                
-
-graph = Graph(7, 7)
-edges = [[1, 2, 5],[1, 5, 6],[2, 4, 7],[4, 3, 9],[3, 1, 2],[5, 6, 8],[6, 4, 3]]
-graph.creatGraph(edges)    
-print(graph.get_edge(4, 3))
-print(graph.get_edge(4, 5))
-graph.printGraph()
-```
-
-### 1.5 哈希表实现邻接表
-
-#### 1.5.1 哈希表实现邻接表的原理描述
-
-在 Python 中，通过哈希表（字典）可以轻松的实现邻接表。哈希表实现邻接表包含两个哈希表：第一个哈希表主要用来存放顶点的数据信息，哈希表的键是顶点，值是该点所有邻接边构成的另一个哈希表。另一个哈希表用来存放顶点相连的边信息，哈希表的键是边的终点，值是边的权重。
-
-#### 1.5.2 哈希表实现邻接表的算法分析
-
-哈希表实现邻接表的时间复杂度：
-
-- 图的初始化和创建操作：$O(n + m)$。
-- 查询是否存在 $v_i$ 到 $v_j$ 的边：$O(1)$。
-- 遍历某个点的所有边：$O(TD(v_i))$。
-- 遍历整张图：$O(n + m)$。
-
-哈希表实现邻接表的空间复杂度：
-
-- 空间复杂度：$O(n + m)$。
-
-#### 1.5.3 哈希表实现邻接表的代码实现
-
-```python
-class VertexNode:                               # 顶点信息类
-    def __init__(self, vi):
-        self.vi = vi                            # 顶点
-        self.adj_edges = dict()                 # 顶点的邻接边
-        
-class Graph:
-    def __init__(self):
-        self.vertices = dict()                   # 顶点
-    
-    # 图的创建操作，edges 为边信息
-    def creatGraph(self, edges=[]):
-        for vi, vj, val in edges:
-            self.add_edge(vi, vj, val)
-    
-    # 向图中添加节点
-    def add_vertex(self, vi):
-        vertex = VertexNode(vi)
-        self.vertices[vi] = vertex
-    
-    # 向图的邻接表中添加边：vi - vj，权值为 val
-    def add_edge(self, vi, vj, val):        
-        if vi not in self.vertices:
-            self.add_vertex(vi)
-        if vj not in self.vertices:
-            self.add_vertex(vj)
-        
-        self.vertices[vi].adj_edges[vj] = val
-        
-    # 获取 vi - vj 边的权值
-    def get_edge(self, vi, vj):
-        if vi in self.vertices and vj in self.vertices[vi].adj_edges:
-            return self.vertices[vi].adj_edges[vj]
+        """
+        查询 vi -> vj的边权，vi, vj 为 1-based 编号
+        返回权值或 None
+        """
+        vi -= 1
+        vj -= 1
+        if not self._valid(vi) or not self._valid(vj):
+            raise ValueError(f"{vi + 1} 或 {vj + 1} 不是有效顶点编号")
+        idx = self.head[vi]
+        while idx != -1:
+            edge = self.edges[idx]
+            if edge.vj == vj:
+                return edge.val
+            idx = edge.next
         return None
-    
-    # 根据邻接表打印图的边
+
     def printGraph(self):
-        for vi in self.vertices:
-            for vj in self.vertices[vi].adj_edges:
-                print(str(vi) + ' - ' + str(vj) + ' : ' + str(self.vertices[vi].adj_edges[vj]))
+        """打印所有边，顶点编号输出为 1-based"""
+        for vi in range(self.n):
+            idx = self.head[vi]
+            while idx != -1:
+                edge = self.edges[idx]
+                print(f"{vi+1} - {edge.vj+1} : {edge.val}")
+                idx = edge.next
 
-
-graph = Graph()
-edges = [[1, 2, 5],[1, 5, 6],[2, 4, 7],[4, 3, 9],[3, 1, 2],[5, 6, 8],[6, 4, 3]]
-graph.creatGraph(edges)
-print(graph.get_edge(3, 4))
+# 示例：构建有向带权图并查询 / 打印
+graph = Graph(7)  # 顶点编号 1 ~ 7
+edges = [
+    [1, 2, 5], [1, 5, 6], [2, 4, 7],
+    [4, 3, 9], [3, 1, 2], [5, 6, 8], [6, 4, 3]
+]
+graph.build(edges)
+print(graph.get_edge(4, 3))   # 输出 9
+print(graph.get_edge(4, 5))   # 输出 None（无此边）
 graph.printGraph()
 ```
+#### 1.3.3 链式前向星的算法分析
 
-## 2. 图论问题应用
+- **时间复杂度**：
+  - **图的初始化和创建操作**：$O(n + m)$，其中 $n$ 表示顶点数，$m$ 表示边数。初始化时需要为每个顶点分配空间，并依次插入每条边，因此总耗时与顶点和边的数量成线性关系。
+  - **查询是否存在 $v_i$ 到 $v_j$ 的边**：$O(TD(v_i))$，其中 $TD(v_i)$ 表示顶点 $v_i$ 的出度。因为链式前向星存储结构需要遍历 $v_i$ 的所有出边才能判断是否存在到 $v_j$ 的边，最坏情况下需要遍历 $v_i$ 的所有出边。
+  - **遍历某个点的所有边**：$O(TD(v_i))$。由于每个顶点的出边在链表中连续存储，遍历时只需顺序访问即可，效率较高。
+  - **遍历整张图的所有边**：$O(n + m)$。遍历所有顶点并依次访问每个顶点的所有出边，总共访问 $n$ 个顶点和 $m$ 条边，整体复杂度为线性。
 
-图论和图论算法在计算机科学中扮演着很重要的角色，它提供了对很多问题都有效的一种简单而系统的建模方式。很多实际问题都可以转化为图论问题，然后使用图论的景点算法加以解决。例如：
+- **空间复杂度**：$O(n + m)$。需要为每个顶点分配一个头指针（$O(n)$），并为每条边分配一个边节点（$O(m)$），因此总空间消耗与顶点数和边数之和成正比。
 
-- 集成电路的设计和布线。
-- 互联网和路由移动电话网的路由设计。
-- 工程项目的计划安排问题。
+### 1.4 哈希表实现邻接表
 
-常见的图论问题应用大概可以分为以下几类：**图的遍历问题**、**图的连通性问题**、**图的生成树问题**、**图的最短路径问题**、**图的网络流问题**、**二分图问题** 等等。
+#### 1.4.1 哈希表实现邻接表的原理描述
+
+在 Python 中，可以利用哈希表（即字典）高效地实现邻接表结构。具体做法是：使用一个字典存储所有顶点信息，字典的键为顶点编号，值为该顶点的邻接边集合（同样用一个字典表示）。每个顶点对应的邻接边字典，其键为相邻顶点的编号，值为对应边的权重。这样既方便查询某一顶点的所有出边，也便于获取任意一条边的权重。
+
+#### 1.4.2 哈希表实现邻接表的代码实现
+
+```python
+class Graph:
+    """哈希表实现的邻接表图结构"""
+    def __init__(self, ver_count, directed=False):
+        self.n = ver_count                    # 顶点数量
+        self.directed = directed              # 是否为有向图
+        # 使用字典存储邻接表，键为顶点编号，值为邻接边字典
+        # 邻接边字典：键为相邻顶点编号，值为边权重
+        self.adj = {i: {} for i in range(1, ver_count + 1)}
+
+    def _valid(self, v):
+        """判断顶点编号是否合法（1 ~ n）"""
+        return 1 <= v <= self.n
+
+    def add_edge(self, vi, vj, val=1):
+        """
+        添加一条边 vi -> vj，权值为 val
+        vi, vj 为 1-based 顶点编号
+        """
+        if not self._valid(vi) or not self._valid(vj):
+            raise ValueError(f"顶点编号 {vi} 或 {vj} 超出范围 [1, {self.n}]")
+        
+        # 添加边 vi -> vj
+        self.adj[vi][vj] = val
+        
+        # 如果是无向图，添加反向边
+        if not self.directed:
+            self.adj[vj][vi] = val
+
+    def build(self, edge_list):
+        """
+        批量建图
+        edge_list: [(vi, vj, val), ...] 边列表，顶点编号从1开始
+        """
+        for vi, vj, val in edge_list:
+            self.add_edge(vi, vj, val)
+
+    def get_edge(self, vi, vj):
+        """
+        查询 vi -> vj 的边权
+        返回权值，如果不存在该边则返回 None
+        """
+        if not self._valid(vi) or not self._valid(vj):
+            raise ValueError(f"顶点编号 {vi} 或 {vj} 超出范围 [1, {self.n}]")
+        
+        return self.adj[vi].get(vj, None)
+
+    def has_edge(self, vi, vj):
+        """
+        判断是否存在 vi -> vj 的边
+        返回 True 或 False
+        """
+        if not self._valid(vi) or not self._valid(vj):
+            return False
+        return vj in self.adj[vi]
+
+    def neighbors(self, vi):
+        """
+        遍历顶点 vi 的所有邻接边
+        返回生成器，每次产生 (邻接顶点, 边权)
+        """
+        if not self._valid(vi):
+            raise ValueError(f"顶点编号 {vi} 超出范围 [1, {self.n}]")
+        
+        for vj, val in self.adj[vi].items():
+            yield vj, val
+
+    def get_degree(self, vi):
+        """
+        获取顶点 vi 的出度
+        """
+        if not self._valid(vi):
+            raise ValueError(f"顶点编号 {vi} 超出范围 [1, {self.n}]")
+        return len(self.adj[vi])
+
+    def print_graph(self):
+        """打印所有边"""
+        for vi in range(1, self.n + 1):
+            for vj, val in self.adj[vi].items():
+                print(f"{vi} -> {vj} : {val}")
+
+
+# 示例：构建有向带权图并测试各种操作
+
+# 创建有向图
+graph = Graph(6, directed=True)
+
+# 添加边
+edges = [(1, 2, 5), (1, 5, 6), (2, 4, 7), (4, 3, 9), (3, 1, 2), (5, 6, 8), (6, 4, 3)]
+graph.build(edges)
+
+print("=== 图的基本信息 ===")
+print(f"顶点数: {graph.n}")
+print(f"是否为有向图: {graph.directed}")
+
+print("\n=== 边的查询操作 ===")
+print(f"边 4->3 的权重: {graph.get_edge(4, 3)}")  # 输出: 9
+print(f"边 4->5 的权重: {graph.get_edge(4, 5)}")  # 输出: None
+print(f"是否存在边 1->2: {graph.has_edge(1, 2)}")  # 输出: True
+print(f"是否存在边 2->1: {graph.has_edge(2, 1)}")  # 输出: False
+
+print("\n=== 邻接点遍历 ===")
+for vi in range(1, 7):
+    neighbors = list(graph.neighbors(vi))
+    print(f"顶点 {vi} 的邻接点: {neighbors}, 出度: {graph.get_degree(vi)}")
+
+print("\n=== 所有边 ===")
+graph.print_graph()
+```
+
+#### 1.4.3 哈希表实现邻接表的简单构建
+
+在实际刷题或竞赛过程中，如果只是需要临时构建一张图用于算法实现，通常会采用最简单直接的方式来初始化邻接表。例如，直接用 Python 的字典（dict）或列表（list）来存储邻接关系，无需封装成类，也不必实现完整的接口。这样可以大大简化代码量，便于快速调试和提交。
+
+```python
+# 构建图
+n = 6  # 顶点数
+edges = [(1, 2, 5), (1, 5, 6), (2, 4, 7), (4, 3, 9), (3, 1, 2), (5, 6, 8), (6, 4, 3)]
+
+# 初始化邻接表
+graph = {i: {} for i in range(1, n + 1)}
+
+# 添加边
+for vi, vj, val in edges:
+    graph[vi][vj] = val
+
+# 查询边
+print(graph[4].get(3, None))  # 输出: 9
+print(graph[4].get(5, None))  # 输出: None
+
+# 遍历邻接点
+for vi in range(1, n + 1):
+    print(f"顶点 {vi} 的邻接点: {list(graph[vi].keys())}")
+```
+
+#### 1.4.4 哈希表实现邻接表的算法分析
+
+- **时间复杂度**：
+  - **图的初始化与构建**：$O(n + m)$，其中 $n$ 表示顶点数，$m$ 表示边数。每个顶点的邻接表初始化为 $O(n)$，每条边的插入操作为 $O(1)$，总共 $m$ 条边，因此整体为 $O(n + m)$。
+  - **边的存在性查询**：$O(1)$。判断是否存在从 $v_i$ 到 $v_j$ 的边，利用哈希表查找，平均时间复杂度为 $O(1)$，即常数时间即可完成。
+  - **遍历某一顶点的所有邻接边**：遍历顶点 $v_i$ 的所有出边，时间复杂度为 $O(\mathrm{TD}(v_i))$，其中 $\mathrm{TD}(v_i)$ 表示顶点 $v_i$ 的出度（即邻接点个数）。这是因为只需顺序访问该顶点邻接表中的所有元素。
+  - **遍历整张图的所有边**：遍历所有顶点及其邻接表，整体时间复杂度为 $O(n + m)$。$O(n)$ 用于访问所有顶点，$O(m)$ 用于访问所有边。
+- **空间复杂度**：$O(n + m)$，其中 $O(n)$ 用于存储所有顶点的邻接表结构，$O(m)$ 用于存储所有边的信息。相比邻接矩阵，邻接表在稀疏图（$m \ll n^2$）时能显著节省空间。
+
+## 2. 常见图论问题
+
+常见的图论问题主要有：**遍历问题**、**连通性问题**、**生成树问题**、**最短路径问题**、**网络流问题**、**二分图问题** 等。
 
 ### 2.1 图的遍历问题
 
-> **图的遍历**：与树的遍历类似，图的遍历指的是从图的某一个顶点出发，按照某种搜索方式对图中的所有节点都仅访问一次。
+> **图的遍历**：从某个顶点出发，按照特定顺序访问图中所有节点且仅访问一次。
 
-图的遍历是求解图的连通性问题、拓扑排序和求关键路径等算法的基础。
+遍历是解决连通性、拓扑排序、关键路径等问题的基础。常用方法有：
 
-根据搜索方式的不同，可以将图的遍历分为「深度优先搜索」和「广度优先搜索」。
-
-- **深度优先搜索**：从某一顶点出发，沿着⼀条路径⼀直搜索下去，在⽆法搜索时，回退到刚刚访问过的节点。
-- **广度优先搜索**：从某个顶点出发，⼀次性访问所有未被访问的邻接点，再依次从这些已访问过的邻接点出发，⼀层⼀层地访问。
+- **深度优先搜索（DFS）**：沿一条路径尽可能深入，无法继续时回退。
+- **广度优先搜索（BFS）**：一层一层访问邻接点，逐层推进。
 
 ### 2.2 图的连通性问题
 
-我们在「2.3 连通图和非连通图」中提到过「2.3.1 连通无向图和连通分量」和「2.3.2 强连通有向图和强连通分量」。
+无向图常见连通性问题有：**连通分量**、**点双连通分量（割点）**、**边双连通分量（桥）**、**全局最小割**等。
 
-在无向图中，图的连通性问题主要包括：**求无向图的连通分量**、**求点双连通分量（找割点）**、**求边双连通分量（找桥）**、**全局最小割问题** 等等。
+- **连通分量**：无向图中，每个连通分量是内部任意两点都连通、且无法再扩展的极大子图。常用并查集或 DFS/BFS 求解。
+- **点双连通分量（割点）**：无向图中，去掉任意一个顶点后，分量内其他顶点仍连通的极大子图。割点是指删除后会增加连通分量数的顶点。常用 DFS 求解。
+- **边双连通分量（桥）**：无向图中，去掉任意一条边后，分量内其他顶点仍连通的极大子图。桥是指删除后会增加连通分量数的边。也可用 DFS 求解。
+- **全局最小割**：将无向图顶点分为两个不相交集合，使连接这两个集合的边权和最小。常用于网络可靠性分析，常见算法有 Stoer-Wagner 等。
 
-在有向图中，图的连通性问题主要包括：**求有向图的强连通分量**、**最小点基**、**最小权点基**、**2-SAT 问题** 等等。
+有向图常见连通性问题有：**强连通分量**、**最小点基**、**最小权点基**、**2-SAT 问题** 等。
+
+
+- **强连通分量**：有向图中，强连通分量指任意两点互相可达、且无法再扩展的极大子图。常用 Kosaraju 或 Tarjan 算法快速求解。
+- **最小点基**：在有向图中，选出最少的顶点，使得从这些点能到达所有顶点。常用于控制系统、可达性分析等。
+- **最小权点基**：在最小点基的基础上，要求选中顶点的权值和最小，常见于带权有向图的优化问题。
+- **2-SAT 问题**：2-SAT 是每个约束只包含两个变量的布尔可满足性问题（如 $x \lor \lnot y$）。可用强连通分量算法在线性时间判断有无解，并给出解。
 
 ### 2.3 图的生成树问题
 
-> **图的生成树（Spanning Tree）**：如果连通图 G 的一个子图是一棵包含图 G 所有顶点的树，则称该子图为 G 的生成树。生成树是连通图的包含图中的所有顶点的极小连通子图。图的生成树不惟一。从不同的顶点出发进行遍历，可以得到不同的生成树。
+> **生成树**：连通图的一个包含所有顶点的极小连通子图，且本身是一棵树。
 
-图的生成树问题主要包括：**最小生成树问题**、**次小生成树问题** 和 **有向图的最小树形图问题** 等等。
+主要问题包括：**最小生成树**、**次小生成树**、**有向图的最小树形图**。
 
-- **无向图的最小生成树**：如果连通图 $G$ 是一个带权无向图，则生成树的边也带权，则称该带权图中所有带权生成树中权值总和最小的生成树为最小生成树（也称为最小代价生成树）。
-- **无向图的次小生成树**：如果连通图 $G$ 是一个带权无向图，生成树 $T$ 是图 $G$ 的一个最小生成树，如果有另一棵生成树 $T_1$，$T_1 \ne T$，满足不存在树 $T^{'}$，$T^{'} \ne T$，且 $w(T^{'}) < W(T_1)$，则称 $T_1$ 是图 $G$ 的次小生成树。 
-- **有向图的最小树形图**：如果连通图 $G$ 是一个带权有向图，以顶点 $v_i$ 为根节点的生成树 $T$ 中，顶点 $v_i$ 到任意非 $v_i$ 顶点的路径存在且唯一，并且生成树 $T$ 中权值总和最小，则该生成树被称为有向图 $G$ 的最小树形图。
+- **最小生成树**：带权无向图中，所有生成树中边权和最小的那棵树。
+- **次小生成树**：权值仅次于最小生成树的另一棵生成树。
+- **最小树形图**：带权有向图中，以某顶点为根，所有点可达且边权和最小的生成树。
 
 ### 2.4 图的最短路径问题
 
-> **图的最短路径问题**：如果用带权图来表示真实的交通、物流或社交网络，则边的权重可能代表交通运输费、距离或者熟悉程度。此时我们会考虑两个不同顶点之间的最短路径有多长，这一类问题统称为最短路径。并且我们称路径上的第一个顶点为源点，最后一个顶点为终点。
+> **最短路径问题**：在带权图中，寻找两点间权值和最小的路径。
 
-按照源点数目的不同，可以将图的最短路径问题分为 **单源最短路径问题** 和 **多源最短路径问题**。
+按源点数量可分为：
 
-- **单源最短路径问题**：从一个顶点出发到图中其余各个顶点之间的最短路径问题。
-- **多源最短路径问题**：图中任意两点之间的最短路径问题。
+- **单源最短路径**：一个顶点到其他所有顶点的最短路径。
+- **多源最短路径**：任意两点间的最短路径。
 
-**单源最短路径问题** 的求解还是 **差分约束系统问题** 的基础。
-
-除此之外，在实际应用中，有时候除了需要知道最短路径外，还需要知道次最短路径或者第三最短路径。这样的多条最短路径问题称为 **`k` 最短路径问题**。
+此外，还有 **k 最短路径问题**（如次短路径、第三短路径等），以及与 **差分约束系统** 相关的问题。
 
 ### 2.5 图的网络流问题
 
-> **图的网络流**：这里的「网络」指的是：带权的连通有向图。该有向图中的每条边都有一个权值（也称为容量值），当顶点之间不存在边时，两点之间的容量为 0。并且该有向图中有两个特殊的顶点：源点 $s$ 和汇点 $t$。
->
-> 这里的「流」指的是：网络上的流。如果把网络想象成一个自来水管道网络，那么流就是其中流动的水。每条边的方向表示允许的流向，边上的权值表示这条边允许通过的最大流量，也就是说每条边上的流都不能超过它的容量。并且对于除了源点 $s$ 和汇点 $t$ 外的所有点（即中继点），流入的流量都等于流出的流量。
+> **网络流**：在带权有向图（网络）中，研究从源点 $s$ 到汇点 $t$ 的流量分配问题。每条边有容量限制，除源点和汇点外，其他点流入等于流出。
 
-图的网络流中最常见的问题就是 **网络最大流问题**。其次还有 **网络最小费用最大流问题**、**网络最小割问题**。
+常见问题有：
 
-- **网络最大流**：给定一个网络，要求计算从源点流向汇点的最大流量（可以有很多条路到达汇点）。
-- **网络最小费用最大流**：给定一个网络，并且每条边都有一个费用，代表单位流量流过这条边的开销。要求计算出最大流的同时，要求花费的费用最小。
-- **网络最小割**：割是删边的意思。给定一个网络，删掉其中 $x$ 条边，从而使原本连通的网络变得不连通，要求计算出 $x$ 条边加起来最小的流量总和是多少。
+- **最大流**：求从源点到汇点的最大可流量。
+- **最小费用最大流**：在最大流的基础上，使总费用最小。
+- **最小割**：删去若干边使网络不连通，且被删边容量和最小。
 
 ### 2.6 二分图问题
 
-> **二分图**：设 $G = (V, E)$ 是一个无向图，如果顶点 $V$ 可以分为两个互不相交的子集 $(A, B)$，并且图中每条边 $(u, v)$ 所关联的两个顶点 $u$ 和 $v$ 分别属于这两个不同的顶点集（即 $u \in A, v \in B$），则称图 $G$ 是一个二分图。
+> **二分图**：一种无向图，可以把所有顶点分成两个互不重叠的集合，使得每条边都连接着来自不同集合的两个顶点，也就是说，同一个集合内的顶点之间没有边相连。
 
-二分图中的常见问题有：**二分图最大匹配问题**、**二分图最大权匹配问题**、**二分图多重匹配问题**。
+常见问题有：
 
-先来介绍一下匹配的概念：在二分图中，一个匹配就是一个边的集合，其中任意两条边之间都没有公共节点。
-
-- **二分图最大匹配**：在一个二分图的所有匹配中，边数最多的匹配叫做该二分图的最大匹配。
-- **二分图最大权匹配**：在一个二分图的所有匹配中，边的权值和最大的匹配叫做该二分图的最大权匹配。
-- **二分图多重匹配**：在二分图最大匹配问题中，每个点最多只能和一条匹配边相关联。但是在二分图多重匹配中，每个点可以多次匹配但是有匹配上限。
-
+- **最大匹配**：匹配边数最多的匹配。
+- **最大权匹配**：匹配边权和最大的匹配。
+- **多重匹配**：每个点可多次匹配，但有上限。
 
 ## 参考资料
 

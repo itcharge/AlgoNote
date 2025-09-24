@@ -4,7 +4,7 @@
 
 以阶乘为例，数学定义如下：
 
-$fact(n) =  \begin{cases} 1 & \text{n = 0} \cr n \times fact(n - 1) & \text{n > 0} \end{cases}$
+$$fact(n) =  \begin{cases} 1 & \text{n = 0} \cr n \times fact(n - 1) & \text{n > 0} \end{cases}$$
 
 我们可以直接用调用函数自身的方式实现阶乘函数 $fact(n)$，代码如下：
 

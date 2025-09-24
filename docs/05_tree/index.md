@@ -1,3 +1,11 @@
+![](https://qcdn.itcharge.cn/images/20250923140359.png)
+
+::: tip 引  言
+树如同大地上拔节生长的脉络。
+
+枝叶纵横，层层递进，信息在脉络间流转，万物由此相连。
+:::
+
 ## 本章内容
 
 - [5.1 树与二叉树基础](https://github.com/ITCharge/AlgoNote/tree/main/docs/05_tree/05_01_tree_basic.md)

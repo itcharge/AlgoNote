@@ -1,3 +1,11 @@
+![](https://qcdn.itcharge.cn/images/20250923140234.png)
+
+::: tip 引  言
+数组如同连续砖块砌成的墙。
+
+每一块砖石紧密相依，井然有序，宛如时光的流转，悄然记录着数据的点滴。
+:::
+
 ## 本章内容
 
 - [1.1 数组基础](https://github.com/ITCharge/AlgoNote/tree/main/docs/01_array/01_01_array_basic.md)
