@@ -6,12 +6,12 @@
     <p><em>一本系统讲解算法与数据结构、涵盖 LeetCode 题解的中文学习手册</em></p>
 </div>
 
-<p align="center">
+<div align="center">
   <a href="https://algo.itcharge.cn/">
     <img src="https://qcdn.itcharge.cn/images/btn_read_online.svg" width="145" alt="在线阅读"></a>
   <a href="https://github.com/ITCharge/AlgoNote">
     <img src="https://qcdn.itcharge.cn/images/btn_github_link.svg" width="145" alt="GitHub 仓库"></a>
-</p>
+</div>
 
 ## 1. 本书简介
 

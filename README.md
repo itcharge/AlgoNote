@@ -9,21 +9,16 @@
   <img src="https://img.shields.io/badge/language-Chinese%20%7C%20Python-brightgreen?style=flat" alt="Language"/>
   <a href="https://github.com/ITCharge/AlgoNote"><img src="https://img.shields.io/badge/GitHub-Project-blue?style=flat&logo=github" alt="GitHub Project"/></a>
   <p></p>
-</div>
-
-<p align="center">
-  <a href="https://algo.itcharge.cn/">
-    <img src="https://qcdn.itcharge.cn/images/btn_read_online.svg" width="145" alt="在线阅读"></a>
-  <a href="https://github.com/ITCharge/AlgoNote">
-    <img src="https://qcdn.itcharge.cn/images/btn_github_link.svg" width="145" alt="GitHub 仓库"></a>
-</p>
-
-
-<div align="center">
   <h3>📚 从零开始的「算法与数据结构」学习教程</h3>
   <p><em>一本系统讲解算法与数据结构、涵盖 LeetCode 题解的中文学习手册</em></p>
 </div>
 
+<div align="center">
+  <a href="https://algo.itcharge.cn/">
+    <img src="https://qcdn.itcharge.cn/images/btn_read_online.svg" width="145" alt="在线阅读"></a>
+  <a href="https://github.com/ITCharge/AlgoNote">
+    <img src="https://qcdn.itcharge.cn/images/btn_github_link.svg" width="145" alt="GitHub 仓库"></a>
+</div>
 
 ## 1. 本书简介
 
@@ -34,20 +29,14 @@
 - 本项目先从基础的数据结构和算法开始讲解，再针对不同分类的数据结构和算法，进行具体题目的讲解分析。让读者可以通过「算法基础理论学习」和「编程实战学习」相结合的方式，彻底的掌握算法知识。
 - 本项目从各大知名互联网公司面试算法题中整理汇总了 **「LeetCode 200 道高频面试题」**，帮助面试者更有针对性的准备面试。
 
-### 1.1 源码地址
-
-本书内容及代码都放在 [Github repo](https://github.com/ITCharge/AlgoNote) 中，欢迎在下方项目中 **「Star ⭐️ 」** 和 **「Fork」**，这是对我最大的鼓励和支持。
-
-- Github 地址：[https://github.com/ITCharge/AlgoNote](https://github.com/ITCharge/AlgoNote)
-
-### 1.2 目标读者
+### 1.1 目标读者
 
 - 拥有 Python 编程基础或其他编程语言基础的编程爱好者
 - 对 LeetCode 刷题感兴趣或准备算法面试的面试人员
 - 对算法感兴趣的计算机专业学生或程序员
 - 想要提升编程思维和问题解决能力的开发者
 
-### 1.3 内容结构
+### 1.2 内容结构
 
 本书采用算法与数据结构相结合的方法，把内容分为如下几个主要部分：
 
@@ -63,7 +52,7 @@
 - **9. 附加内容**：作为全书的扩展模块。
 - **10. 题目解析**：讲解 LeetCode 上刷过的所有题目，可按照对应题号进行检索和学习。
 
-### 1.4 使用说明
+### 1.3 使用说明
 
 - 本电子书的左侧为所有章节目录导航，可直接点击对应章节跳转阅读。
 - 本电子书左上角有搜索栏，可以帮你迅速找到想看的章节和题解文章。
