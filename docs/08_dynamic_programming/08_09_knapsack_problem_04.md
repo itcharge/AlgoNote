@@ -1,4 +1,4 @@
-## 5. 混合背包问题
+## 1. 混合背包问题简介
 
 > **混合背包问题**：有 $n$ 种物品和一个最多能装重量为 $W$ 的背包，第 $i$ 种物品的重量为 $weight[i]$，价值为 $value[i]$，件数为 $count[i]$。其中：
 >
@@ -9,6 +9,8 @@
 > 请问在总重量不超过背包载重上限的情况下，能装入背包的最大价值是多少？
 
 ![混合背包问题](https://qcdn.itcharge.cn/images/20240514111727.png)
+
+## 2. 混合背包问题的基本思路
 
 #### 思路 1：动态规划
 
@@ -78,17 +80,17 @@ class Solution:
 - **时间复杂度**：$O(W \times \sum \log_2{count[i]})$，其中 $W$ 为背包的载重上限，$count[i]$ 是第 $i$ 种物品的数量。
 - **空间复杂度**：$O(W)$。
 
-## 6. 分组背包问题
+## 3. 分组背包问题简介
 
 > **分组背包问题**：有 $n$ 组物品和一个最多能装重量为 $W$ 的背包，第 $i$ 组物品的件数为 $group\_count[i]$，第 $i$ 组的第 $j$ 个物品重量为 $weight[i][j]$，价值为 $value[i][j]$。每组物品中最多只能选择 $1$ 件物品装入背包。请问在总重量不超过背包载重上限的情况下，能装入背包的最大价值是多少？
 
 ![分组背包问题](https://qcdn.itcharge.cn/images/20240514111745.png)
 
-### 6.1 分组背包问题基本思路
+## 4. 分组背包问题的基本思路
 
 #### 思路 1：动态规划 + 二维基本思路
 
-###### 1. 划分阶段
+###### 1. 阶段划分
 
 按照物品种类的序号、当前背包的载重上限进行阶段划分。
 
@@ -147,11 +149,11 @@ class Solution:
 - **时间复杂度**：$O(n \times W \times C)$，其中 $n$ 为物品分组数量，$W$ 为背包的载重上限，$C$ 是每组物品的数量。因为 $n \times C = \sum group\_count[i]$，所以时间复杂度也可以写成 $O(W \times \sum group\_count[i])$。
 - **空间复杂度**：$O(n \times W)$。
 
-### 6.2 分组背包问题滚动数组优化
+## 5. 分组背包问题的滚动数组优化
 
 #### 思路 2：动态规划 + 滚动数组优化
 
-###### 1. 划分阶段
+###### 1. 阶段划分
 
 按照当前背包的载重上限进行阶段划分。
 
@@ -198,19 +200,19 @@ class Solution:
 - **时间复杂度**：$O(n \times W \times C)$，其中 $n$ 为物品分组数量，$W$ 为背包的载重上限，$C$ 是每组物品的数量。因为 $n \times C = \sum group\_count[i]$，所以时间复杂度也可以写成 $O(W \times \sum group\_count[i])$。
 - **空间复杂度**：$O(W)$。
 
-## 7. 二维费用背包问题
+## 6. 二维费用背包问题简介
 
 > **二维费用背包问题**：有 $n$ 件物品和有一个最多能装重量为 $W$、容量为 $V$ 的背包。第 $i$ 件物品的重量为 $weight[i]$，体积为 $volume[i]$，价值为 $value[i]$，每件物品有且只有 $1$ 件。请问在总重量不超过背包载重上限、容量上限的情况下，能装入背包的最大价值是多少？
 
 ![二维费用背包问题](https://qcdn.itcharge.cn/images/20240514111802.png)
 
-### 7.1 二维费用背包问题基本思路
+## 7. 二维费用背包问题的基本思路
 
 我们可以参考「0-1 背包问题」的状态定义和基本思路，在「0-1 背包问题」基本思路的基础上，增加一个维度用于表示物品的容量。
 
 #### 思路 1：动态规划 + 三维基本思路
 
-###### 1. 划分阶段
+###### 1. 阶段划分
 
 按照物品种类的序号、当前背包的载重上限、容量上限进行阶段划分
 
@@ -269,11 +271,11 @@ class Solution:
 - **时间复杂度**：$O(n \times W \times V)$，其中 $n$ 为物品分组数量，$W$ 为背包的载重上限，$V$ 为背包的容量上限。
 - **空间复杂度**：$O(n \times W \times V)$。
 
-### 7.2 二维费用背包问题滚动数组优化
+## 8. 二维费用背包问题滚动数组优化
 
 #### 思路 2：动态规划 + 滚动数组优化
 
-###### 1. 划分阶段
+###### 1. 阶段划分
 
 按照当前背包的载重上限、容量上限进行阶段划分。
 
@@ -327,8 +329,8 @@ class Solution:
 - [1155. 掷骰子等于目标和的方法数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/number-of-dice-rolls-with-target-sum.md)
 - [0474. 一和零](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/ones-and-zeroes.md)
 
-- [分组背包问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%88%86%E7%BB%84%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
-- [多维背包问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%A4%9A%E7%BB%B4%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
+- [分组背包问题题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%88%86%E7%BB%84%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
+- [多维背包问题题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%A4%9A%E7%BB%B4%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 
