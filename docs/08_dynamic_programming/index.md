@@ -1,3 +1,11 @@
+![](https://qcdn.itcharge.cn/images/20250923144601.png)
+
+::: tip 引  言
+动态规划如同在迷雾中铺设星光小径。
+
+循着昨日星辰的余晖，步步生辉，终将抵达最璀璨的彼岸。
+:::
+
 ## 本章内容
 
 - [8.1 动态规划基础](https://github.com/itcharge/AlgoNote/tree/main/docs/08_dynamic_programming/08_01_dynamic_programming_basic.md)
