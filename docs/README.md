@@ -1,10 +1,11 @@
 <div align='center'>
-    <img src="https://qcdn.itcharge.cn/images/20250923171331.png" alt="alt text" width="100%"/>
+    <img src="https://qcdn.itcharge.cn/images/20250925092713.png" alt="alt text" width="100%"/>
     <h1>算法通关手册</h1>
     <p></p>
     <h3>📚 从零开始的「算法与数据结构」学习教程</h3>
     <p><em>一本系统讲解算法与数据结构、涵盖 LeetCode 题解的中文学习手册</em></p>
 </div>
+
 
 <div align="center">
   <a href="https://algo.itcharge.cn/">
@@ -12,7 +13,6 @@
   <a href="https://github.com/ITCharge/AlgoNote">
     <img src="https://qcdn.itcharge.cn/images/btn_github_link.svg" width="145" alt="GitHub 仓库"></a>
 </div>
-
 ## 1. 本书简介
 
 本书不仅仅只是一本算法题解书，更是一本算法与数据结构基础知识的讲解书。

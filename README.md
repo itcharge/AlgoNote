@@ -1,5 +1,5 @@
 <div align='center'>
-    <img src="https://qcdn.itcharge.cn/images/20250923171331.png" alt="alt text" width="100%"/>
+    <img src="https://qcdn.itcharge.cn/images/20250925092713.png" alt="alt text" width="100%"/>
     <h1>算法通关手册</h1>
 </div>
 
