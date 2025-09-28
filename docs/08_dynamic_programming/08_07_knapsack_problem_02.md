@@ -260,12 +260,12 @@ class Solution:
 
 ## 练习题目
 
-- [0279. 完全平方数](https://github.com/itcharge/AlgoNote/tree/main/docs/solutions/0200-0299/perfect-squares.md)
-- [0322. 零钱兑换](https://github.com/itcharge/AlgoNote/tree/main/docs/solutions/0300-0399/coin-change.md)
-- [0518. 零钱兑换 II](https://github.com/itcharge/AlgoNote/tree/main/docs/solutions/0500-0599/coin-change-ii.md)
-- [0377. 组合总和 IV](https://github.com/itcharge/AlgoNote/tree/main/docs/solutions/0300-0399/combination-sum-iv.md)
+- [0279. 完全平方数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/perfect-squares.md)
+- [0322. 零钱兑换](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/coin-change.md)
+- [0518. 零钱兑换 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/coin-change-ii.md)
+- [0377. 组合总和 IV](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/combination-sum-iv.md)
 
-- [完全背包问题题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
+- [完全背包问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
 
 ## 参考资料
 

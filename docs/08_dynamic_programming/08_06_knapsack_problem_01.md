@@ -296,7 +296,7 @@ class Solution:
 - [0494. 目标和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/target-sum.md)
 - [1049. 最后一块石头的重量 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/last-stone-weight-ii.md)
 
-- [0-1 背包问题题目列表](https://github.com/itcharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#0-1-%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
+- [0-1 背包问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#0-1-%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E9%A2%98%E7%9B%AE)
 
 
 ## 参考资料
