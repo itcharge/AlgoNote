@@ -119,7 +119,7 @@ class Solution:
         mod = 10 ** 9 + 7
         
         dp = [[[0 for _ in range(maxMove + 1)] for _ in range(n)] for _ in range(m)]
-        for i in r
+        
         for k in range(1, maxMove + 1):
             for i in range(m):
                 for j in range(n):
