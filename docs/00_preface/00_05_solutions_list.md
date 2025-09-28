@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 860 道）
+# LeetCode 题解（已完成 861 道）
 
 ### 第 1 ~ 99 题
 
@@ -239,7 +239,7 @@
 | [0300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/longest-increasing-subsequence.md) | 数组、二分查找、动态规划 | 中等 |
 | [0303. 区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/range-sum-query-immutable.md) | 设计、数组、前缀和 | 简单 |
 | [0304. 二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/range-sum-query-2d-immutable.md) | 设计、数组、矩阵、前缀和 | 中等 |
-| [0307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/range-sum-query-mutable.md) | 设计、树状数组、线段树、数组 | 中等 |
+| [0307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/range-sum-query-mutable.md) | 设计、树状数组、线段树、数组、分治 | 中等 |
 | [0309. 买卖股票的最佳时机含冷冻期](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/best-time-to-buy-and-sell-stock-with-cooldown.md) | 数组、动态规划 | 中等 |
 | [0310. 最小高度树](https://leetcode.cn/problems/minimum-height-trees/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/minimum-height-trees.md) | 深度优先搜索、广度优先搜索、图、拓扑排序 | 中等 |
 | [0312. 戳气球](https://leetcode.cn/problems/burst-balloons/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/burst-balloons.md) | 数组、动态规划 | 困难 |
@@ -285,7 +285,7 @@
 | [0386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/lexicographical-numbers.md) | 深度优先搜索、字典树 | 中等 |
 | [0387. 字符串中的第一个唯一字符](https://leetcode.cn/problems/first-unique-character-in-a-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/first-unique-character-in-a-string.md) | 队列、哈希表、字符串、计数 | 简单 |
 | [0389. 找不同](https://leetcode.cn/problems/find-the-difference/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/find-the-difference.md) | 位运算、哈希表、字符串、排序 | 简单 |
-| [0391. 完美矩形](https://leetcode.cn/problems/perfect-rectangle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/perfect-rectangle.md) | 数组、扫描线 | 困难 |
+| [0391. 完美矩形](https://leetcode.cn/problems/perfect-rectangle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/perfect-rectangle.md) | 几何、数组、哈希表、数学、扫描线 | 困难 |
 | [0392. 判断子序列](https://leetcode.cn/problems/is-subsequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/is-subsequence.md) | 双指针、字符串、动态规划 | 简单 |
 | [0394. 字符串解码](https://leetcode.cn/problems/decode-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/decode-string.md) | 栈、递归、字符串 | 中等 |
 | [0395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/longest-substring-with-at-least-k-repeating-characters.md) | 哈希表、字符串、分治、滑动窗口 | 中等 |
@@ -570,6 +570,7 @@
 | [1025. 除数博弈](https://leetcode.cn/problems/divisor-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/divisor-game.md) | 脑筋急转弯、数学、动态规划、博弈 | 简单 |
 | [1028. 从先序遍历还原二叉树](https://leetcode.cn/problems/recover-a-tree-from-preorder-traversal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/recover-a-tree-from-preorder-traversal.md) | 树、深度优先搜索、字符串、二叉树 | 困难 |
 | [1029. 两地调度](https://leetcode.cn/problems/two-city-scheduling/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/two-city-scheduling.md) | 贪心、数组、排序 | 中等 |
+| [1032. 字符流](https://leetcode.cn/problems/stream-of-characters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/stream-of-characters.md) | 设计、字典树、数组、字符串、数据流 | 困难 |
 | [1034. 边界着色](https://leetcode.cn/problems/coloring-a-border/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/coloring-a-border.md) | 深度优先搜索、广度优先搜索、数组、矩阵 | 中等 |
 | [1035. 不相交的线](https://leetcode.cn/problems/uncrossed-lines/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/uncrossed-lines.md) | 数组、动态规划 | 中等 |
 | [1037. 有效的回旋镖](https://leetcode.cn/problems/valid-boomerang/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/valid-boomerang.md) | 几何、数组、数学 | 简单 |
@@ -763,7 +764,7 @@
 | [1984. 学生分数的最小差值](https://leetcode.cn/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1900-1999/minimum-difference-between-highest-and-lowest-of-k-scores.md) | 数组、排序、滑动窗口 | 简单 |
 | [1986. 完成任务的最少工作时间段](https://leetcode.cn/problems/minimum-number-of-work-sessions-to-finish-the-tasks/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1900-1999/minimum-number-of-work-sessions-to-finish-the-tasks.md) | 位运算、数组、动态规划、回溯、状态压缩 | 中等 |
 | [1991. 找到数组的中间位置](https://leetcode.cn/problems/find-the-middle-index-in-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1900-1999/find-the-middle-index-in-array.md) | 数组、前缀和 | 简单 |
-| [1994. 好子集的数目](https://leetcode.cn/problems/the-number-of-good-subsets/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1900-1999/the-number-of-good-subsets.md) | 位运算、数组、数学、动态规划、状态压缩 | 困难 |
+| [1994. 好子集的数目](https://leetcode.cn/problems/the-number-of-good-subsets/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1900-1999/the-number-of-good-subsets.md) | 位运算、数组、哈希表、数学、动态规划、状态压缩、计数、数论 | 困难 |
 
 
 ### 第 2000 ~ 2099 题

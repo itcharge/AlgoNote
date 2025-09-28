@@ -15,85 +15,17 @@
 
 ### 排序算法题目
 
-#### 冒泡排序题目
-
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
+| [0912. 排序数组](https://leetcode.cn/problems/sort-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-an-array.md) | 数组、分治、桶排序、计数排序、基数排序、排序、堆（优先队列）、归并排序 | 中等 |
 | [0283. 移动零](https://leetcode.cn/problems/move-zeroes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/move-zeroes.md) | 数组、双指针 | 简单 |
-
-
-#### 选择排序题目
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
 | [0215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/kth-largest-element-in-an-array.md) | 数组、分治、快速选择、排序、堆（优先队列） | 中等 |
-
-
-#### 插入排序题目
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
 | [0075. 颜色分类](https://leetcode.cn/problems/sort-colors/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/sort-colors.md) | 数组、双指针、排序 | 中等 |
-
-
-#### 希尔排序题目
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
-| [0912. 排序数组](https://leetcode.cn/problems/sort-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-an-array.md) | 数组、分治、桶排序、计数排序、基数排序、排序、堆（优先队列）、归并排序 | 中等 |
-
-
-#### 归并排序题目
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
-| [0912. 排序数组](https://leetcode.cn/problems/sort-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-an-array.md) | 数组、分治、桶排序、计数排序、基数排序、排序、堆（优先队列）、归并排序 | 中等 |
 | [0088. 合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/merge-sorted-array.md) | 数组、双指针、排序 | 简单 |
 | [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/shu-zu-zhong-de-ni-xu-dui-lcof.md) | 树状数组、线段树、数组、二分查找、分治、有序集合、归并排序 | 困难 |
-
-
-#### 快速排序题目
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
-| [0912. 排序数组](https://leetcode.cn/problems/sort-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-an-array.md) | 数组、分治、桶排序、计数排序、基数排序、排序、堆（优先队列）、归并排序 | 中等 |
 | [0169. 多数元素](https://leetcode.cn/problems/majority-element/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/majority-element.md) | 数组、哈希表、分治、计数、排序 | 简单 |
-
-
-#### 堆排序题目
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
-| [0912. 排序数组](https://leetcode.cn/problems/sort-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-an-array.md) | 数组、分治、桶排序、计数排序、基数排序、排序、堆（优先队列）、归并排序 | 中等 |
-| [0215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/kth-largest-element-in-an-array.md) | 数组、分治、快速选择、排序、堆（优先队列） | 中等 |
 | [LCR 159. 库存管理 III](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/zui-xiao-de-kge-shu-lcof.md) | 数组、分治、快速选择、排序、堆（优先队列） | 简单 |
-
-
-#### 计数排序题目
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
-| [0912. 排序数组](https://leetcode.cn/problems/sort-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-an-array.md) | 数组、分治、桶排序、计数排序、基数排序、排序、堆（优先队列）、归并排序 | 中等 |
-
-
-#### 桶排序题目
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
-| [0912. 排序数组](https://leetcode.cn/problems/sort-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-an-array.md) | 数组、分治、桶排序、计数排序、基数排序、排序、堆（优先队列）、归并排序 | 中等 |
-
-
-#### 基数排序题目
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
 | [0164. 最大间距](https://leetcode.cn/problems/maximum-gap/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/maximum-gap.md) | 数组、桶排序、基数排序、排序 | 中等 |
-
-
-#### 其他排序题目
-
-| 标题 | 题解 | 标签 | 难度 |
-| :--- | :--- | :--- | :--- |
 | [0136. 只出现一次的数字](https://leetcode.cn/problems/single-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/single-number.md) | 位运算、数组 | 简单 |
 | [0056. 合并区间](https://leetcode.cn/problems/merge-intervals/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/merge-intervals.md) | 数组、排序 | 中等 |
 | [0179. 最大数](https://leetcode.cn/problems/largest-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/largest-number.md) | 贪心、数组、字符串、排序 | 中等 |

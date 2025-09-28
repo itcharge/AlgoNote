@@ -15,6 +15,7 @@
 - [1025. 除数博弈](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/divisor-game.md)
 - [1028. 从先序遍历还原二叉树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/recover-a-tree-from-preorder-traversal.md)
 - [1029. 两地调度](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/two-city-scheduling.md)
+- [1032. 字符流](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/stream-of-characters.md)
 - [1034. 边界着色](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/coloring-a-border.md)
 - [1035. 不相交的线](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/uncrossed-lines.md)
 - [1037. 有效的回旋镖](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1000-1099/valid-boomerang.md)
