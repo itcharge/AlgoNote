@@ -70,7 +70,6 @@ class Solution:
                 cur = queue.popleft()
                 for coin in coins:
                     if cur == coin:
-                        step += 1
                         return step
                     elif cur > coin and cur - coin not in visited:
                         queue.append(cur - coin)
@@ -100,42 +99,39 @@ class Solution:
 
 ###### 3. 状态转移方程
 
-$dp[c] = \begin{cases} dp[c] & c < coins[i - 1] \cr min \lbrace dp[c], dp[c - coins[i - 1]]  + 1 \rbrace & c \ge coins[i - 1] \end{cases}$
+$dp[c] = min(dp[c], dp[c - coin] + 1)$
 
-1. 当 $c < coins[i - 1]$ 时：
-   1. 不使用第 $i - 1$ 枚硬币，只使用前 $i - 1$ 枚硬币凑成金额 $w$ 的最少硬币数量，即 $dp[c]$。
-2. 当 $c \ge coins[i - 1]$ 时，取下面两种情况中的较小值：
-   1. 不使用第 $i - 1$ 枚硬币，只使用前 $i - 1$ 枚硬币凑成金额 $w$ 的最少硬币数量，即 $dp[c]$。
-   2. 凑成金额 $c - coins[i - 1]$ 的最少硬币数量，再加上当前硬币的数量 $1$，即 $dp[c - coins[i - 1]]  + 1$。
+对于每种硬币 $coin$，当 $c \ge coin$ 时，取下面两种情况中的较小值：
+1. 不使用当前硬币，只使用之前硬币凑成金额 $c$ 的最少硬币数量，即 $dp[c]$。
+2. 凑成金额 $c - coin$ 的最少硬币数量，再加上当前硬币的数量 $1$，即 $dp[c - coin] + 1$。
 
 ###### 4. 初始条件
 
 - 凑成总金额为 $0$ 的最少硬币数量为 $0$，即 $dp[0] = 0$。
-- 默认情况下，在不使用硬币时，都不能恰好凑成总金额为 $w$ ，此时将状态值设置为一个极大值（比如 $n + 1$），表示无法凑成。
+- 默认情况下，在不使用硬币时，都不能恰好凑成总金额为 $c$，此时将状态值设置为一个极大值（比如 $+\infty$），表示无法凑成。
 
 ###### 5. 最终结果
 
 根据我们之前定义的状态，$dp[c]$ 表示为：凑成总金额为 $c$ 的最少硬币数量。则最终结果为 $dp[amount]$。
 
-1. 如果 $dp[amount] \ne amount + 1$，则说明： $dp[amount]$ 为凑成金额 $amount$ 的最少硬币数量，则返回 $dp[amount]$。
-2. 如果 $dp[amount] = amount + 1$，则说明：无法凑成金额 $amount$，则返回 $-1$。
+1. 如果 $dp[amount] \ne +\infty$，则说明： $dp[amount]$ 为凑成金额 $amount$ 的最少硬币数量，则返回 $dp[amount]$。
+2. 如果 $dp[amount] = +\infty$，则说明：无法凑成金额 $amount$，则返回 $-1$。
 
 ### 思路 2：代码
 
 ```python
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
-        size = len(coins)
-        dp = [(amount + 1) for _ in range(amount + 1)]
+        dp = [float('inf')] * (amount + 1)
         dp[0] = 0
 
-        # 枚举前 i 种物品
-        for i in range(1, size + 1):
+        # 枚举每种硬币
+        for coin in coins:
             # 正序枚举背包装载重量
-            for c in range(coins[i - 1], amount + 1):
-                dp[c] = min(dp[c], dp[c - coins[i - 1]] + 1)
+            for c in range(coin, amount + 1):
+                dp[c] = min(dp[c], dp[c - coin] + 1)
         
-        if dp[amount] != amount + 1:
+        if dp[amount] != float('inf'):
             return dp[amount]
         return -1
 ```

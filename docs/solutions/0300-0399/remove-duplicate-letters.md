@@ -72,7 +72,7 @@ class Solution:
 
         for ch in s:
             if ch not in stack:
-                while stack and ch < stack[-1] and stack[-1] in letter_counts and letter_counts[stack[-1]] > 0:
+                while stack and ch < stack[-1] and letter_counts[stack[-1]] > 0:
                     stack.pop()
                 stack.append(ch)
             letter_counts[ch] -= 1
