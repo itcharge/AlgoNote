@@ -120,6 +120,6 @@ class Solution:
 
 ### 思路 1：复杂度分析
 
-- **时间复杂度**：$O(m \times n \times \alpha(m \times n))$，其中 $\alpha$ 是反 Ackerman 函数。
+- **时间复杂度**：$O(m \times n \times  \log(m \times n))$，其中 $m$ 和 $n$ 分别为矩阵的行数和列数。主要耗时在于对所有边进行排序，排序复杂度为 $O(m \times n \times \log(m \times n))$，并查集的合并与查找操作均摊为常数级。
 - **空间复杂度**：$O(m \times n)$。
 
