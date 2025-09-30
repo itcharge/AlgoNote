@@ -21,7 +21,7 @@
 - $n == grid.length$。
 - $n == grid[i].length$。
 - $1 \le n \le 50$。
-- $0 \le grid[i][j] < n2$。
+- $0 \le grid[i][j] < n^2$。
 - $grid[i][j]$ 中每个值均无重复。
 
 **示例**：
@@ -124,6 +124,6 @@ class Solution:
 
 ### 思路 1：复杂度分析
 
-- **时间复杂度**：$O(m \times n \times \alpha(m \times n))$，其中 $\alpha$ 是反 Ackerman 函数。
-- **空间复杂度**：$O(m \times n)$。
+- **时间复杂度**：$O(n^2 \log n)$。其中 $n$ 为网格的边长，$n^2$ 为总格子数。枚举所有相邻格子的边，边数为 $O(n^2)$，排序所有边的时间复杂度为 $O(n^2 \log n^2) = O(n^2 \log n)$。并查集的合并与查找操作均摊 $O(\alpha(n^2))$，$\alpha$ 为反 Ackermann 函数，极慢增长，可视为常数。因此整体复杂度为 $O(n^2 \log n)$。
+- **空间复杂度**：$O(n^2)$。主要用于存储并查集的父节点数组和所有边的信息，均为 $O(n^2)$ 级别。
 
