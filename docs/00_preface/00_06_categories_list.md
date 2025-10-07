@@ -270,7 +270,6 @@
 | [0155. 最小栈](https://leetcode.cn/problems/min-stack/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/min-stack.md) | 栈、设计 | 中等 |
 | [0020. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/valid-parentheses.md) | 栈、字符串 | 简单 |
 | [0227. 基本计算器 II](https://leetcode.cn/problems/basic-calculator-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/basic-calculator-ii.md) | 栈、数学、字符串 | 中等 |
-| [0739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/daily-temperatures.md) | 栈、数组、单调栈 | 中等 |
 | [0150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/evaluate-reverse-polish-notation.md) | 栈、数组、数学 | 中等 |
 | [0232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/implement-queue-using-stacks.md) | 栈、设计、队列 | 简单 |
 | [LCR 125. 图书整理 II](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/LCR/yong-liang-ge-zhan-shi-xian-dui-lie-lcof.md) | 栈、设计、队列 | 简单 |
@@ -289,6 +288,8 @@
 | [0496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0400-0499/next-greater-element-i.md) | 栈、数组、哈希表、单调栈 | 简单 |
 | [0503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/next-greater-element-ii.md) | 栈、数组、单调栈 | 中等 |
 | [0901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/online-stock-span.md) | 栈、设计、数据流、单调栈 | 中等 |
+| [0853. 车队](https://leetcode.cn/problems/car-fleet/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/car-fleet.md) | 栈、数组、排序、单调栈 | 中等 |
+| [1762. 能看到海景的建筑物](https://leetcode.cn/problems/buildings-with-an-ocean-view/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1700-1799/buildings-with-an-ocean-view.md) | 栈、数组、单调栈 | 中等 |
 | [0084. 柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/largest-rectangle-in-histogram.md) | 栈、数组、单调栈 | 困难 |
 | [0316. 去除重复字母](https://leetcode.cn/problems/remove-duplicate-letters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/remove-duplicate-letters.md) | 栈、贪心、字符串、单调栈 | 中等 |
 | [0042. 接雨水](https://leetcode.cn/problems/trapping-rain-water/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/trapping-rain-water.md) | 栈、数组、双指针、动态规划、单调栈 | 困难 |
