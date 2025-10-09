@@ -45,7 +45,8 @@ class Solution:
         # pos: 第 pos 个数位
         # state: 之前选过的数字集合。
         # isLimit: 表示是否受到选择限制。如果为真，则第 pos 位填入数字最多为 s[pos]；如果为假，则最大可为 9。
-        # isNum: 表示 pos 前面的数位是否填了数字。如果为真，则当前位不可跳过；如果为假，则当前位可跳过。
+        # isNum: 表示 pos 前面的数位是否填了数字。
+        # 如果为真，则当前位不可跳过；如果为假，则当前位可跳过。
         def dfs(pos, state, isLimit, isNum):
             if pos == len(s):
                 # isNum 为 True，则表示当前方案符合要求
@@ -140,7 +141,8 @@ class Solution:
         # pos: 第 pos 个数位
         # state: 之前选过的数字集合。
         # isLimit: 表示是否受到选择限制。如果为真，则第 pos 位填入数字最多为 s[pos]；如果为假，则最大可为 9。
-        # isNum: 表示 pos 前面的数位是否填了数字。如果为真，则当前位不可跳过；如果为假，则当前位可跳过。
+        # isNum: 表示 pos 前面的数位是否填了数字。
+        # 如果为真，则当前位不可跳过；如果为假，则当前位可跳过。
         def dfs(pos, state, isLimit, isNum):
             if pos == len(s):
                 # isNum 为 True，则表示当前方案符合要求
@@ -246,7 +248,8 @@ class Solution:
         # pos: 第 pos 个数位
         # state: 之前选过的数字集合。
         # isLimit: 表示是否受到选择限制。如果为真，则第 pos 位填入数字最多为 s[pos]；如果为假，则最大可为 9。
-        # isNum: 表示 pos 前面的数位是否填了数字。如果为真，则当前位不可跳过；如果为假，则当前位可跳过。
+        # isNum: 表示 pos 前面的数位是否填了数字。
+        # 如果为真，则当前位不可跳过；如果为假，则当前位可跳过。
         def dfs(pos, state, isLimit, isNum):
             if pos == len(s):
                 # isNum 为 True，则表示当前方案符合要求

@@ -8,7 +8,7 @@
 
 下图展示了区间 $[0, 7]$ 的线段树结构：
 
-![区间 [0, 7] 对应的线段树](https://qcdn.itcharge.cn/images/20240511173328.png)
+![线段树结构](https://qcdn.itcharge.cn/images/20240511173328.png)
 
 ### 1.2 线段树的特点
 

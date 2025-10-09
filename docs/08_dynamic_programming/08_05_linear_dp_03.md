@@ -382,8 +382,8 @@ class Solution:
 - [0343. 整数拆分](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/integer-break.md)
 - [0650. 两个键的键盘](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/2-keys-keyboard.md)
 
-- [矩阵线性 DP 问题题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E7%9F%A9%E9%98%B5%E7%BA%BF%E6%80%A7-dp-%E9%97%AE%E9%A2%98)
-- [无串线性 DP 问题题目列表](https://github.com/itcharge/AlgoNote/blob/main/docs/00_preface/00_06_categories_list.md#%E6%97%A0%E4%B8%B2%E7%BA%BF%E6%80%A7-dp-%E9%97%AE%E9%A2%98)
+- [矩阵线性 DP 问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E7%9F%A9%E9%98%B5%E7%BA%BF%E6%80%A7-dp-%E9%97%AE%E9%A2%98)
+- [无串线性 DP 问题题目列表](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_06_categories_list.md#%E6%97%A0%E4%B8%B2%E7%BA%BF%E6%80%A7-dp-%E9%97%AE%E9%A2%98)
 
 ## 参考资料
 

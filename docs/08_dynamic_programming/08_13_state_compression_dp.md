@@ -264,7 +264,7 @@ class Solution:
 
 ###### 3. 状态转移方程
 
-对于每个状态 $state$，它一定是由某个少放一个整数的状态 $prev = state \text{ \^ } (1 \ll i)$ 转移而来。我们枚举 $state$ 的每一位 $i$，若 $state$ 的第 $i$ 位为 $1$，则可以尝试将第 $count(state)-1$ 个整数放入第 $i$ 个格子，格子编号为 $i // 2 + 1$，对应的与和为 $(i // 2 + 1) \& nums[count(state) - 1]$。状态转移为：
+对于每个状态 $state$，它一定是由某个少放一个整数的状态 $prev = state \oplus (1 \ll i)$ 转移而来。我们枚举 $state$ 的每一位 $i$，若 $state$ 的第 $i$ 位为 $1$，则可以尝试将第 $count(state)-1$ 个整数放入第 $i$ 个格子，格子编号为 $i // 2 + 1$，对应的与和为 $(i // 2 + 1) \& nums[count(state) - 1]$。状态转移为：
 
 $$
 dp[state] = \max\left(dp[state],\ dp[state \oplus (1 \ll i)] + ((i // 2 + 1) \& nums[count(state) - 1])\right)
