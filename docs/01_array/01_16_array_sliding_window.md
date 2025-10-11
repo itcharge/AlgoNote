@@ -114,7 +114,7 @@ while right < len(nums):
 
 ##### 思路 1：代码
 
-<!-- ```python -->
+```python
 class Solution:
     def numOfSubarrays(self, arr: List[int], k: int, threshold: int) -> int:
         left = 0  # 窗口左边界
@@ -136,7 +136,7 @@ class Solution:
             right += 1  # 右边界右移，扩大窗口
 
         return ans  # 返回满足条件的子数组个数
-<!-- ``` -->
+```
 
 ##### 思路 1：复杂度分析
 

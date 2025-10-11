@@ -208,12 +208,12 @@ class Solution:
 - 在循环体内，先比较目标值与中间元素的大小，优先排除目标值不可能存在的区间，然后在剩余区间继续查找。
 - 排除目标值不可能存在的区间后，`else` 分支通常直接取剩余的另一半区间，无需额外判断。例如，若排除 $[left, mid]$，则剩余区间为 $[mid + 1, right]$；若排除 $[mid, right]$，则剩余区间为 $[left, mid-1]$。
 - 为避免死循环，当区间被划分为 $[left, mid-1]$ 和 $[mid, right]$ 时，**$mid$ 需要向上取整**，即 `mid = left + (right - left + 1) // 2`。因为当区间只剩两个元素（$right = left + 1$）时，若 $mid$ 向下取整，`left = mid` 会导致区间不变，陷入死循环。
-  - 例如 $left = 5$，$right = 6$，若 $mid = 5$，执行 $left = mid$ 后区间仍为 $[5, 6]$，无法收缩，导致死循环。
-  - 若 $mid$ 向上取整，$mid = 6$，执行 $left = mid$ 后区间变为 $[6, 6]$，循环得以终止。
+   - 例如 $left = 5$，$right = 6$，若 $mid = 5$，执行 $left = mid$ 后区间仍为 $[5, 6]$，无法收缩，导致死循环。
+   - 若 $mid$ 向上取整，$mid = 6$，执行 $left = mid$ 后区间变为 $[6, 6]$，循环得以终止。
 
 - 边界设置可记忆为：只要出现 `left = mid`，就要让 $mid$ 向上取整。具体配对如下：
-  - `left = mid + 1`、`right = mid` 搭配 `mid = left + (right - left) // 2`。
-  - `right = mid - 1`、`left = mid` 搭配 `mid = left + (right - left + 1) // 2`。
+   - `left = mid + 1`、`right = mid` 搭配 `mid = left + (right - left) // 2`。
+   - `right = mid - 1`、`left = mid` 搭配 `mid = left + (right - left + 1) // 2`。
 
 ### 4.3 两种思路适用范围
 
@@ -228,15 +228,18 @@ class Solution:
 
 **mid取值**：通常使用 `mid = left + (right - left) // 2`，防止整型溢出。在某些情况下，如 `left = mid` 时，需向上取整，避免死循环。  
 
-**循环条件**：  
+**循环条件**：
+
 - `left <= right`：适用于直接法，循环结束时若未找到目标，直接返回 $-1$。  
 - `left < right`：适用于排除法，循环结束时需额外判断 `nums[left]` 是否为目标值。  
 
-**搜索范围选择**：  
+**搜索范围选择**：
+ 
 - 直接法：`left = mid + 1` 或 `right = mid - 1`，明确缩小范围。  
 - 排除法：根据情况选择 `left = mid + 1` 或 `right = mid`，以及 `right = mid - 1` 或 `left = mid`，确保每次排除无效区间。  
 
 **两种思路**：  
+
 - **直接法**：简单直接，适合查找明确存在的元素。  
 - **排除法**：更通用，适合复杂问题，如边界查找或不确定元素是否存在的情况。  
 

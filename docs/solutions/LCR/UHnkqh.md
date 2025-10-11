@@ -29,7 +29,7 @@
 
 使用迭代法反转链表的示意图如下所示：
 
-![](https://qcdn.itcharge.cn/images/20220111133639.png)
+![迭代法反转链表](https://qcdn.itcharge.cn/images/20220111133639.png)
 
 ### 思路 2. 递归
 
@@ -45,7 +45,7 @@
 
 使用递归法反转链表的示意图如下所示：
 
-![](https://qcdn.itcharge.cn/images/20220111134246.png)
+![递归法反转链表](https://qcdn.itcharge.cn/images/20220111134246.png)
 
 ## 代码
 

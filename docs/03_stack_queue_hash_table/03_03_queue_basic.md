@@ -154,8 +154,8 @@ class Queue:
 - **方法 1**：增加计数变量 $self.count$，记录队列元素个数。
 - **方法 2**：增加标记变量 $self.tag$，区分最近一次操作是入队还是出队。
 - **方法 3（常用）**：特意空出一个位置，约定「队头指针在队尾指针的下一位置」为队满。即：
-  - 队满：$(self.rear + 1) \mod self.size == self.front$
-  - 队空：$self.front == self.rear$
+   - 队满：$(self.rear + 1) \mod self.size == self.front$
+   - 队空：$self.front == self.rear$
 
 #### 2.2.1 顺序存储循环队列的基本描述
 

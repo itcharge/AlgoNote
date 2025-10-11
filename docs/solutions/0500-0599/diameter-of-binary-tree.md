@@ -49,7 +49,7 @@
 
 我们来看下图中的两个例子。
 
-![](https://qcdn.itcharge.cn/images/20230427111005.png)
+![二叉树的直径](https://qcdn.itcharge.cn/images/20230427111005.png)
 
 如图所示，左侧这棵二叉树就是一棵常见的平衡二叉树，其直径长度所对应的路径是穿过根节点的（$D\rightarrow B \rightarrow A \rightarrow C$）。这种情况下：$\text{二叉树的直径} = \text{左子树高度} + \text{右子树高度}$。
 
