@@ -318,7 +318,7 @@
 | [0239. 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/sliding-window-maximum.md) | 队列、数组、滑动窗口、单调队列、堆（优先队列） | 困难 |
 | [0295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/find-median-from-data-stream.md) | 设计、双指针、数据流、排序、堆（优先队列） | 困难 |
 | [0023. 合并 K 个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0001-0099/merge-k-sorted-lists.md) | 链表、分治、堆（优先队列）、归并排序 | 困难 |
-| [0218. 天际线问题](https://leetcode.cn/problems/the-skyline-problem/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/the-skyline-problem.md) | 树状数组、线段树、数组、分治、有序集合、扫描线、堆（优先队列） | 困难 |
+| [0218. 天际线问题](https://leetcode.cn/problems/the-skyline-problem/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/the-skyline-problem.md) | 树状数组、线段树、数组、分治、有序集合、排序、扫描线、堆（优先队列） | 困难 |
 
 
 ### 哈希表题目
@@ -501,7 +501,7 @@
 
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
-| [0218. 天际线问题](https://leetcode.cn/problems/the-skyline-problem/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/the-skyline-problem.md) | 树状数组、线段树、数组、分治、有序集合、扫描线、堆（优先队列） | 困难 |
+| [0218. 天际线问题](https://leetcode.cn/problems/the-skyline-problem/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/the-skyline-problem.md) | 树状数组、线段树、数组、分治、有序集合、排序、扫描线、堆（优先队列） | 困难 |
 | [0391. 完美矩形](https://leetcode.cn/problems/perfect-rectangle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/perfect-rectangle.md) | 几何、数组、哈希表、数学、扫描线 | 困难 |
 | [0850. 矩形面积 II](https://leetcode.cn/problems/rectangle-area-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/rectangle-area-ii.md) | 线段树、数组、有序集合、扫描线 | 困难 |
 

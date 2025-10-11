@@ -188,7 +188,7 @@
 | [0213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/house-robber-ii.md) | 数组、动态规划 | 中等 |
 | [0215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/kth-largest-element-in-an-array.md) | 数组、分治、快速选择、排序、堆（优先队列） | 中等 |
 | [0217. 存在重复元素](https://leetcode.cn/problems/contains-duplicate/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/contains-duplicate.md) | 数组、哈希表、排序 | 简单 |
-| [0218. 天际线问题](https://leetcode.cn/problems/the-skyline-problem/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/the-skyline-problem.md) | 树状数组、线段树、数组、分治、有序集合、扫描线、堆（优先队列） | 困难 |
+| [0218. 天际线问题](https://leetcode.cn/problems/the-skyline-problem/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/the-skyline-problem.md) | 树状数组、线段树、数组、分治、有序集合、排序、扫描线、堆（优先队列） | 困难 |
 | [0219. 存在重复元素 II](https://leetcode.cn/problems/contains-duplicate-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/contains-duplicate-ii.md) | 数组、哈希表、滑动窗口 | 简单 |
 | [0220. 存在重复元素 III](https://leetcode.cn/problems/contains-duplicate-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/contains-duplicate-iii.md) | 数组、桶排序、有序集合、排序、滑动窗口 | 困难 |
 | [0221. 最大正方形](https://leetcode.cn/problems/maximal-square/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/maximal-square.md) | 数组、动态规划、矩阵 | 中等 |
