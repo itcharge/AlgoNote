@@ -21,10 +21,10 @@
 
 第一重循环遍历 a，对于每个 a 元素，从 a 元素的下一个位置开始，使用双指针 left，right。left 指向 a 元素的下一个位置，right 指向末尾位置。先将 left 右移、right 左移去除重复元素，再进行下边的判断。
 
-- 若 `nums[a] + nums[left] + nums[right] = 0`，则得到一个解，将其加入答案数组中，并继续将 left 右移，right 左移；
+- 如果 `nums[a] + nums[left] + nums[right] = 0`，则得到一个解，将其加入答案数组中，并继续将 left 右移，right 左移；
 
-- 若 `nums[a] + nums[left] + nums[right] > 0`，说明 nums[right] 值太大，将 right 向左移；
-- 若 `nums[a] + nums[left] + nums[right] < 0`，说明 nums[left] 值太小，将 left 右移。
+- 如果 `nums[a] + nums[left] + nums[right] > 0`，说明 nums[right] 值太大，将 right 向左移；
+- 如果 `nums[a] + nums[left] + nums[right] < 0`，说明 nums[left] 值太小，将 left 右移。
 
 ## 代码
 

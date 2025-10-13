@@ -72,7 +72,7 @@ def generateBadCharTable(p: str):
 def horspool(T: str, p: str) -> int:
     """
     Horspool 字符串匹配算法。
-    返回模式串 p 在文本串 T 中首次出现的位置，若无则返回 -1。
+    返回模式串 p 在文本串 T 中首次出现的位置，如果无则返回 -1。
     """
     n, m = len(T), len(p)
     if m == 0:

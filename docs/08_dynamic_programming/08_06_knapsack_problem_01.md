@@ -231,7 +231,7 @@ class Solution:
 1. 设数组元素和为 $sum$，目标为 $target = \frac{sum}{2}$，即背包容量。
 2. 数组中的每个元素 $nums[i]$ 视为一件物品，其重量和价值均为 $nums[i]$。
 3. 每种物品只能选择一次。
-4. 若能恰好装满容量为 $target$ 的背包，则最大价值也为 $target$。
+4. 如果能恰好装满容量为 $target$ 的背包，则最大价值也为 $target$。
 
 因此，问题转化为：给定物品数组 $nums$，每件物品重量和价值均为 $nums[i]$，背包容量为 $target$，每件物品最多选一次，问能否恰好装满背包。
 
@@ -256,7 +256,7 @@ dp[w] & w < nums[i - 1] \\
 
 ###### 5. 最终结果
 
-只需判断 $dp[target]$ 是否等于 $target$。若 $dp[target] == target$，说明存在子集和为 $target$，返回 `True`；否则返回 `False`。
+只需判断 $dp[target]$ 是否等于 $target$。如果 $dp[target] == target$，说明存在子集和为 $target$，返回 `True`；否则返回 `False`。
 
 ##### 思路 1：代码
 

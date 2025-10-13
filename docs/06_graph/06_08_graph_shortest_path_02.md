@@ -32,7 +32,7 @@ class Solution:
         :param graph: 邻接表，graph[u] = {v: w, ...}
         :param n: 节点总数（节点编号从 1 到 n）
         :param source: 源点编号
-        :return: dist 数组，dist[i] 表示源点到 i 的最短距离；若存在负权环返回 None
+        :return: dist 数组，dist[i] 表示源点到 i 的最短距离；如果存在负权环返回 None
         """
         # 初始化距离数组，所有点距离为正无穷，源点距离为 0
         dist = [float('inf')] * (n + 1)
@@ -111,7 +111,7 @@ def spfa(graph, n, source):
     :param graph: 邻接表，graph[u] = {v: w, ...}
     :param n: 节点总数（节点编号从 1 到 n）
     :param source: 源点编号
-    :return: dist 数组，dist[i] 表示源点到 i 的最短距离；若存在负权环返回 None
+    :return: dist 数组，dist[i] 表示源点到 i 的最短距离；如果存在负权环返回 None
     """
     # 距离数组，初始化为无穷大，dist[i] 表示源点到 i 的最短距离
     dist = [float('inf')] * (n + 1)

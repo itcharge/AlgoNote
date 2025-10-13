@@ -200,7 +200,7 @@ class Solution:
 1. 先将所有区间按结束坐标升序排序。
 2. 维护两个变量：$end\_pos$ 表示当前已选区间的结束位置，$count$ 表示已选的不重叠区间数量。初始时，$end\_pos$ 取第一个区间的结束位置，$count=1$。
 3. 遍历后续区间，对于每个区间 $intervals[i]$：
-   - 若 $end\_pos \le intervals[i][0]$，说明该区间与前面已选区间不重叠，则计数 $count+1$，并更新 $end\_pos$ 为当前区间的结束位置。
+   - 如果 $end\_pos \le intervals[i][0]$，说明该区间与前面已选区间不重叠，则计数 $count+1$，并更新 $end\_pos$ 为当前区间的结束位置。
 4. 最终返回 $len(intervals) - count$，即最少需要移除的区间数。
 
 ##### 思路 1：代码
@@ -219,7 +219,7 @@ class Solution:
         count = 1
         # 遍历后续区间
         for i in range(1, len(intervals)):
-            # 如果当前区间的起始位置不小于上一个已选区间的结束位置，说明不重叠
+            # 当前区间起点不小于上个已选区间终点，说明不重叠
             if end_pos <= intervals[i][0]:
                 count += 1  # 计数加一
                 end_pos = intervals[i][1]  # 更新当前已选区间的结束位置

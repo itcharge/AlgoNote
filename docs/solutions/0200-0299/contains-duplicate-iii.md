@@ -110,7 +110,7 @@ class Solution:
 4. 当窗口元素大于 $k$ 个时，即当 $right - left > k$ 时，移除窗口最左侧元素，并向右移动 $left$。
 5. 当窗口元素小于等于 $k$ 个时：
    1. 使用二分查找算法，查找 $nums[right]$ 在 $window$ 中的位置 $idx$。
-   2. 判断 $window[idx]$ 与相邻位置上元素差值绝对值，若果满足 $abs(window[idx] - window[idx - 1]) \le t$ 或者 $abs(window[idx + 1] - window[idx]) \le t$ 时返回 `True`。
+   2. 判断 $window[idx]$ 与相邻位置上元素差值绝对值，如果满足 $abs(window[idx] - window[idx - 1]) \le t$ 或者 $abs(window[idx + 1] - window[idx]) \le t$ 时返回 `True`。
 6. 向右移动 $right$。
 7. 重复 $3 \sim 6$ 步，直到 $right$ 到达数组末尾，如果还没找到满足条件的情况，则返回 `False`。
 

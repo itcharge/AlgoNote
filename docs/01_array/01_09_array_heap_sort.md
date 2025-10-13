@@ -21,8 +21,8 @@
 
 在实际编程中，堆通常采用数组进行存储。使用数组表示堆时，节点与数组索引之间的对应关系如下：
 
-- 若某节点的下标为 $i$，则其左孩子的下标为 $2 \times i + 1$，右孩子的下标为 $2 \times i + 2$；
-- 若某节点的下标为 $i$，则其父节点的下标为 $\lfloor \frac{i - 1}{2} \rfloor$。
+- 如果某节点的下标为 $i$，则其左孩子的下标为 $2 \times i + 1$，右孩子的下标为 $2 \times i + 2$；
+- 如果某节点的下标为 $i$，则其父节点的下标为 $\lfloor \frac{i - 1}{2} \rfloor$。
 
 如下图所示，顺序存储结构（数组）可以高效地表示堆：
 
@@ -245,31 +245,31 @@ def __shift_down(self, i: int, n: int):
 
 @tab <1>
 
-![1. 构建初始大顶堆 1](https://qcdn.itcharge.cn/images/20230831151620.png)
+![构建初始大顶堆 1](https://qcdn.itcharge.cn/images/20230831151620.png)
 
 @tab <2>
 
-![1. 构建初始大顶堆 2](https://qcdn.itcharge.cn/images/20230831151641.png)
+![构建初始大顶堆 2](https://qcdn.itcharge.cn/images/20230831151641.png)
 
 @tab <3>
 
-![1. 构建初始大顶堆 3](https://qcdn.itcharge.cn/images/20230831151703.png)
+![构建初始大顶堆 3](https://qcdn.itcharge.cn/images/20230831151703.png)
 
 @tab <4>
 
-![1. 构建初始大顶堆 4](https://qcdn.itcharge.cn/images/20230831151715.png)
+![构建初始大顶堆 4](https://qcdn.itcharge.cn/images/20230831151715.png)
 
 @tab <5>
 
-![1. 构建初始大顶堆 5](https://qcdn.itcharge.cn/images/20230831151725.png)
+![构建初始大顶堆 5](https://qcdn.itcharge.cn/images/20230831151725.png)
 
 @tab <6>
 
-![1. 构建初始大顶堆 6](https://qcdn.itcharge.cn/images/20230831151735.png)
+![构建初始大顶堆 6](https://qcdn.itcharge.cn/images/20230831151735.png)
 
 @tab <7>
 
-![1. 构建初始大顶堆 7](https://qcdn.itcharge.cn/images/20230831151749.png)
+![构建初始大顶堆 7](https://qcdn.itcharge.cn/images/20230831151749.png)
 
 :::
 
@@ -284,51 +284,51 @@ def __shift_down(self, i: int, n: int):
 
 @tab <1>
 
-![2. 交换元素，调整堆 1](https://qcdn.itcharge.cn/images/20230831162335.png)
+![交换元素，调整堆 1](https://qcdn.itcharge.cn/images/20230831162335.png)
 
 @tab <2>
 
-![2. 交换元素，调整堆 2](https://qcdn.itcharge.cn/images/20230831162346.png)
+![交换元素，调整堆 2](https://qcdn.itcharge.cn/images/20230831162346.png)
 
 @tab <3>
 
-![2. 交换元素，调整堆 3](https://qcdn.itcharge.cn/images/20230831162359.png)
+![交换元素，调整堆 3](https://qcdn.itcharge.cn/images/20230831162359.png)
 
 @tab <4>
 
-![2. 交换元素，调整堆 4](https://qcdn.itcharge.cn/images/20230831162408.png)
+![交换元素，调整堆 4](https://qcdn.itcharge.cn/images/20230831162408.png)
 
 @tab <5>
 
-![2. 交换元素，调整堆 5](https://qcdn.itcharge.cn/images/20230831162416.png)
+![交换元素，调整堆 5](https://qcdn.itcharge.cn/images/20230831162416.png)
 
 @tab <6>
 
-![2. 交换元素，调整堆 6](https://qcdn.itcharge.cn/images/20230831162424.png)
+![交换元素，调整堆 6](https://qcdn.itcharge.cn/images/20230831162424.png)
 
 @tab <7>
 
-![2. 交换元素，调整堆 7](https://qcdn.itcharge.cn/images/20230831162431.png)
+![交换元素，调整堆 7](https://qcdn.itcharge.cn/images/20230831162431.png)
 
 @tab <8>
 
-![2. 交换元素，调整堆 8](https://qcdn.itcharge.cn/images/20230831162440.png)
+![交换元素，调整堆 8](https://qcdn.itcharge.cn/images/20230831162440.png)
 
 @tab <9>
 
-![2. 交换元素，调整堆 9](https://qcdn.itcharge.cn/images/20230831162449.png)
+![交换元素，调整堆 9](https://qcdn.itcharge.cn/images/20230831162449.png)
 
 @tab <10>
 
-![2. 交换元素，调整堆 10](https://qcdn.itcharge.cn/images/20230831162457.png)
+![交换元素，调整堆 10](https://qcdn.itcharge.cn/images/20230831162457.png)
 
 @tab <11>
 
-![2. 交换元素，调整堆 11](https://qcdn.itcharge.cn/images/20230831162505.png)
+![交换元素，调整堆 11](https://qcdn.itcharge.cn/images/20230831162505.png)
 
 @tab <12>
 
-![2. 交换元素，调整堆 12](https://qcdn.itcharge.cn/images/20230831162512.png)
+![交换元素，调整堆 12](https://qcdn.itcharge.cn/images/20230831162512.png)
 
 :::
 

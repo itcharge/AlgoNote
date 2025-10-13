@@ -76,7 +76,7 @@ def generateBadCharTable(p: str):
 # Sunday 算法实现，T 为文本串，p 为模式串
 def sunday(T: str, p: str) -> int:
     """
-    Sunday 算法主函数，返回模式串 p 在文本串 T 中首次出现的位置，若未匹配则返回 -1。
+    Sunday 算法主函数，返回模式串 p 在文本串 T 中首次出现的位置，如果未匹配则返回 -1。
     参数:
         T: 文本串
         p: 模式串
@@ -101,7 +101,7 @@ def sunday(T: str, p: str) -> int:
         if i + m >= n:
             return -1  # 已到文本串末尾，未匹配
         next_char = T[i + m]  # 当前窗口末尾的下一个字符
-        # 若 next_char 在后移位数表中，滑动对应距离，否则滑动 m+1
+        # 如果 next_char 在后移位数表中，滑动对应距离，否则滑动 m+1
         shift = bc_table.get(next_char, m + 1)
         i += shift
     return -1  # 未找到匹配

@@ -29,7 +29,7 @@
 
 本题中计算的是 $start \oplus (start + 2) \oplus (start + 4) \oplus (start + 6) \oplus … \oplus (start+(2*(n-1)))$。
 
-可以看出，若 start 为奇数，则 $start+2, start + 4, …, start + (2 \times(n - 1))$ 都为奇数。若 start 为偶数，则 $start + 2, start + 4, …, start + (2 \times(n - 1))$ 都为偶数。则它们对应二进制的最低位相同，则我们可以将最低位提取处理单独处理。从而将公式转换一下。
+可以看出，如果 start 为奇数，则 $start+2, start + 4, …, start + (2 \times(n - 1))$ 都为奇数。如果 start 为偶数，则 $start + 2, start + 4, …, start + (2 \times(n - 1))$ 都为偶数。则它们对应二进制的最低位相同，则我们可以将最低位提取处理单独处理。从而将公式转换一下。
 
 令 $s = \frac{start}{2}$，则等式变为 $(s) \oplus (s+1) \oplus (s+2) \oplus (s+3) \oplus … \oplus (s+(n-1)) * 2 + e$，e 表示运算结果的最低位。
 
@@ -49,8 +49,8 @@ $sumXor(x) = \begin{cases} \begin{array} \ x, & x = 4i, k \in Z \cr 1, & x = 4i+
 
 下面还有最后一位 e 的计算。
 
-- 若 start 为偶数，则最后一位 e 为 0。
-- 若 start 为奇数，最后一位 e 跟 n 有关，若 n 为奇数，则最后一位 e 为 1，若 n 为偶数，则最后一位 e 为 0。
+- 如果 start 为偶数，则最后一位 e 为 0。
+- 如果 start 为奇数，最后一位 e 跟 n 有关，如果 n 为奇数，则最后一位 e 为 1，如果 n 为偶数，则最后一位 e 为 0。
 
 总结下来就是 `e = start & n & 1`。
 

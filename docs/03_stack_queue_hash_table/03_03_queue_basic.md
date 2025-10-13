@@ -43,12 +43,12 @@
 为简化实现，我们约定：队头指针 $self.front$ 指向队头元素的前一个位置，队尾指针 $self.rear$ 指向队尾元素所在位置。
 
 - **初始化空队列**：创建空队列 $self.queue$，设置队列容量 $self.size$，并令 $self.front = self.rear = -1$。
-- **判断队列是否为空**：若 $self.front$ 与 $self.rear$ 相等，则队列为空。
-- **判断队列是否已满**：若 $self.rear == self.size - 1$，则队列已满。
-- **入队操作**：先判断队列是否已满，若未满，则 $self.rear$ 右移一位，将新元素赋值到 $self.queue[self.rear]$。
-- **出队操作**：先判断队列是否为空，若不为空，则 $self.front$ 右移一位，返回 $self.queue[self.front]$。
-- **获取队头元素**：先判断队列是否为空，若不为空，则返回 $self.queue[self.front + 1]$。
-- **获取队尾元素**：先判断队列是否为空，若不为空，则返回 $self.queue[self.rear]$。
+- **判断队列是否为空**：如果 $self.front$ 与 $self.rear$ 相等，则队列为空。
+- **判断队列是否已满**：如果 $self.rear == self.size - 1$，则队列已满。
+- **入队操作**：先判断队列是否已满，如果未满，则 $self.rear$ 右移一位，将新元素赋值到 $self.queue[self.rear]$。
+- **出队操作**：先判断队列是否为空，如果不为空，则 $self.front$ 右移一位，返回 $self.queue[self.front]$。
+- **获取队头元素**：先判断队列是否为空，如果不为空，则返回 $self.queue[self.front + 1]$。
+- **获取队尾元素**：先判断队列是否为空，如果不为空，则返回 $self.queue[self.rear]$。
 
 #### 2.1.2 顺序存储队列的实现代码
 
@@ -71,14 +71,14 @@ class Queue:
     def is_empty(self):
         """
         判断队列是否为空
-        :return: 若队列为空返回 True，否则返回 False
+        :return: 如果队列为空返回 True，否则返回 False
         """
         return self.front == self.rear
 
     def is_full(self):
         """
         判断队列是否已满
-        :return: 若队列已满返回 True，否则返回 False
+        :return: 如果队列已满返回 True，否则返回 False
         """
         return self.rear + 1 == self.size
 
@@ -137,7 +137,7 @@ class Queue:
 
 - **方法二：循环移动**  
 
-将队列的首尾视为相连，通过取模运算实现指针的循环移动，从而充分利用存储空间。采用循环队列后，所有基本操作的时间复杂度均为 $O(1)$，高效且无“假溢出”问题。
+将队列的首尾视为相连，通过取模运算实现指针的循环移动，从而充分利用存储空间。采用循环队列后，所有基本操作的时间复杂度均为 $O(1)$，高效且无「假溢出」问题。
 
 循环队列的实现要点如下：
 
@@ -299,7 +299,7 @@ class Queue:
     def is_empty(self):
         """
         判断队列是否为空
-        :return: 若队列为空返回True，否则返回False
+        :return: 如果队列为空返回 True，否则返回 False
         """
         return self.front == self.rear
 

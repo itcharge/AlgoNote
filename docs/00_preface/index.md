@@ -7,7 +7,7 @@
 愿本书与你同行，助你轻装前行，照亮属于你的算法之路。
 :::
 
-# 本章内容
+## 本章内容
 
 - [0.1 前言](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_01_preface.md)
 - [0.2 算法与数据结构](https://github.com/ITCharge/AlgoNote/tree/main/docs/00_preface/00_02_data_structures_algorithms.md)

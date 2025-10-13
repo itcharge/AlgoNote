@@ -39,7 +39,7 @@ def is_bipartite(graph):
         对节点 node 进行染色，并递归染色其所有邻居
         :param node: 当前节点编号
         :param color: 当前节点应染的颜色（1 或 -1）
-        :return: bool，若染色无冲突返回 True，否则 False
+        :return: bool，如果染色无冲突返回 True，否则 False
         """
         colors[node] = color  # 给当前节点染色
         for neighbor in graph[node]:

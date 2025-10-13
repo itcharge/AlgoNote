@@ -50,7 +50,7 @@ def second_shortest_path(n, edges, s, t):
         s: 起点编号
         t: 终点编号
     返回：
-        s 到 t 的次短路径长度，若不存在返回 float('inf')
+        s 到 t 的次短路径长度，如果不存在返回 float('inf')
     注意：
         - 默认边权非负
         - 如果为无向图，请取消 graph[v].append((u, w))的注释

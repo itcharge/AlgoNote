@@ -13,7 +13,7 @@
 
 ## 解题思路
 
-直接模拟求解即可。先求出 matrix 的规模。若 matrix 是 m * n 的矩阵。则创建一个 n * m 大小的矩阵 transposed。根据转置的规则对 transposed 的每个元素进行赋值。最终返回 transposed。
+直接模拟求解即可。先求出 matrix 的规模。如果 matrix 是 m * n 的矩阵。则创建一个 n * m 大小的矩阵 transposed。根据转置的规则对 transposed 的每个元素进行赋值。最终返回 transposed。
 
 ## 代码
 
