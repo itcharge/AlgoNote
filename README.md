@@ -16,8 +16,8 @@
 <div align="center">
   <a href="https://algo.itcharge.cn/">
     <img src="https://qcdn.itcharge.cn/images/btn_read_online.svg" width="145" alt="在线阅读"></a>
-  <a href="https://github.com/ITCharge/AlgoNote">
-    <img src="https://qcdn.itcharge.cn/images/btn_github_link.svg" width="145" alt="GitHub 仓库"></a>
+  <a href="https://github.com/itcharge/AlgoNote/releases">
+    <img src="https://qcdn.itcharge.cn/images/btn_download_pdf.svg" width="145" alt="PDF 下载"></a>
 </div>
 
 ## 1. 本书简介
