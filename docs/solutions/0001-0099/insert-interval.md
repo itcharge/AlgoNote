@@ -22,9 +22,9 @@
 **说明**：
 
 - $0 \le intervals.length \le 10^4$。
-- $intervals[i].$length == 2$。
-- $0 \le starti \le endi \le 10^5$。
-- $intervals 根据 starti 按升序排列。
+- $intervals[i].length == 2$。
+- $0 \le start_i \le end_i \le 10^5$。
+- $intervals 根据 start_i 按升序排列。
 - $newInterval.length == 2$。
 - $0 \le start \le end \le 10^5$。
 
@@ -60,6 +60,7 @@
 4. **处理剩余区间**：合并完成后，将剩余的所有区间加入结果
 
 **关键点**：
+
 - 利用已排序的性质，只需要一次遍历
 - 合并区间时需要考虑新区间可能跨越多个原区间的情况
 - 使用标志位来跟踪是否已经开始合并过程
@@ -79,7 +80,7 @@ class Solution:
             i += 1
         
         # 2. 合并与新区间重叠的区间
-        while i < n and intervals[i][0] \le newInterval[1]:
+        while i < n and intervals[i][0] < newInterval[1]:
             newInterval[0] = min(newInterval[0], intervals[i][0])
             newInterval[1] = max(newInterval[1], intervals[i][1])
             i += 1
