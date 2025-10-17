@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 874 道）
+# LeetCode 题解（已完成 886 道）
 
 ### 第 1 ~ 99 题
 
@@ -118,10 +118,12 @@
 | [0106. 从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/construct-binary-tree-from-inorder-and-postorder-traversal.md) | 树、数组、哈希表、分治、二叉树 | 中等 |
 | [0107. 二叉树的层序遍历 II](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/binary-tree-level-order-traversal-ii.md) | 树、广度优先搜索、二叉树 | 中等 |
 | [0108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/convert-sorted-array-to-binary-search-tree.md) | 树、二叉搜索树、数组、分治、二叉树 | 简单 |
+| [0109. 有序链表转换二叉搜索树](https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/convert-sorted-list-to-binary-search-tree.md) | 树、二叉搜索树、链表、分治、二叉树 | 中等 |
 | [0110. 平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/balanced-binary-tree.md) | 树、深度优先搜索、二叉树 | 简单 |
 | [0111. 二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/minimum-depth-of-binary-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 简单 |
 | [0112. 路径总和](https://leetcode.cn/problems/path-sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/path-sum.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 简单 |
 | [0113. 路径总和 II](https://leetcode.cn/problems/path-sum-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/path-sum-ii.md) | 树、深度优先搜索、回溯、二叉树 | 中等 |
+| [0114. 二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/flatten-binary-tree-to-linked-list.md) | 栈、树、深度优先搜索、链表、二叉树 | 中等 |
 | [0115. 不同的子序列](https://leetcode.cn/problems/distinct-subsequences/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/distinct-subsequences.md) | 字符串、动态规划 | 困难 |
 | [0116. 填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/populating-next-right-pointers-in-each-node.md) | 树、深度优先搜索、广度优先搜索、链表、二叉树 | 中等 |
 | [0117. 填充每个节点的下一个右侧节点指针 II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/populating-next-right-pointers-in-each-node-ii.md) | 树、深度优先搜索、广度优先搜索、链表、二叉树 | 中等 |
@@ -133,11 +135,13 @@
 | [0123. 买卖股票的最佳时机 III](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/best-time-to-buy-and-sell-stock-iii.md) | 数组、动态规划 | 困难 |
 | [0124. 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/binary-tree-maximum-path-sum.md) | 树、深度优先搜索、动态规划、二叉树 | 困难 |
 | [0125. 验证回文串](https://leetcode.cn/problems/valid-palindrome/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/valid-palindrome.md) | 双指针、字符串 | 简单 |
+| [0126. 单词接龙 II](https://leetcode.cn/problems/word-ladder-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/word-ladder-ii.md) | 广度优先搜索、哈希表、字符串、回溯 | 困难 |
 | [0127. 单词接龙](https://leetcode.cn/problems/word-ladder/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/word-ladder.md) | 广度优先搜索、哈希表、字符串 | 困难 |
 | [0128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/longest-consecutive-sequence.md) | 并查集、数组、哈希表 | 中等 |
 | [0129. 求根节点到叶节点数字之和](https://leetcode.cn/problems/sum-root-to-leaf-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/sum-root-to-leaf-numbers.md) | 树、深度优先搜索、二叉树 | 中等 |
 | [0130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/surrounded-regions.md) | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 中等 |
 | [0131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/palindrome-partitioning.md) | 字符串、动态规划、回溯 | 中等 |
+| [0132. 分割回文串 II](https://leetcode.cn/problems/palindrome-partitioning-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/palindrome-partitioning-ii.md) | 字符串、动态规划 | 困难 |
 | [0133. 克隆图](https://leetcode.cn/problems/clone-graph/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/clone-graph.md) | 深度优先搜索、广度优先搜索、图、哈希表 | 中等 |
 | [0134. 加油站](https://leetcode.cn/problems/gas-station/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/gas-station.md) | 贪心、数组 | 中等 |
 | [0135. 分发糖果](https://leetcode.cn/problems/candy/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/candy.md) | 贪心、数组 | 困难 |
@@ -151,6 +155,7 @@
 | [0143. 重排链表](https://leetcode.cn/problems/reorder-list/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/reorder-list.md) | 栈、递归、链表、双指针 | 中等 |
 | [0144. 二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/binary-tree-preorder-traversal.md) | 栈、树、深度优先搜索、二叉树 | 简单 |
 | [0145. 二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/binary-tree-postorder-traversal.md) | 栈、树、深度优先搜索、二叉树 | 简单 |
+| [0146. LRU 缓存](https://leetcode.cn/problems/lru-cache/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/lru-cache.md) | 设计、哈希表、链表、双向链表 | 中等 |
 | [0147. 对链表进行插入排序](https://leetcode.cn/problems/insertion-sort-list/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/insertion-sort-list.md) | 链表、排序 | 中等 |
 | [0148. 排序链表](https://leetcode.cn/problems/sort-list/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/sort-list.md) | 链表、双指针、分治、排序、归并排序 | 中等 |
 | [0149. 直线上最多的点数](https://leetcode.cn/problems/max-points-on-a-line/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/max-points-on-a-line.md) | 几何、数组、哈希表、数学 | 困难 |
@@ -160,10 +165,14 @@
 | [0153. 寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/find-minimum-in-rotated-sorted-array.md) | 数组、二分查找 | 中等 |
 | [0154. 寻找旋转排序数组中的最小值 II](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/find-minimum-in-rotated-sorted-array-ii.md) | 数组、二分查找 | 困难 |
 | [0155. 最小栈](https://leetcode.cn/problems/min-stack/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/min-stack.md) | 栈、设计 | 中等 |
+| [0156. 上下翻转二叉树](https://leetcode.cn/problems/binary-tree-upside-down/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/binary-tree-upside-down.md) | 树、深度优先搜索、二叉树 | 中等 |
 | [0159. 至多包含两个不同字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-most-two-distinct-characters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/longest-substring-with-at-most-two-distinct-characters.md) | 哈希表、字符串、滑动窗口 | 中等 |
 | [0160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/intersection-of-two-linked-lists.md) | 哈希表、链表、双指针 | 简单 |
+| [0161. 相隔为 1 的编辑距离](https://leetcode.cn/problems/one-edit-distance/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/one-edit-distance.md) | 双指针、字符串 | 中等 |
 | [0162. 寻找峰值](https://leetcode.cn/problems/find-peak-element/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/find-peak-element.md) | 数组、二分查找 | 中等 |
+| [0163. 缺失的区间](https://leetcode.cn/problems/missing-ranges/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/missing-ranges.md) | 数组 | 简单 |
 | [0164. 最大间距](https://leetcode.cn/problems/maximum-gap/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/maximum-gap.md) | 数组、桶排序、基数排序、排序 | 中等 |
+| [0165. 比较版本号](https://leetcode.cn/problems/compare-version-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/compare-version-numbers.md) | 双指针、字符串 | 中等 |
 | [0166. 分数到小数](https://leetcode.cn/problems/fraction-to-recurring-decimal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/fraction-to-recurring-decimal.md) | 哈希表、数学、字符串 | 中等 |
 | [0167. 两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/two-sum-ii-input-array-is-sorted.md) | 数组、双指针、二分查找 | 中等 |
 | [0168. Excel 表列名称](https://leetcode.cn/problems/excel-sheet-column-title/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/excel-sheet-column-title.md) | 数学、字符串 | 简单 |
@@ -172,7 +181,10 @@
 | [0171. Excel 表列序号](https://leetcode.cn/problems/excel-sheet-column-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/excel-sheet-column-number.md) | 数学、字符串 | 简单 |
 | [0172. 阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/factorial-trailing-zeroes.md) | 数学 | 中等 |
 | [0173. 二叉搜索树迭代器](https://leetcode.cn/problems/binary-search-tree-iterator/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/binary-search-tree-iterator.md) | 栈、树、设计、二叉搜索树、二叉树、迭代器 | 中等 |
+| [0174. 地下城游戏](https://leetcode.cn/problems/dungeon-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/dungeon-game.md) | 数组、动态规划、矩阵 | 困难 |
 | [0179. 最大数](https://leetcode.cn/problems/largest-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/largest-number.md) | 贪心、数组、字符串、排序 | 中等 |
+| [0186. 反转字符串中的单词 II](https://leetcode.cn/problems/reverse-words-in-a-string-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/reverse-words-in-a-string-ii.md) | 双指针、字符串 | 中等 |
+| [0187. 重复的DNA序列](https://leetcode.cn/problems/repeated-dna-sequences/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/repeated-dna-sequences.md) | 位运算、哈希表、字符串、滑动窗口、哈希函数、滚动哈希 | 中等 |
 | [0188. 买卖股票的最佳时机 IV](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/best-time-to-buy-and-sell-stock-iv.md) | 数组、动态规划 | 困难 |
 | [0189. 轮转数组](https://leetcode.cn/problems/rotate-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/rotate-array.md) | 数组、数学、双指针 | 中等 |
 | [0190. 颠倒二进制位](https://leetcode.cn/problems/reverse-bits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/reverse-bits.md) | 位运算、分治 | 简单 |

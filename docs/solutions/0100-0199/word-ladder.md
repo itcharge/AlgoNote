@@ -9,7 +9,7 @@
 
 ## 题目大意
 
-给定两个单词 `beginWord` 和 `endWord`，以及一个字典 `wordList`。找到从 `beginWord` 到 `endWord` 的最短转换序列中的单词数目。如果不存在这样的转换序列，则返回 0。
+给定两个单词 $beginWord$ 和 $endWord$，以及一个字典 $wordList$。找到从 `beginWord` 到 `endWord` 的最短转换序列中的单词数目。如果不存在这样的转换序列，则返回 0。
 
 转换需要遵守的规则如下：
 
