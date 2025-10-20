@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 894 道）
+# LeetCode 题解（已完成 927 道）
 
 ### 第 1 ~ 99 题
 
@@ -211,6 +211,7 @@
 | [0211. 添加与搜索单词 - 数据结构设计](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/design-add-and-search-words-data-structure.md) | 深度优先搜索、设计、字典树、字符串 | 中等 |
 | [0212. 单词搜索 II](https://leetcode.cn/problems/word-search-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/word-search-ii.md) | 字典树、数组、字符串、回溯、矩阵 | 困难 |
 | [0213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/house-robber-ii.md) | 数组、动态规划 | 中等 |
+| [0214. 最短回文串](https://leetcode.cn/problems/shortest-palindrome/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/shortest-palindrome.md) | 字符串、字符串匹配、哈希函数、滚动哈希 | 困难 |
 | [0215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/kth-largest-element-in-an-array.md) | 数组、分治、快速选择、排序、堆（优先队列） | 中等 |
 | [0216. 组合总和 III](https://leetcode.cn/problems/combination-sum-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/combination-sum-iii.md) | 数组、回溯 | 中等 |
 | [0217. 存在重复元素](https://leetcode.cn/problems/contains-duplicate/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/contains-duplicate.md) | 数组、哈希表、排序 | 简单 |
@@ -220,9 +221,13 @@
 | [0221. 最大正方形](https://leetcode.cn/problems/maximal-square/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/maximal-square.md) | 数组、动态规划、矩阵 | 中等 |
 | [0222. 完全二叉树的节点个数](https://leetcode.cn/problems/count-complete-tree-nodes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/count-complete-tree-nodes.md) | 位运算、树、二分查找、二叉树 | 简单 |
 | [0223. 矩形面积](https://leetcode.cn/problems/rectangle-area/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/rectangle-area.md) | 几何、数学 | 中等 |
+| [0224. 基本计算器](https://leetcode.cn/problems/basic-calculator/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/basic-calculator.md) | 栈、递归、数学、字符串 | 困难 |
 | [0225. 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/implement-stack-using-queues.md) | 栈、设计、队列 | 简单 |
 | [0226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/invert-binary-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 简单 |
 | [0227. 基本计算器 II](https://leetcode.cn/problems/basic-calculator-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/basic-calculator-ii.md) | 栈、数学、字符串 | 中等 |
+| [0228. 汇总区间](https://leetcode.cn/problems/summary-ranges/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/summary-ranges.md) | 数组 | 简单 |
+| [0229. 多数元素 II](https://leetcode.cn/problems/majority-element-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/majority-element-ii.md) | 数组、哈希表、计数、排序 | 中等 |
+| [0230. 二叉搜索树中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/kth-smallest-element-in-a-bst.md) | 树、深度优先搜索、二叉搜索树、二叉树 | 中等 |
 | [0231. 2 的幂](https://leetcode.cn/problems/power-of-two/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/power-of-two.md) | 位运算、递归、数学 | 简单 |
 | [0232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/implement-queue-using-stacks.md) | 栈、设计、队列 | 简单 |
 | [0233. 数字 1 的个数](https://leetcode.cn/problems/number-of-digit-one/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/number-of-digit-one.md) | 递归、数学、动态规划 | 困难 |
@@ -235,31 +240,59 @@
 | [0240. 搜索二维矩阵 II](https://leetcode.cn/problems/search-a-2d-matrix-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/search-a-2d-matrix-ii.md) | 数组、二分查找、分治、矩阵 | 中等 |
 | [0241. 为运算表达式设计优先级](https://leetcode.cn/problems/different-ways-to-add-parentheses/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/different-ways-to-add-parentheses.md) | 递归、记忆化搜索、数学、字符串、动态规划 | 中等 |
 | [0242. 有效的字母异位词](https://leetcode.cn/problems/valid-anagram/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/valid-anagram.md) | 哈希表、字符串、排序 | 简单 |
+| [0243. 最短单词距离](https://leetcode.cn/problems/shortest-word-distance/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/shortest-word-distance.md) | 数组、字符串 | 简单 |
+| [0244. 最短单词距离 II](https://leetcode.cn/problems/shortest-word-distance-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/shortest-word-distance-ii.md) | 设计、数组、哈希表、双指针、字符串 | 中等 |
+| [0245. 最短单词距离 III](https://leetcode.cn/problems/shortest-word-distance-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/shortest-word-distance-iii.md) | 数组、字符串 | 中等 |
+| [0246. 中心对称数](https://leetcode.cn/problems/strobogrammatic-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/strobogrammatic-number.md) | 哈希表、双指针、字符串 | 简单 |
+| [0247. 中心对称数 II](https://leetcode.cn/problems/strobogrammatic-number-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/strobogrammatic-number-ii.md) | 递归、数组、字符串 | 中等 |
+| [0248. 中心对称数 III](https://leetcode.cn/problems/strobogrammatic-number-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/strobogrammatic-number-iii.md) | 递归、数组、字符串 | 困难 |
 | [0249. 移位字符串分组](https://leetcode.cn/problems/group-shifted-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/group-shifted-strings.md) | 数组、哈希表、字符串 | 中等 |
 | [0250. 统计同值子树](https://leetcode.cn/problems/count-univalue-subtrees/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/count-univalue-subtrees.md) | 树、深度优先搜索、二叉树 | 中等 |
+| [0251. 展开二维向量](https://leetcode.cn/problems/flatten-2d-vector/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/flatten-2d-vector.md) | 设计、数组、双指针、迭代器 | 中等 |
+| [0252. 会议室](https://leetcode.cn/problems/meeting-rooms/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/meeting-rooms.md) | 数组、排序 | 简单 |
+| [0253. 会议室 II](https://leetcode.cn/problems/meeting-rooms-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/meeting-rooms-ii.md) | 贪心、数组、双指针、前缀和、排序、堆（优先队列） | 中等 |
 | [0254. 因子的组合](https://leetcode.cn/problems/factor-combinations/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/factor-combinations.md) | 回溯 | 中等 |
+| [0255. 验证二叉搜索树的前序遍历序列](https://leetcode.cn/problems/verify-preorder-sequence-in-binary-search-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/verify-preorder-sequence-in-binary-search-tree.md) | 栈、树、二叉搜索树、递归、数组、二叉树、单调栈 | 中等 |
+| [0256. 粉刷房子](https://leetcode.cn/problems/paint-house/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/paint-house.md) | 数组、动态规划 | 中等 |
 | [0257. 二叉树的所有路径](https://leetcode.cn/problems/binary-tree-paths/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/binary-tree-paths.md) | 树、深度优先搜索、字符串、回溯、二叉树 | 简单 |
 | [0258. 各位相加](https://leetcode.cn/problems/add-digits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/add-digits.md) | 数学、数论、模拟 | 简单 |
 | [0259. 较小的三数之和](https://leetcode.cn/problems/3sum-smaller/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/3sum-smaller.md) | 数组、双指针、二分查找、排序 | 中等 |
 | [0260. 只出现一次的数字 III](https://leetcode.cn/problems/single-number-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/single-number-iii.md) | 位运算、数组 | 中等 |
+| [0261. 以图判树](https://leetcode.cn/problems/graph-valid-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/graph-valid-tree.md) | 深度优先搜索、广度优先搜索、并查集、图 | 中等 |
 | [0263. 丑数](https://leetcode.cn/problems/ugly-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/ugly-number.md) | 数学 | 简单 |
 | [0264. 丑数 II](https://leetcode.cn/problems/ugly-number-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/ugly-number-ii.md) | 哈希表、数学、动态规划、堆（优先队列） | 中等 |
+| [0265. 粉刷房子 II](https://leetcode.cn/problems/paint-house-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/paint-house-ii.md) | 数组、动态规划 | 困难 |
+| [0266. 回文排列](https://leetcode.cn/problems/palindrome-permutation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/palindrome-permutation.md) | 位运算、哈希表、字符串 | 简单 |
+| [0267. 回文排列 II](https://leetcode.cn/problems/palindrome-permutation-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/palindrome-permutation-ii.md) | 哈希表、字符串、回溯 | 中等 |
 | [0268. 丢失的数字](https://leetcode.cn/problems/missing-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/missing-number.md) | 位运算、数组、哈希表、数学、二分查找、排序 | 简单 |
+| [0269. 火星词典](https://leetcode.cn/problems/alien-dictionary/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/alien-dictionary.md) | 深度优先搜索、广度优先搜索、图、拓扑排序、数组、字符串 | 困难 |
 | [0270. 最接近的二叉搜索树值](https://leetcode.cn/problems/closest-binary-search-tree-value/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/closest-binary-search-tree-value.md) | 树、深度优先搜索、二叉搜索树、二分查找、二叉树 | 简单 |
 | [0271. 字符串的编码与解码](https://leetcode.cn/problems/encode-and-decode-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/encode-and-decode-strings.md) | 设计、数组、字符串 | 中等 |
 | [0272. 最接近的二叉搜索树值 II](https://leetcode.cn/problems/closest-binary-search-tree-value-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/closest-binary-search-tree-value-ii.md) | 栈、树、深度优先搜索、二叉搜索树、双指针、二叉树、堆（优先队列） | 困难 |
+| [0273. 整数转换英文表示](https://leetcode.cn/problems/integer-to-english-words/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/integer-to-english-words.md) | 递归、数学、字符串 | 困难 |
+| [0274. H 指数](https://leetcode.cn/problems/h-index/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/h-index.md) | 数组、计数排序、排序 | 中等 |
+| [0275. H 指数 II](https://leetcode.cn/problems/h-index-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/h-index-ii.md) | 数组、二分查找 | 中等 |
+| [0276. 栅栏涂色](https://leetcode.cn/problems/paint-fence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/paint-fence.md) | 动态规划 | 中等 |
 | [0277. 搜寻名人](https://leetcode.cn/problems/find-the-celebrity/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/find-the-celebrity.md) | 图、双指针、交互 | 中等 |
 | [0278. 第一个错误的版本](https://leetcode.cn/problems/first-bad-version/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/first-bad-version.md) | 二分查找、交互 | 简单 |
 | [0279. 完全平方数](https://leetcode.cn/problems/perfect-squares/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/perfect-squares.md) | 广度优先搜索、数学、动态规划 | 中等 |
+| [0280. 摆动排序](https://leetcode.cn/problems/wiggle-sort/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/wiggle-sort.md) | 贪心、数组、排序 | 中等 |
+| [0281. 锯齿迭代器](https://leetcode.cn/problems/zigzag-iterator/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/zigzag-iterator.md) | 设计、队列、数组、迭代器 | 中等 |
+| [0282. 给表达式添加运算符](https://leetcode.cn/problems/expression-add-operators/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/expression-add-operators.md) | 数学、字符串、回溯 | 困难 |
 | [0283. 移动零](https://leetcode.cn/problems/move-zeroes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/move-zeroes.md) | 数组、双指针 | 简单 |
+| [0284. 窥视迭代器](https://leetcode.cn/problems/peeking-iterator/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/peeking-iterator.md) | 设计、数组、迭代器 | 中等 |
 | [0285. 二叉搜索树中的中序后继](https://leetcode.cn/problems/inorder-successor-in-bst/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/inorder-successor-in-bst.md) | 树、深度优先搜索、二叉搜索树、二叉树 | 中等 |
 | [0286. 墙与门](https://leetcode.cn/problems/walls-and-gates/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/walls-and-gates.md) | 广度优先搜索、数组、矩阵 | 中等 |
 | [0287. 寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/find-the-duplicate-number.md) | 位运算、数组、双指针、二分查找 | 中等 |
 | [0288. 单词的唯一缩写](https://leetcode.cn/problems/unique-word-abbreviation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/unique-word-abbreviation.md) | 设计、数组、哈希表、字符串 | 中等 |
 | [0289. 生命游戏](https://leetcode.cn/problems/game-of-life/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/game-of-life.md) | 数组、矩阵、模拟 | 中等 |
 | [0290. 单词规律](https://leetcode.cn/problems/word-pattern/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/word-pattern.md) | 哈希表、字符串 | 简单 |
+| [0291. 单词规律 II](https://leetcode.cn/problems/word-pattern-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/word-pattern-ii.md) | 哈希表、字符串、回溯 | 中等 |
 | [0292. Nim 游戏](https://leetcode.cn/problems/nim-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/nim-game.md) | 脑筋急转弯、数学、博弈 | 简单 |
+| [0293. 翻转游戏](https://leetcode.cn/problems/flip-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/flip-game.md) | 字符串 | 简单 |
+| [0294. 翻转游戏 II](https://leetcode.cn/problems/flip-game-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/flip-game-ii.md) | 记忆化搜索、数学、动态规划、回溯、博弈 | 中等 |
 | [0295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/find-median-from-data-stream.md) | 设计、双指针、数据流、排序、堆（优先队列） | 困难 |
+| [0296. 最佳的碰头地点](https://leetcode.cn/problems/best-meeting-point/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/best-meeting-point.md) | 数组、数学、矩阵、排序 | 困难 |
 | [0297. 二叉树的序列化与反序列化](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/serialize-and-deserialize-binary-tree.md) | 树、深度优先搜索、广度优先搜索、设计、字符串、二叉树 | 困难 |
 | [0298. 二叉树最长连续序列](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/binary-tree-longest-consecutive-sequence.md) | 树、深度优先搜索、二叉树 | 中等 |
 | [0299. 猜数字游戏](https://leetcode.cn/problems/bulls-and-cows/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0200-0299/bulls-and-cows.md) | 哈希表、字符串、计数 | 中等 |
