@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 927 道）
+# LeetCode 题解（已完成 940 道）
 
 ### 第 1 ~ 99 题
 
@@ -305,17 +305,22 @@
 | [0300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/longest-increasing-subsequence.md) | 数组、二分查找、动态规划 | 中等 |
 | [0303. 区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/range-sum-query-immutable.md) | 设计、数组、前缀和 | 简单 |
 | [0304. 二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/range-sum-query-2d-immutable.md) | 设计、数组、矩阵、前缀和 | 中等 |
+| [0306. 累加数](https://leetcode.cn/problems/additive-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/additive-number.md) | 字符串、回溯 | 中等 |
 | [0307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/range-sum-query-mutable.md) | 设计、树状数组、线段树、数组、分治 | 中等 |
 | [0309. 买卖股票的最佳时机含冷冻期](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/best-time-to-buy-and-sell-stock-with-cooldown.md) | 数组、动态规划 | 中等 |
 | [0310. 最小高度树](https://leetcode.cn/problems/minimum-height-trees/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/minimum-height-trees.md) | 深度优先搜索、广度优先搜索、图、拓扑排序 | 中等 |
 | [0312. 戳气球](https://leetcode.cn/problems/burst-balloons/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/burst-balloons.md) | 数组、动态规划 | 困难 |
+| [0314. 二叉树的垂直遍历](https://leetcode.cn/problems/binary-tree-vertical-order-traversal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/binary-tree-vertical-order-traversal.md) | 树、深度优先搜索、广度优先搜索、哈希表、二叉树、排序 | 中等 |
 | [0315. 计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/count-of-smaller-numbers-after-self.md) | 树状数组、线段树、数组、二分查找、分治、有序集合、归并排序 | 困难 |
 | [0316. 去除重复字母](https://leetcode.cn/problems/remove-duplicate-letters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/remove-duplicate-letters.md) | 栈、贪心、字符串、单调栈 | 中等 |
 | [0318. 最大单词长度乘积](https://leetcode.cn/problems/maximum-product-of-word-lengths/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/maximum-product-of-word-lengths.md) | 位运算、数组、字符串 | 中等 |
+| [0319. 灯泡开关](https://leetcode.cn/problems/bulb-switcher/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/bulb-switcher.md) | 脑筋急转弯、数学 | 中等 |
+| [0321. 拼接最大数](https://leetcode.cn/problems/create-maximum-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/create-maximum-number.md) | 栈、贪心、数组、双指针、单调栈 | 困难 |
 | [0322. 零钱兑换](https://leetcode.cn/problems/coin-change/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/coin-change.md) | 广度优先搜索、数组、动态规划 | 中等 |
 | [0323. 无向图中连通分量的数目](https://leetcode.cn/problems/number-of-connected-components-in-an-undirected-graph/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/number-of-connected-components-in-an-undirected-graph.md) | 深度优先搜索、广度优先搜索、并查集、图 | 中等 |
 | [0324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/wiggle-sort-ii.md) | 贪心、数组、分治、快速选择、排序 | 中等 |
 | [0326. 3 的幂](https://leetcode.cn/problems/power-of-three/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/power-of-three.md) | 递归、数学 | 简单 |
+| [0327. 区间和的个数](https://leetcode.cn/problems/count-of-range-sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/count-of-range-sum.md) | 树状数组、线段树、数组、二分查找、分治、有序集合、归并排序 | 困难 |
 | [0328. 奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/odd-even-linked-list.md) | 链表 | 中等 |
 | [0329. 矩阵中的最长递增路径](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/longest-increasing-path-in-a-matrix.md) | 深度优先搜索、广度优先搜索、图、拓扑排序、记忆化搜索、数组、动态规划、矩阵 | 困难 |
 | [0334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/increasing-triplet-subsequence.md) | 贪心、数组 | 中等 |
@@ -330,13 +335,19 @@
 | [0345. 反转字符串中的元音字母](https://leetcode.cn/problems/reverse-vowels-of-a-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/reverse-vowels-of-a-string.md) | 双指针、字符串 | 简单 |
 | [0346. 数据流中的移动平均值](https://leetcode.cn/problems/moving-average-from-data-stream/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/moving-average-from-data-stream.md) | 设计、队列、数组、数据流 | 简单 |
 | [0347. 前 K 个高频元素](https://leetcode.cn/problems/top-k-frequent-elements/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/top-k-frequent-elements.md) | 数组、哈希表、分治、桶排序、计数、快速选择、排序、堆（优先队列） | 中等 |
+| [0348. 设计井字棋](https://leetcode.cn/problems/design-tic-tac-toe/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/design-tic-tac-toe.md) | 设计、数组、哈希表、矩阵、模拟 | 中等 |
 | [0349. 两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/intersection-of-two-arrays.md) | 数组、哈希表、双指针、二分查找、排序 | 简单 |
 | [0350. 两个数组的交集 II](https://leetcode.cn/problems/intersection-of-two-arrays-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/intersection-of-two-arrays-ii.md) | 数组、哈希表、双指针、二分查找、排序 | 简单 |
 | [0351. 安卓系统手势解锁](https://leetcode.cn/problems/android-unlock-patterns/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/android-unlock-patterns.md) | 位运算、动态规划、回溯、状态压缩 | 中等 |
+| [0352. 将数据流变为多个不相交区间](https://leetcode.cn/problems/data-stream-as-disjoint-intervals/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/data-stream-as-disjoint-intervals.md) | 设计、二分查找、有序集合 | 困难 |
+| [0353. 贪吃蛇](https://leetcode.cn/problems/design-snake-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/design-snake-game.md) | 设计、队列、数组、哈希表、模拟 | 中等 |
 | [0354. 俄罗斯套娃信封问题](https://leetcode.cn/problems/russian-doll-envelopes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/russian-doll-envelopes.md) | 数组、二分查找、动态规划、排序 | 困难 |
+| [0355. 设计推特](https://leetcode.cn/problems/design-twitter/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/design-twitter.md) | 设计、哈希表、链表、堆（优先队列） | 中等 |
 | [0357. 统计各位数字都不同的数字个数](https://leetcode.cn/problems/count-numbers-with-unique-digits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/count-numbers-with-unique-digits.md) | 数学、动态规划、回溯 | 中等 |
 | [0359. 日志速率限制器](https://leetcode.cn/problems/logger-rate-limiter/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/logger-rate-limiter.md) | 设计、哈希表、数据流 | 简单 |
 | [0360. 有序转化数组](https://leetcode.cn/problems/sort-transformed-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/sort-transformed-array.md) | 数组、数学、双指针、排序 | 中等 |
+| [0361. 轰炸敌人](https://leetcode.cn/problems/bomb-enemy/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/bomb-enemy.md) | 数组、动态规划、矩阵 | 中等 |
+| [0362. 敲击计数器](https://leetcode.cn/problems/design-hit-counter/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/design-hit-counter.md) | 设计、队列、数组、二分查找、数据流 | 中等 |
 | [0367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/valid-perfect-square.md) | 数学、二分查找 | 简单 |
 | [0370. 区间加法](https://leetcode.cn/problems/range-addition/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/range-addition.md) | 数组、前缀和 | 中等 |
 | [0371. 两整数之和](https://leetcode.cn/problems/sum-of-two-integers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/sum-of-two-integers.md) | 位运算、数学 | 中等 |
@@ -345,12 +356,14 @@
 | [0376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/wiggle-subsequence.md) | 贪心、数组、动态规划 | 中等 |
 | [0377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/combination-sum-iv.md) | 数组、动态规划 | 中等 |
 | [0378. 有序矩阵中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/kth-smallest-element-in-a-sorted-matrix.md) | 数组、二分查找、矩阵、排序、堆（优先队列） | 中等 |
+| [0379. 电话目录管理系统](https://leetcode.cn/problems/design-phone-directory/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/design-phone-directory.md) | 设计、队列、数组、哈希表、链表 | 中等 |
 | [0380. O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/insert-delete-getrandom-o1.md) | 设计、数组、哈希表、数学、随机化 | 中等 |
 | [0383. 赎金信](https://leetcode.cn/problems/ransom-note/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/ransom-note.md) | 哈希表、字符串、计数 | 简单 |
 | [0384. 打乱数组](https://leetcode.cn/problems/shuffle-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/shuffle-an-array.md) | 设计、数组、数学、随机化 | 中等 |
 | [0386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/lexicographical-numbers.md) | 深度优先搜索、字典树 | 中等 |
 | [0387. 字符串中的第一个唯一字符](https://leetcode.cn/problems/first-unique-character-in-a-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/first-unique-character-in-a-string.md) | 队列、哈希表、字符串、计数 | 简单 |
 | [0389. 找不同](https://leetcode.cn/problems/find-the-difference/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/find-the-difference.md) | 位运算、哈希表、字符串、排序 | 简单 |
+| [0390. 消除游戏](https://leetcode.cn/problems/elimination-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/elimination-game.md) | 递归、数学 | 中等 |
 | [0391. 完美矩形](https://leetcode.cn/problems/perfect-rectangle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/perfect-rectangle.md) | 几何、数组、哈希表、数学、扫描线 | 困难 |
 | [0392. 判断子序列](https://leetcode.cn/problems/is-subsequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/is-subsequence.md) | 双指针、字符串、动态规划 | 简单 |
 | [0394. 字符串解码](https://leetcode.cn/problems/decode-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0300-0399/decode-string.md) | 栈、递归、字符串 | 中等 |

@@ -102,5 +102,5 @@ class Solution:
 
 ### 思路 1：复杂度分析
 
-- **时间复杂度**：令 $m = \sum_i \lfloor c_i/2 \rfloor$。半串的唯一排列数为 $\dfrac{m!}{\prod_i (\lfloor c_i/2 \rfloor)!}$。对每个半串构造完整回文需要 $O(n)$ 拼接与拷贝，因此总复杂度为 $O\!\left(\dfrac{m!}{\prod_i (\lfloor c_i/2 \rfloor)!} \cdot n\right)$。在 $n \le 16$ 的约束下不会超时。
+- **时间复杂度**：令 $m = \sum_i \lfloor c_i/2 \rfloor$。半串的唯一排列数为 $\dfrac{m!}{\prod_i (\lfloor c_i/2 \rfloor)!}$。对每个半串构造完整回文需要 $O(n)$ 拼接与拷贝，因此总复杂度为 $O\!\left(\dfrac{m!}{\prod_i (\lfloor c_i/2 \rfloor)!} \times n\right)$。在 $n \le 16$ 的约束下不会超时。
 - **空间复杂度**：回溯深度与路径为 $O(m)$，计数表为 $O(\Sigma)$（$\Sigma$ 为字符集大小，这里为小写字母）。不计输出的额外空间为 $O(m + \Sigma)$。
