@@ -67,7 +67,7 @@ arr = [6]
   - 然后从右到左消除，相当于对剩余数字进行镜像操作。
   - $f(n) = 2 \times (1 + \lfloor \frac{n}{2} \rfloor - f(\lfloor \frac{n}{2} \rfloor))$。
 
-**关键观察**：
+**关键点**：
 
 - 从左到右消除后，剩余数字为 $[2, 4, 6, 8, ...]$，共 $\lfloor \frac{n}{2} \rfloor$ 个。
 - 这些数字可以重新编号为 $[1, 2, 3, 4, ...]$，共 $\lfloor \frac{n}{2} \rfloor$ 个。
