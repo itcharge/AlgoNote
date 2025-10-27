@@ -20,6 +20,8 @@
     <img src="https://qcdn.itcharge.cn/images/btn_download_pdf.svg" width="145" alt="PDF 下载"></a>
 </div>
 
+如果觉得本项目对你有帮助，欢迎点亮 🌟 Star，支持一下!
+
 ## 1. 本书简介
 
 本书不仅仅只是一本算法题解书，更是一本算法与数据结构基础知识的讲解书。
