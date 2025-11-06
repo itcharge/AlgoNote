@@ -21,6 +21,7 @@
 - [0557. 反转字符串中的单词 III](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/reverse-words-in-a-string-iii.md)
 - [0560. 和为 K 的子数组](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/subarray-sum-equals-k.md)
 - [0561. 数组拆分](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/array-partition.md)
+- [0565. 数组嵌套](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/array-nesting.md)
 - [0567. 字符串的排列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/permutation-in-string.md)
 - [0575. 分糖果](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/distribute-candies.md)
 - [0576. 出界的路径数](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/out-of-boundary-paths.md)

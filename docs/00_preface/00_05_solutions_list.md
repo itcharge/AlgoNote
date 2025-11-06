@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1014 道）
+# LeetCode 题解（已完成 1016 道）
 
 ### 第 1 ~ 99 题
 
@@ -521,6 +521,7 @@
 | [0557. 反转字符串中的单词 III](https://leetcode.cn/problems/reverse-words-in-a-string-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/reverse-words-in-a-string-iii.md) | 双指针、字符串 | 简单 |
 | [0560. 和为 K 的子数组](https://leetcode.cn/problems/subarray-sum-equals-k/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/subarray-sum-equals-k.md) | 数组、哈希表、前缀和 | 中等 |
 | [0561. 数组拆分](https://leetcode.cn/problems/array-partition/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/array-partition.md) | 贪心、数组、计数排序、排序 | 简单 |
+| [0565. 数组嵌套](https://leetcode.cn/problems/array-nesting/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/array-nesting.md) | 深度优先搜索、数组 | 中等 |
 | [0567. 字符串的排列](https://leetcode.cn/problems/permutation-in-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/permutation-in-string.md) | 哈希表、双指针、字符串、滑动窗口 | 中等 |
 | [0575. 分糖果](https://leetcode.cn/problems/distribute-candies/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/distribute-candies.md) | 数组、哈希表 | 简单 |
 | [0576. 出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0500-0599/out-of-boundary-paths.md) | 动态规划 | 中等 |
@@ -601,6 +602,7 @@
 | [0735. 小行星碰撞](https://leetcode.cn/problems/asteroid-collision/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/asteroid-collision.md) | 栈、数组、模拟 | 中等 |
 | [0738. 单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/monotone-increasing-digits.md) | 贪心、数学 | 中等 |
 | [0739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/daily-temperatures.md) | 栈、数组、单调栈 | 中等 |
+| [0743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/network-delay-time.md) | 深度优先搜索、广度优先搜索、图、最短路、堆（优先队列） | 中等 |
 | [0744. 寻找比目标字母大的最小字母](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/find-smallest-letter-greater-than-target.md) | 数组、二分查找 | 简单 |
 | [0746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/min-cost-climbing-stairs.md) | 数组、动态规划 | 简单 |
 | [0752. 打开转盘锁](https://leetcode.cn/problems/open-the-lock/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/open-the-lock.md) | 广度优先搜索、数组、哈希表、字符串 | 中等 |

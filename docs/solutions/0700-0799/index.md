@@ -25,6 +25,7 @@
 - [0735. 小行星碰撞](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/asteroid-collision.md)
 - [0738. 单调递增的数字](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/monotone-increasing-digits.md)
 - [0739. 每日温度](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/daily-temperatures.md)
+- [0743. 网络延迟时间](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/network-delay-time.md)
 - [0744. 寻找比目标字母大的最小字母](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/find-smallest-letter-greater-than-target.md)
 - [0746. 使用最小花费爬楼梯](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/min-cost-climbing-stairs.md)
 - [0752. 打开转盘锁](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/open-the-lock.md)
