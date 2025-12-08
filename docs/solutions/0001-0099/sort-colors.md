@@ -45,10 +45,11 @@
 这道题我们也可以借鉴快速排序算法中的 $partition$ 过程，将 $1$ 作为基准数 $pivot$，然后将序列分为三部分：$0$（即比 $1$ 小的部分）、等于 $1$ 的部分、$2$（即比 $1$ 大的部分）。具体步骤如下：
 
 1. 使用两个指针 $left$、$right$，分别指向数组的头尾。$left$ 表示当前处理好红色元素的尾部，$right$ 表示当前处理好蓝色的头部。
-2. 再使用一个下标 $index$ 遍历数组，如果遇到 $nums[index] == 0$，就交换 $nums[index]$ 和 $nums[left]$，同时将 $left$ 右移。如果遇到 $nums[index] == 2$，就交换 $nums[index]$ 和 $nums[right]$，同时将 $right$ 左移。
+2. 再使用一个下标 $index$ 遍历数组：
+   - 如果遇到 $nums[index] == 0$，就交换 $nums[index]$ 和 $nums[left]$，同时将 $left$ 和 $index$ 都右移（因为交换后 $nums[index]$ 可能是从 $left$ 位置换过来的，需要继续检查）。
+   - 如果遇到 $nums[index] == 2$，就交换 $nums[index]$ 和 $nums[right]$，同时将 $right$ 左移（注意 $index$ 不增加，因为交换后 $nums[index]$ 可能是从 $right$ 位置换过来的 0 或 1，需要再次检查）。
+   - 如果遇到 $nums[index] == 1$，直接将 $index$ 右移。
 3. 直到 $index$ 移动到 $right$ 位置之后，停止遍历。遍历结束之后，此时 $left$ 左侧都是红色，$right$ 右侧都是蓝色。
-
-注意：移动的时候需要判断 $index$ 和 $left$ 的位置，因为 $left$ 左侧是已经处理好的数组，所以需要判断 $index$ 的位置是否小于 $left$，小于的话，需要更新 $index$ 位置。
 
 ### 思路 1：代码
 
@@ -59,11 +60,10 @@ class Solution:
         right = len(nums) - 1
         index = 0
         while index <= right:
-            if index < left:
-                index += 1
-            elif nums[index] == 0:
+            if nums[index] == 0:
                 nums[index], nums[left] = nums[left], nums[index]
                 left += 1
+                index += 1
             elif nums[index] == 2:
                 nums[index], nums[right] = nums[right], nums[index]
                 right -= 1

@@ -9,13 +9,17 @@
 
 ## 题目大意
 
-**描述**：有 `n` 个城市，其中一些彼此相连，另一些没有相连。如果城市 `a` 与城市 `b` 直接相连，且城市 `b` 与城市 `c` 直接相连，那么城市 `a` 与城市 `c` 间接相连。
+**描述**：
+
+有 `n` 个城市，其中一些彼此相连，另一些没有相连。如果城市 `a` 与城市 `b` 直接相连，且城市 `b` 与城市 `c` 直接相连，那么城市 `a` 与城市 `c` 间接相连。
 
 「省份」是由一组直接或间接链接的城市组成，组内不含有其他没有相连的城市。
 
 现在给定一个 `n * n` 的矩阵 `isConnected` 表示城市的链接关系。其中 `isConnected[i][j] = 1` 表示第 `i` 个城市和第 `j` 个城市直接相连，`isConnected[i][j] = 0` 表示第 `i` 个城市和第 `j` 个城市没有相连。
 
-**要求**：根据给定的城市关系，返回「省份」的数量。
+**要求**：
+
+根据给定的城市关系，返回「省份」的数量。
 
 **说明**：
 
@@ -81,15 +85,13 @@ class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
         size = len(isConnected)
         union_find = UnionFind(size)
+        cnt = size
         for i in range(size):
             for j in range(i + 1, size):
                 if isConnected[i][j] == 1:
-                    union_find.union(i, j)
-
-        res = set()
-        for i in range(size):
-            res.add(union_find.find(i))
-        return len(res)
+                    if union_find.union(i, j):
+                        cnt -= 1
+        return cnt
 ```
 
 ### 思路 1：复杂度分析
