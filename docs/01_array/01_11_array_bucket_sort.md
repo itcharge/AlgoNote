@@ -36,7 +36,7 @@ class Solution:
     def bucketSort(self, nums: [int], bucket_size=5) -> [int]:
         # 计算数据范围
         nums_min, nums_max = min(nums), max(nums)
-        bucket_count = (nums_max - nums_min) // bucket_size + 1
+        bucket_count = (nums_max - nums_min + 1) // bucket_size
         # 定义桶数组 buckets
         buckets = [[] for _ in range(bucket_count)]
 
