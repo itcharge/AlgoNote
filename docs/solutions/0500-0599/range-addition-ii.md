@@ -11,7 +11,7 @@
 
 **描述**：
 
-给定一个 $m \times n$ 的矩阵 $M$ 和一个操作数组 $op$ 。矩阵初始化时所有的单元格都为 $0$。$ops[i] = [ai, bi]$ 意味着当所有的 $0 \le x < ai$ 和 $0 \le y < bi$ 时， $M[x][y]$ 应该加 $1$。
+给定一个 $m \times n$ 的矩阵 $M$ 和一个操作数组 $op$ 。矩阵初始化时所有的单元格都为 $0$。$ops[i] = [ai, bi]$ 意味着当所有的 $0 \le x < ai$ 和 $0 \le y < bi$ 时， $M[x][y]$ 应该加 $1$。
 
 **要求**：
 
@@ -22,8 +22,8 @@
 - $1 \le m, n \le 4 \times 10^{4}$。
 - $0 \le ops.length \le 10^{4}$。
 - $ops[i].length == 2$。
-- $1 \le ai \le m$。
-- $1 \le bi \le n$。
+- $1 \le ai \le m$。
+- $1 \le bi \le n$。
 
 **示例**：
 

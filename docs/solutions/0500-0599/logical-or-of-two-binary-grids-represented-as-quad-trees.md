@@ -50,7 +50,7 @@ class Node {
 - 四叉树格式：
    - 输出为使用层序遍历后四叉树的序列化形式，其中 $null$ 表示路径终止符，其下面不存在节点。
    - 它与二叉树的序列化非常相似。唯一的区别是节点以列表形式表示 $[isLeaf, val]$。
-   - 如果 $isLeaf$ 或者 $val$ 的值为 True，则表示它在列表 $[isLeaf, val]$ 中的值为 1；如果 $isLeaf$ 或者 $val$ 的值为 False，则表示值为 0。
+   - 如果 $isLeaf$ 或者 $val$ 的值为 True，则表示它在列表 $[isLeaf, val]$ 中的值为 1；如果 $isLeaf$ 或者 $val$ 的值为 False，则表示值为 0。
 - quadTree1 和 quadTree2 都是符合题目要求的四叉树，每个都代表一个 $n \times n$ 的矩阵。
 - $n == 2x$，其中 $0 \le x \le 9$。
 

@@ -11,7 +11,7 @@
 
 **描述**：
 
-TinyURL 是一种 URL 简化服务， 比如：当你输入一个 URL https://leetcode.com/problems/design-tinyurl 时，它将返回一个简化的 URL http://tinyurl.com/4e9iAk。
+TinyURL 是一种 URL 简化服务， 比如：当你输入一个 URL https://leetcode.com/problems/design-tinyurl 时，它将返回一个简化的 URL http://tinyurl.com/4e9iAk。
 
 **要求**：
 
