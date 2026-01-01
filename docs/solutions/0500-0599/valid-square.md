@@ -11,7 +11,7 @@
 
 **描述**：
 
-给定 2D 空间中四个点的坐标 $p1$, $p2$, $p3$ 和 $p4$。
+给定 2D 空间中四个点的坐标 $p1$, $p2$, $p3$ 和 $p4$。
 
 **要求**：
 
@@ -19,10 +19,10 @@
 
 **说明**：
 
-- 点的坐标 $pi$ 表示为 $[xi, yi]$。 输入没有任何顺序。
-- 一个有效的正方形有四条等边和四个等角(90度角)。
+- 点的坐标 $pi$ 表示为 $[xi, yi]$。 输入没有任何顺序。
+- 一个有效的正方形有四条等边和四个等角（90 度角）。
 - $p1.length == p2.length == p3.length == p4.length == 2$。
-- $-10^{4} \le xi, yi \le 10^{4}$。
+- $-10^{4} \le xi, yi \le 10^{4}$。
 
 **示例**：
 
@@ -85,9 +85,7 @@ class Solution:
             return False
         
         # 前 4 个应该是边，后 2 个应该是对角线
-        return distances[0] == distances[1] == distances[2] == distances[3] and \
-               distances[4] == distances[5] and \
-               2 * distances[0] == distances[4]
+        return distances[0] == distances[1] == distances[2] == distances[3] and distances[4] == distances[5] and 2 * distances[0] == distances[4]
 ```
 
 ### 思路 1：复杂度分析
