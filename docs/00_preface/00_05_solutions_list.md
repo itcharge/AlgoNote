@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1111 道）
+# LeetCode 题解（已完成 1120 道）
 
 ### 第 1 ~ 99 题
 
@@ -664,7 +664,9 @@
 | [0719. 找出第 K 小的数对距离](https://leetcode.cn/problems/find-k-th-smallest-pair-distance/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/find-k-th-smallest-pair-distance.md) | 数组、双指针、二分查找、排序 | 困难 |
 | [0720. 词典中最长的单词](https://leetcode.cn/problems/longest-word-in-dictionary/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/longest-word-in-dictionary.md) | 字典树、数组、哈希表、字符串、排序 | 中等 |
 | [0721. 账户合并](https://leetcode.cn/problems/accounts-merge/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/accounts-merge.md) | 深度优先搜索、广度优先搜索、并查集、数组、哈希表、字符串、排序 | 中等 |
+| [0722. 删除注释](https://leetcode.cn/problems/remove-comments/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/remove-comments.md) | 数组、字符串 | 中等 |
 | [0724. 寻找数组的中心下标](https://leetcode.cn/problems/find-pivot-index/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/find-pivot-index.md) | 数组、前缀和 | 简单 |
+| [0725. 分隔链表](https://leetcode.cn/problems/split-linked-list-in-parts/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/split-linked-list-in-parts.md) | 链表 | 中等 |
 | [0726. 原子的数量](https://leetcode.cn/problems/number-of-atoms/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/number-of-atoms.md) | 栈、哈希表、字符串、排序 | 困难 |
 | [0727. 最小窗口子序列](https://leetcode.cn/problems/minimum-window-subsequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/minimum-window-subsequence.md) | 字符串、动态规划、滑动窗口 | 困难 |
 | [0728. 自除数](https://leetcode.cn/problems/self-dividing-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/self-dividing-numbers.md) | 数学 | 简单 |
@@ -677,6 +679,7 @@
 | [0736. Lisp 语法解析](https://leetcode.cn/problems/parse-lisp-expression/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/parse-lisp-expression.md) | 栈、递归、哈希表、字符串 | 困难 |
 | [0738. 单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/monotone-increasing-digits.md) | 贪心、数学 | 中等 |
 | [0739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/daily-temperatures.md) | 栈、数组、单调栈 | 中等 |
+| [0740. 删除并获得点数](https://leetcode.cn/problems/delete-and-earn/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/delete-and-earn.md) | 数组、哈希表、动态规划 | 中等 |
 | [0741. 摘樱桃](https://leetcode.cn/problems/cherry-pickup/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/cherry-pickup.md) | 数组、动态规划、矩阵 | 困难 |
 | [0743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/network-delay-time.md) | 深度优先搜索、广度优先搜索、图、最短路、堆（优先队列） | 中等 |
 | [0744. 寻找比目标字母大的最小字母](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/find-smallest-letter-greater-than-target.md) | 数组、二分查找 | 简单 |
@@ -686,6 +689,7 @@
 | [0749. 隔离病毒](https://leetcode.cn/problems/contain-virus/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/contain-virus.md) | 深度优先搜索、广度优先搜索、数组、矩阵、模拟 | 困难 |
 | [0752. 打开转盘锁](https://leetcode.cn/problems/open-the-lock/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/open-the-lock.md) | 广度优先搜索、数组、哈希表、字符串 | 中等 |
 | [0753. 破解保险箱](https://leetcode.cn/problems/cracking-the-safe/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/cracking-the-safe.md) | 深度优先搜索、图、欧拉回路 | 困难 |
+| [0754. 到达终点数字](https://leetcode.cn/problems/reach-a-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/reach-a-number.md) | 数学、二分查找 | 中等 |
 | [0756. 金字塔转换矩阵](https://leetcode.cn/problems/pyramid-transition-matrix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/pyramid-transition-matrix.md) | 位运算、深度优先搜索、广度优先搜索、哈希表、字符串 | 中等 |
 | [0758. 字符串中的加粗单词](https://leetcode.cn/problems/bold-words-in-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/bold-words-in-string.md) | 字典树、数组、哈希表、字符串、字符串匹配 | 中等 |
 | [0762. 二进制表示中质数个计算置位](https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/prime-number-of-set-bits-in-binary-representation.md) | 位运算、数学 | 简单 |
@@ -693,23 +697,28 @@
 | [0764. 最大加号标志](https://leetcode.cn/problems/largest-plus-sign/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/largest-plus-sign.md) | 数组、动态规划 | 中等 |
 | [0765. 情侣牵手](https://leetcode.cn/problems/couples-holding-hands/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/couples-holding-hands.md) | 贪心、深度优先搜索、广度优先搜索、并查集、图 | 困难 |
 | [0766. 托普利茨矩阵](https://leetcode.cn/problems/toeplitz-matrix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/toeplitz-matrix.md) | 数组、矩阵 | 简单 |
+| [0767. 重构字符串](https://leetcode.cn/problems/reorganize-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/reorganize-string.md) | 贪心、哈希表、字符串、计数、排序、堆（优先队列） | 中等 |
 | [0768. 最多能完成排序的块 II](https://leetcode.cn/problems/max-chunks-to-make-sorted-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/max-chunks-to-make-sorted-ii.md) | 栈、贪心、数组、排序、单调栈 | 困难 |
 | [0769. 最多能完成排序的块](https://leetcode.cn/problems/max-chunks-to-make-sorted/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/max-chunks-to-make-sorted.md) | 栈、贪心、数组、排序、单调栈 | 中等 |
 | [0771. 宝石与石头](https://leetcode.cn/problems/jewels-and-stones/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/jewels-and-stones.md) | 哈希表、字符串 | 简单 |
 | [0773. 滑动谜题](https://leetcode.cn/problems/sliding-puzzle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/sliding-puzzle.md) | 广度优先搜索、记忆化搜索、数组、动态规划、回溯、矩阵 | 困难 |
 | [0775. 全局倒置与局部倒置](https://leetcode.cn/problems/global-and-local-inversions/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/global-and-local-inversions.md) | 数组、数学 | 中等 |
+| [0777. 在 LR 字符串中交换相邻字符](https://leetcode.cn/problems/swap-adjacent-in-lr-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/swap-adjacent-in-lr-string.md) | 双指针、字符串 | 中等 |
 | [0778. 水位上升的泳池中游泳](https://leetcode.cn/problems/swim-in-rising-water/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/swim-in-rising-water.md) | 深度优先搜索、广度优先搜索、并查集、数组、二分查找、矩阵、堆（优先队列） | 困难 |
 | [0779. 第K个语法符号](https://leetcode.cn/problems/k-th-symbol-in-grammar/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/k-th-symbol-in-grammar.md) | 位运算、递归、数学 | 中等 |
+| [0780. 到达终点](https://leetcode.cn/problems/reaching-points/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/reaching-points.md) | 数学 | 困难 |
 | [0781. 森林中的兔子](https://leetcode.cn/problems/rabbits-in-forest/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/rabbits-in-forest.md) | 贪心、数组、哈希表、数学 | 中等 |
 | [0783. 二叉搜索树节点最小距离](https://leetcode.cn/problems/minimum-distance-between-bst-nodes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/minimum-distance-between-bst-nodes.md) | 树、深度优先搜索、广度优先搜索、二叉搜索树、二叉树 | 简单 |
 | [0784. 字母大小写全排列](https://leetcode.cn/problems/letter-case-permutation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/letter-case-permutation.md) | 位运算、字符串、回溯 | 中等 |
 | [0785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/is-graph-bipartite.md) | 深度优先搜索、广度优先搜索、并查集、图 | 中等 |
 | [0786. 第 K 个最小的质数分数](https://leetcode.cn/problems/k-th-smallest-prime-fraction/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/k-th-smallest-prime-fraction.md) | 数组、双指针、二分查找、排序、堆（优先队列） | 中等 |
+| [0787. K 站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/cheapest-flights-within-k-stops.md) | 深度优先搜索、广度优先搜索、图、动态规划、最短路、堆（优先队列） | 中等 |
 | [0788. 旋转数字](https://leetcode.cn/problems/rotated-digits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/rotated-digits.md) | 数学、动态规划 | 中等 |
 | [0789. 逃脱阻碍者](https://leetcode.cn/problems/escape-the-ghosts/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/escape-the-ghosts.md) | 数组、数学 | 中等 |
 | [0790. 多米诺和托米诺平铺](https://leetcode.cn/problems/domino-and-tromino-tiling/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/domino-and-tromino-tiling.md) | 动态规划 | 中等 |
 | [0791. 自定义字符串排序](https://leetcode.cn/problems/custom-sort-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/custom-sort-string.md) | 哈希表、字符串、排序 | 中等 |
 | [0792. 匹配子序列的单词数](https://leetcode.cn/problems/number-of-matching-subsequences/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/number-of-matching-subsequences.md) | 字典树、数组、哈希表、字符串、二分查找、动态规划、排序 | 中等 |
+| [0793. 阶乘函数后 K 个零](https://leetcode.cn/problems/preimage-size-of-factorial-zeroes-function/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/preimage-size-of-factorial-zeroes-function.md) | 数学、二分查找 | 困难 |
 | [0795. 区间子数组个数](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/number-of-subarrays-with-bounded-maximum.md) | 数组、双指针 | 中等 |
 | [0796. 旋转字符串](https://leetcode.cn/problems/rotate-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/rotate-string.md) | 字符串、字符串匹配 | 简单 |
 | [0797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/all-paths-from-source-to-target.md) | 深度优先搜索、广度优先搜索、图、回溯 | 中等 |
