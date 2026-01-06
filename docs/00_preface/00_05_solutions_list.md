@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1120 道）
+# LeetCode 题解（已完成 1123 道）
 
 ### 第 1 ~ 99 题
 
@@ -655,6 +655,7 @@
 | [0707. 设计链表](https://leetcode.cn/problems/design-linked-list/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/design-linked-list.md) | 设计、链表 | 中等 |
 | [0708. 循环有序列表的插入](https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/insert-into-a-sorted-circular-linked-list.md) | 链表 | 中等 |
 | [0709. 转换成小写字母](https://leetcode.cn/problems/to-lower-case/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/to-lower-case.md) | 字符串 | 简单 |
+| [0710. 黑名单中的随机数](https://leetcode.cn/problems/random-pick-with-blacklist/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/random-pick-with-blacklist.md) | 数组、哈希表、数学、二分查找、排序、随机化 | 困难 |
 | [0712. 两个字符串的最小ASCII删除和](https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/minimum-ascii-delete-sum-for-two-strings.md) | 字符串、动态规划 | 中等 |
 | [0713. 乘积小于 K 的子数组](https://leetcode.cn/problems/subarray-product-less-than-k/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/subarray-product-less-than-k.md) | 数组、二分查找、前缀和、滑动窗口 | 中等 |
 | [0714. 买卖股票的最佳时机含手续费](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/best-time-to-buy-and-sell-stock-with-transaction-fee.md) | 贪心、数组、动态规划 | 中等 |
@@ -683,6 +684,7 @@
 | [0741. 摘樱桃](https://leetcode.cn/problems/cherry-pickup/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/cherry-pickup.md) | 数组、动态规划、矩阵 | 困难 |
 | [0743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/network-delay-time.md) | 深度优先搜索、广度优先搜索、图、最短路、堆（优先队列） | 中等 |
 | [0744. 寻找比目标字母大的最小字母](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/find-smallest-letter-greater-than-target.md) | 数组、二分查找 | 简单 |
+| [0745. 前缀和后缀搜索](https://leetcode.cn/problems/prefix-and-suffix-search/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/prefix-and-suffix-search.md) | 设计、字典树、数组、哈希表、字符串 | 困难 |
 | [0746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/min-cost-climbing-stairs.md) | 数组、动态规划 | 简单 |
 | [0747. 至少是其他数字两倍的最大数](https://leetcode.cn/problems/largest-number-at-least-twice-of-others/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/largest-number-at-least-twice-of-others.md) | 数组、排序 | 简单 |
 | [0748. 最短补全词](https://leetcode.cn/problems/shortest-completing-word/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/shortest-completing-word.md) | 数组、哈希表、字符串 | 简单 |
@@ -719,6 +721,7 @@
 | [0791. 自定义字符串排序](https://leetcode.cn/problems/custom-sort-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/custom-sort-string.md) | 哈希表、字符串、排序 | 中等 |
 | [0792. 匹配子序列的单词数](https://leetcode.cn/problems/number-of-matching-subsequences/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/number-of-matching-subsequences.md) | 字典树、数组、哈希表、字符串、二分查找、动态规划、排序 | 中等 |
 | [0793. 阶乘函数后 K 个零](https://leetcode.cn/problems/preimage-size-of-factorial-zeroes-function/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/preimage-size-of-factorial-zeroes-function.md) | 数学、二分查找 | 困难 |
+| [0794. 有效的井字游戏](https://leetcode.cn/problems/valid-tic-tac-toe-state/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/valid-tic-tac-toe-state.md) | 数组、矩阵 | 中等 |
 | [0795. 区间子数组个数](https://leetcode.cn/problems/number-of-subarrays-with-bounded-maximum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/number-of-subarrays-with-bounded-maximum.md) | 数组、双指针 | 中等 |
 | [0796. 旋转字符串](https://leetcode.cn/problems/rotate-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/rotate-string.md) | 字符串、字符串匹配 | 简单 |
 | [0797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/all-paths-from-source-to-target.md) | 深度优先搜索、广度优先搜索、图、回溯 | 中等 |
