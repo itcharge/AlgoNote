@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1123 道）
+# LeetCode 题解（已完成 1163 道）
 
 ### 第 1 ~ 99 题
 
@@ -693,6 +693,7 @@
 | [0753. 破解保险箱](https://leetcode.cn/problems/cracking-the-safe/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/cracking-the-safe.md) | 深度优先搜索、图、欧拉回路 | 困难 |
 | [0754. 到达终点数字](https://leetcode.cn/problems/reach-a-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/reach-a-number.md) | 数学、二分查找 | 中等 |
 | [0756. 金字塔转换矩阵](https://leetcode.cn/problems/pyramid-transition-matrix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/pyramid-transition-matrix.md) | 位运算、深度优先搜索、广度优先搜索、哈希表、字符串 | 中等 |
+| [0757. 设置交集大小至少为2](https://leetcode.cn/problems/set-intersection-size-at-least-two/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/set-intersection-size-at-least-two.md) | 贪心、数组、排序 | 困难 |
 | [0758. 字符串中的加粗单词](https://leetcode.cn/problems/bold-words-in-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/bold-words-in-string.md) | 字典树、数组、哈希表、字符串、字符串匹配 | 中等 |
 | [0762. 二进制表示中质数个计算置位](https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/prime-number-of-set-bits-in-binary-representation.md) | 位运算、数学 | 简单 |
 | [0763. 划分字母区间](https://leetcode.cn/problems/partition-labels/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/partition-labels.md) | 贪心、哈希表、双指针、字符串 | 中等 |
@@ -702,6 +703,7 @@
 | [0767. 重构字符串](https://leetcode.cn/problems/reorganize-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/reorganize-string.md) | 贪心、哈希表、字符串、计数、排序、堆（优先队列） | 中等 |
 | [0768. 最多能完成排序的块 II](https://leetcode.cn/problems/max-chunks-to-make-sorted-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/max-chunks-to-make-sorted-ii.md) | 栈、贪心、数组、排序、单调栈 | 困难 |
 | [0769. 最多能完成排序的块](https://leetcode.cn/problems/max-chunks-to-make-sorted/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/max-chunks-to-make-sorted.md) | 栈、贪心、数组、排序、单调栈 | 中等 |
+| [0770. 基本计算器 IV](https://leetcode.cn/problems/basic-calculator-iv/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/basic-calculator-iv.md) | 栈、递归、哈希表、数学、字符串 | 困难 |
 | [0771. 宝石与石头](https://leetcode.cn/problems/jewels-and-stones/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/jewels-and-stones.md) | 哈希表、字符串 | 简单 |
 | [0773. 滑动谜题](https://leetcode.cn/problems/sliding-puzzle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/sliding-puzzle.md) | 广度优先搜索、记忆化搜索、数组、动态规划、回溯、矩阵 | 困难 |
 | [0775. 全局倒置与局部倒置](https://leetcode.cn/problems/global-and-local-inversions/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/global-and-local-inversions.md) | 数组、数学 | 中等 |
@@ -710,6 +712,7 @@
 | [0779. 第K个语法符号](https://leetcode.cn/problems/k-th-symbol-in-grammar/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/k-th-symbol-in-grammar.md) | 位运算、递归、数学 | 中等 |
 | [0780. 到达终点](https://leetcode.cn/problems/reaching-points/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/reaching-points.md) | 数学 | 困难 |
 | [0781. 森林中的兔子](https://leetcode.cn/problems/rabbits-in-forest/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/rabbits-in-forest.md) | 贪心、数组、哈希表、数学 | 中等 |
+| [0782. 变为棋盘](https://leetcode.cn/problems/transform-to-chessboard/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/transform-to-chessboard.md) | 位运算、数组、数学、矩阵 | 困难 |
 | [0783. 二叉搜索树节点最小距离](https://leetcode.cn/problems/minimum-distance-between-bst-nodes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/minimum-distance-between-bst-nodes.md) | 树、深度优先搜索、广度优先搜索、二叉搜索树、二叉树 | 简单 |
 | [0784. 字母大小写全排列](https://leetcode.cn/problems/letter-case-permutation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/letter-case-permutation.md) | 位运算、字符串、回溯 | 中等 |
 | [0785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0700-0799/is-graph-bipartite.md) | 深度优先搜索、广度优先搜索、并查集、图 | 中等 |
@@ -739,41 +742,78 @@
 | [0803. 打砖块](https://leetcode.cn/problems/bricks-falling-when-hit/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/bricks-falling-when-hit.md) | 并查集、数组、矩阵 | 困难 |
 | [0804. 唯一摩尔斯密码词](https://leetcode.cn/problems/unique-morse-code-words/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/unique-morse-code-words.md) | 数组、哈希表、字符串 | 简单 |
 | [0806. 写字符串需要的行数](https://leetcode.cn/problems/number-of-lines-to-write-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/number-of-lines-to-write-string.md) | 数组、字符串 | 简单 |
+| [0807. 保持城市天际线](https://leetcode.cn/problems/max-increase-to-keep-city-skyline/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/max-increase-to-keep-city-skyline.md) | 贪心、数组、矩阵 | 中等 |
+| [0809. 情感丰富的文字](https://leetcode.cn/problems/expressive-words/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/expressive-words.md) | 数组、双指针、字符串 | 中等 |
+| [0810. 黑板异或游戏](https://leetcode.cn/problems/chalkboard-xor-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/chalkboard-xor-game.md) | 位运算、脑筋急转弯、数组、数学、博弈 | 困难 |
 | [0811. 子域名访问计数](https://leetcode.cn/problems/subdomain-visit-count/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/subdomain-visit-count.md) | 数组、哈希表、字符串、计数 | 中等 |
+| [0812. 最大三角形面积](https://leetcode.cn/problems/largest-triangle-area/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/largest-triangle-area.md) | 几何、数组、数学 | 简单 |
+| [0813. 最大平均值和的分组](https://leetcode.cn/problems/largest-sum-of-averages/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/largest-sum-of-averages.md) | 数组、动态规划、前缀和 | 中等 |
 | [0814. 二叉树剪枝](https://leetcode.cn/problems/binary-tree-pruning/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/binary-tree-pruning.md) | 树、深度优先搜索、二叉树 | 中等 |
+| [0815. 公交路线](https://leetcode.cn/problems/bus-routes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/bus-routes.md) | 广度优先搜索、数组、哈希表 | 困难 |
+| [0816. 模糊坐标](https://leetcode.cn/problems/ambiguous-coordinates/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/ambiguous-coordinates.md) | 字符串、回溯、枚举 | 中等 |
+| [0817. 链表组件](https://leetcode.cn/problems/linked-list-components/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/linked-list-components.md) | 数组、哈希表、链表 | 中等 |
 | [0819. 最常见的单词](https://leetcode.cn/problems/most-common-word/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/most-common-word.md) | 数组、哈希表、字符串、计数 | 简单 |
 | [0820. 单词的压缩编码](https://leetcode.cn/problems/short-encoding-of-words/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/short-encoding-of-words.md) | 字典树、数组、哈希表、字符串 | 中等 |
 | [0821. 字符的最短距离](https://leetcode.cn/problems/shortest-distance-to-a-character/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/shortest-distance-to-a-character.md) | 数组、双指针、字符串 | 简单 |
+| [0822. 翻转卡片游戏](https://leetcode.cn/problems/card-flipping-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/card-flipping-game.md) | 数组、哈希表 | 中等 |
+| [0823. 带因子的二叉树](https://leetcode.cn/problems/binary-trees-with-factors/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/binary-trees-with-factors.md) | 数组、哈希表、动态规划、排序 | 中等 |
 | [0824. 山羊拉丁文](https://leetcode.cn/problems/goat-latin/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/goat-latin.md) | 字符串 | 简单 |
+| [0825. 适龄的朋友](https://leetcode.cn/problems/friends-of-appropriate-ages/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/friends-of-appropriate-ages.md) | 数组、双指针、二分查找、排序 | 中等 |
+| [0826. 安排工作以达到最大收益](https://leetcode.cn/problems/most-profit-assigning-work/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/most-profit-assigning-work.md) | 贪心、数组、双指针、二分查找、排序 | 中等 |
+| [0827. 最大人工岛](https://leetcode.cn/problems/making-a-large-island/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/making-a-large-island.md) | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 困难 |
+| [0828. 统计子串中的唯一字符](https://leetcode.cn/problems/count-unique-characters-of-all-substrings-of-a-given-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/count-unique-characters-of-all-substrings-of-a-given-string.md) | 哈希表、字符串、动态规划 | 困难 |
+| [0829. 连续整数求和](https://leetcode.cn/problems/consecutive-numbers-sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/consecutive-numbers-sum.md) | 数学、枚举 | 困难 |
 | [0830. 较大分组的位置](https://leetcode.cn/problems/positions-of-large-groups/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/positions-of-large-groups.md) | 字符串 | 简单 |
+| [0831. 隐藏个人信息](https://leetcode.cn/problems/masking-personal-information/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/masking-personal-information.md) | 字符串 | 中等 |
 | [0832. 翻转图像](https://leetcode.cn/problems/flipping-an-image/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/flipping-an-image.md) | 位运算、数组、双指针、矩阵、模拟 | 简单 |
+| [0833. 字符串中的查找与替换](https://leetcode.cn/problems/find-and-replace-in-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/find-and-replace-in-string.md) | 数组、哈希表、字符串、排序 | 中等 |
 | [0834. 树中距离之和](https://leetcode.cn/problems/sum-of-distances-in-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/sum-of-distances-in-tree.md) | 树、深度优先搜索、图、动态规划 | 困难 |
+| [0835. 图像重叠](https://leetcode.cn/problems/image-overlap/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/image-overlap.md) | 数组、矩阵 | 中等 |
 | [0836. 矩形重叠](https://leetcode.cn/problems/rectangle-overlap/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/rectangle-overlap.md) | 几何、数学 | 简单 |
+| [0840. 矩阵中的幻方](https://leetcode.cn/problems/magic-squares-in-grid/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/magic-squares-in-grid.md) | 数组、哈希表、数学、矩阵 | 中等 |
 | [0841. 钥匙和房间](https://leetcode.cn/problems/keys-and-rooms/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/keys-and-rooms.md) | 深度优先搜索、广度优先搜索、图 | 中等 |
+| [0843. 猜猜这个单词](https://leetcode.cn/problems/guess-the-word/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/guess-the-word.md) | 数组、数学、字符串、博弈、交互 | 困难 |
 | [0844. 比较含退格的字符串](https://leetcode.cn/problems/backspace-string-compare/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/backspace-string-compare.md) | 栈、双指针、字符串、模拟 | 简单 |
 | [0845. 数组中的最长山脉](https://leetcode.cn/problems/longest-mountain-in-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/longest-mountain-in-array.md) | 数组、双指针、动态规划、枚举 | 中等 |
 | [0846. 一手顺子](https://leetcode.cn/problems/hand-of-straights/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/hand-of-straights.md) | 贪心、数组、哈希表、排序 | 中等 |
 | [0847. 访问所有节点的最短路径](https://leetcode.cn/problems/shortest-path-visiting-all-nodes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/shortest-path-visiting-all-nodes.md) | 位运算、广度优先搜索、图、动态规划、状态压缩 | 困难 |
+| [0849. 到最近的人的最大距离](https://leetcode.cn/problems/maximize-distance-to-closest-person/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/maximize-distance-to-closest-person.md) | 数组 | 中等 |
 | [0850. 矩形面积 II](https://leetcode.cn/problems/rectangle-area-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/rectangle-area-ii.md) | 线段树、数组、有序集合、扫描线 | 困难 |
 | [0851. 喧闹和富有](https://leetcode.cn/problems/loud-and-rich/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/loud-and-rich.md) | 深度优先搜索、图、拓扑排序、数组 | 中等 |
 | [0852. 山脉数组的峰顶索引](https://leetcode.cn/problems/peak-index-in-a-mountain-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/peak-index-in-a-mountain-array.md) | 数组、二分查找 | 中等 |
+| [0853. 车队](https://leetcode.cn/problems/car-fleet/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/car-fleet.md) | 栈、数组、排序、单调栈 | 中等 |
+| [0854. 相似度为 K 的字符串](https://leetcode.cn/problems/k-similar-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/k-similar-strings.md) | 广度优先搜索、哈希表、字符串 | 困难 |
+| [0855. 考场就座](https://leetcode.cn/problems/exam-room/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/exam-room.md) | 设计、有序集合、堆（优先队列） | 中等 |
+| [0858. 镜面反射](https://leetcode.cn/problems/mirror-reflection/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/mirror-reflection.md) | 几何、数学、数论 | 中等 |
+| [0859. 亲密字符串](https://leetcode.cn/problems/buddy-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/buddy-strings.md) | 哈希表、字符串 | 简单 |
 | [0860. 柠檬水找零](https://leetcode.cn/problems/lemonade-change/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/lemonade-change.md) | 贪心、数组 | 简单 |
 | [0861. 翻转矩阵后的得分](https://leetcode.cn/problems/score-after-flipping-matrix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/score-after-flipping-matrix.md) | 贪心、位运算、数组、矩阵 | 中等 |
 | [0862. 和至少为 K 的最短子数组](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/shortest-subarray-with-sum-at-least-k.md) | 队列、数组、二分查找、前缀和、滑动窗口、单调队列、堆（优先队列） | 困难 |
+| [0863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/all-nodes-distance-k-in-binary-tree.md) | 树、深度优先搜索、广度优先搜索、哈希表、二叉树 | 中等 |
 | [0867. 转置矩阵](https://leetcode.cn/problems/transpose-matrix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/transpose-matrix.md) | 数组、矩阵、模拟 | 简单 |
 | [0868. 二进制间距](https://leetcode.cn/problems/binary-gap/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/binary-gap.md) | 位运算 | 简单 |
+| [0870. 优势洗牌](https://leetcode.cn/problems/advantage-shuffle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/advantage-shuffle.md) | 贪心、数组、双指针、排序 | 中等 |
+| [0871. 最低加油次数](https://leetcode.cn/problems/minimum-number-of-refueling-stops/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/minimum-number-of-refueling-stops.md) | 贪心、数组、动态规划、堆（优先队列） | 困难 |
 | [0872. 叶子相似的树](https://leetcode.cn/problems/leaf-similar-trees/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/leaf-similar-trees.md) | 树、深度优先搜索、二叉树 | 简单 |
 | [0873. 最长的斐波那契子序列的长度](https://leetcode.cn/problems/length-of-longest-fibonacci-subsequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/length-of-longest-fibonacci-subsequence.md) | 数组、哈希表、动态规划 | 中等 |
 | [0875. 爱吃香蕉的珂珂](https://leetcode.cn/problems/koko-eating-bananas/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/koko-eating-bananas.md) | 数组、二分查找 | 中等 |
 | [0876. 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/middle-of-the-linked-list.md) | 链表、双指针 | 简单 |
 | [0877. 石子游戏](https://leetcode.cn/problems/stone-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/stone-game.md) | 数组、数学、动态规划、博弈 | 中等 |
+| [0880. 索引处的解码字符串](https://leetcode.cn/problems/decoded-string-at-index/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/decoded-string-at-index.md) | 栈、字符串 | 中等 |
 | [0881. 救生艇](https://leetcode.cn/problems/boats-to-save-people/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/boats-to-save-people.md) | 贪心、数组、双指针、排序 | 中等 |
 | [0884. 两句话中的不常见单词](https://leetcode.cn/problems/uncommon-words-from-two-sentences/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/uncommon-words-from-two-sentences.md) | 哈希表、字符串、计数 | 简单 |
 | [0886. 可能的二分法](https://leetcode.cn/problems/possible-bipartition/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/possible-bipartition.md) | 深度优先搜索、广度优先搜索、并查集、图 | 中等 |
 | [0887. 鸡蛋掉落](https://leetcode.cn/problems/super-egg-drop/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/super-egg-drop.md) | 数学、二分查找、动态规划 | 困难 |
+| [0888. 公平的糖果交换](https://leetcode.cn/problems/fair-candy-swap/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/fair-candy-swap.md) | 数组、哈希表、二分查找、排序 | 简单 |
 | [0889. 根据前序和后序遍历构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/construct-binary-tree-from-preorder-and-postorder-traversal.md) | 树、数组、哈希表、分治、二叉树 | 中等 |
+| [0890. 查找和替换模式](https://leetcode.cn/problems/find-and-replace-pattern/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/find-and-replace-pattern.md) | 数组、哈希表、字符串 | 中等 |
 | [0892. 三维形体的表面积](https://leetcode.cn/problems/surface-area-of-3d-shapes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/surface-area-of-3d-shapes.md) | 几何、数组、数学、矩阵 | 简单 |
+| [0893. 特殊等价字符串组](https://leetcode.cn/problems/groups-of-special-equivalent-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/groups-of-special-equivalent-strings.md) | 数组、哈希表、字符串、排序 | 中等 |
+| [0894. 所有可能的真二叉树](https://leetcode.cn/problems/all-possible-full-binary-trees/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/all-possible-full-binary-trees.md) | 树、递归、记忆化搜索、动态规划、二叉树 | 中等 |
+| [0895. 最大频率栈](https://leetcode.cn/problems/maximum-frequency-stack/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/maximum-frequency-stack.md) | 栈、设计、哈希表、有序集合 | 困难 |
+| [0896. 单调数列](https://leetcode.cn/problems/monotonic-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/monotonic-array.md) | 数组 | 简单 |
 | [0897. 递增顺序搜索树](https://leetcode.cn/problems/increasing-order-search-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/increasing-order-search-tree.md) | 栈、树、深度优先搜索、二叉搜索树、二叉树 | 简单 |
+| [0898. 子数组按位或操作](https://leetcode.cn/problems/bitwise-ors-of-subarrays/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0800-0899/bitwise-ors-of-subarrays.md) | 位运算、数组、动态规划 | 中等 |
 
 
 ### 第 900 ~ 999 题
