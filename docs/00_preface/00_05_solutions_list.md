@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1185 道）
+# LeetCode 题解（已完成 1254 道）
 
 ### 第 1 ~ 99 题
 
@@ -845,33 +845,102 @@
 | [0900. RLE 迭代器](https://leetcode.cn/problems/rle-iterator/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/rle-iterator.md) | 设计、数组、计数、迭代器 | 中等 |
 | [0901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/online-stock-span.md) | 栈、设计、数据流、单调栈 | 中等 |
 | [0902. 最大为 N 的数字组合](https://leetcode.cn/problems/numbers-at-most-n-given-digit-set/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/numbers-at-most-n-given-digit-set.md) | 数组、数学、字符串、二分查找、动态规划 | 困难 |
+| [0903. DI 序列的有效排列](https://leetcode.cn/problems/valid-permutations-for-di-sequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/valid-permutations-for-di-sequence.md) | 字符串、动态规划、前缀和 | 困难 |
 | [0904. 水果成篮](https://leetcode.cn/problems/fruit-into-baskets/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/fruit-into-baskets.md) | 数组、哈希表、滑动窗口 | 中等 |
+| [0905. 按奇偶排序数组](https://leetcode.cn/problems/sort-array-by-parity/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-array-by-parity.md) | 数组、双指针、排序 | 简单 |
+| [0906. 超级回文数](https://leetcode.cn/problems/super-palindromes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/super-palindromes.md) | 数学、字符串、枚举 | 困难 |
+| [0907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sum-of-subarray-minimums.md) | 栈、数组、动态规划、单调栈 | 中等 |
 | [0908. 最小差值 I](https://leetcode.cn/problems/smallest-range-i/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/smallest-range-i.md) | 数组、数学 | 简单 |
+| [0909. 蛇梯棋](https://leetcode.cn/problems/snakes-and-ladders/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/snakes-and-ladders.md) | 广度优先搜索、数组、矩阵 | 中等 |
+| [0910. 最小差值 II](https://leetcode.cn/problems/smallest-range-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/smallest-range-ii.md) | 贪心、数组、数学、排序 | 中等 |
+| [0911. 在线选举](https://leetcode.cn/problems/online-election/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/online-election.md) | 设计、数组、哈希表、二分查找 | 中等 |
 | [0912. 排序数组](https://leetcode.cn/problems/sort-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-an-array.md) | 数组、分治、桶排序、计数排序、基数排序、排序、堆（优先队列）、归并排序 | 中等 |
+| [0913. 猫和老鼠](https://leetcode.cn/problems/cat-and-mouse/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/cat-and-mouse.md) | 图、拓扑排序、记忆化搜索、数学、动态规划、博弈 | 困难 |
+| [0914. 卡牌分组](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/x-of-a-kind-in-a-deck-of-cards.md) | 数组、哈希表、数学、计数、数论 | 简单 |
+| [0915. 分割数组](https://leetcode.cn/problems/partition-array-into-disjoint-intervals/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/partition-array-into-disjoint-intervals.md) | 数组 | 中等 |
+| [0916. 单词子集](https://leetcode.cn/problems/word-subsets/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/word-subsets.md) | 数组、哈希表、字符串 | 中等 |
+| [0917. 仅仅反转字母](https://leetcode.cn/problems/reverse-only-letters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/reverse-only-letters.md) | 双指针、字符串 | 简单 |
 | [0918. 环形子数组的最大和](https://leetcode.cn/problems/maximum-sum-circular-subarray/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/maximum-sum-circular-subarray.md) | 队列、数组、分治、动态规划、单调队列 | 中等 |
 | [0919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/complete-binary-tree-inserter.md) | 树、广度优先搜索、设计、二叉树 | 中等 |
+| [0920. 播放列表的数量](https://leetcode.cn/problems/number-of-music-playlists/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/number-of-music-playlists.md) | 数学、动态规划、组合数学 | 困难 |
 | [0921. 使括号有效的最少添加](https://leetcode.cn/problems/minimum-add-to-make-parentheses-valid/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/minimum-add-to-make-parentheses-valid.md) | 栈、贪心、字符串 | 中等 |
+| [0922. 按奇偶排序数组 II](https://leetcode.cn/problems/sort-array-by-parity-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sort-array-by-parity-ii.md) | 数组、双指针、排序 | 简单 |
+| [0923. 三数之和的多种可能](https://leetcode.cn/problems/3sum-with-multiplicity/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/3sum-with-multiplicity.md) | 数组、哈希表、双指针、计数、排序 | 中等 |
+| [0924. 尽量减少恶意软件的传播](https://leetcode.cn/problems/minimize-malware-spread/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/minimize-malware-spread.md) | 深度优先搜索、广度优先搜索、并查集、图、数组、哈希表 | 困难 |
 | [0925. 长按键入](https://leetcode.cn/problems/long-pressed-name/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/long-pressed-name.md) | 双指针、字符串 | 简单 |
+| [0926. 将字符串翻转到单调递增](https://leetcode.cn/problems/flip-string-to-monotone-increasing/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/flip-string-to-monotone-increasing.md) | 字符串、动态规划 | 中等 |
+| [0927. 三等分](https://leetcode.cn/problems/three-equal-parts/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/three-equal-parts.md) | 数组、数学 | 困难 |
+| [0928. 尽量减少恶意软件的传播 II](https://leetcode.cn/problems/minimize-malware-spread-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/minimize-malware-spread-ii.md) | 深度优先搜索、广度优先搜索、并查集、图、数组、哈希表 | 困难 |
+| [0929. 独特的电子邮件地址](https://leetcode.cn/problems/unique-email-addresses/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/unique-email-addresses.md) | 数组、哈希表、字符串 | 简单 |
+| [0930. 和相同的二元子数组](https://leetcode.cn/problems/binary-subarrays-with-sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/binary-subarrays-with-sum.md) | 数组、哈希表、前缀和、滑动窗口 | 中等 |
+| [0931. 下降路径最小和](https://leetcode.cn/problems/minimum-falling-path-sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/minimum-falling-path-sum.md) | 数组、动态规划、矩阵 | 中等 |
 | [0932. 漂亮数组](https://leetcode.cn/problems/beautiful-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/beautiful-array.md) | 数组、数学、分治 | 中等 |
 | [0933. 最近的请求次数](https://leetcode.cn/problems/number-of-recent-calls/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/number-of-recent-calls.md) | 设计、队列、数据流 | 简单 |
+| [0934. 最短的桥](https://leetcode.cn/problems/shortest-bridge/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/shortest-bridge.md) | 深度优先搜索、广度优先搜索、数组、矩阵 | 中等 |
 | [0935. 骑士拨号器](https://leetcode.cn/problems/knight-dialer/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/knight-dialer.md) | 动态规划 | 中等 |
+| [0936. 戳印序列](https://leetcode.cn/problems/stamping-the-sequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/stamping-the-sequence.md) | 栈、贪心、队列、字符串 | 困难 |
+| [0937. 重新排列日志文件](https://leetcode.cn/problems/reorder-data-in-log-files/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/reorder-data-in-log-files.md) | 数组、字符串、排序 | 中等 |
 | [0938. 二叉搜索树的范围和](https://leetcode.cn/problems/range-sum-of-bst/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/range-sum-of-bst.md) | 树、深度优先搜索、二叉搜索树、二叉树 | 简单 |
+| [0939. 最小面积矩形](https://leetcode.cn/problems/minimum-area-rectangle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/minimum-area-rectangle.md) | 几何、数组、哈希表、数学、排序 | 中等 |
+| [0940. 不同的子序列 II](https://leetcode.cn/problems/distinct-subsequences-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/distinct-subsequences-ii.md) | 字符串、动态规划 | 困难 |
+| [0941. 有效的山脉数组](https://leetcode.cn/problems/valid-mountain-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/valid-mountain-array.md) | 数组 | 简单 |
+| [0942. 增减字符串匹配](https://leetcode.cn/problems/di-string-match/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/di-string-match.md) | 贪心、数组、双指针、字符串 | 简单 |
+| [0943. 最短超级串](https://leetcode.cn/problems/find-the-shortest-superstring/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/find-the-shortest-superstring.md) | 位运算、数组、字符串、动态规划、状态压缩 | 困难 |
+| [0944. 删列造序](https://leetcode.cn/problems/delete-columns-to-make-sorted/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/delete-columns-to-make-sorted.md) | 数组、字符串 | 简单 |
+| [0945. 使数组唯一的最小增量](https://leetcode.cn/problems/minimum-increment-to-make-array-unique/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/minimum-increment-to-make-array-unique.md) | 贪心、数组、计数、排序 | 中等 |
 | [0946. 验证栈序列](https://leetcode.cn/problems/validate-stack-sequences/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/validate-stack-sequences.md) | 栈、数组、模拟 | 中等 |
 | [0947. 移除最多的同行或同列石头](https://leetcode.cn/problems/most-stones-removed-with-same-row-or-column/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/most-stones-removed-with-same-row-or-column.md) | 深度优先搜索、并查集、图、哈希表 | 中等 |
+| [0948. 令牌放置](https://leetcode.cn/problems/bag-of-tokens/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/bag-of-tokens.md) | 贪心、数组、双指针、排序 | 中等 |
+| [0949. 给定数字能组成的最大时间](https://leetcode.cn/problems/largest-time-for-given-digits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/largest-time-for-given-digits.md) | 数组、字符串、回溯、枚举 | 中等 |
+| [0950. 按递增顺序显示卡牌](https://leetcode.cn/problems/reveal-cards-in-increasing-order/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/reveal-cards-in-increasing-order.md) | 队列、数组、排序、模拟 | 中等 |
+| [0951. 翻转等价二叉树](https://leetcode.cn/problems/flip-equivalent-binary-trees/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/flip-equivalent-binary-trees.md) | 树、深度优先搜索、二叉树 | 中等 |
+| [0952. 按公因数计算最大组件大小](https://leetcode.cn/problems/largest-component-size-by-common-factor/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/largest-component-size-by-common-factor.md) | 并查集、数组、哈希表、数学、数论 | 困难 |
 | [0953. 验证外星语词典](https://leetcode.cn/problems/verifying-an-alien-dictionary/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/verifying-an-alien-dictionary.md) | 数组、哈希表、字符串 | 简单 |
+| [0954. 二倍数对数组](https://leetcode.cn/problems/array-of-doubled-pairs/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/array-of-doubled-pairs.md) | 贪心、数组、哈希表、排序 | 中等 |
+| [0955. 删列造序 II](https://leetcode.cn/problems/delete-columns-to-make-sorted-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/delete-columns-to-make-sorted-ii.md) | 贪心、数组、字符串 | 中等 |
+| [0956. 最高的广告牌](https://leetcode.cn/problems/tallest-billboard/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/tallest-billboard.md) | 数组、动态规划 | 困难 |
+| [0957. N 天后的牢房](https://leetcode.cn/problems/prison-cells-after-n-days/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/prison-cells-after-n-days.md) | 位运算、数组、哈希表、数学 | 中等 |
 | [0958. 二叉树的完全性检验](https://leetcode.cn/problems/check-completeness-of-a-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/check-completeness-of-a-binary-tree.md) | 树、广度优先搜索、二叉树 | 中等 |
 | [0959. 由斜杠划分区域](https://leetcode.cn/problems/regions-cut-by-slashes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/regions-cut-by-slashes.md) | 深度优先搜索、广度优先搜索、并查集、数组、哈希表、矩阵 | 中等 |
+| [0960. 删列造序 III](https://leetcode.cn/problems/delete-columns-to-make-sorted-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/delete-columns-to-make-sorted-iii.md) | 数组、字符串、动态规划 | 困难 |
+| [0961. 在长度 2N 的数组中找出重复 N 次的元素](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/n-repeated-element-in-size-2n-array.md) | 数组、哈希表 | 简单 |
+| [0962. 最大宽度坡](https://leetcode.cn/problems/maximum-width-ramp/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/maximum-width-ramp.md) | 栈、数组、双指针、单调栈 | 中等 |
+| [0963. 最小面积矩形 II](https://leetcode.cn/problems/minimum-area-rectangle-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/minimum-area-rectangle-ii.md) | 几何、数组、哈希表、数学 | 中等 |
+| [0964. 表示数字的最少运算符](https://leetcode.cn/problems/least-operators-to-express-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/least-operators-to-express-number.md) | 记忆化搜索、数学、动态规划 | 困难 |
+| [0965. 单值二叉树](https://leetcode.cn/problems/univalued-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/univalued-binary-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 简单 |
+| [0966. 元音拼写检查器](https://leetcode.cn/problems/vowel-spellchecker/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/vowel-spellchecker.md) | 数组、哈希表、字符串 | 中等 |
+| [0967. 连续差相同的数字](https://leetcode.cn/problems/numbers-with-same-consecutive-differences/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/numbers-with-same-consecutive-differences.md) | 广度优先搜索、回溯 | 中等 |
 | [0968. 监控二叉树](https://leetcode.cn/problems/binary-tree-cameras/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/binary-tree-cameras.md) | 树、深度优先搜索、动态规划、二叉树 | 困难 |
+| [0969. 煎饼排序](https://leetcode.cn/problems/pancake-sorting/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/pancake-sorting.md) | 贪心、数组、双指针、排序 | 中等 |
+| [0970. 强整数](https://leetcode.cn/problems/powerful-integers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/powerful-integers.md) | 哈希表、数学、枚举 | 中等 |
+| [0971. 翻转二叉树以匹配先序遍历](https://leetcode.cn/problems/flip-binary-tree-to-match-preorder-traversal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/flip-binary-tree-to-match-preorder-traversal.md) | 树、深度优先搜索、二叉树 | 中等 |
+| [0972. 相等的有理数](https://leetcode.cn/problems/equal-rational-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/equal-rational-numbers.md) | 数学、字符串 | 困难 |
 | [0973. 最接近原点的 K 个点](https://leetcode.cn/problems/k-closest-points-to-origin/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/k-closest-points-to-origin.md) | 几何、数组、数学、分治、快速选择、排序、堆（优先队列） | 中等 |
 | [0974. 和可被 K 整除的子数组](https://leetcode.cn/problems/subarray-sums-divisible-by-k/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/subarray-sums-divisible-by-k.md) | 数组、哈希表、前缀和 | 中等 |
+| [0975. 奇偶跳](https://leetcode.cn/problems/odd-even-jump/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/odd-even-jump.md) | 栈、数组、动态规划、有序集合、排序、单调栈 | 困难 |
 | [0976. 三角形的最大周长](https://leetcode.cn/problems/largest-perimeter-triangle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/largest-perimeter-triangle.md) | 贪心、数组、数学、排序 | 简单 |
 | [0977. 有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/squares-of-a-sorted-array.md) | 数组、双指针、排序 | 简单 |
 | [0978. 最长湍流子数组](https://leetcode.cn/problems/longest-turbulent-subarray/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/longest-turbulent-subarray.md) | 数组、动态规划、滑动窗口 | 中等 |
+| [0979. 在二叉树中分配硬币](https://leetcode.cn/problems/distribute-coins-in-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/distribute-coins-in-binary-tree.md) | 树、深度优先搜索、二叉树 | 中等 |
+| [0980. 不同路径 III](https://leetcode.cn/problems/unique-paths-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/unique-paths-iii.md) | 位运算、数组、回溯、矩阵 | 困难 |
+| [0981. 基于时间的键值存储](https://leetcode.cn/problems/time-based-key-value-store/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/time-based-key-value-store.md) | 设计、哈希表、字符串、二分查找 | 中等 |
 | [0982. 按位与为零的三元组](https://leetcode.cn/problems/triples-with-bitwise-and-equal-to-zero/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/triples-with-bitwise-and-equal-to-zero.md) | 位运算、数组、哈希表 | 困难 |
+| [0983. 最低票价](https://leetcode.cn/problems/minimum-cost-for-tickets/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/minimum-cost-for-tickets.md) | 数组、动态规划 | 中等 |
+| [0984. 不含 AAA 或 BBB 的字符串](https://leetcode.cn/problems/string-without-aaa-or-bbb/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/string-without-aaa-or-bbb.md) | 贪心、字符串 | 中等 |
+| [0985. 查询后的偶数和](https://leetcode.cn/problems/sum-of-even-numbers-after-queries/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/sum-of-even-numbers-after-queries.md) | 数组、模拟 | 中等 |
+| [0986. 区间列表的交集](https://leetcode.cn/problems/interval-list-intersections/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/interval-list-intersections.md) | 数组、双指针、扫描线 | 中等 |
+| [0987. 二叉树的垂序遍历](https://leetcode.cn/problems/vertical-order-traversal-of-a-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/vertical-order-traversal-of-a-binary-tree.md) | 树、深度优先搜索、广度优先搜索、哈希表、二叉树、排序 | 困难 |
+| [0988. 从叶结点开始的最小字符串](https://leetcode.cn/problems/smallest-string-starting-from-leaf/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/smallest-string-starting-from-leaf.md) | 树、深度优先搜索、字符串、回溯、二叉树 | 中等 |
+| [0989. 数组形式的整数加法](https://leetcode.cn/problems/add-to-array-form-of-integer/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/add-to-array-form-of-integer.md) | 数组、数学 | 简单 |
 | [0990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/satisfiability-of-equality-equations.md) | 并查集、图、数组、字符串 | 中等 |
+| [0991. 坏了的计算器](https://leetcode.cn/problems/broken-calculator/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/broken-calculator.md) | 贪心、数学 | 中等 |
 | [0992. K 个不同整数的子数组](https://leetcode.cn/problems/subarrays-with-k-different-integers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/subarrays-with-k-different-integers.md) | 数组、哈希表、计数、滑动窗口 | 困难 |
 | [0993. 二叉树的堂兄弟节点](https://leetcode.cn/problems/cousins-in-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/cousins-in-binary-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 简单 |
+| [0994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/rotting-oranges.md) | 广度优先搜索、数组、矩阵 | 中等 |
 | [0995. K 连续位的最小翻转次数](https://leetcode.cn/problems/minimum-number-of-k-consecutive-bit-flips/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/minimum-number-of-k-consecutive-bit-flips.md) | 位运算、队列、数组、前缀和、滑动窗口 | 困难 |
+| [0996. 平方数组的数目](https://leetcode.cn/problems/number-of-squareful-arrays/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/number-of-squareful-arrays.md) | 位运算、数组、哈希表、数学、动态规划、回溯、状态压缩 | 困难 |
+| [0997. 找到小镇的法官](https://leetcode.cn/problems/find-the-town-judge/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/find-the-town-judge.md) | 图、数组、哈希表 | 简单 |
+| [0998. 最大二叉树 II](https://leetcode.cn/problems/maximum-binary-tree-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/maximum-binary-tree-ii.md) | 树、二叉树 | 中等 |
 | [0999. 可以被一步捕获的棋子数](https://leetcode.cn/problems/available-captures-for-rook/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0900-0999/available-captures-for-rook.md) | 数组、矩阵、模拟 | 简单 |
 
 
@@ -1357,5 +1426,4 @@
 | [面试题 17.14. 最小K个数](https://leetcode.cn/problems/smallest-k-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/smallest-k-lcci.md) | 数组、分治、快速选择、排序、堆（优先队列） | 中等 |
 | [面试题 17.15. 最长单词](https://leetcode.cn/problems/longest-word-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/longest-word-lcci.md) | 字典树、数组、哈希表、字符串 | 中等 |
 | [面试题 17.17. 多次搜索](https://leetcode.cn/problems/multi-search-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/multi-search-lcci.md) | 字典树、数组、哈希表、字符串、字符串匹配、滑动窗口 | 中等 |
-
 
