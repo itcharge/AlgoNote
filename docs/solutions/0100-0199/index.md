@@ -57,6 +57,8 @@
 - [0154. 寻找旋转排序数组中的最小值 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/find-minimum-in-rotated-sorted-array-ii.md)
 - [0155. 最小栈](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/min-stack.md)
 - [0156. 上下翻转二叉树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/binary-tree-upside-down.md)
+- [0157. 用 Read4 读取 N 个字符](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/read-n-characters-given-read4.md)
+- [0158. 用 Read4 读取 N 个字符 II - 多次调用](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/read-n-characters-given-read4-ii-call-multiple-times.md)
 - [0159. 至多包含两个不同字符的最长子串](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/longest-substring-with-at-most-two-distinct-characters.md)
 - [0160. 相交链表](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/intersection-of-two-linked-lists.md)
 - [0161. 相隔为 1 的编辑距离](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0100-0199/one-edit-distance.md)
