@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1289 道）
+# LeetCode 题解（已完成 1300 道）
 
 ### 第 1 ~ 99 题
 
@@ -605,6 +605,7 @@
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
 | [0600. 不含连续1的非负整数](https://leetcode.cn/problems/non-negative-integers-without-consecutive-ones/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/non-negative-integers-without-consecutive-ones.md) | 动态规划 | 困难 |
+| [0604. 迭代压缩字符串](https://leetcode.cn/problems/design-compressed-string-iterator/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/design-compressed-string-iterator.md) | 设计、数组、字符串、迭代器 | 简单 |
 | [0605. 种花问题](https://leetcode.cn/problems/can-place-flowers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/can-place-flowers.md) | 贪心、数组 | 简单 |
 | [0606. 根据二叉树创建字符串](https://leetcode.cn/problems/construct-string-from-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/construct-string-from-binary-tree.md) | 树、深度优先搜索、字符串、二叉树 | 中等 |
 | [0609. 在系统中查找重复文件](https://leetcode.cn/problems/find-duplicate-file-in-system/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/find-duplicate-file-in-system.md) | 数组、哈希表、字符串 | 中等 |
@@ -615,11 +616,14 @@
 | [0622. 设计循环队列](https://leetcode.cn/problems/design-circular-queue/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/design-circular-queue.md) | 设计、队列、数组、链表 | 中等 |
 | [0623. 在二叉树中增加一行](https://leetcode.cn/problems/add-one-row-to-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/add-one-row-to-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 中等 |
 | [0624. 数组列表中的最大距离](https://leetcode.cn/problems/maximum-distance-in-arrays/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-distance-in-arrays.md) | 贪心、数组 | 中等 |
+| [0625. 最小因式分解](https://leetcode.cn/problems/minimum-factorization/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/minimum-factorization.md) | 贪心、数学 | 中等 |
 | [0628. 三个数的最大乘积](https://leetcode.cn/problems/maximum-product-of-three-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-product-of-three-numbers.md) | 数组、数学、排序 | 简单 |
 | [0629. K 个逆序对数组](https://leetcode.cn/problems/k-inverse-pairs-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/k-inverse-pairs-array.md) | 动态规划 | 困难 |
 | [0630. 课程表 III](https://leetcode.cn/problems/course-schedule-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/course-schedule-iii.md) | 贪心、数组、排序、堆（优先队列） | 困难 |
 | [0632. 最小区间](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/smallest-range-covering-elements-from-k-lists.md) | 贪心、数组、哈希表、排序、滑动窗口、堆（优先队列） | 困难 |
 | [0633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/sum-of-square-numbers.md) | 数学、双指针、二分查找 | 中等 |
+| [0634. 寻找数组的错位排列](https://leetcode.cn/problems/find-the-derangement-of-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/find-the-derangement-of-an-array.md) | 数学、动态规划、组合数学 | 中等 |
+| [0635. 设计日志存储系统](https://leetcode.cn/problems/design-log-storage-system/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/design-log-storage-system.md) | 设计、哈希表、字符串、有序集合 | 中等 |
 | [0636. 函数的独占时间](https://leetcode.cn/problems/exclusive-time-of-functions/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/exclusive-time-of-functions.md) | 栈、数组 | 中等 |
 | [0637. 二叉树的层平均值](https://leetcode.cn/problems/average-of-levels-in-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/average-of-levels-in-binary-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 简单 |
 | [0638. 大礼包](https://leetcode.cn/problems/shopping-offers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/shopping-offers.md) | 位运算、记忆化搜索、数组、动态规划、回溯、状态压缩 | 中等 |
@@ -634,6 +638,7 @@
 | [0648. 单词替换](https://leetcode.cn/problems/replace-words/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/replace-words.md) | 字典树、数组、哈希表、字符串 | 中等 |
 | [0649. Dota2 参议院](https://leetcode.cn/problems/dota2-senate/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/dota2-senate.md) | 贪心、队列、字符串 | 中等 |
 | [0650. 两个键的键盘](https://leetcode.cn/problems/2-keys-keyboard/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/2-keys-keyboard.md) | 数学、动态规划 | 中等 |
+| [0651. 四个键的键盘](https://leetcode.cn/problems/4-keys-keyboard/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/4-keys-keyboard.md) | 数学、动态规划 | 中等 |
 | [0652. 寻找重复的子树](https://leetcode.cn/problems/find-duplicate-subtrees/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/find-duplicate-subtrees.md) | 树、深度优先搜索、哈希表、二叉树 | 中等 |
 | [0653. 两数之和 IV - 输入二叉搜索树](https://leetcode.cn/problems/two-sum-iv-input-is-a-bst/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/two-sum-iv-input-is-a-bst.md) | 树、深度优先搜索、广度优先搜索、二叉搜索树、哈希表、双指针、二叉树 | 简单 |
 | [0654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-binary-tree.md) | 栈、树、数组、分治、二叉树、单调栈 | 中等 |
@@ -641,10 +646,13 @@
 | [0657. 机器人能否返回原点](https://leetcode.cn/problems/robot-return-to-origin/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/robot-return-to-origin.md) | 字符串、模拟 | 简单 |
 | [0658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/find-k-closest-elements.md) | 数组、双指针、二分查找、排序、滑动窗口、堆（优先队列） | 中等 |
 | [0659. 分割数组为连续子序列](https://leetcode.cn/problems/split-array-into-consecutive-subsequences/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/split-array-into-consecutive-subsequences.md) | 贪心、数组、哈希表、堆（优先队列） | 中等 |
+| [0660. 移除 9](https://leetcode.cn/problems/remove-9/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/remove-9.md) | 数学 | 困难 |
 | [0661. 图片平滑器](https://leetcode.cn/problems/image-smoother/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/image-smoother.md) | 数组、矩阵 | 简单 |
 | [0662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-width-of-binary-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 中等 |
+| [0663. 均匀树划分](https://leetcode.cn/problems/equal-tree-partition/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/equal-tree-partition.md) | 树、深度优先搜索、二叉树 | 中等 |
 | [0664. 奇怪的打印机](https://leetcode.cn/problems/strange-printer/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/strange-printer.md) | 字符串、动态规划 | 困难 |
 | [0665. 非递减数列](https://leetcode.cn/problems/non-decreasing-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/non-decreasing-array.md) | 数组 | 中等 |
+| [0666. 路径总和 IV](https://leetcode.cn/problems/path-sum-iv/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/path-sum-iv.md) | 树、深度优先搜索、数组、哈希表、二叉树 | 中等 |
 | [0667. 优美的排列 II](https://leetcode.cn/problems/beautiful-arrangement-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/beautiful-arrangement-ii.md) | 数组、数学 | 中等 |
 | [0669. 修剪二叉搜索树](https://leetcode.cn/problems/trim-a-binary-search-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/trim-a-binary-search-tree.md) | 树、深度优先搜索、二叉搜索树、二叉树 | 中等 |
 | [0670. 最大交换](https://leetcode.cn/problems/maximum-swap/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-swap.md) | 贪心、数学 | 中等 |
@@ -658,6 +666,7 @@
 | [0678. 有效的括号字符串](https://leetcode.cn/problems/valid-parenthesis-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/valid-parenthesis-string.md) | 栈、贪心、字符串、动态规划 | 中等 |
 | [0679. 24 点游戏](https://leetcode.cn/problems/24-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/24-game.md) | 数组、数学、回溯 | 困难 |
 | [0680. 验证回文串 II](https://leetcode.cn/problems/valid-palindrome-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/valid-palindrome-ii.md) | 贪心、双指针、字符串 | 简单 |
+| [0681. 最近时刻](https://leetcode.cn/problems/next-closest-time/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/next-closest-time.md) | 哈希表、字符串、回溯、枚举 | 中等 |
 | [0682. 棒球比赛](https://leetcode.cn/problems/baseball-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/baseball-game.md) | 栈、数组、模拟 | 简单 |
 | [0683. K 个关闭的灯泡](https://leetcode.cn/problems/k-empty-slots/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/k-empty-slots.md) | 树状数组、线段树、队列、数组、有序集合、滑动窗口、单调队列、堆（优先队列） | 困难 |
 | [0684. 冗余连接](https://leetcode.cn/problems/redundant-connection/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/redundant-connection.md) | 深度优先搜索、广度优先搜索、并查集、图 | 中等 |
@@ -670,10 +679,12 @@
 | [0691. 贴纸拼词](https://leetcode.cn/problems/stickers-to-spell-word/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/stickers-to-spell-word.md) | 位运算、记忆化搜索、数组、哈希表、字符串、动态规划、回溯、状态压缩 | 困难 |
 | [0692. 前K个高频单词](https://leetcode.cn/problems/top-k-frequent-words/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/top-k-frequent-words.md) | 字典树、数组、哈希表、字符串、桶排序、计数、排序、堆（优先队列） | 中等 |
 | [0693. 交替位二进制数](https://leetcode.cn/problems/binary-number-with-alternating-bits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/binary-number-with-alternating-bits.md) | 位运算 | 简单 |
+| [0694. 不同岛屿的数量](https://leetcode.cn/problems/number-of-distinct-islands/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/number-of-distinct-islands.md) | 深度优先搜索、广度优先搜索、并查集、哈希表、哈希函数 | 中等 |
 | [0695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/max-area-of-island.md) | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 中等 |
 | [0696. 计数二进制子串](https://leetcode.cn/problems/count-binary-substrings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/count-binary-substrings.md) | 双指针、字符串 | 简单 |
 | [0697. 数组的度](https://leetcode.cn/problems/degree-of-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/degree-of-an-array.md) | 数组、哈希表 | 简单 |
 | [0698. 划分为k个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/partition-to-k-equal-sum-subsets.md) | 位运算、记忆化搜索、数组、动态规划、回溯、状态压缩 | 中等 |
+| [0699. 掉落的方块](https://leetcode.cn/problems/falling-squares/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/falling-squares.md) | 线段树、数组、有序集合 | 困难 |
 
 
 ### 第 700 ~ 799 题
