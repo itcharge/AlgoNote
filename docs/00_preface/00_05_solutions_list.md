@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1300 道）
+# LeetCode 题解（已完成 1301 道）
 
 ### 第 1 ~ 99 题
 
@@ -643,6 +643,7 @@
 | [0653. 两数之和 IV - 输入二叉搜索树](https://leetcode.cn/problems/two-sum-iv-input-is-a-bst/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/two-sum-iv-input-is-a-bst.md) | 树、深度优先搜索、广度优先搜索、二叉搜索树、哈希表、双指针、二叉树 | 简单 |
 | [0654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-binary-tree.md) | 栈、树、数组、分治、二叉树、单调栈 | 中等 |
 | [0655. 输出二叉树](https://leetcode.cn/problems/print-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/print-binary-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 中等 |
+| [0656. 成本最小路径](https://leetcode.cn/problems/coin-path/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/coin-path.md) | 数组、动态规划 | 困难 |
 | [0657. 机器人能否返回原点](https://leetcode.cn/problems/robot-return-to-origin/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/robot-return-to-origin.md) | 字符串、模拟 | 简单 |
 | [0658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/find-k-closest-elements.md) | 数组、双指针、二分查找、排序、滑动窗口、堆（优先队列） | 中等 |
 | [0659. 分割数组为连续子序列](https://leetcode.cn/problems/split-array-into-consecutive-subsequences/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/split-array-into-consecutive-subsequences.md) | 贪心、数组、哈希表、堆（优先队列） | 中等 |

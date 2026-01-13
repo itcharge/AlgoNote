@@ -39,6 +39,7 @@
 - [0653. 两数之和 IV - 输入二叉搜索树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/two-sum-iv-input-is-a-bst.md)
 - [0654. 最大二叉树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-binary-tree.md)
 - [0655. 输出二叉树](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/print-binary-tree.md)
+- [0656. 成本最小路径](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/coin-path.md)
 - [0657. 机器人能否返回原点](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/robot-return-to-origin.md)
 - [0658. 找到 K 个最接近的元素](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/find-k-closest-elements.md)
 - [0659. 分割数组为连续子序列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/split-array-into-consecutive-subsequences.md)
