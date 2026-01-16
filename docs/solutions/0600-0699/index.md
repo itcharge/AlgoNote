@@ -16,6 +16,7 @@
 - [0628. 三个数的最大乘积](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-product-of-three-numbers.md)
 - [0629. K 个逆序对数组](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/k-inverse-pairs-array.md)
 - [0630. 课程表 III](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/course-schedule-iii.md)
+- [0631. 设计 Excel 求和公式](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/design-excel-sum-formula.md)
 - [0632. 最小区间](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/smallest-range-covering-elements-from-k-lists.md)
 - [0633. 平方数之和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/sum-of-square-numbers.md)
 - [0634. 寻找数组的错位排列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/find-the-derangement-of-an-array.md)

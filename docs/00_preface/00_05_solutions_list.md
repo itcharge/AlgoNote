@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1301 道）
+# LeetCode 题解（已完成 1302 道）
 
 ### 第 1 ~ 99 题
 
@@ -620,6 +620,7 @@
 | [0628. 三个数的最大乘积](https://leetcode.cn/problems/maximum-product-of-three-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-product-of-three-numbers.md) | 数组、数学、排序 | 简单 |
 | [0629. K 个逆序对数组](https://leetcode.cn/problems/k-inverse-pairs-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/k-inverse-pairs-array.md) | 动态规划 | 困难 |
 | [0630. 课程表 III](https://leetcode.cn/problems/course-schedule-iii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/course-schedule-iii.md) | 贪心、数组、排序、堆（优先队列） | 困难 |
+| [0631. 设计 Excel 求和公式](https://leetcode.cn/problems/design-excel-sum-formula/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/design-excel-sum-formula.md) | 图、设计、拓扑排序、数组、哈希表、字符串、矩阵 | 困难 |
 | [0632. 最小区间](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/smallest-range-covering-elements-from-k-lists.md) | 贪心、数组、哈希表、排序、滑动窗口、堆（优先队列） | 困难 |
 | [0633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/sum-of-square-numbers.md) | 数学、双指针、二分查找 | 中等 |
 | [0634. 寻找数组的错位排列](https://leetcode.cn/problems/find-the-derangement-of-an-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/find-the-derangement-of-an-array.md) | 数学、动态规划、组合数学 | 中等 |
