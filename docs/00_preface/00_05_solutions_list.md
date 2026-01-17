@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1302 道）
+# LeetCode 题解（已完成 1303 道）
 
 ### 第 1 ~ 99 题
 
@@ -633,6 +633,7 @@
 | [0641. 设计循环双端队列](https://leetcode.cn/problems/design-circular-deque/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/design-circular-deque.md) | 设计、队列、数组、链表 | 中等 |
 | [0642. 设计搜索自动补全系统](https://leetcode.cn/problems/design-search-autocomplete-system/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/design-search-autocomplete-system.md) | 深度优先搜索、设计、字典树、字符串、数据流、排序、堆（优先队列） | 困难 |
 | [0643. 子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-average-subarray-i.md) | 数组、滑动窗口 | 简单 |
+| [0644. 子数组最大平均数 II](https://leetcode.cn/problems/maximum-average-subarray-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-average-subarray-ii.md) | 数组、二分查找、前缀和 | 困难 |
 | [0645. 错误的集合](https://leetcode.cn/problems/set-mismatch/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/set-mismatch.md) | 位运算、数组、哈希表、排序 | 简单 |
 | [0646. 最长数对链](https://leetcode.cn/problems/maximum-length-of-pair-chain/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-length-of-pair-chain.md) | 贪心、数组、动态规划、排序 | 中等 |
 | [0647. 回文子串](https://leetcode.cn/problems/palindromic-substrings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/palindromic-substrings.md) | 双指针、字符串、动态规划 | 中等 |

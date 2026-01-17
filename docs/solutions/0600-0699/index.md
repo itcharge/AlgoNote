@@ -29,6 +29,7 @@
 - [0641. 设计循环双端队列](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/design-circular-deque.md)
 - [0642. 设计搜索自动补全系统](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/design-search-autocomplete-system.md)
 - [0643. 子数组最大平均数 I](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-average-subarray-i.md)
+- [0644. 子数组最大平均数 II](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-average-subarray-ii.md)
 - [0645. 错误的集合](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/set-mismatch.md)
 - [0646. 最长数对链](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/maximum-length-of-pair-chain.md)
 - [0647. 回文子串](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/0600-0699/palindromic-substrings.md)
