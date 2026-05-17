@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1364 道）
+# LeetCode 题解（已完成 1395 道）
 
 ### 第 1 ~ 99 题
 
@@ -1118,21 +1118,52 @@
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
 | [1202. 交换字符串中的元素](https://leetcode.cn/problems/smallest-string-with-swaps/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/smallest-string-with-swaps.md) | 深度优先搜索、广度优先搜索、并查集、数组、哈希表、字符串、排序 | 中等 |
+| [1206. 设计跳表](https://leetcode.cn/problems/design-skiplist/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/design-skiplist.md) | 设计、链表 | 困难 |
 | [1208. 尽可能使字符串相等](https://leetcode.cn/problems/get-equal-substrings-within-budget/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/get-equal-substrings-within-budget.md) | 字符串、二分查找、前缀和、滑动窗口 | 中等 |
+| [1213. 三个有序数组的交集](https://leetcode.cn/problems/intersection-of-three-sorted-arrays/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/intersection-of-three-sorted-arrays.md) | 数组、哈希表、二分查找、计数 | 简单 |
 | [1217. 玩筹码](https://leetcode.cn/problems/minimum-cost-to-move-chips-to-the-same-position/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/minimum-cost-to-move-chips-to-the-same-position.md) | 贪心、数组、数学 | 简单 |
+| [1218. 最长定差子序列](https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/longest-arithmetic-subsequence-of-given-difference.md) | 数组、哈希表、动态规划 | 中等 |
 | [1220. 统计元音字母序列的数目](https://leetcode.cn/problems/count-vowels-permutation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/count-vowels-permutation.md) | 动态规划 | 困难 |
+| [1223. 掷骰子模拟](https://leetcode.cn/problems/dice-roll-simulation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/dice-roll-simulation.md) | 数组、动态规划 | 困难 |
+| [1224. 最大相等频率](https://leetcode.cn/problems/maximum-equal-frequency/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/maximum-equal-frequency.md) | 数组、哈希表 | 困难 |
 | [1227. 飞机座位分配概率](https://leetcode.cn/problems/airplane-seat-assignment-probability/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/airplane-seat-assignment-probability.md) | 脑筋急转弯、数学、动态规划、概率与统计 | 中等 |
 | [1229. 安排会议日程](https://leetcode.cn/problems/meeting-scheduler/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/meeting-scheduler.md) | 数组、双指针、排序 | 中等 |
+| [1231. 分享巧克力](https://leetcode.cn/problems/divide-chocolate/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/divide-chocolate.md) | 数组、二分查找 | 困难 |
 | [1232. 缀点成线](https://leetcode.cn/problems/check-if-it-is-a-straight-line/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/check-if-it-is-a-straight-line.md) | 几何、数组、数学 | 简单 |
+| [1235. 规划兼职工作](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/maximum-profit-in-job-scheduling.md) | 数组、二分查找、动态规划、排序 | 困难 |
+| [1237. 找出给定方程的正整数解](https://leetcode.cn/problems/find-positive-integer-solution-for-a-given-equation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/find-positive-integer-solution-for-a-given-equation.md) | 数学、双指针、二分查找、交互 | 中等 |
+| [1238. 循环码排列](https://leetcode.cn/problems/circular-permutation-in-binary-representation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/circular-permutation-in-binary-representation.md) | 位运算、数学、回溯 | 中等 |
+| [1239. 串联字符串的最大长度](https://leetcode.cn/problems/maximum-length-of-a-concatenated-string-with-unique-characters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/maximum-length-of-a-concatenated-string-with-unique-characters.md) | 位运算、数组、字符串、回溯 | 中等 |
+| [1243. 数组变换](https://leetcode.cn/problems/array-transformation/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/array-transformation.md) | 数组、模拟 | 简单 |
+| [1244. 力扣排行榜](https://leetcode.cn/problems/design-a-leaderboard/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/design-a-leaderboard.md) | 设计、哈希表、排序 | 中等 |
 | [1245. 树的直径](https://leetcode.cn/problems/tree-diameter/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/tree-diameter.md) | 树、深度优先搜索、广度优先搜索、图、拓扑排序 | 中等 |
 | [1247. 交换字符使得字符串相同](https://leetcode.cn/problems/minimum-swaps-to-make-strings-equal/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/minimum-swaps-to-make-strings-equal.md) | 贪心、数学、字符串 | 中等 |
+| [1248. 统计「优美子数组」](https://leetcode.cn/problems/count-number-of-nice-subarrays/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/count-number-of-nice-subarrays.md) | 数组、哈希表、数学、前缀和、滑动窗口 | 中等 |
+| [1250. 检查「好数组」](https://leetcode.cn/problems/check-if-it-is-a-good-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/check-if-it-is-a-good-array.md) | 数组、数学、数论 | 困难 |
+| [1252. 奇数值单元格的数目](https://leetcode.cn/problems/cells-with-odd-values-in-a-matrix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/cells-with-odd-values-in-a-matrix.md) | 数组、数学、模拟 | 简单 |
 | [1253. 重构 2 行二进制矩阵](https://leetcode.cn/problems/reconstruct-a-2-row-binary-matrix/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/reconstruct-a-2-row-binary-matrix.md) | 贪心、数组、矩阵 | 中等 |
 | [1254. 统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/number-of-closed-islands.md) | 深度优先搜索、广度优先搜索、并查集、数组、矩阵 | 中等 |
+| [1255. 得分最高的单词集合](https://leetcode.cn/problems/maximum-score-words-formed-by-letters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/maximum-score-words-formed-by-letters.md) | 位运算、数组、哈希表、字符串、动态规划、回溯、状态压缩、计数 | 困难 |
+| [1256. 加密数字](https://leetcode.cn/problems/encode-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/encode-number.md) | 位运算、数学、字符串 | 中等 |
+| [1259. 不相交的握手](https://leetcode.cn/problems/handshakes-that-dont-cross/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/handshakes-that-dont-cross.md) | 数学、动态规划 | 困难 |
 | [1261. 在受污染的二叉树中查找元素](https://leetcode.cn/problems/find-elements-in-a-contaminated-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/find-elements-in-a-contaminated-binary-tree.md) | 树、深度优先搜索、广度优先搜索、设计、哈希表、二叉树 | 中等 |
+| [1262. 可被三整除的最大和](https://leetcode.cn/problems/greatest-sum-divisible-by-three/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/greatest-sum-divisible-by-three.md) | 贪心、数组、动态规划、排序 | 中等 |
 | [1266. 访问所有点的最小时间](https://leetcode.cn/problems/minimum-time-visiting-all-points/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/minimum-time-visiting-all-points.md) | 几何、数组、数学 | 简单 |
+| [1267. 统计参与通信的服务器](https://leetcode.cn/problems/count-servers-that-communicate/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/count-servers-that-communicate.md) | 深度优先搜索、广度优先搜索、并查集、数组、计数、矩阵 | 中等 |
 | [1268. 搜索推荐系统](https://leetcode.cn/problems/search-suggestions-system/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/search-suggestions-system.md) | 字典树、数组、字符串、二分查找、排序、堆（优先队列） | 中等 |
+| [1271. 十六进制魔术数字](https://leetcode.cn/problems/hexspeak/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/hexspeak.md) | 数学、字符串 | 简单 |
+| [1273. 删除树节点](https://leetcode.cn/problems/delete-tree-nodes/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/delete-tree-nodes.md) | 树、深度优先搜索、广度优先搜索、数组 | 中等 |
+| [1275. 找出井字棋的获胜者](https://leetcode.cn/problems/find-winner-on-a-tic-tac-toe-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/find-winner-on-a-tic-tac-toe-game.md) | 数组、哈希表、矩阵、模拟 | 简单 |
+| [1277. 统计全为 1 的正方形子矩阵](https://leetcode.cn/problems/count-square-submatrices-with-all-ones/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/count-square-submatrices-with-all-ones.md) | 数组、动态规划、矩阵 | 中等 |
 | [1281. 整数的各位积和之差](https://leetcode.cn/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/subtract-the-product-and-sum-of-digits-of-an-integer.md) | 数学 | 简单 |
+| [1282. 用户分组](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/group-the-people-given-the-group-size-they-belong-to.md) | 贪心、数组、哈希表 | 中等 |
+| [1283. 使结果不超过阈值的最小除数](https://leetcode.cn/problems/find-the-smallest-divisor-given-a-threshold/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/find-the-smallest-divisor-given-a-threshold.md) | 数组、二分查找 | 中等 |
+| [1286. 字母组合迭代器](https://leetcode.cn/problems/iterator-for-combination/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/iterator-for-combination.md) | 设计、字符串、回溯、迭代器 | 中等 |
+| [1287. 有序数组中出现次数超过25%的元素](https://leetcode.cn/problems/element-appearing-more-than-25-in-sorted-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/element-appearing-more-than-25-in-sorted-array.md) | 数组 | 简单 |
+| [1290. 二进制链表转整数](https://leetcode.cn/problems/convert-binary-number-in-a-linked-list-to-integer/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/convert-binary-number-in-a-linked-list-to-integer.md) | 链表、数学 | 简单 |
+| [1295. 统计位数为偶数的数字](https://leetcode.cn/problems/find-numbers-with-even-number-of-digits/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/find-numbers-with-even-number-of-digits.md) | 数组、数学 | 简单 |
 | [1296. 划分数组为连续数字的集合](https://leetcode.cn/problems/divide-array-in-sets-of-k-consecutive-numbers/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/divide-array-in-sets-of-k-consecutive-numbers.md) | 贪心、数组、哈希表、排序 | 中等 |
+| [1297. 子串的最大出现次数](https://leetcode.cn/problems/maximum-number-of-occurrences-of-a-substring/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1200-1299/maximum-number-of-occurrences-of-a-substring.md) | 哈希表、字符串、滑动窗口 | 中等 |
 
 
 ### 第 1300 ~ 1399 题
