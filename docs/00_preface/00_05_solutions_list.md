@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1303 道）
+# LeetCode 题解（已完成 1364 道）
 
 ### 第 1 ~ 99 题
 
@@ -1037,19 +1037,80 @@
 | 标题 | 题解 | 标签 | 难度 |
 | :--- | :--- | :--- | :--- |
 | [1100. 长度为 K 的无重复字符子串](https://leetcode.cn/problems/find-k-length-substrings-with-no-repeated-characters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/find-k-length-substrings-with-no-repeated-characters.md) | 哈希表、字符串、滑动窗口 | 中等 |
+| [1101. 彼此熟识的最早时间](https://leetcode.cn/problems/the-earliest-moment-when-everyone-become-friends/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/the-earliest-moment-when-everyone-become-friends.md) | 并查集、数组、排序 | 中等 |
+| [1102. 得分最高的路径](https://leetcode.cn/problems/path-with-maximum-minimum-value/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/path-with-maximum-minimum-value.md) | 深度优先搜索、广度优先搜索、并查集、数组、二分查找、矩阵、堆（优先队列） | 中等 |
 | [1103. 分糖果 II](https://leetcode.cn/problems/distribute-candies-to-people/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/distribute-candies-to-people.md) | 数学、模拟 | 简单 |
+| [1104. 二叉树寻路](https://leetcode.cn/problems/path-in-zigzag-labelled-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/path-in-zigzag-labelled-binary-tree.md) | 树、数学、二叉树 | 中等 |
+| [1105. 填充书架](https://leetcode.cn/problems/filling-bookcase-shelves/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/filling-bookcase-shelves.md) | 数组、动态规划 | 中等 |
+| [1106. 解析布尔表达式](https://leetcode.cn/problems/parsing-a-boolean-expression/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/parsing-a-boolean-expression.md) | 栈、递归、字符串 | 困难 |
 | [1108. IP 地址无效化](https://leetcode.cn/problems/defanging-an-ip-address/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/defanging-an-ip-address.md) | 字符串 | 简单 |
 | [1109. 航班预订统计](https://leetcode.cn/problems/corporate-flight-bookings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/corporate-flight-bookings.md) | 数组、前缀和 | 中等 |
 | [1110. 删点成林](https://leetcode.cn/problems/delete-nodes-and-return-forest/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/delete-nodes-and-return-forest.md) | 树、深度优先搜索、数组、哈希表、二叉树 | 中等 |
+| [1111. 有效括号的嵌套深度](https://leetcode.cn/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-nesting-depth-of-two-valid-parentheses-strings.md) | 栈、字符串 | 中等 |
+| [1114. 按序打印](https://leetcode.cn/problems/print-in-order/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/print-in-order.md) | 多线程 | 简单 |
+| [1115. 交替打印 FooBar](https://leetcode.cn/problems/print-foobar-alternately/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/print-foobar-alternately.md) | 多线程 | 中等 |
+| [1116. 打印零与奇偶数](https://leetcode.cn/problems/print-zero-even-odd/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/print-zero-even-odd.md) | 多线程 | 中等 |
+| [1118. 一月有多少天](https://leetcode.cn/problems/number-of-days-in-a-month/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/number-of-days-in-a-month.md) | 数学 | 简单 |
+| [1119. 删去字符串中的元音](https://leetcode.cn/problems/remove-vowels-from-a-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/remove-vowels-from-a-string.md) | 字符串 | 简单 |
+| [1120. 子树的最大平均值](https://leetcode.cn/problems/maximum-average-subtree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-average-subtree.md) | 树、深度优先搜索、二叉树 | 中等 |
+| [1121. 将数组分成几个递增序列](https://leetcode.cn/problems/divide-array-into-increasing-sequences/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/divide-array-into-increasing-sequences.md) | 数组、计数 | 困难 |
 | [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/relative-sort-array.md) | 数组、哈希表、计数排序、排序 | 简单 |
+| [1123. 最深叶节点的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/lowest-common-ancestor-of-deepest-leaves.md) | 树、深度优先搜索、广度优先搜索、哈希表、二叉树 | 中等 |
+| [1124. 表现良好的最长时间段](https://leetcode.cn/problems/longest-well-performing-interval/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/longest-well-performing-interval.md) | 栈、数组、哈希表、前缀和、单调栈 | 中等 |
+| [1125. 最小的必要团队](https://leetcode.cn/problems/smallest-sufficient-team/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/smallest-sufficient-team.md) | 位运算、数组、动态规划、状态压缩 | 困难 |
+| [1128. 等价多米诺骨牌对的数量](https://leetcode.cn/problems/number-of-equivalent-domino-pairs/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/number-of-equivalent-domino-pairs.md) | 数组、哈希表、计数 | 简单 |
+| [1129. 颜色交替的最短路径](https://leetcode.cn/problems/shortest-path-with-alternating-colors/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/shortest-path-with-alternating-colors.md) | 广度优先搜索、图 | 中等 |
+| [1130. 叶值的最小代价生成树](https://leetcode.cn/problems/minimum-cost-tree-from-leaf-values/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/minimum-cost-tree-from-leaf-values.md) | 栈、贪心、数组、动态规划、单调栈 | 中等 |
+| [1131. 绝对值表达式的最大值](https://leetcode.cn/problems/maximum-of-absolute-value-expression/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-of-absolute-value-expression.md) | 数组、数学 | 中等 |
+| [1133. 最大唯一数](https://leetcode.cn/problems/largest-unique-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/largest-unique-number.md) | 数组、哈希表、排序 | 简单 |
+| [1134. 阿姆斯特朗数](https://leetcode.cn/problems/armstrong-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/armstrong-number.md) | 数学 | 简单 |
+| [1135. 最低成本连通所有城市](https://leetcode.cn/problems/connecting-cities-with-minimum-cost/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/connecting-cities-with-minimum-cost.md) | 并查集、图、最小生成树、堆（优先队列） | 中等 |
 | [1136. 并行课程](https://leetcode.cn/problems/parallel-courses/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/parallel-courses.md) | 图、拓扑排序 | 中等 |
 | [1137. 第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/n-th-tribonacci-number.md) | 记忆化搜索、数学、动态规划 | 简单 |
+| [1138. 字母板上的路径](https://leetcode.cn/problems/alphabet-board-path/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/alphabet-board-path.md) | 哈希表、字符串 | 中等 |
+| [1139. 最大的以 1 为边界的正方形](https://leetcode.cn/problems/largest-1-bordered-square/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/largest-1-bordered-square.md) | 数组、动态规划、矩阵 | 中等 |
+| [1140. 石子游戏 II](https://leetcode.cn/problems/stone-game-ii/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/stone-game-ii.md) | 数组、数学、动态规划、博弈、前缀和 | 中等 |
 | [1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/longest-common-subsequence.md) | 字符串、动态规划 | 中等 |
+| [1144. 递减元素使数组呈锯齿状](https://leetcode.cn/problems/decrease-elements-to-make-array-zigzag/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/decrease-elements-to-make-array-zigzag.md) | 贪心、数组 | 中等 |
+| [1145. 二叉树着色游戏](https://leetcode.cn/problems/binary-tree-coloring-game/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/binary-tree-coloring-game.md) | 树、深度优先搜索、二叉树 | 中等 |
+| [1146. 快照数组](https://leetcode.cn/problems/snapshot-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/snapshot-array.md) | 设计、数组、哈希表、二分查找 | 中等 |
+| [1150. 检查一个数是否在数组中占绝大多数](https://leetcode.cn/problems/check-if-a-number-is-majority-element-in-a-sorted-array/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/check-if-a-number-is-majority-element-in-a-sorted-array.md) | 数组、二分查找 | 简单 |
 | [1151. 最少交换次数来组合所有的 1](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/minimum-swaps-to-group-all-1s-together.md) | 数组、滑动窗口 | 中等 |
+| [1152. 用户网站访问行为分析](https://leetcode.cn/problems/analyze-user-website-visit-pattern/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/analyze-user-website-visit-pattern.md) | 数组、哈希表、字符串、排序 | 中等 |
+| [1153. 字符串转化](https://leetcode.cn/problems/string-transforms-into-another-string/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/string-transforms-into-another-string.md) | 图、哈希表、字符串 | 困难 |
+| [1154. 一年中的第几天](https://leetcode.cn/problems/day-of-the-year/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/day-of-the-year.md) | 数学、字符串 | 简单 |
 | [1155. 掷骰子等于目标和的方法数](https://leetcode.cn/problems/number-of-dice-rolls-with-target-sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/number-of-dice-rolls-with-target-sum.md) | 动态规划 | 中等 |
+| [1156. 单字符重复子串的最大长度](https://leetcode.cn/problems/swap-for-longest-repeated-character-substring/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/swap-for-longest-repeated-character-substring.md) | 哈希表、字符串、滑动窗口 | 中等 |
+| [1157. 子数组中占绝大多数的元素](https://leetcode.cn/problems/online-majority-element-in-subarray/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/online-majority-element-in-subarray.md) | 设计、树状数组、线段树、数组、二分查找 | 困难 |
+| [1160. 拼写单词](https://leetcode.cn/problems/find-words-that-can-be-formed-by-characters/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/find-words-that-can-be-formed-by-characters.md) | 数组、哈希表、字符串、计数 | 简单 |
 | [1161. 最大层内元素和](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-level-sum-of-a-binary-tree.md) | 树、深度优先搜索、广度优先搜索、二叉树 | 中等 |
+| [1162. 地图分析](https://leetcode.cn/problems/as-far-from-land-as-possible/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/as-far-from-land-as-possible.md) | 广度优先搜索、数组、动态规划、矩阵 | 中等 |
+| [1163. 按字典序排在最后的子串](https://leetcode.cn/problems/last-substring-in-lexicographical-order/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/last-substring-in-lexicographical-order.md) | 双指针、字符串 | 困难 |
+| [1165. 单行键盘](https://leetcode.cn/problems/single-row-keyboard/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/single-row-keyboard.md) | 哈希表、字符串 | 简单 |
+| [1166. 设计文件系统](https://leetcode.cn/problems/design-file-system/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/design-file-system.md) | 设计、字典树、哈希表、字符串 | 中等 |
+| [1167. 连接木棍的最低费用](https://leetcode.cn/problems/minimum-cost-to-connect-sticks/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/minimum-cost-to-connect-sticks.md) | 贪心、数组、堆（优先队列） | 中等 |
+| [1168. 水资源分配优化](https://leetcode.cn/problems/optimize-water-distribution-in-a-village/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/optimize-water-distribution-in-a-village.md) | 并查集、图、最小生成树、堆（优先队列） | 困难 |
+| [1170. 比较字符串最小字母出现频次](https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/compare-strings-by-frequency-of-the-smallest-character.md) | 数组、哈希表、字符串、二分查找、排序 | 中等 |
+| [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/remove-zero-sum-consecutive-nodes-from-linked-list.md) | 哈希表、链表 | 中等 |
+| [1175. 质数排列](https://leetcode.cn/problems/prime-arrangements/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/prime-arrangements.md) | 数学 | 简单 |
 | [1176. 健身计划评估](https://leetcode.cn/problems/diet-plan-performance/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/diet-plan-performance.md) | 数组、滑动窗口 | 简单 |
+| [1177. 构建回文串检测](https://leetcode.cn/problems/can-make-palindrome-from-substring/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/can-make-palindrome-from-substring.md) | 位运算、数组、哈希表、字符串、前缀和 | 中等 |
+| [1178. 猜字谜](https://leetcode.cn/problems/number-of-valid-words-for-each-puzzle/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/number-of-valid-words-for-each-puzzle.md) | 位运算、字典树、数组、哈希表、字符串 | 困难 |
+| [1180. 统计只含单一字母的子串](https://leetcode.cn/problems/count-substrings-with-only-one-distinct-letter/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/count-substrings-with-only-one-distinct-letter.md) | 数学、字符串 | 简单 |
+| [1182. 与目标颜色间的最短距离](https://leetcode.cn/problems/shortest-distance-to-target-color/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/shortest-distance-to-target-color.md) | 数组、二分查找、动态规划 | 中等 |
+| [1183. 矩阵中 1 的最大数量](https://leetcode.cn/problems/maximum-number-of-ones/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-number-of-ones.md) | 贪心、数学、排序、堆（优先队列） | 困难 |
 | [1184. 公交站间的距离](https://leetcode.cn/problems/distance-between-bus-stops/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/distance-between-bus-stops.md) | 数组 | 简单 |
+| [1186. 删除一次得到子数组最大和](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-subarray-sum-with-one-deletion.md) | 数组、动态规划 | 中等 |
+| [1187. 使数组严格递增](https://leetcode.cn/problems/make-array-strictly-increasing/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/make-array-strictly-increasing.md) | 数组、二分查找、动态规划、排序 | 困难 |
+| [1189. “气球” 的最大数量](https://leetcode.cn/problems/maximum-number-of-balloons/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-number-of-balloons.md) | 哈希表、字符串、计数 | 简单 |
+| [1190. 反转每对括号间的子串](https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/reverse-substrings-between-each-pair-of-parentheses.md) | 栈、字符串 | 中等 |
+| [1191. K 次串联后最大子数组之和](https://leetcode.cn/problems/k-concatenation-maximum-sum/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/k-concatenation-maximum-sum.md) | 数组、动态规划 | 中等 |
+| [1192. 查找集群内的关键连接](https://leetcode.cn/problems/critical-connections-in-a-network/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/critical-connections-in-a-network.md) | 深度优先搜索、图、双连通分量 | 困难 |
+| [1195. 交替打印字符串](https://leetcode.cn/problems/fizz-buzz-multithreaded/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/fizz-buzz-multithreaded.md) | 多线程 | 中等 |
+| [1196. 最多可以买到的苹果数量](https://leetcode.cn/problems/how-many-apples-can-you-put-into-the-basket/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/how-many-apples-can-you-put-into-the-basket.md) | 贪心、数组、排序 | 简单 |
+| [1197. 进击的骑士](https://leetcode.cn/problems/minimum-knight-moves/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/minimum-knight-moves.md) | 广度优先搜索 | 中等 |
+| [1198. 找出所有行中最小公共元素](https://leetcode.cn/problems/find-smallest-common-element-in-all-rows/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/find-smallest-common-element-in-all-rows.md) | 数组、哈希表、二分查找、计数、矩阵 | 中等 |
+| [1199. 建造街区的最短时间](https://leetcode.cn/problems/minimum-time-to-build-blocks/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/minimum-time-to-build-blocks.md) | 贪心、数组、数学、堆（优先队列） | 困难 |
 
 
 ### 第 1200 ~ 1299 题
