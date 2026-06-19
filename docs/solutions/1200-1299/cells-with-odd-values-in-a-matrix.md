@@ -90,7 +90,7 @@
 
 奇数单元格需要行和列一奇一偶，所以：
 
-$$奇数值数量 = odd\_rows \times (n - odd\_cols) + (m - odd\_rows) \times odd\_cols$$
+$$\text{奇数值数量} = odd\_rows \times (n - odd\_cols) + (m - odd\_rows) \times odd\_cols$$
 
 - $odd\_rows \times (n - odd\_cols)$：奇数行配偶数列
 - $(m - odd\_rows) \times odd\_cols$：偶数行配奇数列

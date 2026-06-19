@@ -68,14 +68,14 @@
 这种情况下删除任意一个元素后，剩余元素出现的次数要么是 $0$（被删除的元素），要么是 $1$（其他元素）。因为「出现 $0$ 次」和「出现 $1$ 次」都可以视为「相同」，所以条件成立。
 
 条件 2：只有一个数字出现 $maxFreq$ 次，其他数字都出现 $maxFreq-1$ 次。
-即 $count[maxFreq] == 1$ 且 $count[maxFreq-1] \times (maxFreq-1) + maxFreq == 当前长度$。
+即 $count[maxFreq] == 1$ 且 $count[maxFreq-1] \times (maxFreq-1) + maxFreq == \text{当前长度}$。
 这种情况删除那个出现 $maxFreq$ 次的数字中的一个，所有数字就变成 $maxFreq-1$ 次。
 例如 $[1,1,2,2,3,3,4]$：$1,2,3$ 各 $2$ 次，$4$ 只有 $1$ 次。$maxFreq=2$，$count[2]=3$，不满足。 
 再比如 $[1,1,2,2,3]$：$maxFreq=2$，$count[2]=2$，不满足（有两个数字出现 $2$ 次）。
 $[1,1,1,2,2]$：$maxFreq=3$，$count[3]=1$，$count[2]=1$ → $1 \times 2 + 3 = 5$ → 成立。删除一个 $1$ 得 $[1,1,2,2]$。
 
 条件 3：只有一个数字出现 $1$ 次，其他所有数字都出现 $maxFreq$ 次。
-即 $count[1] == 1$ 且 $count[maxFreq] \times maxFreq + 1 == 当前长度$。
+即 $count[1] == 1$ 且 $count[maxFreq] \times maxFreq + 1 == \text{当前长度}$。
 这种情况删除那个出现 $1$ 次的数字，所有数字就变成 $maxFreq$ 次。
 例如 $[1,1,2,2,3]$：$maxFreq=2$，$count[2]=2$，$count[1]=1$ → $2 \times 2 + 1 = 5$ → 成立。
 
@@ -83,13 +83,13 @@ $[1,1,1,2,2]$：$maxFreq=3$，$count[3]=1$，$count[2]=1$ → $1 \times 2 + 3 = 
 
 实际上条件有三种：
 1. $maxFreq == 1$：所有元素都相同或每个元素只出现一次
-2. $count[maxFreq] == 1$ 且 $count[maxFreq-1] \times (maxFreq-1) + maxFreq == 当前长度$
-3. $count[maxFreq] \times maxFreq + 1 == 当前长度$（即只有一个数字出现 $1$ 次，其他都是 $maxFreq$ 次）
+2. $count[maxFreq] == 1$ 且 $count[maxFreq-1] \times (maxFreq-1) + maxFreq == \text{当前长度}$
+3. $count[maxFreq] \times maxFreq + 1 == \text{当前长度}$（即只有一个数字出现 $1$ 次，其他都是 $maxFreq$ 次）
 
 等等，条件 3 中 $count[maxFreq] \times maxFreq + 1$ 的含义是：所有出现 $maxFreq$ 次的元素加起来，再加上出现 $1$ 次的那个元素。
 
 再想想，其实条件 3 中还有一个隐含条件：那个"出现 $1$ 次"的数字，其实就是 $count[1]$ 代表的元素之一。所以条件 3 等价于：
-$count[1] == 1$ 且 $count[maxFreq] \times maxFreq + 1 == 当前长度$
+$count[1] == 1$ 且 $count[maxFreq] \times maxFreq + 1 == \text{当前长度}$
 
 好了，让我把这个写进题解中。
 

@@ -10,6 +10,7 @@
 ## 题目大意
 
 **描述**：实现地铁系统 $UndergroundSystem$：
+
 - $checkIn(id, stationName, t)$：乘客 $id$ 在 $t$ 时刻进站 $stationName$。
 - $checkOut(id, stationName, t)$：乘客 $id$ 在 $t$ 时刻出站 $stationName$。
 - $getAverageTime(startStation, endStation)$：返回从 $startStation$ 到 $endStation$ 的平均用时。
@@ -74,7 +75,7 @@ undergroundSystem.getAverageTime("Leyton", "Paradise"); // 返回 6.66667 ，(5 
 
 用 $check\_in$ 字典记录每个乘客的进站信息（车站+时间）。出站时查找对应的进站信息，计算用时，累加到 $travel\_times$ 字典中。
 
-$travel\_times$ 的键为 $(start, end)$，值为 $(总用时, 次数)$。
+$travel\_times$ 的键为 $(start, end)$，值为 $(\text{总用时}, \text{次数})$。
 
 #### 2. 具体步骤
 
