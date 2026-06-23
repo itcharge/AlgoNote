@@ -52,6 +52,7 @@
 **第 1 步**：初始化 $prev = -1$（表示尚未遇到 $1$）。
 
 **第 2 步**：遍历 $i = 0 \to n-1$：
+
 - 如果 $nums[i] == 1$：
   - 如果 $prev \ne -1$ 且 $i - prev - 1 < k$，返回 $False$。
   - 更新 $prev = i$。
@@ -65,9 +66,9 @@
 以 $nums = [1,0,0,0,1,0,0,1], k = 2$ 为例：
 
 - $prev = -1$
-- $i=0, nums=1：prev=-1$，更新 $prev=0$
-- $i=4, nums=1：diff=4-0-1=3 \ge 2$ ✓，更新 $prev=4$
-- $i=7, nums=1：diff=7-4-1=2 \ge 2$ ✓，更新 $prev=7$
+- $i=0, nums=1: prev=-1$，更新 $prev=0$
+- $i=4, nums=1: diff=4-0-1=3 \ge 2$ ✓，更新 $prev=4$
+- $i=7, nums=1: diff=7-4-1=2 \ge 2$ ✓，更新 $prev=7$
 
 返回 $True$。
 

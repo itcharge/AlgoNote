@@ -54,7 +54,7 @@ $n \le 15$，可以使用状态压缩。$mask$ 表示已经学完的课程集合
 
 **第 2 步**：预处理所有状态中可以在一学期内修完的课程子集（不超过 $k$ 门，且先修条件已满足）。
 
-如何枚举子集？对于状态 $mask$，$available = (未学课程) \& (先修条件已满足)$。然后枚举 $available$ 的所有子集，取大小 $\le k$ 的子集。
+如何枚举子集？对于状态 $mask$，$available = (\text{未学课程}) \& (\text{先修条件已满足})$。然后枚举 $available$ 的所有子集，取大小 $\le k$ 的子集。
 
 枚举子集的技巧：`sub = available; while sub: ... sub = (sub-1) & available`
 
