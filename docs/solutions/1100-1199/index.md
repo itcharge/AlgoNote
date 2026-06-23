@@ -64,6 +64,7 @@
 - [1182. 与目标颜色间的最短距离](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/shortest-distance-to-target-color.md)
 - [1183. 矩阵中 1 的最大数量](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-number-of-ones.md)
 - [1184. 公交站间的距离](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/distance-between-bus-stops.md)
+- [1185. 一周中的第几天](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/day-of-the-week.md)
 - [1186. 删除一次得到子数组最大和](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-subarray-sum-with-one-deletion.md)
 - [1187. 使数组严格递增](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/make-array-strictly-increasing.md)
 - [1189. “气球” 的最大数量](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-number-of-balloons.md)

@@ -1,4 +1,4 @@
-# LeetCode 题解（已完成 1564 道）
+# LeetCode 题解（已完成 1565 道）
 
 ### 第 1 ~ 99 题
 
@@ -1100,6 +1100,7 @@
 | [1182. 与目标颜色间的最短距离](https://leetcode.cn/problems/shortest-distance-to-target-color/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/shortest-distance-to-target-color.md) | 数组、二分查找、动态规划 | 中等 |
 | [1183. 矩阵中 1 的最大数量](https://leetcode.cn/problems/maximum-number-of-ones/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-number-of-ones.md) | 贪心、数学、排序、堆（优先队列） | 困难 |
 | [1184. 公交站间的距离](https://leetcode.cn/problems/distance-between-bus-stops/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/distance-between-bus-stops.md) | 数组 | 简单 |
+| [1185. 一周中的第几天](https://leetcode.cn/problems/day-of-the-week/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/day-of-the-week.md) | 数学 | 简单 |
 | [1186. 删除一次得到子数组最大和](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-subarray-sum-with-one-deletion.md) | 数组、动态规划 | 中等 |
 | [1187. 使数组严格递增](https://leetcode.cn/problems/make-array-strictly-increasing/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/make-array-strictly-increasing.md) | 数组、二分查找、动态规划、排序 | 困难 |
 | [1189. “气球” 的最大数量](https://leetcode.cn/problems/maximum-number-of-balloons/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/1100-1199/maximum-number-of-balloons.md) | 哈希表、字符串、计数 | 简单 |
